@@ -1,0 +1,18 @@
+2026-08-30 04:11:39 [INFO] uvh_test.main: Processing video: realrun/test.mp4
+2026-08-30 04:11:39 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.engine
+WARNING ⚠️ Unable to automatically guess model task, assuming 'task=detect'. Explicitly define task for your model, i.e. 'task=detect', 'segment', 'classify', 'pose', 'obb' or 'semantic'.
+Loading /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.engine for TensorRT inference...
+[08/30/2026-04:11:40] [TRT] [I] Loaded engine size: 21 MiB
+[08/30/2026-04:11:40] [TRT] [E] IRuntime::deserializeCudaEngine: Error Code 1: Internal Error (Failed due to an old deserialization call on a newer plan file. This might happen when the plan file was built from an older TensorRT version. You can use `trtexec --getPlanVersionOnly` to check the version of TensorRT that was used to create the plan file. In deserializeEngine at /_src/runtime/api/engine.cpp:1590)
+ERROR ❌ TensorRT model exported with a different version than expected
+
+Traceback (most recent call last):
+  File "/storage/users/oauser/mvsa/vehicle-counting/pipeline/counting/main.py", line 259, in <module>
+    main()
+  File "/storage/users/oauser/mvsa/vehicle-counting/pipeline/counting/main.py", line 95, in main
+    detector = VehicleDetector(
+  File "/storage/users/oauser/mvsa/vehicle-counting/pipeline/counting/detector.py", line 18, in __init__
+    self.class_names = self.model.names
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/model.py", line 1186, in __getattr__
+    return self._modules["model"] if name == "model" else getattr(self.model, name)
+AttributeError: 'str' object has no attribute 'names'

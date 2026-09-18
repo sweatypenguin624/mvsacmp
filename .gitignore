@@ -1,0 +1,16 @@
+# Credentials -- never commit real versions of these. See config/rclone.conf.example.
+config/rclone.conf
+.labelstudio_token
+*.token
+*_token
+*.pem
+*.key
+
+# Model weights -- too large for git, and GPU-architecture-specific (TensorRT
+# engines). Deploy these directly onto the target GPU box; see deploy/.
+*.engine
+*.onnx
+models/
+
+__pycache__/
+*.pyc

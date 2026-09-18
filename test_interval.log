@@ -1,0 +1,40 @@
+2026-08-20 01:16:57 [INFO] uvh_test.main: Processing video: videos/actual_test/08.00.00-09.00.00.mp4
+2026-08-20 01:16:57 [INFO] uvh_test.detector: Loading YOLO model from models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.pt
+2026-08-20 01:16:57 [INFO] uvh_test.detector: Loaded 14 classes.
+2026-08-20 01:17:03 [INFO] uvh_test.main: Processed 100 frames... Count: 2
+2026-08-20 01:17:06 [INFO] uvh_test.main: Processed 200 frames... Count: 3
+2026-08-20 01:17:09 [INFO] uvh_test.main: Processed 300 frames... Count: 3
+2026-08-20 01:17:12 [INFO] uvh_test.main: Stopping early for test
+
+==================================================
+FINAL SUMMARY
+{
+  "input_video": "videos/actual_test/08.00.00-09.00.00.mp4",
+  "model": "models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.pt",
+  "frames_processed": 400,
+  "processing_time_sec": 14.279961347579956,
+  "processing_fps": 28.011280301384605,
+  "profiling_sec": {
+    "video_read": 0.9638910293579102,
+    "yolo_inference": 12.598185300827026,
+    "filtering_and_logic": 0.6957800388336182,
+    "annotation": 0.0001671314239501953
+  },
+  "filter_stats": {
+    "raw_detections": 1108,
+    "low_conf": 0,
+    "too_small": 25,
+    "invalid_class": 0,
+    "passed_filter": 1083,
+    "tracks_created": 20
+  },
+  "tracks_created": 20,
+  "tracks_confirmed": 19,
+  "tracks_rejected_before_confirmation": 1,
+  "tracks_counted": 3,
+  "duplicate_count_preventions": 0,
+  "count_by_class": {
+    "Two-wheeler": 3
+  }
+}
+==================================================

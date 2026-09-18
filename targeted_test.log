@@ -1,0 +1,27 @@
+nohup: ignoring input
+2026-08-29 09:33:02 [INFO] uvh_test.main: Processing video: /home/users/oauser/mvsa/realrun/test.mp4
+2026-08-29 09:33:02 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.pt
+2026-08-29 09:33:02 [INFO] uvh_test.detector: Loaded 14 classes.
+2026-08-29 09:33:02 [INFO] uvh_test.main: goods_crops: save-all mode -- every frame of every Goods Vehicle track will be written to disk
+2026-08-29 09:33:12 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=3 into lost_tid=3, dist=61.4px
+2026-08-29 09:33:12 [DEBUG] uvh_test.main: frame=25231 COUNTED track_id=3 class=Truck
+2026-08-29 09:33:17 [DEBUG] uvh_test.counter: track_id: 13, frame: 25407, previous_bottom_center: (1515.208984375, 643.21094), current_bottom_center: (1586.89111328125, 600.33295), previous_side: -44.51, current_side: 35.65, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 09:33:17 [DEBUG] uvh_test.main: frame=25407 COUNTED track_id=13 class=Two-wheeler
+2026-08-29 09:33:17 [DEBUG] uvh_test.counter: track_id: 9, frame: 25408, previous_bottom_center: (1374.384521484375, 463.8519), current_bottom_center: (1394.7666015625, 457.3971), previous_side: -8.58, current_side: 10.00, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 09:33:17 [DEBUG] uvh_test.main: frame=25408 COUNTED track_id=9 class=Two-wheeler
+2026-08-29 09:33:23 [DEBUG] uvh_test.counter: track_id: 21, frame: 25571, previous_bottom_center: (1475.334228515625, 553.3655), current_bottom_center: (1523.2490234375, 534.43396), previous_side: -5.68, current_side: 40.77, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 09:33:23 [DEBUG] uvh_test.main: frame=25571 COUNTED track_id=21 class=Two-wheeler
+2026-08-29 09:33:23 [DEBUG] uvh_test.counter: track_id: 15, frame: 25587, previous_bottom_center: (1317.1759033203125, 407.86984), current_bottom_center: (1348.900146484375, 407.80722), previous_side: -6.37, current_side: 15.23, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 09:33:23 [DEBUG] uvh_test.main: frame=25587 COUNTED track_id=15 class=Bus
+2026-08-29 09:33:24 [DEBUG] uvh_test.counter: track_id: 12, frame: 25599, previous_bottom_center: (1366.232177734375, 455.802), current_bottom_center: (1460.8265380859375, 407.95395), previous_side: -8.21, current_side: 91.16, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 09:33:24 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=12 as duplicate of class Bus, prev_tid=15, dist=111.9px, thresh=344.2px, bbox_size=458.9x384.3
+2026-08-29 09:33:24 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=22 into lost_tid=12, dist=94.9px
+2026-08-29 09:33:24 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=22 as duplicate of class Bus, prev_tid=15, dist=122.0px, thresh=344.2px
+2026-08-29 09:33:27 [INFO] uvh_test.main: HARD STOP at 0 minutes reached.
+2026-08-29 09:33:27 [INFO] uvh_test.main: Wrote results/vehicle_count_v1/tracks.jsonl
+2026-08-29 09:33:27 [INFO] uvh_test.main: Wrote goods-vehicle crops for 5 track(s) under results/vehicle_count_v1/goods_tracks
+2026-08-29 09:33:27 [INFO] uvh_test.main: Processing complete. Final Counts:
+2026-08-29 09:33:27 [INFO] uvh_test.main: Truck: 1
+2026-08-29 09:33:27 [INFO] uvh_test.main: Two-wheeler: 3
+2026-08-29 09:33:27 [INFO] uvh_test.main: Bus: 1
+VideoWriter initialized at: /storage/users/oauser/mvsa/results/vehicle_count_v1/annotated.mp4

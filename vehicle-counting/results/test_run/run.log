@@ -1,0 +1,6 @@
+2026-08-29 20:50:30 [INFO] uvh_test.main: Processing video: /home/users/oauser/mvsa/videos/sample.mp4
+2026-08-29 20:50:30 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.pt
+2026-08-29 20:50:30 [INFO] uvh_test.detector: Loaded 14 classes.
+2026-08-29 20:50:30 [INFO] uvh_test.counter: VehicleCounter initialized: line=[1911.0, 949.0] -> [1142.0, 237.0], direction=BOTH
+2026-08-29 20:50:38 [INFO] uvh_test.main: Wrote /home/users/oauser/mvsa/vehicle-counting/results/test_run/tracks.jsonl
+2026-08-29 20:50:38 [INFO] uvh_test.main: Processing complete. Final Counts:

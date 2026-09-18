@@ -1,0 +1,22 @@
+2026-08-30 04:31:44 [INFO] uvh_test.main: Processing video: realrun/test.mp4
+2026-08-30 04:31:44 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.engine
+Loading /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.engine for TensorRT inference...
+[08/30/2026-04:31:45] [TRT] [I] Loaded engine size: 21 MiB
+[08/30/2026-04:31:45] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +18, now: CPU 0, GPU 18 (MiB)
+[08/30/2026-04:31:45] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +85, now: CPU 0, GPU 103 (MiB)
+Loading /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.engine for TensorRT inference...
+[08/30/2026-04:31:45] [TRT] [I] Loaded engine size: 21 MiB
+[08/30/2026-04:31:45] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +18, now: CPU 0, GPU 18 (MiB)
+[08/30/2026-04:31:45] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +85, now: CPU 0, GPU 103 (MiB)
+Loading /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.engine for TensorRT inference...
+[08/30/2026-04:31:45] [TRT] [I] Loaded engine size: 21 MiB
+[08/30/2026-04:31:45] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +18, now: CPU 0, GPU 18 (MiB)
+[08/30/2026-04:31:45] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +85, now: CPU 0, GPU 103 (MiB)
+2026-08-30 04:31:45 [INFO] uvh_test.detector: Loaded 26 classes.
+2026-08-30 04:31:45 [INFO] uvh_test.main: Restricting detection to classes: ['Two-wheeler', 'Three-wheeler', 'Hatchback', 'Sedan', 'SUV', 'MUV', 'Van'] -> ids [7, 6, 0, 1, 2, 3, 12]
+2026-08-30 04:31:45 [INFO] uvh_test.counter: VehicleCounter initialized: line=[1911.0, 949.0] -> [1142.0, 237.0], direction=BOTH
+2026-08-30 04:31:45 [INFO] uvh_test.main: Processing window: 0.0 min -> 1.0 min
+Loading /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.engine for TensorRT inference...
+[08/30/2026-04:31:46] [TRT] [I] Loaded engine size: 21 MiB
+[08/30/2026-04:31:46] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +18, now: CPU 0, GPU 18 (MiB)
+[08/30/2026-04:31:46] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +85, now: CPU 0, GPU 103 (MiB)

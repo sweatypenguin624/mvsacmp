@@ -1,0 +1,430 @@
+nohup: ignoring input
+2026-08-29 07:37:26 [INFO] uvh_test.main: Processing video: /home/users/oauser/mvsa/realrun/test.mp4
+2026-08-29 07:37:26 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.pt
+2026-08-29 07:37:26 [INFO] uvh_test.detector: Loaded 14 classes.
+2026-08-29 07:37:33 [DEBUG] uvh_test.counter: track_id: 1, frame: 444, previous_bottom_center: (1274.364501953125, 363.41852), current_bottom_center: (1284.26123046875, 361.70203), previous_side: -2.84, current_side: 5.15, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:33 [DEBUG] uvh_test.main: frame=444 COUNTED track_id=1 class=Two-wheeler
+2026-08-29 07:37:35 [DEBUG] uvh_test.counter: track_id: 4, frame: 654, previous_bottom_center: (1513.1865234375, 695.8268), current_bottom_center: (1583.9039306640625, 627.9763), previous_side: -84.50, current_side: 13.33, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:35 [DEBUG] uvh_test.counter: track_id: 8, frame: 654, previous_bottom_center: (1606.457763671875, 695.7181), current_bottom_center: (1645.2545166015625, 659.7081), previous_side: -21.05, current_side: 31.73, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=8 as duplicate of class Truck, dist=69.1px
+2026-08-29 07:37:35 [DEBUG] uvh_test.main: frame=654 COUNTED track_id=4 class=Truck
+2026-08-29 07:37:35 [DEBUG] uvh_test.counter: track_id: 6, frame: 657, previous_bottom_center: (1598.005859375, 709.84204), current_bottom_center: (1643.361328125, 697.8886), previous_side: -37.16, current_side: 2.43, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=6 as duplicate of class Truck, dist=91.8px
+2026-08-29 07:37:35 [DEBUG] uvh_test.counter: track_id: 7, frame: 657, previous_bottom_center: (1561.28662109375, 647.7632), current_bottom_center: (1596.194091796875, 647.73334), previous_side: -16.55, current_side: 7.19, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=7 as duplicate of class Truck, dist=23.3px
+2026-08-29 07:37:40 [DEBUG] uvh_test.counter: track_id: 16, frame: 1180, previous_bottom_center: (1405.1829833984375, 596.9171), current_bottom_center: (1494.431640625, 555.3215), previous_side: -85.30, current_side: 5.86, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:40 [DEBUG] uvh_test.counter: track_id: 17, frame: 1180, previous_bottom_center: (1295.0771484375, 647.6844), current_bottom_center: (1442.59619140625, 486.2557), previous_side: -197.35, current_side: 21.32, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=17 as duplicate of class SUV, dist=86.4px
+2026-08-29 07:37:40 [DEBUG] uvh_test.main: frame=1180 COUNTED track_id=16 class=SUV
+2026-08-29 07:37:48 [DEBUG] uvh_test.counter: track_id: 24, frame: 2014, previous_bottom_center: (1264.1923828125, 375.51288), current_bottom_center: (1299.2772216796875, 369.66135), previous_side: -18.62, current_side: 9.51, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:48 [DEBUG] uvh_test.main: frame=2014 COUNTED track_id=24 class=SUV
+2026-08-29 07:37:50 [DEBUG] uvh_test.counter: track_id: 26, frame: 2240, previous_bottom_center: (1280.433349609375, 369.10587), current_bottom_center: (1322.440673828125, 361.4302), previous_side: -2.89, current_side: 31.29, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:50 [DEBUG] uvh_test.main: frame=2240 COUNTED track_id=26 class=Two-wheeler
+2026-08-29 07:37:57 [DEBUG] uvh_test.counter: track_id: 29, frame: 2977, previous_bottom_center: (1256.29150390625, 364.7594), current_bottom_center: (1284.34130859375, 359.99582), previous_side: -16.10, current_side: 6.45, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:37:57 [DEBUG] uvh_test.main: frame=2977 COUNTED track_id=29 class=Two-wheeler
+2026-08-29 07:38:05 [DEBUG] uvh_test.counter: track_id: 31, frame: 3834, previous_bottom_center: (1429.9287109375, 536.5084), current_bottom_center: (1480.6357421875, 522.1342), previous_side: -24.16, current_side: 20.84, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:05 [DEBUG] uvh_test.main: frame=3834 COUNTED track_id=31 class=Two-wheeler
+2026-08-29 07:38:08 [DEBUG] uvh_test.counter: track_id: 32, frame: 4080, previous_bottom_center: (1296.719482421875, 409.5455), current_bottom_center: (1337.7764892578125, 399.6984), previous_side: -21.50, current_side: 13.62, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:08 [DEBUG] uvh_test.main: frame=4080 COUNTED track_id=32 class=Two-wheeler
+2026-08-29 07:38:09 [DEBUG] uvh_test.counter: track_id: 33, frame: 4137, previous_bottom_center: (1274.8553466796875, 364.7617), current_bottom_center: (1302.876953125, 359.96637), previous_side: -3.49, current_side: 19.07, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=33 as duplicate of class Two-wheeler, dist=52.9px
+2026-08-29 07:38:13 [DEBUG] uvh_test.counter: track_id: 34, frame: 4557, previous_bottom_center: (1603.994873046875, 728.07556), current_bottom_center: (1651.09326171875, 695.9887), previous_side: -46.47, current_side: 9.08, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:13 [DEBUG] uvh_test.main: frame=4557 COUNTED track_id=34 class=Two-wheeler
+2026-08-29 07:38:16 [DEBUG] uvh_test.counter: track_id: 36, frame: 4917, previous_bottom_center: (1454.946533203125, 604.7466), current_bottom_center: (1548.420654296875, 592.0766), previous_side: -57.23, current_side: 15.57, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:16 [DEBUG] uvh_test.main: frame=4917 COUNTED track_id=36 class=Sedan
+2026-08-29 07:38:16 [DEBUG] uvh_test.counter: track_id: 37, frame: 4920, previous_bottom_center: (1504.8267822265625, 581.57477), current_bottom_center: (1541.7581787109375, 526.715), previous_side: -6.34, current_side: 59.00, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=37 as duplicate of class Sedan, dist=65.7px
+2026-08-29 07:38:29 [DEBUG] uvh_test.counter: track_id: 45, frame: 6290, previous_bottom_center: (1274.96435546875, 388.96625), current_bottom_center: (1325.7838134765625, 377.92285), previous_side: -21.18, current_side: 21.45, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:29 [DEBUG] uvh_test.main: frame=6290 COUNTED track_id=45 class=Two-wheeler
+2026-08-29 07:38:35 [DEBUG] uvh_test.counter: track_id: 47, frame: 6814, previous_bottom_center: (1250.6875, 345.1717), current_bottom_center: (1288.3623046875, 339.60513), previous_side: -5.53, current_side: 24.15, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:35 [DEBUG] uvh_test.main: frame=6814 COUNTED track_id=47 class=Two-wheeler
+2026-08-29 07:38:39 [DEBUG] uvh_test.counter: track_id: 49, frame: 7247, previous_bottom_center: (1541.97021484375, 659.9132), current_bottom_center: (1636.2080078125, 604.47784), previous_side: -38.59, current_side: 66.11, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:39 [DEBUG] uvh_test.main: frame=7247 COUNTED track_id=49 class=Two-wheeler
+2026-08-29 07:38:39 [DEBUG] uvh_test.counter: track_id: 51, frame: 7284, previous_bottom_center: (1409.191650390625, 492.689), current_bottom_center: (1423.413330078125, 486.9253), previous_side: -6.09, current_side: 7.80, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:39 [DEBUG] uvh_test.main: frame=7284 COUNTED track_id=51 class=Two-wheeler
+2026-08-29 07:38:40 [DEBUG] uvh_test.counter: track_id: 58, frame: 7397, previous_bottom_center: (1325.4573974609375, 407.77838), current_bottom_center: (1360.503662109375, 407.7373), previous_side: -0.67, current_side: 23.17, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:40 [DEBUG] uvh_test.main: frame=7397 COUNTED track_id=58 class=Bus
+2026-08-29 07:38:40 [DEBUG] uvh_test.counter: track_id: 56, frame: 7400, previous_bottom_center: (1315.7850341796875, 427.82935), current_bottom_center: (1355.4691162109375, 411.54648), previous_side: -21.96, current_side: 16.95, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=56 as duplicate of class Bus, dist=6.3px
+2026-08-29 07:38:40 [DEBUG] uvh_test.counter: track_id: 59, frame: 7414, previous_bottom_center: (1422.32470703125, 506.01886), current_bottom_center: (1457.3592529296875, 505.65555), previous_side: -6.95, current_side: 17.12, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=59 as duplicate of class Bus, dist=137.7px
+2026-08-29 07:38:40 [DEBUG] uvh_test.counter: track_id: 53, frame: 7417, previous_bottom_center: (1373.42529296875, 454.28815), current_bottom_center: (1405.7379150390625, 454.45984), previous_side: -2.21, current_side: 19.61, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=53 as duplicate of class Bus, dist=65.0px
+2026-08-29 07:38:44 [DEBUG] uvh_test.counter: track_id: 63, frame: 7737, previous_bottom_center: (1503.606201171875, 649.0766), current_bottom_center: (1570.1234130859375, 609.2628), previous_side: -56.70, current_side: 17.70, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:44 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=63 as duplicate of class Two-wheeler, dist=66.3px
+2026-08-29 07:38:46 [DEBUG] uvh_test.counter: track_id: 64, frame: 7940, previous_bottom_center: (1255.5032958984375, 366.6076), current_bottom_center: (1284.655029296875, 361.1142), previous_side: -17.99, current_side: 5.85, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:46 [DEBUG] uvh_test.main: frame=7940 COUNTED track_id=64 class=Two-wheeler
+2026-08-29 07:38:47 [DEBUG] uvh_test.counter: track_id: 68, frame: 8057, previous_bottom_center: (1308.425048828125, 437.4945), current_bottom_center: (1356.6279296875, 426.23355), previous_side: -34.05, current_side: 6.96, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=68 as duplicate of class Two-wheeler, dist=97.1px
+2026-08-29 07:38:49 [DEBUG] uvh_test.counter: track_id: 72, frame: 8237, previous_bottom_center: (1330.423095703125, 451.3375), current_bottom_center: (1374.23046875, 438.91458), previous_side: -29.26, current_side: 9.61, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=72 as duplicate of class Two-wheeler, dist=118.6px
+2026-08-29 07:38:49 [DEBUG] uvh_test.counter: track_id: 75, frame: 8254, previous_bottom_center: (1278.068359375, 364.87305), current_bottom_center: (1303.719482421875, 360.4264), previous_side: -1.39, current_side: 19.30, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=75 as duplicate of class Two-wheeler, dist=19.1px
+2026-08-29 07:38:53 [DEBUG] uvh_test.counter: track_id: 78, frame: 8657, previous_bottom_center: (1488.386962890625, 627.0936), current_bottom_center: (1564.2080078125, 586.60046), previous_side: -50.91, current_side: 30.31, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:53 [DEBUG] uvh_test.main: frame=8657 COUNTED track_id=78 class=Two-wheeler
+2026-08-29 07:38:54 [DEBUG] uvh_test.counter: track_id: 81, frame: 8747, previous_bottom_center: (1281.4677734375, 408.35144), current_bottom_center: (1344.49755859375, 394.7847), previous_side: -30.98, current_side: 21.80, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:54 [DEBUG] uvh_test.main: frame=8747 COUNTED track_id=81 class=Two-wheeler
+2026-08-29 07:38:57 [DEBUG] uvh_test.counter: track_id: 83, frame: 9134, previous_bottom_center: (1274.168212890625, 362.51398), current_bottom_center: (1301.533203125, 358.17944), previous_side: -2.31, current_side: 19.47, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:38:57 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=83 as duplicate of class Two-wheeler, dist=56.4px
+2026-08-29 07:39:02 [DEBUG] uvh_test.counter: track_id: 93, frame: 9617, previous_bottom_center: (1313.7642822265625, 424.7617), current_bottom_center: (1367.08056640625, 411.4787), previous_side: -21.08, current_side: 24.89, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:02 [DEBUG] uvh_test.main: frame=9617 COUNTED track_id=93 class=Two-wheeler
+2026-08-29 07:39:04 [DEBUG] uvh_test.counter: track_id: 85, frame: 9797, previous_bottom_center: (1261.5390625, 368.30444), current_bottom_center: (1297.6424560546875, 361.82153), previous_side: -15.13, current_side: 14.15, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=85 as duplicate of class Two-wheeler, dist=85.4px
+2026-08-29 07:39:05 [DEBUG] uvh_test.counter: track_id: 99, frame: 9930, previous_bottom_center: (1301.748779296875, 405.4216), current_bottom_center: (1323.9676513671875, 400.54422), previous_side: -15.05, current_side: 3.62, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:05 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=99 as duplicate of class Two-wheeler, dist=44.5px
+2026-08-29 07:39:06 [DEBUG] uvh_test.counter: track_id: 97, frame: 10017, previous_bottom_center: (1287.0751953125, 373.97238), current_bottom_center: (1319.1356201171875, 368.11606), previous_side: -1.94, current_side: 24.13, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=97 as duplicate of class Two-wheeler, dist=64.6px
+2026-08-29 07:39:07 [DEBUG] uvh_test.counter: track_id: 105, frame: 10094, previous_bottom_center: (1289.4345703125, 391.0857), current_bottom_center: (1320.782958984375, 384.4558), previous_side: -12.90, current_side: 13.26, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:07 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=105 as duplicate of class Two-wheeler, dist=53.6px
+2026-08-29 07:39:08 [DEBUG] uvh_test.counter: track_id: 109, frame: 10170, previous_bottom_center: (1284.026611328125, 370.01562), current_bottom_center: (1298.1473388671875, 367.23718), previous_side: -1.11, current_side: 10.52, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:08 [DEBUG] uvh_test.main: frame=10170 COUNTED track_id=109 class=Two-wheeler
+2026-08-29 07:39:09 [DEBUG] uvh_test.counter: track_id: 115, frame: 10307, previous_bottom_center: (1337.853759765625, 422.80914), current_bottom_center: (1393.8486328125, 409.7561), previous_side: -3.28, current_side: 44.34, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=115 as duplicate of class Two-wheeler, dist=104.7px
+2026-08-29 07:39:09 [DEBUG] uvh_test.counter: track_id: 110, frame: 10340, previous_bottom_center: (1263.7939453125, 391.69577), current_bottom_center: (1302.84033203125, 383.66245), previous_side: -30.77, current_side: 1.66, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=110 as duplicate of class Two-wheeler, dist=17.1px
+2026-08-29 07:39:13 [DEBUG] uvh_test.counter: track_id: 119, frame: 10737, previous_bottom_center: (1239.2117919921875, 337.09732), current_bottom_center: (1251.89404296875, 334.70108), previous_side: -7.40, current_side: 2.97, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:13 [DEBUG] uvh_test.counter: track_id: 121, frame: 10737, previous_bottom_center: (1299.03369140625, 387.12454), current_bottom_center: (1331.291015625, 380.60315), previous_side: -3.47, current_side: 23.23, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:13 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=121 as duplicate of class Two-wheeler, dist=91.7px
+2026-08-29 07:39:13 [DEBUG] uvh_test.main: frame=10737 COUNTED track_id=119 class=Two-wheeler
+2026-08-29 07:39:15 [DEBUG] uvh_test.counter: track_id: 124, frame: 10880, previous_bottom_center: (1249.34423828125, 344.75464), current_bottom_center: (1266.759033203125, 342.30527), previous_side: -6.14, current_side: 7.49, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:15 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=124 as duplicate of class Two-wheeler, dist=16.7px
+2026-08-29 07:39:17 [DEBUG] uvh_test.counter: track_id: 126, frame: 11140, previous_bottom_center: (1249.13671875, 347.235), current_bottom_center: (1273.52978515625, 343.61142), previous_side: -8.10, current_side: 11.13, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=126 as duplicate of class Two-wheeler, dist=23.4px
+2026-08-29 07:39:18 [DEBUG] uvh_test.counter: track_id: 129, frame: 11224, previous_bottom_center: (1273.72314453125, 363.67752), current_bottom_center: (1282.8929443359375, 362.07147), previous_side: -3.46, current_side: 3.95, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=129 as duplicate of class Two-wheeler, dist=41.4px
+2026-08-29 07:39:19 [DEBUG] uvh_test.counter: track_id: 131, frame: 11297, previous_bottom_center: (1292.046875, 417.32135), current_bottom_center: (1337.59716796875, 407.4033), previous_side: -30.38, current_side: 7.85, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:19 [DEBUG] uvh_test.main: frame=11297 COUNTED track_id=131 class=Two-wheeler
+2026-08-29 07:39:20 [DEBUG] uvh_test.counter: track_id: 135, frame: 11427, previous_bottom_center: (1361.665771484375, 520.894), current_bottom_center: (1453.917724609375, 490.20847), previous_side: -59.08, current_side: 26.11, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:20 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=135 as duplicate of class Two-wheeler, dist=142.8px
+2026-08-29 07:39:22 [DEBUG] uvh_test.counter: track_id: 127, frame: 11627, previous_bottom_center: (1254.7171630859375, 357.3394), current_bottom_center: (1293.0687255859375, 350.6993), previous_side: -11.72, current_side: 19.20, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=127 as duplicate of class Two-wheeler, dist=72.1px
+2026-08-29 07:39:25 [DEBUG] uvh_test.counter: track_id: 138, frame: 11894, previous_bottom_center: (1355.2884521484375, 452.3194), current_bottom_center: (1396.9227294921875, 440.02283), previous_side: -13.09, current_side: 24.22, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:25 [DEBUG] uvh_test.main: frame=11894 COUNTED track_id=138 class=Two-wheeler
+2026-08-29 07:39:29 [DEBUG] uvh_test.counter: track_id: 142, frame: 12350, previous_bottom_center: (1400.06103515625, 492.76935), current_bottom_center: (1416.2554931640625, 487.9648), previous_side: -12.35, current_side: 2.17, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=142 as duplicate of class Two-wheeler, dist=51.7px
+2026-08-29 07:39:29 [DEBUG] uvh_test.counter: track_id: 143, frame: 12367, previous_bottom_center: (1329.50927734375, 417.67197), current_bottom_center: (1369.2357177734375, 409.01038), previous_side: -5.18, current_side: 28.16, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=143 as duplicate of class Two-wheeler, dist=41.6px
+2026-08-29 07:39:29 [DEBUG] uvh_test.counter: track_id: 146, frame: 12374, previous_bottom_center: (1278.303955078125, 373.07452), current_bottom_center: (1302.878173828125, 368.24448), previous_side: -7.25, current_side: 12.99, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=146 as duplicate of class Two-wheeler, dist=118.3px
+2026-08-29 07:39:31 [DEBUG] uvh_test.counter: track_id: 145, frame: 12587, previous_bottom_center: (1041.830078125, 416.75482), current_bottom_center: (1331.104736328125, 388.41608), previous_side: -199.95, current_side: 17.37, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:31 [DEBUG] uvh_test.main: frame=12587 COUNTED track_id=145 class=Two-wheeler
+2026-08-29 07:39:32 [DEBUG] uvh_test.counter: track_id: 152, frame: 12620, previous_bottom_center: (1258.576904296875, 346.03427), current_bottom_center: (1280.91943359375, 342.7054), previous_side: -0.81, current_side: 16.82, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=152 as duplicate of class Two-wheeler, dist=67.9px
+2026-08-29 07:39:33 [DEBUG] uvh_test.counter: track_id: 157, frame: 12697, previous_bottom_center: (1324.7603759765625, 416.33167), current_bottom_center: (1356.423095703125, 408.41492), previous_side: -7.42, current_side: 19.90, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=157 as duplicate of class Two-wheeler, dist=32.3px
+2026-08-29 07:39:33 [DEBUG] uvh_test.counter: track_id: 161, frame: 12767, previous_bottom_center: (1286.951171875, 392.32495), current_bottom_center: (1335.66796875, 383.7418), previous_side: -15.50, current_side: 23.90, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=161 as duplicate of class Two-wheeler, dist=6.5px
+2026-08-29 07:39:36 [DEBUG] uvh_test.counter: track_id: 153, frame: 13050, previous_bottom_center: (1305.475830078125, 391.85532), current_bottom_center: (1323.201904296875, 388.04153), previous_side: -2.57, current_side: 12.28, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:36 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=153 as duplicate of class Two-wheeler, dist=7.9px
+2026-08-29 07:39:38 [DEBUG] uvh_test.counter: track_id: 164, frame: 13230, previous_bottom_center: (1273.5281982421875, 367.38928), current_bottom_center: (1291.110107421875, 363.87308), previous_side: -6.32, current_side: 8.21, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:38 [DEBUG] uvh_test.main: frame=13230 COUNTED track_id=164 class=Two-wheeler
+2026-08-29 07:39:39 [DEBUG] uvh_test.counter: track_id: 165, frame: 13307, previous_bottom_center: (1227.0438232421875, 343.61115), current_bottom_center: (1264.286376953125, 338.09515), previous_side: -20.45, current_side: 8.90, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=165 as duplicate of class Two-wheeler, dist=37.2px
+2026-08-29 07:39:40 [DEBUG] uvh_test.counter: track_id: 166, frame: 13467, previous_bottom_center: (1272.157958984375, 386.30002), current_bottom_center: (1328.3421630859375, 375.64127), previous_side: -21.13, current_side: 24.87, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=166 as duplicate of class Two-wheeler, dist=39.0px
+2026-08-29 07:39:42 [DEBUG] uvh_test.counter: track_id: 170, frame: 13607, previous_bottom_center: (1615.202880859375, 756.39514), current_bottom_center: (1684.6337890625, 705.4723), previous_side: -59.63, current_side: 24.90, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:42 [DEBUG] uvh_test.main: frame=13607 COUNTED track_id=170 class=Two-wheeler
+2026-08-29 07:39:42 [DEBUG] uvh_test.counter: track_id: 175, frame: 13627, previous_bottom_center: (1466.362548828125, 612.0075), current_bottom_center: (1529.382080078125, 587.38416), previous_side: -54.80, current_side: 6.08, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:42 [DEBUG] uvh_test.main: frame=13627 COUNTED track_id=175 class=Two-wheeler
+2026-08-29 07:39:42 [DEBUG] uvh_test.counter: track_id: 173, frame: 13647, previous_bottom_center: (1420.760009765625, 498.23215), current_bottom_center: (1457.073486328125, 498.37842), previous_side: -2.30, current_side: 22.26, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:42 [DEBUG] uvh_test.counter: track_id: 177, frame: 13647, previous_bottom_center: (1464.3388671875, 545.5047), current_bottom_center: (1501.52197265625, 545.53644), previous_side: -7.38, current_side: 17.86, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=177 as duplicate of class SUV, dist=64.8px
+2026-08-29 07:39:42 [DEBUG] uvh_test.main: frame=13647 COUNTED track_id=173 class=SUV
+2026-08-29 07:39:42 [DEBUG] uvh_test.counter: track_id: 174, frame: 13657, previous_bottom_center: (1458.180419921875, 550.26636), current_bottom_center: (1502.122314453125, 550.4298), previous_side: -15.06, current_side: 14.68, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=174 as duplicate of class SUV, dist=68.8px
+2026-08-29 07:39:42 [DEBUG] uvh_test.counter: track_id: 168, frame: 13684, previous_bottom_center: (1259.005126953125, 357.02454), current_bottom_center: (1270.621826171875, 355.11282), previous_side: -8.58, current_side: 0.72, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=168 as duplicate of class Two-wheeler, dist=22.3px
+2026-08-29 07:39:44 [DEBUG] uvh_test.counter: track_id: 182, frame: 13847, previous_bottom_center: (1241.7462158203125, 343.67535), current_bottom_center: (1283.9091796875, 337.21152), previous_side: -10.51, current_side: 22.88, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:44 [DEBUG] uvh_test.main: frame=13847 COUNTED track_id=182 class=Two-wheeler
+2026-08-29 07:39:45 [DEBUG] uvh_test.counter: track_id: 171, frame: 13997, previous_bottom_center: (1346.1614990234375, 491.58063), current_bottom_center: (1404.002685546875, 474.9928), previous_side: -48.10, current_side: 3.37, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:45 [DEBUG] uvh_test.main: frame=13997 COUNTED track_id=171 class=Two-wheeler
+2026-08-29 07:39:47 [DEBUG] uvh_test.counter: track_id: 186, frame: 14167, previous_bottom_center: (1481.762451171875, 592.4714), current_bottom_center: (1525.0087890625, 560.31696), previous_side: -30.01, current_side: 22.97, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:47 [DEBUG] uvh_test.counter: track_id: 189, frame: 14167, previous_bottom_center: (1542.594482421875, 672.2357), current_bottom_center: (1614.061279296875, 625.0903), previous_side: -47.21, current_side: 35.94, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:47 [DEBUG] uvh_test.counter: track_id: 190, frame: 14167, previous_bottom_center: (1414.72998046875, 647.6771), current_bottom_center: (1460.25439453125, 509.4302), previous_side: -116.06, current_side: 16.32, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=190 as duplicate of class Sedan, dist=82.4px
+2026-08-29 07:39:47 [DEBUG] uvh_test.main: frame=14167 COUNTED track_id=186 class=Sedan
+2026-08-29 07:39:47 [DEBUG] uvh_test.main: frame=14167 COUNTED track_id=189 class=Two-wheeler
+2026-08-29 07:39:47 [DEBUG] uvh_test.counter: track_id: 187, frame: 14170, previous_bottom_center: (1372.690185546875, 547.6257), current_bottom_center: (1500.845703125, 547.1114), previous_side: -71.20, current_side: 16.24, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=187 as duplicate of class Sedan, dist=27.5px
+2026-08-29 07:39:47 [DEBUG] uvh_test.counter: track_id: 180, frame: 14204, previous_bottom_center: (1252.289794921875, 342.49142), current_bottom_center: (1259.65966796875, 341.5375), previous_side: -2.48, current_side: 3.23, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=180 as duplicate of class Two-wheeler, dist=24.6px
+2026-08-29 07:39:52 [DEBUG] uvh_test.counter: track_id: 199, frame: 14690, previous_bottom_center: (1479.7889404296875, 566.196), current_bottom_center: (1511.884033203125, 553.23517), previous_side: -12.07, current_side: 19.25, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:52 [DEBUG] uvh_test.main: frame=14690 COUNTED track_id=199 class=Two-wheeler
+2026-08-29 07:39:53 [DEBUG] uvh_test.counter: track_id: 203, frame: 14774, previous_bottom_center: (1552.379638671875, 629.2278), current_bottom_center: (1585.4298095703125, 607.49066), previous_side: -9.00, current_side: 29.40, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:53 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=203 as duplicate of class Two-wheeler, dist=91.4px
+2026-08-29 07:39:53 [DEBUG] uvh_test.counter: track_id: 207, frame: 14817, previous_bottom_center: (1281.291259765625, 386.78467), current_bottom_center: (1321.765869140625, 379.525), previous_side: -15.28, current_side: 17.55, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:53 [DEBUG] uvh_test.main: frame=14817 COUNTED track_id=207 class=Two-wheeler
+2026-08-29 07:39:54 [DEBUG] uvh_test.counter: track_id: 215, frame: 14917, previous_bottom_center: (1346.7186279296875, 486.28928), current_bottom_center: (1400.05908203125, 464.40198), previous_side: -43.84, current_side: 8.46, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:54 [DEBUG] uvh_test.main: frame=14917 COUNTED track_id=215 class=Sedan
+2026-08-29 07:39:55 [DEBUG] uvh_test.counter: track_id: 200, frame: 14987, previous_bottom_center: (1232.2255859375, 341.26996), current_bottom_center: (1270.068115234375, 336.10278), previous_side: -15.21, current_side: 14.29, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:55 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=200 as duplicate of class Two-wheeler, dist=67.5px
+2026-08-29 07:39:57 [DEBUG] uvh_test.counter: track_id: 222, frame: 15167, previous_bottom_center: (1558.276123046875, 636.6016), current_bottom_center: (1628.571533203125, 593.2477), previous_side: -10.41, current_side: 69.16, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:57 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=222 as duplicate of class Two-wheeler, dist=123.4px
+2026-08-29 07:39:57 [DEBUG] uvh_test.counter: track_id: 206, frame: 15210, previous_bottom_center: (1338.98828125, 425.28604), current_bottom_center: (1366.5870361328125, 418.7657), previous_side: -4.33, current_side: 19.21, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:57 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=206 as duplicate of class Two-wheeler, dist=59.6px
+2026-08-29 07:39:58 [DEBUG] uvh_test.counter: track_id: 225, frame: 15250, previous_bottom_center: (1266.598388671875, 361.30902), current_bottom_center: (1283.9755859375, 358.6436), previous_side: -6.56, current_side: 7.20, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:58 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=225 as duplicate of class Two-wheeler, dist=43.2px
+2026-08-29 07:39:58 [DEBUG] uvh_test.counter: track_id: 229, frame: 15280, previous_bottom_center: (1490.5185546875, 642.31995), current_bottom_center: (1551.347900390625, 612.75024), previous_side: -60.64, current_side: 2.39, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:39:58 [DEBUG] uvh_test.main: frame=15280 COUNTED track_id=229 class=Two-wheeler
+2026-08-29 07:40:00 [DEBUG] uvh_test.counter: track_id: 238, frame: 15507, previous_bottom_center: (1557.0772705078125, 647.66626), current_bottom_center: (1594.08203125, 647.68115), previous_side: -19.34, current_side: 5.79, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:00 [DEBUG] uvh_test.counter: track_id: 239, frame: 15507, previous_bottom_center: (1461.1259765625, 599.72986), current_bottom_center: (1535.11181640625, 599.7243), previous_side: -49.35, current_side: 0.92, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:00 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=239 as duplicate of class SUV, dist=76.0px
+2026-08-29 07:40:00 [DEBUG] uvh_test.main: frame=15507 COUNTED track_id=238 class=SUV
+2026-08-29 07:40:02 [DEBUG] uvh_test.counter: track_id: 241, frame: 15727, previous_bottom_center: (1248.414306640625, 371.13922), current_bottom_center: (1282.7288818359375, 364.81015), previous_side: -26.13, current_side: 1.83, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:02 [DEBUG] uvh_test.main: frame=15727 COUNTED track_id=241 class=Two-wheeler
+2026-08-29 07:40:03 [DEBUG] uvh_test.counter: track_id: 247, frame: 15747, previous_bottom_center: (1252.25537109375, 339.3313), current_bottom_center: (1284.274658203125, 334.5459), previous_side: -0.18, current_side: 25.08, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:03 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=247 as duplicate of class Two-wheeler, dist=30.3px
+2026-08-29 07:40:04 [DEBUG] uvh_test.counter: track_id: 243, frame: 15924, previous_bottom_center: (1299.408203125, 391.67313), current_bottom_center: (1307.764892578125, 389.88443), previous_side: -6.55, current_side: 0.44, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=243 as duplicate of class Two-wheeler, dist=35.4px
+2026-08-29 07:40:04 [DEBUG] uvh_test.counter: track_id: 253, frame: 15927, previous_bottom_center: (1242.9814453125, 367.49997), current_bottom_center: (1275.579345703125, 359.98538), previous_side: -27.15, current_side: 0.51, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=253 as duplicate of class Two-wheeler, dist=8.6px
+2026-08-29 07:40:05 [DEBUG] uvh_test.counter: track_id: 242, frame: 16027, previous_bottom_center: (1233.960693359375, 341.69745), current_bottom_center: (1264.108642578125, 336.99405), previous_side: -14.35, current_side: 9.59, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:05 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=242 as duplicate of class Two-wheeler, dist=33.5px
+2026-08-29 07:40:06 [DEBUG] uvh_test.counter: track_id: 254, frame: 16050, previous_bottom_center: (1308.916748046875, 402.52948), current_bottom_center: (1327.9423828125, 398.38855), previous_side: -8.06, current_side: 7.90, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=254 as duplicate of class Two-wheeler, dist=56.3px
+2026-08-29 07:40:09 [DEBUG] uvh_test.counter: track_id: 257, frame: 16427, previous_bottom_center: (1321.253173828125, 404.4736), current_bottom_center: (1375.701171875, 392.61572), previous_side: -1.11, current_side: 44.59, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:09 [DEBUG] uvh_test.main: frame=16427 COUNTED track_id=257 class=Two-wheeler
+2026-08-29 07:40:13 [DEBUG] uvh_test.counter: track_id: 260, frame: 16804, previous_bottom_center: (1296.700927734375, 386.85062), current_bottom_center: (1307.22998046875, 384.81003), previous_side: -4.86, current_side: 3.80, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:13 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=260 as duplicate of class Two-wheeler, dist=68.9px
+2026-08-29 07:40:14 [DEBUG] uvh_test.counter: track_id: 263, frame: 16894, previous_bottom_center: (1303.497314453125, 397.45865), current_bottom_center: (1334.521728515625, 392.11536), previous_side: -8.02, current_side: 16.98, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:14 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=263 as duplicate of class Two-wheeler, dist=41.2px
+2026-08-29 07:40:17 [DEBUG] uvh_test.counter: track_id: 268, frame: 17174, previous_bottom_center: (1298.1923828125, 383.66275), current_bottom_center: (1318.9495849609375, 380.35693), previous_side: -1.50, current_side: 15.03, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:17 [DEBUG] uvh_test.main: frame=17174 COUNTED track_id=268 class=Two-wheeler
+2026-08-29 07:40:17 [DEBUG] uvh_test.counter: track_id: 267, frame: 17187, previous_bottom_center: (1253.6552734375, 342.82056), current_bottom_center: (1284.11083984375, 339.19427), previous_side: -1.79, current_side: 21.56, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=267 as duplicate of class Two-wheeler, dist=53.9px
+2026-08-29 07:40:17 [DEBUG] uvh_test.counter: track_id: 261, frame: 17230, previous_bottom_center: (1267.33056640625, 355.35748), current_bottom_center: (1277.4923095703125, 353.854), previous_side: -1.70, current_side: 6.31, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=261 as duplicate of class Two-wheeler, dist=49.2px
+2026-08-29 07:40:18 [DEBUG] uvh_test.counter: track_id: 269, frame: 17307, previous_bottom_center: (1253.2445068359375, 360.99747), current_bottom_center: (1282.975830078125, 356.34805), previous_side: -15.41, current_side: 8.20, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=269 as duplicate of class Two-wheeler, dist=43.2px
+2026-08-29 07:40:20 [DEBUG] uvh_test.counter: track_id: 271, frame: 17440, previous_bottom_center: (1431.1549072265625, 580.0837), current_bottom_center: (1511.5721435546875, 542.8372), previous_side: -55.30, current_side: 26.67, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:20 [DEBUG] uvh_test.main: frame=17440 COUNTED track_id=271 class=Two-wheeler
+2026-08-29 07:40:21 [DEBUG] uvh_test.counter: track_id: 273, frame: 17597, previous_bottom_center: (1268.4158935546875, 365.0282), current_bottom_center: (1288.2772216796875, 361.83087), previous_side: -8.06, current_side: 7.78, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:21 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=273 as duplicate of class Two-wheeler, dist=35.8px
+2026-08-29 07:40:21 [DEBUG] uvh_test.counter: track_id: 276, frame: 17627, previous_bottom_center: (1231.29345703125, 365.10712), current_bottom_center: (1406.31396484375, 336.04245), previous_side: -33.34, current_side: 106.90, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:21 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=276 as duplicate of class Two-wheeler, dist=98.0px
+2026-08-29 07:40:24 [DEBUG] uvh_test.counter: track_id: 282, frame: 17887, previous_bottom_center: (1320.958740234375, 433.1588), current_bottom_center: (1369.1697998046875, 420.43204), previous_side: -22.35, current_side: 19.74, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:24 [DEBUG] uvh_test.main: frame=17887 COUNTED track_id=282 class=Two-wheeler
+2026-08-29 07:40:25 [DEBUG] uvh_test.counter: track_id: 277, frame: 17924, previous_bottom_center: (1275.535400390625, 365.5508), current_bottom_center: (1282.432861328125, 364.5623), previous_side: -3.61, current_side: 1.81, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:25 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=277 as duplicate of class Two-wheeler, dist=103.2px
+2026-08-29 07:40:28 [DEBUG] uvh_test.counter: track_id: 285, frame: 18280, previous_bottom_center: (1286.123291015625, 390.37982), current_bottom_center: (1321.1832275390625, 383.55832), previous_side: -14.63, current_side: 14.19, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:28 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=285 as duplicate of class Two-wheeler, dist=60.5px
+2026-08-29 07:40:41 [DEBUG] uvh_test.counter: track_id: 286, frame: 19614, previous_bottom_center: (1253.5751953125, 345.3211), current_bottom_center: (1273.776611328125, 342.1966), previous_side: -3.68, current_side: 12.34, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:41 [DEBUG] uvh_test.main: frame=19614 COUNTED track_id=286 class=Two-wheeler
+2026-08-29 07:40:47 [DEBUG] uvh_test.counter: track_id: 298, frame: 20290, previous_bottom_center: (1301.14501953125, 412.5517), current_bottom_center: (1350.8079833984375, 398.77112), previous_side: -20.69, current_side: 23.16, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:47 [DEBUG] uvh_test.main: frame=20290 COUNTED track_id=298 class=Sedan
+2026-08-29 07:40:51 [DEBUG] uvh_test.counter: track_id: 306, frame: 20690, previous_bottom_center: (1344.22216796875, 474.12732), current_bottom_center: (1394.075927734375, 455.9296), previous_side: -36.61, current_side: 10.61, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:51 [DEBUG] uvh_test.main: frame=20690 COUNTED track_id=306 class=SUV
+2026-08-29 07:40:52 [DEBUG] uvh_test.counter: track_id: 314, frame: 20830, previous_bottom_center: (1605.072021484375, 695.68976), current_bottom_center: (1642.4229736328125, 695.67255), previous_side: -21.97, current_side: 3.42, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:52 [DEBUG] uvh_test.main: frame=20830 COUNTED track_id=314 class=SUV
+2026-08-29 07:40:52 [DEBUG] uvh_test.counter: track_id: 313, frame: 20834, previous_bottom_center: (1512.5057373046875, 695.823), current_bottom_center: (1608.670654296875, 596.33356), previous_side: -84.96, current_side: 53.38, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=313 as duplicate of class SUV, dist=104.9px
+2026-08-29 07:40:52 [DEBUG] uvh_test.counter: track_id: 315, frame: 20837, previous_bottom_center: (1557.1378173828125, 647.85583), current_bottom_center: (1591.896484375, 647.80676), previous_side: -19.44, current_side: 4.21, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=315 as duplicate of class SUV, dist=69.6px
+2026-08-29 07:40:52 [DEBUG] uvh_test.counter: track_id: 316, frame: 20837, previous_bottom_center: (1599.960693359375, 700.9303), current_bottom_center: (1642.4859619140625, 622.8774), previous_side: -29.29, current_side: 56.88, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=316 as duplicate of class SUV, dist=72.8px
+2026-08-29 07:40:56 [DEBUG] uvh_test.counter: track_id: 323, frame: 21177, previous_bottom_center: (1300.078857421875, 408.12415), current_bottom_center: (1353.9488525390625, 394.83), previous_side: -18.17, current_side: 28.18, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:56 [DEBUG] uvh_test.main: frame=21177 COUNTED track_id=323 class=Two-wheeler
+2026-08-29 07:40:57 [DEBUG] uvh_test.counter: track_id: 319, frame: 21274, previous_bottom_center: (1231.1373291015625, 338.7974), current_bottom_center: (1256.537353515625, 335.8949), previous_side: -14.14, current_side: 5.25, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:40:57 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=319 as duplicate of class Two-wheeler, dist=113.9px
+2026-08-29 07:41:04 [DEBUG] uvh_test.counter: track_id: 330, frame: 22020, previous_bottom_center: (1331.0576171875, 443.68655), current_bottom_center: (1377.310302734375, 431.4075), previous_side: -23.22, current_side: 17.22, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:04 [DEBUG] uvh_test.main: frame=22020 COUNTED track_id=330 class=Two-wheeler
+2026-08-29 07:41:08 [DEBUG] uvh_test.counter: track_id: 332, frame: 22414, previous_bottom_center: (1468.7476806640625, 600.2172), current_bottom_center: (1519.7314453125, 579.1389), previous_side: -44.53, current_side: 5.57, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:08 [DEBUG] uvh_test.main: frame=22414 COUNTED track_id=332 class=Two-wheeler
+2026-08-29 07:41:13 [DEBUG] uvh_test.counter: track_id: 333, frame: 22940, previous_bottom_center: (1267.68994140625, 389.40686), current_bottom_center: (1303.91259765625, 382.37964), previous_side: -26.44, current_side: 3.33, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:13 [DEBUG] uvh_test.main: frame=22940 COUNTED track_id=333 class=Two-wheeler
+2026-08-29 07:41:13 [DEBUG] uvh_test.counter: track_id: 334, frame: 23004, previous_bottom_center: (1321.8577880859375, 406.5638), current_bottom_center: (1332.940185546875, 403.7395), previous_side: -2.23, current_side: 7.37, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:13 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=334 as duplicate of class Two-wheeler, dist=36.0px
+2026-08-29 07:41:14 [DEBUG] uvh_test.counter: track_id: 343, frame: 23127, previous_bottom_center: (1345.601806640625, 458.04504), current_bottom_center: (1411.7410888671875, 439.75116), previous_side: -23.87, current_side: 34.48, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:14 [DEBUG] uvh_test.main: frame=23127 COUNTED track_id=343 class=Three-wheeler
+2026-08-29 07:41:15 [DEBUG] uvh_test.counter: track_id: 335, frame: 23187, previous_bottom_center: (1244.2681884765625, 334.41074), current_bottom_center: (1271.969482421875, 330.2253), previous_side: -2.00, current_side: 19.89, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:15 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=335 as duplicate of class Two-wheeler, dist=61.2px
+2026-08-29 07:41:18 [DEBUG] uvh_test.counter: track_id: 345, frame: 23464, previous_bottom_center: (1254.03857421875, 344.8963), current_bottom_center: (1261.2861328125, 343.6448), previous_side: -3.05, current_side: 2.79, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:18 [DEBUG] uvh_test.main: frame=23464 COUNTED track_id=345 class=Two-wheeler
+2026-08-29 07:41:22 [DEBUG] uvh_test.counter: track_id: 348, frame: 23874, previous_bottom_center: (1247.556884765625, 371.0274), current_bottom_center: (1282.914306640625, 364.9836), previous_side: -26.63, current_side: 1.82, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=348 as duplicate of class Two-wheeler, dist=30.4px
+2026-08-29 07:41:25 [DEBUG] uvh_test.counter: track_id: 350, frame: 24160, previous_bottom_center: (1270.021484375, 370.61783), current_bottom_center: (1299.4189453125, 365.13043), previous_side: -11.07, current_side: 12.93, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:25 [DEBUG] uvh_test.main: frame=24160 COUNTED track_id=350 class=Two-wheeler
+2026-08-29 07:41:25 [DEBUG] uvh_test.counter: track_id: 353, frame: 24180, previous_bottom_center: (1312.8824462890625, 442.03964), current_bottom_center: (1360.454345703125, 429.54205), previous_side: -34.36, current_side: 7.13, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:25 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=353 as duplicate of class Two-wheeler, dist=88.7px
+2026-08-29 07:41:29 [DEBUG] uvh_test.counter: track_id: 359, frame: 24640, previous_bottom_center: (1266.804931640625, 369.69644), current_bottom_center: (1300.7510986328125, 363.36752), previous_side: -12.58, current_side: 15.13, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=359 as duplicate of class Two-wheeler, dist=2.2px
+2026-08-29 07:41:32 [DEBUG] uvh_test.counter: track_id: 358, frame: 24897, previous_bottom_center: (1259.375, 365.23413), current_bottom_center: (1288.858154296875, 359.96927), previous_side: -14.35, current_side: 9.54, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:32 [DEBUG] uvh_test.main: frame=24897 COUNTED track_id=358 class=Two-wheeler
+2026-08-29 07:41:35 [DEBUG] uvh_test.counter: track_id: 362, frame: 25224, previous_bottom_center: (1552.08251953125, 646.2832), current_bottom_center: (1599.02734375, 613.1722), previous_side: -21.72, current_side: 34.47, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:35 [DEBUG] uvh_test.main: frame=25224 COUNTED track_id=362 class=Truck
+2026-08-29 07:41:35 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=363 into lost_tid=363, dist=51.3px
+2026-08-29 07:41:35 [DEBUG] uvh_test.main: frame=25234 COUNTED track_id=363 class=Truck
+2026-08-29 07:41:37 [DEBUG] uvh_test.counter: track_id: 370, frame: 25407, previous_bottom_center: (1323.997314453125, 479.44684), current_bottom_center: (1387.126220703125, 459.41614), previous_side: -54.26, current_side: 3.33, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:37 [DEBUG] uvh_test.counter: track_id: 374, frame: 25407, previous_bottom_center: (1513.192138671875, 644.4423), current_bottom_center: (1601.59228515625, 591.7993), previous_side: -46.79, current_side: 51.90, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:37 [DEBUG] uvh_test.main: frame=25407 COUNTED track_id=370 class=Two-wheeler
+2026-08-29 07:41:37 [DEBUG] uvh_test.main: frame=25407 COUNTED track_id=374 class=Two-wheeler
+2026-08-29 07:41:39 [DEBUG] uvh_test.counter: track_id: 379, frame: 25554, previous_bottom_center: (1319.8310546875, 403.79626), current_bottom_center: (1323.73388671875, 403.86807), previous_side: -1.58, current_side: 1.02, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:39 [DEBUG] uvh_test.main: frame=25554 COUNTED track_id=379 class=Bus
+2026-08-29 07:41:39 [DEBUG] uvh_test.counter: track_id: 371, frame: 25574, previous_bottom_center: (1456.217041015625, 563.6912), current_bottom_center: (1529.5823974609375, 534.2617), previous_side: -26.24, current_side: 45.20, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:39 [DEBUG] uvh_test.main: frame=25574 COUNTED track_id=371 class=Bus
+2026-08-29 07:41:39 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=372 into lost_tid=372, dist=100.0px
+2026-08-29 07:41:39 [DEBUG] uvh_test.main: frame=25600 COUNTED track_id=372 class=Bus
+2026-08-29 07:41:39 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=384 into lost_tid=384, dist=96.9px
+2026-08-29 07:41:39 [DEBUG] uvh_test.main: frame=25607 COUNTED track_id=384 class=Bus
+2026-08-29 07:41:43 [DEBUG] uvh_test.counter: track_id: 389, frame: 25934, previous_bottom_center: (1563.899169921875, 644.4905), current_bottom_center: (1599.50732421875, 612.41376), previous_side: -12.37, current_side: 35.35, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=389 as duplicate of class Bus, dist=104.9px
+2026-08-29 07:41:45 [DEBUG] uvh_test.counter: track_id: 400, frame: 26107, previous_bottom_center: (1414.72314453125, 550.2732), current_bottom_center: (1490.0908203125, 511.4709), previous_side: -44.59, current_side: 35.09, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:45 [DEBUG] uvh_test.counter: track_id: 394, frame: 26107, previous_bottom_center: (1315.68408203125, 456.05423), current_bottom_center: (1435.1922607421875, 451.69052), previous_side: -42.74, current_side: 41.66, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=394 as duplicate of class LCV, dist=81.2px
+2026-08-29 07:41:45 [DEBUG] uvh_test.main: frame=26107 COUNTED track_id=400 class=LCV
+2026-08-29 07:41:45 [DEBUG] uvh_test.counter: track_id: 398, frame: 26114, previous_bottom_center: (1365.52197265625, 456.17142), current_bottom_center: (1440.08642578125, 452.5553), previous_side: -8.96, current_side: 44.35, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=398 as duplicate of class LCV, dist=77.3px
+2026-08-29 07:41:45 [DEBUG] uvh_test.counter: track_id: 397, frame: 26117, previous_bottom_center: (1472.84423828125, 551.70105), current_bottom_center: (1507.82177734375, 551.70276), previous_side: -6.15, current_side: 17.61, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=397 as duplicate of class LCV, dist=44.0px
+2026-08-29 07:41:45 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=401 into lost_tid=401, dist=40.1px
+2026-08-29 07:41:45 [DEBUG] uvh_test.main: frame=26120 COUNTED track_id=401 class=LCV
+2026-08-29 07:41:48 [DEBUG] uvh_test.counter: track_id: 404, frame: 26404, previous_bottom_center: (1409.258056640625, 502.655), current_bottom_center: (1433.373779296875, 499.58673), previous_side: -13.36, current_side: 5.28, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:48 [DEBUG] uvh_test.main: frame=26404 COUNTED track_id=404 class=Sedan
+2026-08-29 07:41:48 [DEBUG] uvh_test.counter: track_id: 403, frame: 26407, previous_bottom_center: (1373.220458984375, 551.7034), current_bottom_center: (1438.668701171875, 459.26138), previous_side: -73.83, current_side: 38.46, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:48 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=403 as duplicate of class Sedan, dist=40.7px
+2026-08-29 07:41:49 [DEBUG] uvh_test.counter: track_id: 407, frame: 26474, previous_bottom_center: (1510.53955078125, 599.93866), current_bottom_center: (1549.3302001953125, 599.8741), previous_side: -15.93, current_side: 10.47, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:49 [DEBUG] uvh_test.main: frame=26474 COUNTED track_id=407 class=Bus
+2026-08-29 07:41:52 [DEBUG] uvh_test.counter: track_id: 393, frame: 26757, previous_bottom_center: (1410.041015625, 545.6633), current_bottom_center: (1458.4287109375, 513.9217), previous_side: -44.39, current_side: 11.78, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:52 [DEBUG] uvh_test.main: frame=26757 COUNTED track_id=393 class=LCV
+2026-08-29 07:41:52 [DEBUG] uvh_test.counter: track_id: 420, frame: 26764, previous_bottom_center: (1414.2191162109375, 495.6077), current_bottom_center: (1428.0234375, 496.60403), previous_side: -4.82, current_side: 3.83, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=420 as duplicate of class LCV, dist=35.0px
+2026-08-29 07:41:52 [DEBUG] uvh_test.counter: track_id: 419, frame: 26774, previous_bottom_center: (1475.76416015625, 555.7013), current_bottom_center: (1509.921142578125, 551.35156), previous_side: -7.10, current_side: 19.30, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=419 as duplicate of class LCV, dist=63.7px
+2026-08-29 07:41:52 [DEBUG] uvh_test.counter: track_id: 413, frame: 26774, previous_bottom_center: (1314.716064453125, 504.30975), current_bottom_center: (1463.8289794921875, 497.87988), previous_side: -78.80, current_side: 27.22, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:52 [DEBUG] uvh_test.main: frame=26774 COUNTED track_id=413 class=Truck
+2026-08-29 07:41:52 [DEBUG] uvh_test.counter: track_id: 428, frame: 26777, previous_bottom_center: (1271.107421875, 363.36633), current_bottom_center: (1305.419189453125, 358.61365), previous_side: -5.01, current_side: 21.79, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:52 [DEBUG] uvh_test.main: frame=26777 COUNTED track_id=428 class=Two-wheeler
+2026-08-29 07:41:56 [DEBUG] uvh_test.counter: track_id: 437, frame: 27147, previous_bottom_center: (1276.93115234375, 428.8908), current_bottom_center: (1335.771240234375, 414.73462), previous_side: -49.13, current_side: 1.23, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=437 as duplicate of class Two-wheeler, dist=63.8px
+2026-08-29 07:41:56 [DEBUG] uvh_test.counter: track_id: 436, frame: 27167, previous_bottom_center: (1239.182373046875, 349.69437), current_bottom_center: (1275.302978515625, 343.4643), previous_side: -16.67, current_side: 12.44, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=436 as duplicate of class Two-wheeler, dist=33.7px
+2026-08-29 07:41:58 [DEBUG] uvh_test.counter: track_id: 440, frame: 27374, previous_bottom_center: (1325.298095703125, 409.74536), current_bottom_center: (1360.853515625, 403.46216), previous_side: -2.23, current_side: 26.54, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:41:58 [DEBUG] uvh_test.main: frame=27374 COUNTED track_id=440 class=Two-wheeler
+2026-08-29 07:42:00 [DEBUG] uvh_test.counter: track_id: 442, frame: 27547, previous_bottom_center: (1294.11767578125, 404.12036), current_bottom_center: (1345.7735595703125, 393.16742), previous_side: -19.28, current_side: 23.85, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:00 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=442 as duplicate of class Two-wheeler, dist=18.3px
+2026-08-29 07:42:07 [DEBUG] uvh_test.counter: track_id: 445, frame: 28187, previous_bottom_center: (1305.524658203125, 394.00922), current_bottom_center: (1374.914306640625, 380.46014), previous_side: -4.11, current_side: 52.97, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:07 [DEBUG] uvh_test.main: frame=28187 COUNTED track_id=445 class=Two-wheeler
+2026-08-29 07:42:07 [DEBUG] uvh_test.counter: track_id: 449, frame: 28220, previous_bottom_center: (1473.89697265625, 595.93384), current_bottom_center: (1543.5833740234375, 558.88104), previous_side: -37.89, current_side: 36.64, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:07 [DEBUG] uvh_test.main: frame=28220 COUNTED track_id=449 class=Truck
+2026-08-29 07:42:11 [DEBUG] uvh_test.counter: track_id: 453, frame: 28560, previous_bottom_center: (1258.32373046875, 375.27478), current_bottom_center: (1285.9130859375, 370.18362), previous_side: -22.43, current_side: 0.05, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:11 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=453 as duplicate of class Two-wheeler, dist=89.6px
+2026-08-29 07:42:11 [DEBUG] uvh_test.counter: track_id: 456, frame: 28617, previous_bottom_center: (1311.3369140625, 422.39413), current_bottom_center: (1359.701904296875, 410.6081), previous_side: -20.99, current_side: 20.51, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:11 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=456 as duplicate of class Two-wheeler, dist=33.8px
+2026-08-29 07:42:14 [DEBUG] uvh_test.counter: track_id: 461, frame: 28860, previous_bottom_center: (1541.37744140625, 627.9035), current_bottom_center: (1595.394287109375, 595.0636), previous_side: -15.50, current_side: 45.29, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:14 [DEBUG] uvh_test.main: frame=28860 COUNTED track_id=461 class=Two-wheeler
+2026-08-29 07:42:16 [DEBUG] uvh_test.counter: track_id: 465, frame: 29054, previous_bottom_center: (1297.396728515625, 395.39365), current_bottom_center: (1327.8245849609375, 388.76273), previous_side: -10.65, current_side: 14.89, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:16 [DEBUG] uvh_test.main: frame=29054 COUNTED track_id=465 class=Two-wheeler
+2026-08-29 07:42:20 [DEBUG] uvh_test.counter: track_id: 467, frame: 29487, previous_bottom_center: (1269.275390625, 374.90366), current_bottom_center: (1306.5848388671875, 369.91785), previous_side: -14.72, current_side: 14.28, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:20 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=467 as duplicate of class Two-wheeler, dist=28.4px
+2026-08-29 07:42:20 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=469 into lost_tid=469, dist=23.5px
+2026-08-29 07:42:20 [DEBUG] uvh_test.main: frame=29494 COUNTED track_id=469 class=Two-wheeler
+2026-08-29 07:42:21 [DEBUG] uvh_test.counter: track_id: 473, frame: 29650, previous_bottom_center: (1323.0286865234375, 419.44464), current_bottom_center: (1348.835205078125, 413.89874), previous_side: -10.89, current_side: 10.72, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:21 [DEBUG] uvh_test.main: frame=29650 COUNTED track_id=473 class=Two-wheeler
+2026-08-29 07:42:22 [DEBUG] uvh_test.counter: track_id: 474, frame: 29734, previous_bottom_center: (1290.05078125, 393.5625), current_bottom_center: (1320.8927001953125, 387.99106), previous_side: -14.30, current_side: 10.74, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=474 as duplicate of class Two-wheeler, dist=38.1px
+2026-08-29 07:42:23 [DEBUG] uvh_test.counter: track_id: 475, frame: 29770, previous_bottom_center: (1260.9173583984375, 352.7114), current_bottom_center: (1272.08056640625, 350.87445), previous_side: -4.12, current_side: 4.82, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=475 as duplicate of class Two-wheeler, dist=99.3px
+2026-08-29 07:42:29 [DEBUG] uvh_test.counter: track_id: 476, frame: 30397, previous_bottom_center: (1272.017822265625, 394.97583), current_bottom_center: (1311.8433837890625, 387.60904), previous_side: -27.59, current_side: 4.88, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:29 [DEBUG] uvh_test.main: frame=30397 COUNTED track_id=476 class=Two-wheeler
+2026-08-29 07:42:30 [DEBUG] uvh_test.counter: track_id: 477, frame: 30527, previous_bottom_center: (1250.461181640625, 364.02255), current_bottom_center: (1297.701416015625, 356.3116), previous_side: -19.52, current_side: 18.23, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:30 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=477 as duplicate of class Two-wheeler, dist=34.3px
+2026-08-29 07:42:32 [DEBUG] uvh_test.counter: track_id: 479, frame: 30757, previous_bottom_center: (1275.3575439453125, 375.47977), current_bottom_center: (1301.563720703125, 369.99255), previous_side: -11.01, current_side: 10.82, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=479 as duplicate of class Two-wheeler, dist=20.4px
+2026-08-29 07:42:33 [DEBUG] uvh_test.counter: track_id: 480, frame: 30870, previous_bottom_center: (1323.8333740234375, 421.87244), current_bottom_center: (1343.682373046875, 417.39297), previous_side: -12.12, current_side: 4.65, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=480 as duplicate of class Two-wheeler, dist=43.6px
+2026-08-29 07:42:34 [DEBUG] uvh_test.counter: track_id: 478, frame: 30964, previous_bottom_center: (1260.65673828125, 347.59473), current_bottom_center: (1267.41162109375, 346.53928), previous_side: -0.54, current_side: 4.83, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:34 [DEBUG] uvh_test.main: frame=30964 COUNTED track_id=478 class=Two-wheeler
+2026-08-29 07:42:37 [DEBUG] uvh_test.counter: track_id: 489, frame: 31220, previous_bottom_center: (1283.46533203125, 372.28336), current_bottom_center: (1312.7950439453125, 367.75183), previous_side: -3.16, current_side: 20.09, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=489 as duplicate of class Two-wheeler, dist=50.1px
+2026-08-29 07:42:37 [DEBUG] uvh_test.counter: track_id: 491, frame: 31240, previous_bottom_center: (1536.949951171875, 659.5294), current_bottom_center: (1589.317138671875, 632.9963), previous_side: -41.72, current_side: 13.33, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:37 [DEBUG] uvh_test.main: frame=31240 COUNTED track_id=491 class=Two-wheeler
+2026-08-29 07:42:40 [DEBUG] uvh_test.counter: track_id: 493, frame: 31514, previous_bottom_center: (1287.1903076171875, 373.10928), current_bottom_center: (1312.4677734375, 367.46463), previous_side: -1.23, current_side: 20.08, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:40 [DEBUG] uvh_test.main: frame=31514 COUNTED track_id=493 class=Two-wheeler
+2026-08-29 07:42:40 [DEBUG] uvh_test.counter: track_id: 496, frame: 31560, previous_bottom_center: (1340.509033203125, 433.42792), current_bottom_center: (1383.5941162109375, 422.48013), previous_side: -9.27, current_side: 28.04, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=496 as duplicate of class Two-wheeler, dist=89.9px
+2026-08-29 07:42:44 [DEBUG] uvh_test.counter: track_id: 499, frame: 31934, previous_bottom_center: (1238.3675537109375, 343.31732), current_bottom_center: (1276.04541015625, 337.46753), previous_side: -12.54, current_side: 17.35, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:44 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=499 as duplicate of class Two-wheeler, dist=47.2px
+2026-08-29 07:42:47 [DEBUG] uvh_test.counter: track_id: 502, frame: 32217, previous_bottom_center: (1546.16845703125, 647.78375), current_bottom_center: (1595.8570556640625, 647.7704), previous_side: -26.84, current_side: 6.93, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:47 [DEBUG] uvh_test.main: frame=32217 COUNTED track_id=502 class=SUV
+2026-08-29 07:42:47 [DEBUG] uvh_test.counter: track_id: 500, frame: 32220, previous_bottom_center: (1552.314453125, 687.3702), current_bottom_center: (1600.513916015625, 654.32404), previous_side: -51.71, current_side: 5.29, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=500 as duplicate of class SUV, dist=8.0px
+2026-08-29 07:42:47 [DEBUG] uvh_test.counter: track_id: 501, frame: 32220, previous_bottom_center: (1633.18505859375, 706.3867), current_bottom_center: (1659.278076171875, 694.72253), previous_side: -10.72, current_side: 15.57, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=501 as duplicate of class SUV, dist=78.9px
+2026-08-29 07:42:52 [DEBUG] uvh_test.counter: track_id: 508, frame: 32827, previous_bottom_center: (1246.122802734375, 391.7981), current_bottom_center: (1312.544921875, 380.03494), previous_side: -42.85, current_side: 10.91, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:52 [DEBUG] uvh_test.main: frame=32827 COUNTED track_id=508 class=Two-wheeler
+2026-08-29 07:42:54 [DEBUG] uvh_test.counter: track_id: 511, frame: 32947, previous_bottom_center: (1305.55322265625, 391.73004), current_bottom_center: (1370.334228515625, 376.87793), previous_side: -2.42, current_side: 52.49, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:54 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=511 as duplicate of class Two-wheeler, dist=57.9px
+2026-08-29 07:42:54 [DEBUG] uvh_test.counter: track_id: 510, frame: 33020, previous_bottom_center: (1271.7138671875, 371.57727), current_bottom_center: (1308.9888916015625, 364.5855), previous_side: -10.62, current_side: 19.83, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:54 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=510 as duplicate of class Two-wheeler, dist=15.9px
+2026-08-29 07:42:58 [DEBUG] uvh_test.counter: track_id: 513, frame: 33357, previous_bottom_center: (1238.63232421875, 335.40637), current_bottom_center: (1258.628662109375, 332.83316), previous_side: -6.56, current_side: 8.92, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:42:58 [DEBUG] uvh_test.main: frame=33357 COUNTED track_id=513 class=Two-wheeler
+2026-08-29 07:43:03 [DEBUG] uvh_test.counter: track_id: 515, frame: 33897, previous_bottom_center: (1299.540771484375, 392.106), current_bottom_center: (1325.647705078125, 386.134), previous_side: -6.78, current_side: 15.34, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:03 [DEBUG] uvh_test.main: frame=33897 COUNTED track_id=515 class=Two-wheeler
+2026-08-29 07:43:03 [DEBUG] uvh_test.counter: track_id: 517, frame: 33907, previous_bottom_center: (1267.648681640625, 363.22217), current_bottom_center: (1309.7115478515625, 357.88138), previous_side: -7.25, current_side: 25.24, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:03 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=517 as duplicate of class Two-wheeler, dist=32.4px
+2026-08-29 07:43:05 [DEBUG] uvh_test.counter: track_id: 519, frame: 34127, previous_bottom_center: (1291.521240234375, 382.72278), current_bottom_center: (1336.3046875, 373.73257), previous_side: -5.35, current_side: 31.68, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:05 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=519 as duplicate of class Two-wheeler, dist=16.4px
+2026-08-29 07:43:06 [DEBUG] uvh_test.counter: track_id: 520, frame: 34210, previous_bottom_center: (1252.245849609375, 344.6347), current_bottom_center: (1278.246337890625, 341.07315), previous_side: -4.08, current_side: 16.20, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=520 as duplicate of class Two-wheeler, dist=65.4px
+2026-08-29 07:43:09 [DEBUG] uvh_test.counter: track_id: 523, frame: 34484, previous_bottom_center: (1585.876953125, 657.2909), current_bottom_center: (1600.674560546875, 649.8882), previous_side: -6.84, current_side: 8.65, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:09 [DEBUG] uvh_test.main: frame=34484 COUNTED track_id=523 class=tempo-traveller
+2026-08-29 07:43:11 [DEBUG] uvh_test.counter: track_id: 530, frame: 34667, previous_bottom_center: (1318.5908203125, 411.754), current_bottom_center: (1370.349609375, 399.3138), previous_side: -8.26, current_side: 36.04, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:11 [DEBUG] uvh_test.main: frame=34667 COUNTED track_id=530 class=Two-wheeler
+2026-08-29 07:43:15 [DEBUG] uvh_test.counter: track_id: 531, frame: 35110, previous_bottom_center: (1228.1318359375, 350.54736), current_bottom_center: (1259.018798828125, 344.77396), previous_side: -24.80, current_side: 0.42, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:15 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=531 as duplicate of class Two-wheeler, dist=124.0px
+2026-08-29 07:43:21 [DEBUG] uvh_test.counter: track_id: 538, frame: 35680, previous_bottom_center: (1239.003662109375, 336.61493), current_bottom_center: (1269.41748046875, 331.31577), previous_side: -7.19, current_side: 17.36, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:21 [DEBUG] uvh_test.main: frame=35680 COUNTED track_id=538 class=Two-wheeler
+2026-08-29 07:43:22 [DEBUG] uvh_test.counter: track_id: 540, frame: 35820, previous_bottom_center: (1283.2242431640625, 382.90756), current_bottom_center: (1321.91015625, 374.3129), previous_side: -11.12, current_side: 21.47, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=540 as duplicate of class Two-wheeler, dist=67.9px
+2026-08-29 07:43:23 [DEBUG] uvh_test.counter: track_id: 547, frame: 35860, previous_bottom_center: (1570.38134765625, 686.4224), current_bottom_center: (1620.080810546875, 601.75995), previous_side: -38.74, current_side: 57.15, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:23 [DEBUG] uvh_test.main: frame=35860 COUNTED track_id=547 class=Sedan
+2026-08-29 07:43:26 [DEBUG] uvh_test.counter: track_id: 555, frame: 36224, previous_bottom_center: (1554.91064453125, 693.8991), current_bottom_center: (1622.697998046875, 653.8091), previous_side: -54.74, current_side: 20.74, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:26 [DEBUG] uvh_test.main: frame=36224 COUNTED track_id=555 class=Two-wheeler
+2026-08-29 07:43:32 [DEBUG] uvh_test.counter: track_id: 561, frame: 36844, previous_bottom_center: (1295.7247314453125, 385.61658), current_bottom_center: (1338.224853515625, 376.80212), previous_side: -4.61, current_side: 30.73, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:32 [DEBUG] uvh_test.main: frame=36844 COUNTED track_id=561 class=Two-wheeler
+2026-08-29 07:43:32 [DEBUG] uvh_test.counter: track_id: 563, frame: 36854, previous_bottom_center: (1256.64990234375, 356.65598), current_bottom_center: (1284.3538818359375, 351.7024), previous_side: -9.91, current_side: 12.55, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=563 as duplicate of class Two-wheeler, dist=59.4px
+2026-08-29 07:43:34 [DEBUG] uvh_test.counter: track_id: 562, frame: 37020, previous_bottom_center: (1268.9755859375, 377.46854), current_bottom_center: (1318.180419921875, 367.20413), previous_side: -16.81, current_side: 24.15, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=562 as duplicate of class Two-wheeler, dist=22.2px
+2026-08-29 07:43:35 [DEBUG] uvh_test.counter: track_id: 560, frame: 37080, previous_bottom_center: (1285.413818359375, 413.88257), current_bottom_center: (1332.9776611328125, 402.2199), previous_side: -32.36, current_side: 8.51, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=560 as duplicate of class Two-wheeler, dist=26.0px
+2026-08-29 07:43:37 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=571 into lost_tid=571, dist=97.3px
+2026-08-29 07:43:37 [DEBUG] uvh_test.main: frame=37274 COUNTED track_id=571 class=Sedan
+2026-08-29 07:43:38 [DEBUG] uvh_test.counter: track_id: 579, frame: 37387, previous_bottom_center: (1447.336669921875, 600.2164), current_bottom_center: (1533.9049072265625, 559.3583), previous_side: -59.08, current_side: 29.72, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:38 [DEBUG] uvh_test.main: frame=37387 COUNTED track_id=579 class=SUV
+2026-08-29 07:43:38 [DEBUG] uvh_test.counter: track_id: 569, frame: 37390, previous_bottom_center: (1459.629150390625, 542.25006), current_bottom_center: (1480.5255126953125, 501.8869), previous_side: -8.19, current_side: 35.62, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:38 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=569 as duplicate of class SUV, dist=78.4px
+2026-08-29 07:43:38 [DEBUG] uvh_test.counter: track_id: 580, frame: 37394, previous_bottom_center: (1509.381103515625, 598.3185), current_bottom_center: (1545.942138671875, 595.5372), previous_side: -15.53, current_side: 11.35, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:38 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=580 as duplicate of class SUV, dist=38.1px
+2026-08-29 07:43:38 [DEBUG] uvh_test.counter: track_id: 581, frame: 37394, previous_bottom_center: (1462.756103515625, 551.71295), current_bottom_center: (1502.10986328125, 551.7162), previous_side: -13.01, current_side: 13.72, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:38 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=581 as duplicate of class SUV, dist=32.7px
+2026-08-29 07:43:40 [DEBUG] uvh_test.counter: track_id: 583, frame: 37560, previous_bottom_center: (1611.0751953125, 695.6778), current_bottom_center: (1649.0836181640625, 660.89197), previous_side: -17.88, current_side: 33.46, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:40 [DEBUG] uvh_test.counter: track_id: 585, frame: 37560, previous_bottom_center: (1461.2470703125, 648.033), current_bottom_center: (1569.15380859375, 611.8061), previous_side: -84.71, current_side: 15.18, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=585 as duplicate of class SUV, dist=63.2px
+2026-08-29 07:43:40 [DEBUG] uvh_test.main: frame=37560 COUNTED track_id=583 class=SUV
+2026-08-29 07:43:40 [DEBUG] uvh_test.counter: track_id: 577, frame: 37564, previous_bottom_center: (1579.652099609375, 695.99695), current_bottom_center: (1620.912353515625, 590.9162), previous_side: -39.47, current_side: 65.67, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=577 as duplicate of class SUV, dist=92.6px
+2026-08-29 07:43:40 [DEBUG] uvh_test.counter: track_id: 587, frame: 37564, previous_bottom_center: (1557.1346435546875, 647.7808), current_bottom_center: (1594.4803466796875, 647.79004), previous_side: -19.38, current_side: 5.98, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=587 as duplicate of class SUV, dist=107.2px
+2026-08-29 07:43:43 [DEBUG] uvh_test.counter: track_id: 592, frame: 37934, previous_bottom_center: (1296.5645751953125, 393.77557), current_bottom_center: (1331.709228515625, 386.14713), previous_side: -10.03, current_side: 19.45, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:43 [DEBUG] uvh_test.main: frame=37934 COUNTED track_id=592 class=Two-wheeler
+2026-08-29 07:43:48 [DEBUG] uvh_test.counter: track_id: 593, frame: 38387, previous_bottom_center: (1255.24609375, 391.8684), current_bottom_center: (1301.85986328125, 381.6902), previous_side: -36.70, current_side: 2.44, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:48 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=593 as duplicate of class Two-wheeler, dist=30.2px
+2026-08-29 07:43:49 [DEBUG] uvh_test.counter: track_id: 595, frame: 38527, previous_bottom_center: (1292.8154296875, 392.95227), current_bottom_center: (1325.9185791015625, 385.18405), previous_side: -11.97, current_side: 16.22, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:49 [DEBUG] uvh_test.main: frame=38527 COUNTED track_id=595 class=MUV
+2026-08-29 07:43:58 [DEBUG] uvh_test.counter: track_id: 600, frame: 39400, previous_bottom_center: (1248.0855712890625, 364.0147), current_bottom_center: (1297.4287109375, 355.81128), previous_side: -21.13, current_side: 18.42, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 07:43:58 [DEBUG] uvh_test.main: frame=39400 COUNTED track_id=600 class=Two-wheeler
+2026-08-29 07:44:03 [INFO] uvh_test.main: HARD STOP at 2 minutes reached.
+2026-08-29 07:44:03 [INFO] uvh_test.main: Wrote results/vehicle_count_v1/tracks.jsonl
+2026-08-29 07:44:03 [INFO] uvh_test.main: Wrote goods-vehicle crops for 32 track(s) under results/vehicle_count_v1/goods_tracks
+2026-08-29 07:44:03 [INFO] uvh_test.main: Processing complete. Final Counts:
+2026-08-29 07:44:03 [INFO] uvh_test.main: Two-wheeler: 63
+2026-08-29 07:44:03 [INFO] uvh_test.main: Truck: 5
+2026-08-29 07:44:03 [INFO] uvh_test.main: SUV: 9
+2026-08-29 07:44:03 [INFO] uvh_test.main: Sedan: 7
+2026-08-29 07:44:03 [INFO] uvh_test.main: Bus: 6
+2026-08-29 07:44:03 [INFO] uvh_test.main: Three-wheeler: 1
+2026-08-29 07:44:03 [INFO] uvh_test.main: LCV: 3
+2026-08-29 07:44:03 [INFO] uvh_test.main: tempo-traveller: 1
+2026-08-29 07:44:03 [INFO] uvh_test.main: MUV: 1
+VideoWriter initialized at: /storage/users/oauser/mvsa/results/vehicle_count_v1/annotated.mp4

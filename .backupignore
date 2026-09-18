@@ -1,0 +1,32 @@
+# All mp4 video files (backed up separately to Google Drive)
+*.mp4
+
+# Dataset to exclude for now
+vehicle_dataset_v1/
+
+# Rust build/toolchain data
+rustup/
+
+# Review/output artifacts
+review/
+output/
+output_live_stream_test/
+output_test_after/
+output_test_before/
+output_test_fix/
+output_test_simple_sign/
+output_test_tuned_tracker/
+output_test_merged_fragments/
+
+# --- User Specified Exclusions ---
+Cam 1 - EB/2026-07-16/
+cargo/
+data/
+Data Corp - Dataset/
+dataset/
+goods_dataset/
+historical-processor/data/videos/
+vehicle-count-output/
+videos/
+env.broken_py36/
+

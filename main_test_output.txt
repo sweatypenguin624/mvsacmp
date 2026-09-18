@@ -1,0 +1,5 @@
+2026-09-16 06:19:16 [INFO] uvh_test.main: Processing video: historical-processor/data/videos/cvc10_cam_1/2026-07-23/19.00.00-20.00.00[R][0@0][0].dav.mp4
+2026-09-16 06:19:16 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X_a100.engine
+Loading /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X_a100.engine for TensorRT inference...
+[09/16/2026-06:19:16] [TRT] [E] createInferRuntime: Error Code 6: API Usage Error (CUDA initialization failure with error: 100 In checkCudaInstallation at /_src/runtime/dispatch/runtime.cpp:840)
+[09/16/2026-06:19:16] [TRT] [E] [checkMacros.cpp::catchCudaError::247] Error Code 1: Cuda Runtime (In catchCudaError at /_src/common/dispatch/checkMacros.cpp:247 (cudaError 100: no CUDA-capable device is detected))

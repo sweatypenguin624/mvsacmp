@@ -1,0 +1,37 @@
+2026-08-19 12:34:43 [INFO] uvh_test.main: Processing video: videos/actual_test/08.00.00-09.00.00.mp4
+2026-08-19 12:34:43 [INFO] uvh_test.detector: Loading YOLO model from models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.pt
+2026-08-19 12:34:44 [INFO] uvh_test.detector: Loaded 14 classes.
+Traceback (most recent call last):
+  File "/storage/users/oauser/mvsa/scripts/vehicle_counting/Vclassification/main.py", line 207, in <module>
+    main()
+  File "/storage/users/oauser/mvsa/scripts/vehicle_counting/Vclassification/main.py", line 125, in main
+    tracked_results = detector.model.track(
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/model.py", line 562, in track
+    return self.predict(source=source, stream=stream, **kwargs)
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/model.py", line 520, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/predictor.py", line 241, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Results into one
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/utils/_contextlib.py", line 35, in generator_context
+    response = gen.send(None)
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/predictor.py", line 357, in stream_inference
+    self.run_callbacks("on_predict_postprocess_end")
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/predictor.py", line 561, in run_callbacks
+    callback(self)
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/trackers/track.py", line 123, in on_predict_postprocess_end
+    tracks = tracker.update(det, result.orig_img, **kwargs)
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/trackers/byte_tracker.py", line 286, in update
+    u_track, u_detection = self._first_association(strack_pool, detections, activated_stracks, refind_stracks)
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/trackers/byte_tracker.py", line 373, in _first_association
+    dists = self.get_dists(strack_pool, detections)
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/trackers/byte_tracker.py", line 508, in get_dists
+    if self.args.fuse_score:
+  File "/storage/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/utils/__init__.py", line 360, in __getattr__
+    raise AttributeError(
+AttributeError: 
+            'IterableSimpleNamespace' object has no attribute 'fuse_score'. This may be caused by a modified or out of date ultralytics
+            'default.yaml' file.
+Please update your code with 'pip install -U ultralytics' and if necessary replace
+            /storage/users/oauser/mvsa/env/lib/python3.9/site-packages/ultralytics/cfg/default.yaml with the latest version from
+            https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/default.yaml
+            

@@ -1,0 +1,17 @@
+#!/usr/bin/expect -f
+log_file expect.log
+set timeout 10
+spawn ssh oauser@voltar "nvidia-smi"
+expect {
+    "yes/no" {
+        send "yes\r"
+        exp_continue
+    }
+    "*assword*" {
+        send "welcome123\r"
+        exp_continue
+    }
+    eof {
+        exit
+    }
+}

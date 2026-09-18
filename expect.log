@@ -1,0 +1,2 @@
+spawn ssh oauser@voltar nvidia-smi
+oauser@voltar's password: 

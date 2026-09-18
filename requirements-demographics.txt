@@ -1,0 +1,48 @@
+# MVSA demographic-stage dependencies.
+#
+# DO NOT `pip install -r requirements-demographics.txt` blindly on the
+# research server. The existing environment already has a working, pinned
+# stack that MUST NOT change:
+#
+#   torch        2.1.0+cu118
+#   torchvision  0.16.0+cu118
+#   numpy        1.26.1
+#
+# None of those three packages are listed below, on purpose. If any command
+# in this file, or any package it pulls in, tries to upgrade one of them,
+# stop and investigate rather than letting pip proceed -- see
+# README.md "Installing demographic dependencies safely" for the exact,
+# step-by-step, --no-deps-based install procedure and a verification command
+# to run afterward.
+#
+# ultralytics (already installed on the server) already provides opencv and
+# PyYAML in a version known to work with the pinned torch/torchvision, so
+# those are intentionally not pinned again here.
+
+# --- InsightFace itself -----------------------------------------------------
+# Install with `pip install --no-deps insightface==0.7.3` (see README) so it
+# cannot pull its own transitive requirements (which include unpinned
+# scipy/scikit-learn/onnx/onnxruntime versions that could otherwise drag in
+# a numpy upgrade). insightface is therefore intentionally NOT listed as a
+# plain requirement line here.
+
+# --- InsightFace's actual runtime dependencies (install these explicitly,
+# each also with --no-deps where noted, per README) ---------------------
+onnx>=1.14,<1.17
+# CPU by default -- avoids any interaction with the CUDA runtime torch
+# already relies on. Only switch to onnxruntime-gpu if you have validated
+# it in isolation first (see README GPU note).
+onnxruntime>=1.16,<1.19
+# Used internally by insightface/utils/face_align.py for face alignment.
+# Pinned to a range that supports numpy 1.26 without wanting numpy 2.x.
+scikit-image>=0.19,<0.23
+easydict>=1.10
+Cython>=0.29,<3.1
+prettytable>=3.6
+requests>=2.28
+tqdm>=4.64
+Pillow>=9.0
+
+# --- Config loading (usually already present via ultralytics; listed for
+# completeness in case a bare virtualenv is used) ---------------------------
+PyYAML>=6.0

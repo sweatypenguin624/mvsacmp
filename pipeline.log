@@ -1,0 +1,499 @@
+2026-08-26 09:18:43 [INFO] uvh_test.main: Processing video: /home/users/oauser/mvsa/videos/sample.mp4
+2026-08-26 09:18:43 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.pt
+2026-08-26 09:18:44 [INFO] uvh_test.detector: Loaded 14 classes.
+2026-08-26 09:18:44 [INFO] uvh_test.main: Native video FPS: 20.0
+2026-08-26 09:18:44 [INFO] uvh_test.main: Configured processing_fps: 30
+2026-08-26 09:18:44 [INFO] uvh_test.main: No frame skipping will occur (processing_fps >= native FPS or 0).
+2026-08-26 09:18:47 [WARNING] uvh_test.main: OCR failed to extract time from first frame. Using config default.
+2026-08-26 09:18:53 [INFO] uvh_test.main: Processed 100 frames... Count: 6
+2026-08-26 09:18:57 [INFO] uvh_test.main: Processed 200 frames... Count: 11
+2026-08-26 09:19:01 [INFO] uvh_test.main: Processed 300 frames... Count: 15
+2026-08-26 09:19:05 [INFO] uvh_test.main: Processed 400 frames... Count: 15
+2026-08-26 09:19:09 [INFO] uvh_test.main: Lighting analysis:
+2026-08-26 09:19:09 [INFO] uvh_test.main: Condition: DAY
+2026-08-26 09:19:09 [INFO] uvh_test.main: Confidence: 1.0
+2026-08-26 09:19:09 [INFO] uvh_test.main: Samples: 41
+2026-08-26 09:19:09 [INFO] uvh_test.main: Median brightness: 144.0
+2026-08-26 09:19:09 [INFO] uvh_test.main: Dark pixel ratio: 0.013
+2026-08-26 09:19:09 [INFO] uvh_test.main: Bright pixel ratio: 0.049
+VideoWriter initialized at: /storage/users/oauser/mvsa/output_test_merged_fragments/annotated.mp4
+
+==================================================
+FINAL SUMMARY
+{
+  "input_video": "/home/users/oauser/mvsa/videos/sample.mp4",
+  "model": "/storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.pt",
+  "frames_processed": 491,
+  "processing_time_sec": 24.821144104003906,
+  "processing_fps": 19.781521671307512,
+  "profiling_sec": {
+    "video_read": 4.196532726287842,
+    "yolo_inference": 14.523948669433594,
+    "filtering_and_logic": 0.6531844139099121,
+    "annotation": 5.39587140083313
+  },
+  "filter_stats": {
+    "raw_detections": 5424,
+    "low_conf": 0,
+    "too_small": 397,
+    "invalid_class": 0,
+    "passed_filter": 5027,
+    "tracks_created": 28
+  },
+  "tracks_created": 28,
+  "tracks_confirmed": 27,
+  "tracks_rejected_before_confirmation": 1,
+  "tracks_counted": 17,
+  "duplicate_count_preventions": 0,
+  "count_by_class": {
+    "Hatchback": 2,
+    "Two-wheeler": 12,
+    "Bus": 1,
+    "SUV": 1,
+    "LCV": 1
+  },
+  "video_info": {
+    "codec": "unknown",
+    "width": 1920,
+    "height": 1080,
+    "fps": 20.0,
+    "frame_count": 491,
+    "duration": 0.0,
+    "input_file_size": 2855701,
+    "video_read_time": 4.196532726287842,
+    "processing_fps": 19.781521671307512
+  },
+  "qa_metrics": {
+    "confirmation_rate": 0.9643,
+    "counted_rate": 0.6296,
+    "high_fragmentation_tracks": 16,
+    "track_details": [
+      {
+        "track_id": 1,
+        "class": "Hatchback",
+        "first_frame": 0,
+        "last_frame": 308,
+        "duration_frames": 309,
+        "detection_count": 155,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 2,
+        "class": "Two-wheeler",
+        "first_frame": 0,
+        "last_frame": 490,
+        "duration_frames": 491,
+        "detection_count": 491,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 3,
+        "class": "Two-wheeler",
+        "first_frame": 0,
+        "last_frame": 261,
+        "duration_frames": 262,
+        "detection_count": 139,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 4,
+        "class": "Hatchback",
+        "first_frame": 0,
+        "last_frame": 490,
+        "duration_frames": 491,
+        "detection_count": 491,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 5,
+        "class": "LCV",
+        "first_frame": 0,
+        "last_frame": 225,
+        "duration_frames": 226,
+        "detection_count": 113,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 6,
+        "class": "Two-wheeler",
+        "first_frame": 0,
+        "last_frame": 490,
+        "duration_frames": 491,
+        "detection_count": 437,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 7,
+        "class": "Hatchback",
+        "first_frame": 0,
+        "last_frame": 490,
+        "duration_frames": 491,
+        "detection_count": 217,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 9,
+        "class": "Two-wheeler",
+        "first_frame": 0,
+        "last_frame": 490,
+        "duration_frames": 491,
+        "detection_count": 344,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 10,
+        "class": "Two-wheeler",
+        "first_frame": 3,
+        "last_frame": 490,
+        "duration_frames": 488,
+        "detection_count": 280,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 11,
+        "class": "Two-wheeler",
+        "first_frame": 3,
+        "last_frame": 12,
+        "duration_frames": 10,
+        "detection_count": 10,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 12,
+        "class": "Two-wheeler",
+        "first_frame": 6,
+        "last_frame": 55,
+        "duration_frames": 50,
+        "detection_count": 31,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 13,
+        "class": "Two-wheeler",
+        "first_frame": 6,
+        "last_frame": 490,
+        "duration_frames": 485,
+        "detection_count": 413,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 14,
+        "class": "Two-wheeler",
+        "first_frame": 10,
+        "last_frame": 38,
+        "duration_frames": 29,
+        "detection_count": 28,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 15,
+        "class": "Two-wheeler",
+        "first_frame": 39,
+        "last_frame": 227,
+        "duration_frames": 189,
+        "detection_count": 129,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 17,
+        "class": "Bus",
+        "first_frame": 48,
+        "last_frame": 199,
+        "duration_frames": 152,
+        "detection_count": 138,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 18,
+        "class": "Two-wheeler",
+        "first_frame": 78,
+        "last_frame": 490,
+        "duration_frames": 413,
+        "detection_count": 265,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 19,
+        "class": "Two-wheeler",
+        "first_frame": 81,
+        "last_frame": 490,
+        "duration_frames": 410,
+        "detection_count": 386,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 20,
+        "class": "SUV",
+        "first_frame": 96,
+        "last_frame": 144,
+        "duration_frames": 49,
+        "detection_count": 36,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 21,
+        "class": "Two-wheeler",
+        "first_frame": 99,
+        "last_frame": 195,
+        "duration_frames": 97,
+        "detection_count": 89,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 26,
+        "class": "Two-wheeler",
+        "first_frame": 188,
+        "last_frame": 201,
+        "duration_frames": 14,
+        "detection_count": 7,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 30,
+        "class": "Hatchback",
+        "first_frame": 218,
+        "last_frame": 342,
+        "duration_frames": 125,
+        "detection_count": 125,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 36,
+        "class": "Two-wheeler",
+        "first_frame": 228,
+        "last_frame": 367,
+        "duration_frames": 140,
+        "detection_count": 140,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 37,
+        "class": "Two-wheeler",
+        "first_frame": 259,
+        "last_frame": 490,
+        "duration_frames": 232,
+        "detection_count": 104,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 38,
+        "class": "Two-wheeler",
+        "first_frame": 283,
+        "last_frame": 490,
+        "duration_frames": 208,
+        "detection_count": 208,
+        "track_confirmed": true,
+        "track_counted": false,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 39,
+        "class": "Two-wheeler",
+        "first_frame": 291,
+        "last_frame": 398,
+        "duration_frames": 108,
+        "detection_count": 68,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": true
+      },
+      {
+        "track_id": 40,
+        "class": "Two-wheeler",
+        "first_frame": 375,
+        "last_frame": 490,
+        "duration_frames": 116,
+        "detection_count": 116,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 43,
+        "class": "Two-wheeler",
+        "first_frame": 425,
+        "last_frame": 490,
+        "duration_frames": 66,
+        "detection_count": 66,
+        "track_confirmed": true,
+        "track_counted": true,
+        "high_fragmentation": false
+      },
+      {
+        "track_id": 47,
+        "class": "Two-wheeler",
+        "first_frame": 488,
+        "last_frame": 488,
+        "duration_frames": 1,
+        "detection_count": 1,
+        "track_confirmed": false,
+        "track_counted": false,
+        "high_fragmentation": false
+      }
+    ],
+    "class_wise_qa": [
+      {
+        "class": "Hatchback",
+        "tracks_created": 4,
+        "tracks_confirmed": 4,
+        "tracks_counted": 2,
+        "fragmented_tracks": 2,
+        "fragmentation_rate": 0.5,
+        "average_track_length": 354.0,
+        "median_track_length": 491
+      },
+      {
+        "class": "Two-wheeler",
+        "tracks_created": 21,
+        "tracks_confirmed": 20,
+        "tracks_counted": 13,
+        "fragmented_tracks": 11,
+        "fragmentation_rate": 0.5238095238095238,
+        "average_track_length": 228.14285714285714,
+        "median_track_length": 189
+      },
+      {
+        "class": "LCV",
+        "tracks_created": 1,
+        "tracks_confirmed": 1,
+        "tracks_counted": 1,
+        "fragmented_tracks": 1,
+        "fragmentation_rate": 1.0,
+        "average_track_length": 226.0,
+        "median_track_length": 226
+      },
+      {
+        "class": "Bus",
+        "tracks_created": 1,
+        "tracks_confirmed": 1,
+        "tracks_counted": 0,
+        "fragmented_tracks": 1,
+        "fragmentation_rate": 1.0,
+        "average_track_length": 152.0,
+        "median_track_length": 152
+      },
+      {
+        "class": "SUV",
+        "tracks_created": 1,
+        "tracks_confirmed": 1,
+        "tracks_counted": 1,
+        "fragmented_tracks": 1,
+        "fragmentation_rate": 1.0,
+        "average_track_length": 49.0,
+        "median_track_length": 49
+      }
+    ],
+    "candidate_fragments": [
+      {
+        "previous_track_id": 15,
+        "next_track_id": 37,
+        "gap_frames": 32,
+        "spatial_distance": 28.67,
+        "end_position": [
+          906.6956787109375,
+          220.5051727294922,
+          926.8052978515625,
+          255.80718994140625
+        ],
+        "start_position": [
+          740.1426391601562,
+          62.36592483520508,
+          1039.67822265625,
+          434.1038818359375
+        ]
+      },
+      {
+        "previous_track_id": 26,
+        "next_track_id": 37,
+        "gap_frames": 58,
+        "spatial_distance": 57.58,
+        "end_position": [
+          731.2847290039062,
+          107.70741271972656,
+          946.0115356445312,
+          441.20257568359375
+        ],
+        "start_position": [
+          740.1426391601562,
+          62.36592483520508,
+          1039.67822265625,
+          434.1038818359375
+        ]
+      }
+    ]
+  },
+  "reproducibility": {
+    "pipeline_version": "1.0-diagnostics",
+    "model_path": "/storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.pt",
+    "tracker": "bytetrack.yaml",
+    "track_buffer": 120,
+    "match_thresh": 0.99,
+    "track_high_thresh": 0.4,
+    "track_low_thresh": 0.1,
+    "min_track_frames": 3
+  },
+  "lighting": {
+    "dominant_condition": "DAY",
+    "confidence": 1.0,
+    "sampled_frames": 41,
+    "dark_pixel_ratio": 0.013,
+    "bright_pixel_ratio": 0.049,
+    "median_brightness": 144.0
+  },
+  "interval_counts": {
+    "08:00:00 - 08:15:00": {
+      "Hatchback": 2,
+      "Two-wheeler": 12,
+      "Bus": 1,
+      "SUV": 1,
+      "LCV": 1
+    }
+  }
+}
+==================================================

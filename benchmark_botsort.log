@@ -1,0 +1,82 @@
+2026-08-29 06:34:10 [INFO] uvh_test.main: Processing video: /home/users/oauser/mvsa/realrun/test.mp4
+2026-08-29 06:34:10 [INFO] uvh_test.detector: Loading YOLO model from /storage/users/oauser/mvsa/models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.pt
+2026-08-29 06:34:10 [INFO] uvh_test.detector: Loaded 14 classes.
+2026-08-29 06:34:19 [DEBUG] uvh_test.counter: track_id: 1, frame: 444, previous_bottom_center: (1273.617919921875, 363.4174), current_bottom_center: (1282.8936767578125, 361.70215), previous_side: -3.34, current_side: 4.22, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 06:34:19 [DEBUG] uvh_test.main: frame=444 COUNTED track_id=1 class=Two-wheeler
+2026-08-29 06:34:23 [DEBUG] uvh_test.counter: track_id: 3, frame: 654, previous_bottom_center: (1569.760498046875, 639.1215), current_bottom_center: (1605.64599609375, 606.18915), previous_side: -4.45, current_side: 44.09, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 06:34:23 [DEBUG] uvh_test.counter: track_id: 7, frame: 654, previous_bottom_center: (1606.45458984375, 695.7197), current_bottom_center: (1645.25439453125, 659.7087), previous_side: -21.05, current_side: 31.73, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 06:34:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=7 as duplicate of class Truck, dist=66.6px
+2026-08-29 06:34:23 [DEBUG] uvh_test.main: frame=654 COUNTED track_id=3 class=Truck
+2026-08-29 06:34:23 [DEBUG] uvh_test.counter: track_id: 4, frame: 657, previous_bottom_center: (1550.05126953125, 661.8988), current_bottom_center: (1595.3970947265625, 649.91644), previous_side: -34.56, current_side: 5.04, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 06:34:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=4 as duplicate of class Truck, dist=44.9px
+2026-08-29 06:34:23 [DEBUG] uvh_test.counter: track_id: 6, frame: 657, previous_bottom_center: (1598.0068359375, 709.83997), current_bottom_center: (1643.3621826171875, 697.89105), previous_side: -37.15, current_side: 2.43, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 06:34:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=6 as duplicate of class Truck, dist=99.2px
+2026-08-29 06:34:33 [DEBUG] uvh_test.counter: track_id: 15, frame: 1180, previous_bottom_center: (1405.18115234375, 596.91626), current_bottom_center: (1494.430908203125, 555.32214), previous_side: -85.30, current_side: 5.86, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 06:34:33 [DEBUG] uvh_test.counter: track_id: 16, frame: 1180, previous_bottom_center: (1295.07666015625, 647.68384), current_bottom_center: (1442.595703125, 486.2556), previous_side: -197.35, current_side: 21.32, side_transition: True, crossing_result: True, direction: A_TO_B
+2026-08-29 06:34:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=16 as duplicate of class SUV, dist=86.4px
+2026-08-29 06:34:33 [DEBUG] uvh_test.main: frame=1180 COUNTED track_id=15 class=SUV
+VideoWriter initialized at: /storage/users/oauser/mvsa/results/vehicle_count_v1/annotated.mp4
+Traceback (most recent call last):
+  File "/storage/users/oauser/mvsa/vehicle-counting/pipeline/counting/main.py", line 239, in <module>
+    main()
+  File "/storage/users/oauser/mvsa/vehicle-counting/pipeline/counting/main.py", line 156, in main
+    tracked_results = detector.model.track(
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/model.py", line 562, in track
+    return self.predict(source=source, stream=stream, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/model.py", line 520, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/predictor.py", line 241, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Results into one
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/utils/_contextlib.py", line 35, in generator_context
+    response = gen.send(None)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/predictor.py", line 349, in stream_inference
+    preds = self.inference(im, *args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/engine/predictor.py", line 198, in inference
+    return self.model(im, *args, augment=self.args.augment, embed=self.args.embed, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/autobackend.py", line 285, in forward
+    y = self.backend.forward(im, **forward_kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/backends/pytorch.py", line 93, in forward
+    return self.model(im, augment=augment, embed=embed, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/tasks.py", line 157, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/tasks.py", line 173, in predict
+    return self._predict_once(x, profile, embed)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/tasks.py", line 194, in _predict_once
+    x = m(x)  # run
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/modules/block.py", line 312, in forward
+    y.extend(m(y[-1]) for m in self.m)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/modules/block.py", line 312, in <genexpr>
+    y.extend(m(y[-1]) for m in self.m)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/modules/block.py", line 482, in forward
+    return x + self.cv2(self.cv1(x)) if self.add else self.cv2(self.cv1(x))
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/ultralytics/nn/modules/conv.py", line 89, in forward_fuse
+    return self.act(self.conv(x))
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/users/oauser/mvsa/env/lib64/python3.9/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

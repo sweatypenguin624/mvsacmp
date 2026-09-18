@@ -1,0 +1,7 @@
+Counter patched.
+Testing patched logic (Spanning + Proximity)...
+Testing strict segment logic...
+
+--- COMPARISON ---
+Patched (Spanning): Counts=1, Rejections=0, Merges=0
+Original (Strict Segment): Counts=1, Rejections=0, Merges=0

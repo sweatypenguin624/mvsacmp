@@ -1,0 +1,379 @@
+FILE: VEHICLE_COUNTING_PIPELINE_LOGIC.txt
+
+SECTION 1: FILE STRUCTURE
+- pipeline/Vclassification/main.py: Main script containing the frame processing loop and orchestration.
+- pipeline/Vclassification/detector.py: Contains `VehicleDetector` class (loads YOLO, runs inference).
+- pipeline/Vclassification/tracker.py: Contains `VehicleTracker` and `TrackState` classes (manages tracking state and bounding boxes).
+- pipeline/Vclassification/counter.py: Contains `VehicleCounter` class and `bottom_center` function (handles line crossing math and counting logic).
+- pipeline/Vclassification/filters.py: Contains `DetectionFilter` class (filters detections before passing to the tracker).
+- config/vehicle_count_config.yaml: Main configuration (paths, ROI, intervals, thresholds).
+- config/custom_bytetrack.yaml: Tracker-specific configuration.
+
+
+SECTION 2: YOLO DETECTION LOGIC
+--- File: pipeline/Vclassification/detector.py ---
+class VehicleDetector:
+    def __init__(self, model_path: str, device: str = "0", conf_thres: float = 0.35, imgsz: int = 1280):
+        self.model_path = model_path
+        self.device = device
+        self.conf_thres = conf_thres
+        self.imgsz = imgsz
+        
+        logger.info(f"Loading YOLO model from {self.model_path}")
+        self.model = YOLO(self.model_path)
+        self.class_names = self.model.names
+        logger.info(f"Loaded {len(self.class_names)} classes.")
+
+    def detect(self, frame: np.ndarray) -> Any:
+        results = self.model.predict(
+            frame,
+            conf=self.conf_thres,
+            imgsz=self.imgsz,
+            device=self.device,
+            verbose=False
+        )
+        return results[0]
+
+
+SECTION 3: BYTETRACK INTEGRATION
+--- File: pipeline/Vclassification/main.py (Initialization) ---
+    tracker = VehicleTracker(min_track_frames=config["tracker"]["min_track_frames"])
+
+--- File: config/custom_bytetrack.yaml (Hyperparameters) ---
+fuse_score: true
+match_thresh: 0.9
+new_track_thresh: 0.6
+track_buffer: 60
+track_high_thresh: 0.5
+track_low_thresh: 0.1
+tracker_type: bytetrack
+
+--- File: pipeline/Vclassification/main.py (Inference) ---
+            tracked_results = detector.model.track(
+                source=frame,
+                persist=True,
+                tracker=str(Path(config_path).parent / "custom_bytetrack.yaml") if "track_buffer" in config.get("tracker", {}) else config["model"]["tracker"],
+                verbose=False,
+                imgsz=config["model"]["imgsz"],
+                device=config["model"]["device"],
+                conf=config["model"]["confidence"]
+            )
+            result = tracked_results[0]
+            filtered_boxes, f_stats = filt.filter_boxes(result.boxes)
+            if filtered_boxes is not None and len(filtered_boxes) > 0:
+                active_tracks = tracker.update(frame_idx, filtered_boxes)
+            else:
+                active_tracks = []
+
+--- File: pipeline/Vclassification/tracker.py (Assignment & Output) ---
+class VehicleTracker:
+    def __init__(self, min_track_frames: int):
+        self.min_track_frames = min_track_frames
+        self.tracks = {}
+        
+    def update(self, frame_idx: int, tracked_boxes: Any) -> list:
+        active_tracks = []
+        if tracked_boxes is None or len(tracked_boxes) == 0 or tracked_boxes.id is None:
+            return active_tracks
+            
+        track_ids = tracked_boxes.id.cpu().numpy().astype(int)
+        clss = tracked_boxes.cls.cpu().numpy().astype(int)
+        confs = tracked_boxes.conf.cpu().numpy()
+        xyxy = tracked_boxes.xyxy.cpu().numpy()
+        
+        for i, (tid, cls_id, conf, box) in enumerate(zip(track_ids, clss, confs, xyxy)):
+            if tid not in self.tracks:
+                self.tracks[tid] = TrackState(
+                    track_id=tid,
+                    first_seen_frame=frame_idx,
+                    last_seen_frame=frame_idx,
+                    creation_bbox=box.tolist() if hasattr(box, "tolist") else list(box)
+                )
+            
+            state = self.tracks[tid]
+            lost_gap = frame_idx - state.last_seen_frame - 1
+            if lost_gap > 0:
+                state.max_lost_gap = max(state.max_lost_gap, lost_gap)
+                state.total_lost_frames += lost_gap
+            state.last_seen_frame = frame_idx
+            state.class_history.append(cls_id)
+            state.conf_history.append(conf)
+            state.last_bbox = box.tolist() if hasattr(box, "tolist") else list(box)
+            
+            frames_alive = frame_idx - state.first_seen_frame + 1
+            if state.state == TrackStateEnum.NEW:
+                if frames_alive >= self.min_track_frames:
+                    state.state = TrackStateEnum.CONFIRMED
+                    state.not_counted_reason = "Never crossed counting line"
+                else:
+                    state.not_counted_reason = "Unconfirmed (too short lifespan)"
+            
+            # Yield ALL active tracks (even NEW ones) so counter can track their early path
+            active_tracks.append((tid, state, box))
+                
+        return active_tracks
+
+
+SECTION 4: TRACKING POINT EXTRACTION
+--- File: pipeline/Vclassification/counter.py ---
+def bottom_center(box):
+    return ((box[0] + box[2]) / 2.0, box[3])
+
+
+SECTION 5: COUNTING LINE DEFINITION & GEOMETRY
+--- File: config/vehicle_count_config.yaml (Definition) ---
+roi:
+  count_direction: BOTH
+  counting_line:
+  - - 718
+    - 286
+  - - 1608
+    - 984
+
+--- File: pipeline/Vclassification/counter.py (Geometry Math) ---
+class VehicleCounter:
+    def __init__(self, line_pt1, line_pt2, direction="BOTH"):
+        self.pt1 = np.array(line_pt1)
+        self.pt2 = np.array(line_pt2)
+        self.direction = direction
+        
+        self.line_vec = self.pt2 - self.pt1
+        self.normal = np.array([-self.line_vec[1], self.line_vec[0]])
+        norm_len = np.linalg.norm(self.normal)
+        if norm_len > 0:
+            self.normal = self.normal / norm_len
+
+
+SECTION 6: CROSSING DETECTION & SIDE CALCULATION
+--- File: pipeline/Vclassification/counter.py (Side & Transition Calculation) ---
+    def side_of_line(self, pt):
+        vec = np.array(pt) - self.pt1
+        return np.dot(vec, self.normal)
+
+    def check_crossing(self, prev_pt, curr_pt):
+        if prev_pt is None:
+            return False, None
+            
+        prev_side = self.side_of_line(prev_pt)
+        curr_side = self.side_of_line(curr_pt)
+        
+        if prev_side * curr_side < 0:
+            line_dir = self.pt2 - self.pt1
+            path_dir = np.array(curr_pt) - np.array(prev_pt)
+            
+            cross = path_dir[0] * line_dir[1] - path_dir[1] * line_dir[0]
+            if abs(cross) < 1e-6:
+                return False, None
+                
+            t = ((self.pt1[0] - prev_pt[0]) * line_dir[1] - (self.pt1[1] - prev_pt[1]) * line_dir[0]) / cross
+            u = ((self.pt1[0] - prev_pt[0]) * path_dir[1] - (self.pt1[1] - prev_pt[1]) * path_dir[0]) / cross
+            
+            if 0 <= t <= 1 and 0 <= u <= 1:
+                cross_dir = "A_TO_B" if prev_side < 0 else "B_TO_A"
+                if self.direction == "BOTH" or self.direction == cross_dir:
+                    return True, cross_dir
+        return False, None
+
+--- File: pipeline/Vclassification/tracker.py (Stored Tracking State) ---
+@dataclass
+class TrackState:
+    track_id: int
+    first_seen_frame: int
+    last_seen_frame: int
+    counted: bool = False
+    state: TrackStateEnum = TrackStateEnum.NEW
+    class_history: list = field(default_factory=list)
+    conf_history: list = field(default_factory=list)
+    previous_bottom_center: tuple = None
+    max_lost_gap: int = 0
+    total_lost_frames: int = 0
+    creation_bbox: list = None
+    last_bbox: list = None
+    counting_bbox: list = None
+    crossing_frame: int = -1
+    crossing_direction: str = None
+    not_counted_reason: str = "Never crossed counting line"
+
+
+SECTION 7: COUNTING LOGIC & CONDITIONS
+--- File: pipeline/Vclassification/counter.py ---
+    def process_tracks(self, active_tracks, class_names):
+        newly_counted = []
+        for tid, state, box in active_tracks:
+            curr_bc = bottom_center(box)
+            prev_bc = state.previous_bottom_center
+            
+            # Conditions applied:
+            # 1. Track is not already counted (`not state.counted`)
+            # 2. Previous bottom-center point exists (`prev_bc is not None`)
+            # 3. Crossing check passes logic between previous and current bottom center (`self.check_crossing`)
+            #    (Crossing check ensures: intersection within segment (0 <= t <= 1), direction matches config, segment crossing)
+            if not state.counted and prev_bc is not None:
+                crossed, dir_str = self.check_crossing(prev_bc, curr_bc)
+                if crossed:
+                    state.counted = True
+                    state.crossing_frame = state.last_seen_frame
+                    state.crossing_direction = dir_str
+                    state.counting_bbox = box.tolist() if hasattr(box, "tolist") else list(box)
+                    state.not_counted_reason = ""
+                    self.counted_ids.add(tid)
+                    stable_class = state.get_stable_class(class_names)
+                    self.counts_by_class[stable_class] = self.counts_by_class.get(stable_class, 0) + 1
+                    newly_counted.append({
+                        "track_id": tid,
+                        "class": stable_class,
+                        "direction": dir_str
+                    })
+                    
+            state.previous_bottom_center = curr_bc
+            
+        return newly_counted
+
+
+SECTION 8: FRAME PROCESSING LOOP
+--- File: pipeline/Vclassification/main.py ---
+    with VideoStreamReader(video_path) as reader:
+        read_start = time.time()
+        time_per_frame = 1.0 / processing_fps if processing_fps > 0 else 0
+        next_process_time = 0.0
+
+        for frame_idx, frame in reader.frames(start_frame=0):
+            # Frame skipping implementation via timing calculation
+            frame_time = frame_idx / fps
+            if processing_fps > 0 and frame_time < next_process_time - 1e-5:
+                read_start = time.time()
+                continue
+            
+            next_process_time += time_per_frame
+            total_frames += 1
+            
+            # YOLO tracking + ByteTrack tracking update
+            # Filtering logic and Tracker processing
+            # ... (truncated for brevity)
+            
+            # Extract active_tracks, hand them to counter
+            if filtered_boxes is not None and len(filtered_boxes) > 0:
+                active_tracks = tracker.update(frame_idx, filtered_boxes)
+            else:
+                active_tracks = []
+                
+            newly_counted = counter.process_tracks(active_tracks, detector.class_names)
+            for nc in newly_counted:
+                nc["frame"] = frame_idx
+                records.append(nc)
+            
+            # Logging & Constraints (Hard Stops based on frames / time)
+            if total_frames % 100 == 0:
+                logger.info(f"Processed {total_frames} frames... Count: {len(counter.counted_ids)}")
+                
+            if max_frames > 0 and total_frames >= max_frames:
+                print(f"HARD STOP at {max_frames} frames reached for video.")
+                break
+
+
+SECTION 9: LOGGING & DEBUG OUTPUT
+--- File: pipeline/Vclassification/main.py ---
+            if annotator:
+                annotator.draw_line(frame, config["roi"]["counting_line"][0], config["roi"]["counting_line"][1])
+                for tid, state, box in active_tracks:
+                    stable_class = state.get_stable_class(detector.class_names)
+                    conf = state.conf_history[-1] if state.conf_history else 0.0
+                    annotator.draw_track(frame, box, tid, stable_class, conf, state.counted, state_str=state.state.value)
+                annotator.write_frame(frame)
+                
+            if total_frames % 100 == 0:
+                logger.info(f"Processed {total_frames} frames... Count: {len(counter.counted_ids)}")
+
+
+SECTION 10: CONFIG/HYPERPARAMETERS
+--- File: config/vehicle_count_config.yaml ---
+tracker:
+  match_thresh: 0.9
+  min_track_frames: 3
+  new_track_thresh: 0.6
+  track_buffer: 60
+  track_high_thresh: 0.5
+  track_low_thresh: 0.1
+roi:
+  count_direction: BOTH
+  counting_line:
+  - - 718
+    - 286
+  - - 1608
+    - 984
+  reference_height: 1080
+  reference_width: 1920
+filters:
+  min_box_area: 500
+  min_height: 20
+  min_width: 20
+
+--- File: config/custom_bytetrack.yaml ---
+fuse_score: true
+match_thresh: 0.9
+new_track_thresh: 0.6
+track_buffer: 60
+track_high_thresh: 0.5
+track_low_thresh: 0.1
+tracker_type: bytetrack
+
+
+SECTION 11: TRACK FILTERING / FILTERING PIPELINE
+--- File: pipeline/Vclassification/filters.py ---
+class DetectionFilter:
+    def __init__(self, min_area: float, min_width: float, min_height: float, class_names: Dict[int, str], valid_classes: List[str] = None):
+        self.min_area = min_area
+        self.min_width = min_width
+        self.min_height = min_height
+        self.valid_classes = set(valid_classes) if valid_classes else None
+        self.class_names = class_names
+
+    def filter_boxes(self, boxes: Any) -> Tuple[Any, dict]:
+        # Filter occurs BEFORE tracking. Unfiltered boxes do not become tracks.
+        passed_indices = []
+        xyxy = boxes.xyxy.cpu().numpy()
+        clss = boxes.cls.cpu().numpy().astype(int)
+        
+        for i, (box, cls_id) in enumerate(zip(xyxy, clss)):
+            class_name = self.class_names.get(cls_id, "Unknown")
+            if self.valid_classes and class_name not in self.valid_classes:
+                continue
+                
+            w = box[2] - box[0]
+            h = box[3] - box[1]
+            area = w * h
+            
+            if area < self.min_area or w < self.min_width or h < self.min_height:
+                continue
+                
+            passed_indices.append(i)
+        
+        if len(passed_indices) == len(boxes):
+            return boxes, stats
+        
+        filtered_boxes = boxes[passed_indices]
+        return filtered_boxes, stats
+
+
+SECTION 12: OUTPUT FORMAT
+--- File: pipeline/Vclassification/main.py ---
+    # CSV records export layout 
+    # Example nc dict created in `newly_counted`: {"track_id": tid, "class": stable_class, "direction": dir_str, "frame": frame_idx}
+    export_csv(records, output_dir / "counts.csv")
+
+    # JSON summary generation structure
+    summary = {
+        "input_video": str(video_path),
+        "model": config["model"]["yolo_weights"],
+        "frames_processed": total_frames,
+        "processing_time_sec": elapsed,
+        "processing_fps": total_frames / elapsed if elapsed > 0 else 0,
+        "profiling_sec": {"video_read": time_read, "yolo_inference": time_inference, "filtering_and_logic": time_logic, "annotation": time_annot},
+        "filter_stats": stats_summary,
+        "tracks_created": len(tracker.tracks),
+        "tracks_confirmed": sum(1 for t in tracker.tracks.values() if t.state.value in ["CONFIRMED", "COUNTED"]),
+        "tracks_counted": len(counter.counted_ids),
+        "count_by_class": counter.counts_by_class
+    }
+    
+    export_json(summary, output_dir / "summary.json")

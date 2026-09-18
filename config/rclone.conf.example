@@ -1,0 +1,11 @@
+# Template only -- copy to config/rclone.conf and fill in real values there.
+# config/rclone.conf itself is gitignored; never commit the real file.
+# Generate real values with: rclone config
+
+[gdrive]
+type = drive
+client_id = YOUR_GOOGLE_OAUTH_CLIENT_ID
+client_secret = YOUR_GOOGLE_OAUTH_CLIENT_SECRET
+scope = drive
+token = {"access_token":"...","token_type":"Bearer","refresh_token":"...","expiry":"..."}
+team_drive =

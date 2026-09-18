@@ -1,0 +1,1229 @@
+2026-08-29 09:36:47 [DEBUG] uvh_test.main: frame=447 COUNTED track_id=1 class=Two-wheeler
+2026-08-29 09:36:54 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=5 as duplicate of class Truck, prev_tid=4, dist=72.3px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 09:36:54 [DEBUG] uvh_test.main: frame=651 COUNTED track_id=4 class=Truck
+2026-08-29 09:36:54 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3 as duplicate of class Truck, prev_tid=4, dist=21.8px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 09:36:54 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=6 as duplicate of class Truck, prev_tid=4, dist=89.6px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 09:37:12 [DEBUG] uvh_test.main: frame=1179 COUNTED track_id=16 class=SUV
+2026-08-29 09:37:12 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=13 as duplicate of class SUV, prev_tid=16, dist=92.7px, thresh=150.0px, bbox_size=282.6x216.6
+2026-08-29 09:37:37 [DEBUG] uvh_test.main: frame=2011 COUNTED track_id=22 class=SUV
+2026-08-29 09:37:44 [DEBUG] uvh_test.main: frame=2239 COUNTED track_id=24 class=Two-wheeler
+2026-08-29 09:38:08 [DEBUG] uvh_test.main: frame=2976 COUNTED track_id=28 class=Two-wheeler
+2026-08-29 09:38:36 [DEBUG] uvh_test.main: frame=3831 COUNTED track_id=31 class=Two-wheeler
+2026-08-29 09:38:44 [DEBUG] uvh_test.main: frame=4079 COUNTED track_id=34 class=Two-wheeler
+2026-08-29 09:38:46 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=32 as duplicate of class Two-wheeler, prev_tid=34, dist=51.4px, thresh=150.0px, bbox_size=150.6x128.4
+2026-08-29 09:39:00 [DEBUG] uvh_test.main: frame=4555 COUNTED track_id=35 class=Two-wheeler
+2026-08-29 09:39:11 [DEBUG] uvh_test.main: frame=4915 COUNTED track_id=39 class=Sedan
+2026-08-29 09:39:11 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=38 as duplicate of class Sedan, prev_tid=39, dist=51.0px, thresh=150.0px, bbox_size=320.2x252.4
+2026-08-29 09:39:53 [DEBUG] uvh_test.main: frame=6288 COUNTED track_id=46 class=Two-wheeler
+2026-08-29 09:40:10 [DEBUG] uvh_test.main: frame=6810 COUNTED track_id=48 class=Two-wheeler
+2026-08-29 09:40:24 [DEBUG] uvh_test.main: frame=7247 COUNTED track_id=50 class=Two-wheeler
+2026-08-29 09:40:25 [DEBUG] uvh_test.main: frame=7280 COUNTED track_id=51 class=Two-wheeler
+2026-08-29 09:40:29 [DEBUG] uvh_test.main: frame=7395 COUNTED track_id=59 class=Bus
+2026-08-29 09:40:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=58 as duplicate of class Bus, prev_tid=59, dist=32.2px, thresh=344.1px, bbox_size=458.8x384.4
+2026-08-29 09:40:30 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=54 as duplicate of class Bus, prev_tid=59, dist=135.1px, thresh=344.2px, bbox_size=458.9x384.3
+2026-08-29 09:40:30 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=57 as duplicate of class Bus, prev_tid=59, dist=66.7px, thresh=344.2px, bbox_size=459.0x384.4
+2026-08-29 09:40:41 [DEBUG] uvh_test.main: frame=7735 COUNTED track_id=62 class=Two-wheeler
+2026-08-29 09:40:47 [DEBUG] uvh_test.main: frame=7940 COUNTED track_id=63 class=Two-wheeler
+2026-08-29 09:40:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=66 as duplicate of class Two-wheeler, prev_tid=63, dist=93.7px, thresh=150.0px, bbox_size=178.8x172.2
+2026-08-29 09:40:58 [DEBUG] uvh_test.main: frame=8236 COUNTED track_id=67 class=Two-wheeler
+2026-08-29 09:40:58 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=73 as duplicate of class Two-wheeler, prev_tid=67, dist=107.8px, thresh=150.0px, bbox_size=153.8x127.1
+2026-08-29 09:41:12 [DEBUG] uvh_test.main: frame=8655 COUNTED track_id=75 class=Two-wheeler
+2026-08-29 09:41:16 [DEBUG] uvh_test.main: frame=8747 COUNTED track_id=78 class=Two-wheeler
+2026-08-29 09:41:29 [DEBUG] uvh_test.main: frame=9131 COUNTED track_id=79 class=Two-wheeler
+2026-08-29 09:41:45 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=87 into lost_tid=87, dist=88.6px
+2026-08-29 09:41:45 [DEBUG] uvh_test.main: frame=9608 COUNTED track_id=87 class=Two-wheeler
+2026-08-29 09:41:45 [DEBUG] uvh_test.main: frame=9615 COUNTED track_id=86 class=Two-wheeler
+2026-08-29 09:41:52 [DEBUG] uvh_test.main: frame=9795 COUNTED track_id=89 class=Two-wheeler
+2026-08-29 09:41:57 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=91 as duplicate of class Two-wheeler, prev_tid=89, dist=66.1px, thresh=150.0px, bbox_size=175.0x153.2
+2026-08-29 09:42:00 [DEBUG] uvh_test.main: frame=10015 COUNTED track_id=94 class=Two-wheeler
+2026-08-29 09:42:03 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=97 as duplicate of class Two-wheeler, prev_tid=94, dist=18.0px, thresh=150.0px, bbox_size=154.5x138.3
+2026-08-29 09:42:06 [DEBUG] uvh_test.main: frame=10168 COUNTED track_id=96 class=Two-wheeler
+2026-08-29 09:42:11 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=101 as duplicate of class Two-wheeler, prev_tid=96, dist=101.7px, thresh=150.0px, bbox_size=164.1x154.5
+2026-08-29 09:42:12 [DEBUG] uvh_test.main: frame=10340 COUNTED track_id=100 class=Two-wheeler
+2026-08-29 09:42:27 [DEBUG] uvh_test.main: frame=10735 COUNTED track_id=109 class=Two-wheeler
+2026-08-29 09:42:27 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=107 as duplicate of class Two-wheeler, prev_tid=109, dist=84.8px, thresh=150.0px, bbox_size=118.8x115.0
+2026-08-29 09:42:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=110 as duplicate of class Two-wheeler, prev_tid=109, dist=70.1px, thresh=150.0px, bbox_size=132.0x111.4
+2026-08-29 09:42:42 [DEBUG] uvh_test.main: frame=11139 COUNTED track_id=112 class=Two-wheeler
+2026-08-29 09:42:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=114 as duplicate of class Two-wheeler, prev_tid=112, dist=44.9px, thresh=150.0px, bbox_size=147.3x124.9
+2026-08-29 09:42:47 [DEBUG] uvh_test.main: frame=11296 COUNTED track_id=116 class=Two-wheeler
+2026-08-29 09:42:53 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=120 as duplicate of class Two-wheeler, prev_tid=116, dist=130.4px, thresh=150.0px, bbox_size=205.1x201.5
+2026-08-29 09:43:00 [DEBUG] uvh_test.main: frame=11627 COUNTED track_id=122 class=Two-wheeler
+2026-08-29 09:43:10 [DEBUG] uvh_test.main: frame=11891 COUNTED track_id=123 class=Two-wheeler
+2026-08-29 09:43:25 [DEBUG] uvh_test.main: frame=12351 COUNTED track_id=127 class=Two-wheeler
+2026-08-29 09:43:26 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=128 as duplicate of class Two-wheeler, prev_tid=127, dist=101.9px, thresh=150.0px, bbox_size=167.1x158.3
+2026-08-29 09:43:26 [DEBUG] uvh_test.main: frame=12371 COUNTED track_id=130 class=Two-wheeler
+2026-08-29 09:43:34 [DEBUG] uvh_test.main: frame=12587 COUNTED track_id=137 class=Two-wheeler
+2026-08-29 09:43:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=135 as duplicate of class Two-wheeler, prev_tid=137, dist=70.2px, thresh=150.0px, bbox_size=137.3x112.6
+2026-08-29 09:43:38 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=140 as duplicate of class Two-wheeler, prev_tid=137, dist=38.9px, thresh=150.0px, bbox_size=157.5x152.4
+2026-08-29 09:43:41 [DEBUG] uvh_test.main: frame=12767 COUNTED track_id=139 class=Two-wheeler
+2026-08-29 09:43:52 [DEBUG] uvh_test.main: frame=13049 COUNTED track_id=145 class=Two-wheeler
+2026-08-29 09:43:59 [DEBUG] uvh_test.main: frame=13229 COUNTED track_id=148 class=Two-wheeler
+2026-08-29 09:44:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=149 as duplicate of class Two-wheeler, prev_tid=148, dist=38.0px, thresh=150.0px, bbox_size=139.3x126.0
+2026-08-29 09:44:08 [DEBUG] uvh_test.main: frame=13467 COUNTED track_id=150 class=Two-wheeler
+2026-08-29 09:44:13 [DEBUG] uvh_test.main: frame=13607 COUNTED track_id=154 class=Two-wheeler
+2026-08-29 09:44:14 [DEBUG] uvh_test.main: frame=13628 COUNTED track_id=151 class=Two-wheeler
+2026-08-29 09:44:14 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=156 into lost_tid=160, dist=85.5px
+2026-08-29 09:44:14 [DEBUG] uvh_test.main: frame=13639 COUNTED track_id=156 class=SUV
+2026-08-29 09:44:15 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=157 as duplicate of class SUV, prev_tid=156, dist=59.8px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:44:15 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=162 as duplicate of class SUV, prev_tid=156, dist=126.3px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 09:44:15 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=159 into lost_tid=159, dist=40.9px
+2026-08-29 09:44:15 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=159 as duplicate of class SUV, prev_tid=156, dist=136.0px, thresh=150.0px
+2026-08-29 09:44:16 [DEBUG] uvh_test.main: frame=13687 COUNTED track_id=161 class=Two-wheeler
+2026-08-29 09:44:22 [DEBUG] uvh_test.main: frame=13847 COUNTED track_id=166 class=Two-wheeler
+2026-08-29 09:44:27 [DEBUG] uvh_test.main: frame=13996 COUNTED track_id=169 class=Two-wheeler
+2026-08-29 09:44:33 [DEBUG] uvh_test.main: frame=14167 COUNTED track_id=175 class=Two-wheeler
+2026-08-29 09:44:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=178 as duplicate of class Sedan, prev_tid=176, dist=90.6px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:44:33 [DEBUG] uvh_test.main: frame=14168 COUNTED track_id=176 class=Sedan
+2026-08-29 09:44:35 [DEBUG] uvh_test.main: frame=14207 COUNTED track_id=172 class=Two-wheeler
+2026-08-29 09:44:51 [DEBUG] uvh_test.main: frame=14688 COUNTED track_id=181 class=Two-wheeler
+2026-08-29 09:44:54 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=183 as duplicate of class Two-wheeler, prev_tid=181, dist=93.2px, thresh=150.0px, bbox_size=253.4x256.3
+2026-08-29 09:44:56 [DEBUG] uvh_test.main: frame=14815 COUNTED track_id=187 class=Two-wheeler
+2026-08-29 09:45:00 [DEBUG] uvh_test.main: frame=14916 COUNTED track_id=196 class=MUV
+2026-08-29 09:45:02 [DEBUG] uvh_test.main: frame=14987 COUNTED track_id=191 class=Two-wheeler
+2026-08-29 09:45:09 [DEBUG] uvh_test.main: frame=15167 COUNTED track_id=203 class=Two-wheeler
+2026-08-29 09:45:10 [DEBUG] uvh_test.main: frame=15208 COUNTED track_id=207 class=Two-wheeler
+2026-08-29 09:45:12 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=206 as duplicate of class Two-wheeler, prev_tid=207, dist=96.3px, thresh=150.0px, bbox_size=157.2x130.3
+2026-08-29 09:45:13 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=204 as duplicate of class Two-wheeler, prev_tid=203, dist=60.2px, thresh=150.0px, bbox_size=223.4x251.3
+2026-08-29 09:45:22 [DEBUG] uvh_test.main: frame=15507 COUNTED track_id=217 class=SUV
+2026-08-29 09:45:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=218 as duplicate of class SUV, prev_tid=217, dist=61.9px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:45:33 [DEBUG] uvh_test.main: frame=15728 COUNTED track_id=225 class=Two-wheeler
+2026-08-29 09:45:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=226 as duplicate of class Two-wheeler, prev_tid=225, dist=39.6px, thresh=150.0px, bbox_size=141.4x113.9
+2026-08-29 09:45:43 [DEBUG] uvh_test.main: frame=15927 COUNTED track_id=233 class=Two-wheeler
+2026-08-29 09:45:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=235 as duplicate of class Two-wheeler, prev_tid=233, dist=62.2px, thresh=150.0px, bbox_size=139.1x130.3
+2026-08-29 09:45:48 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=229 as duplicate of class Two-wheeler, prev_tid=233, dist=92.8px, thresh=150.0px, bbox_size=127.2x118.5
+2026-08-29 09:45:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=236 as duplicate of class Two-wheeler, prev_tid=233, dist=12.1px, thresh=150.0px, bbox_size=152.2x144.8
+2026-08-29 09:46:02 [DEBUG] uvh_test.main: frame=16427 COUNTED track_id=241 class=Two-wheeler
+2026-08-29 09:46:17 [DEBUG] uvh_test.main: frame=16807 COUNTED track_id=246 class=Two-wheeler
+2026-08-29 09:46:20 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=249 as duplicate of class Two-wheeler, prev_tid=246, dist=20.6px, thresh=150.0px, bbox_size=168.4x150.9
+2026-08-29 09:46:30 [DEBUG] uvh_test.main: frame=17171 COUNTED track_id=255 class=Two-wheeler
+2026-08-29 09:46:31 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=254 as duplicate of class Two-wheeler, prev_tid=255, dist=53.9px, thresh=150.0px, bbox_size=126.8x115.8
+2026-08-29 09:46:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=252 as duplicate of class Two-wheeler, prev_tid=255, dist=47.6px, thresh=150.0px, bbox_size=136.1x127.7
+2026-08-29 09:46:36 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=256 as duplicate of class Two-wheeler, prev_tid=255, dist=44.4px, thresh=150.0px, bbox_size=143.8x131.0
+2026-08-29 09:46:41 [DEBUG] uvh_test.main: frame=17439 COUNTED track_id=259 class=Two-wheeler
+2026-08-29 09:46:47 [DEBUG] uvh_test.main: frame=17595 COUNTED track_id=262 class=Two-wheeler
+2026-08-29 09:46:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=264 as duplicate of class Two-wheeler, prev_tid=262, dist=62.5px, thresh=150.0px, bbox_size=150.1x119.5
+2026-08-29 09:46:58 [DEBUG] uvh_test.main: frame=17887 COUNTED track_id=270 class=Two-wheeler
+2026-08-29 09:47:00 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=267 as duplicate of class Two-wheeler, prev_tid=270, dist=83.4px, thresh=150.0px, bbox_size=135.1x124.2
+2026-08-29 09:47:13 [DEBUG] uvh_test.main: frame=18279 COUNTED track_id=273 class=Two-wheeler
+2026-08-29 09:47:56 [DEBUG] uvh_test.main: frame=19611 COUNTED track_id=275 class=Two-wheeler
+2026-08-29 09:47:57 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=276 as duplicate of class Two-wheeler, prev_tid=275, dist=124.3px, thresh=150.0px, bbox_size=175.4x148.0
+2026-08-29 09:48:25 [DEBUG] uvh_test.main: frame=20288 COUNTED track_id=283 class=Sedan
+2026-08-29 09:48:48 [DEBUG] uvh_test.main: frame=20688 COUNTED track_id=285 class=SUV
+2026-08-29 09:48:48 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=289 as duplicate of class SUV, prev_tid=285, dist=22.7px, thresh=150.0px, bbox_size=257.9x194.5
+2026-08-29 09:48:54 [DEBUG] uvh_test.main: frame=20828 COUNTED track_id=294 class=SUV
+2026-08-29 09:48:54 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=293 as duplicate of class SUV, prev_tid=294, dist=107.8px, thresh=150.0px, bbox_size=348.0x282.5
+2026-08-29 09:48:55 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=295 as duplicate of class SUV, prev_tid=294, dist=68.3px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 09:49:06 [DEBUG] uvh_test.main: frame=21176 COUNTED track_id=300 class=Two-wheeler
+2026-08-29 09:49:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=298 as duplicate of class Two-wheeler, prev_tid=300, dist=111.0px, thresh=150.0px, bbox_size=142.5x115.0
+2026-08-29 09:49:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=301 as duplicate of class Two-wheeler, prev_tid=300, dist=83.3px, thresh=150.0px, bbox_size=174.5x187.3
+2026-08-29 09:49:33 [DEBUG] uvh_test.main: frame=22019 COUNTED track_id=307 class=Two-wheeler
+2026-08-29 09:49:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=302 as duplicate of class Two-wheeler, prev_tid=307, dist=70.7px, thresh=150.0px, bbox_size=147.7x128.1
+2026-08-29 09:49:46 [DEBUG] uvh_test.main: frame=22412 COUNTED track_id=310 class=Two-wheeler
+2026-08-29 09:50:03 [DEBUG] uvh_test.main: frame=22940 COUNTED track_id=311 class=Two-wheeler
+2026-08-29 09:50:05 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=313 as duplicate of class Two-wheeler, prev_tid=311, dist=63.7px, thresh=150.0px, bbox_size=150.3x147.1
+2026-08-29 09:50:09 [DEBUG] uvh_test.main: frame=23127 COUNTED track_id=320 class=Three-wheeler
+2026-08-29 09:50:12 [DEBUG] uvh_test.main: frame=23187 COUNTED track_id=314 class=Two-wheeler
+2026-08-29 09:50:22 [DEBUG] uvh_test.main: frame=23467 COUNTED track_id=324 class=Two-wheeler
+2026-08-29 09:50:35 [DEBUG] uvh_test.main: frame=23873 COUNTED track_id=328 class=Two-wheeler
+2026-08-29 09:50:45 [DEBUG] uvh_test.main: frame=24159 COUNTED track_id=331 class=Two-wheeler
+2026-08-29 09:50:46 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=330 as duplicate of class Two-wheeler, prev_tid=331, dist=93.5px, thresh=150.0px, bbox_size=181.5x171.2
+2026-08-29 09:51:02 [DEBUG] uvh_test.main: frame=24639 COUNTED track_id=339 class=Two-wheeler
+2026-08-29 09:51:12 [DEBUG] uvh_test.main: frame=24895 COUNTED track_id=340 class=Two-wheeler
+2026-08-29 09:51:24 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=341 into lost_tid=341, dist=61.4px
+2026-08-29 09:51:24 [DEBUG] uvh_test.main: frame=25231 COUNTED track_id=341 class=Truck
+2026-08-29 09:51:31 [DEBUG] uvh_test.main: frame=25407 COUNTED track_id=351 class=Two-wheeler
+2026-08-29 09:51:31 [DEBUG] uvh_test.main: frame=25408 COUNTED track_id=347 class=Two-wheeler
+2026-08-29 09:51:41 [DEBUG] uvh_test.main: frame=25571 COUNTED track_id=359 class=Two-wheeler
+2026-08-29 09:51:42 [DEBUG] uvh_test.main: frame=25587 COUNTED track_id=353 class=Bus
+2026-08-29 09:51:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=350 as duplicate of class Bus, prev_tid=353, dist=111.9px, thresh=344.2px, bbox_size=458.9x384.3
+2026-08-29 09:51:44 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=360 into lost_tid=350, dist=94.9px
+2026-08-29 09:51:44 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=360 as duplicate of class Bus, prev_tid=353, dist=122.0px, thresh=344.2px
+2026-08-29 09:52:08 [DEBUG] uvh_test.main: frame=25931 COUNTED track_id=365 class=Bus
+2026-08-29 09:52:18 [DEBUG] uvh_test.main: frame=26107 COUNTED track_id=370 class=LCV
+2026-08-29 09:52:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=373 as duplicate of class LCV, prev_tid=370, dist=101.5px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 09:52:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=374 as duplicate of class LCV, prev_tid=370, dist=125.1px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:52:19 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=371 into lost_tid=371, dist=43.1px
+2026-08-29 09:52:19 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=371 as duplicate of class LCV, prev_tid=370, dist=68.4px, thresh=150.0px
+2026-08-29 09:52:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=380 as duplicate of class Sedan, prev_tid=378, dist=37.1px, thresh=150.0px, bbox_size=322.8x250.6
+2026-08-29 09:52:29 [DEBUG] uvh_test.main: frame=26407 COUNTED track_id=378 class=Sedan
+2026-08-29 09:52:31 [DEBUG] uvh_test.main: frame=26471 COUNTED track_id=381 class=Bus
+2026-08-29 09:52:42 [DEBUG] uvh_test.main: frame=26755 COUNTED track_id=394 class=LCV
+2026-08-29 09:52:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=393 as duplicate of class LCV, prev_tid=394, dist=74.6px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:52:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=395 as duplicate of class LCV, prev_tid=394, dist=48.2px, thresh=150.0px, bbox_size=459.1x384.3
+2026-08-29 09:52:43 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=392 into lost_tid=392, dist=97.4px
+2026-08-29 09:52:43 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=392 as duplicate of class LCV, prev_tid=394, dist=13.0px, thresh=150.0px
+2026-08-29 09:52:43 [DEBUG] uvh_test.main: frame=26772 COUNTED track_id=398 class=Two-wheeler
+2026-08-29 09:52:57 [DEBUG] uvh_test.main: frame=27148 COUNTED track_id=406 class=Two-wheeler
+2026-08-29 09:52:58 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=407 as duplicate of class Two-wheeler, prev_tid=406, dist=100.0px, thresh=150.0px, bbox_size=139.2x124.0
+2026-08-29 09:53:06 [DEBUG] uvh_test.main: frame=27371 COUNTED track_id=413 class=Two-wheeler
+2026-08-29 09:53:12 [DEBUG] uvh_test.main: frame=27547 COUNTED track_id=415 class=Two-wheeler
+2026-08-29 09:53:34 [DEBUG] uvh_test.main: frame=28187 COUNTED track_id=418 class=Two-wheeler
+2026-08-29 09:53:36 [DEBUG] uvh_test.main: frame=28219 COUNTED track_id=420 class=Truck
+2026-08-29 09:53:48 [DEBUG] uvh_test.main: frame=28561 COUNTED track_id=425 class=Two-wheeler
+2026-08-29 09:53:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=430 as duplicate of class Two-wheeler, prev_tid=425, dist=71.3px, thresh=150.0px, bbox_size=185.4x157.9
+2026-08-29 09:53:59 [DEBUG] uvh_test.main: frame=28857 COUNTED track_id=432 class=Two-wheeler
+2026-08-29 09:54:06 [DEBUG] uvh_test.main: frame=29051 COUNTED track_id=437 class=Two-wheeler
+2026-08-29 09:54:22 [DEBUG] uvh_test.main: frame=29481 COUNTED track_id=442 class=Two-wheeler
+2026-08-29 09:54:23 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=441 into lost_tid=441, dist=41.1px
+2026-08-29 09:54:23 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=441 as duplicate of class Two-wheeler, prev_tid=442, dist=11.5px, thresh=150.0px
+2026-08-29 09:54:29 [DEBUG] uvh_test.main: frame=29649 COUNTED track_id=446 class=Two-wheeler
+2026-08-29 09:54:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=447 as duplicate of class Two-wheeler, prev_tid=446, dist=36.3px, thresh=150.0px, bbox_size=164.2x139.6
+2026-08-29 09:54:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=448 as duplicate of class Two-wheeler, prev_tid=446, dist=98.4px, thresh=150.0px, bbox_size=134.4x121.8
+2026-08-29 09:54:55 [DEBUG] uvh_test.main: frame=30396 COUNTED track_id=449 class=Two-wheeler
+2026-08-29 09:55:00 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=450 as duplicate of class Two-wheeler, prev_tid=449, dist=39.2px, thresh=150.0px, bbox_size=137.5x125.3
+2026-08-29 09:55:09 [DEBUG] uvh_test.main: frame=30755 COUNTED track_id=453 class=Two-wheeler
+2026-08-29 09:55:13 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=459 as duplicate of class Two-wheeler, prev_tid=453, dist=78.6px, thresh=150.0px, bbox_size=179.1x156.1
+2026-08-29 09:55:16 [DEBUG] uvh_test.main: frame=30961 COUNTED track_id=455 class=Two-wheeler
+2026-08-29 09:55:26 [DEBUG] uvh_test.main: frame=31219 COUNTED track_id=461 class=Two-wheeler
+2026-08-29 09:55:27 [DEBUG] uvh_test.main: frame=31239 COUNTED track_id=463 class=Two-wheeler
+2026-08-29 09:55:37 [DEBUG] uvh_test.main: frame=31511 COUNTED track_id=464 class=Two-wheeler
+2026-08-29 09:55:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=467 as duplicate of class Two-wheeler, prev_tid=464, dist=90.2px, thresh=150.0px, bbox_size=195.3x160.5
+2026-08-29 09:55:52 [DEBUG] uvh_test.main: frame=31931 COUNTED track_id=470 class=Two-wheeler
+2026-08-29 09:56:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=473 as duplicate of class SUV, prev_tid=472, dist=10.4px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 09:56:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=474 as duplicate of class SUV, prev_tid=472, dist=60.0px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:56:02 [DEBUG] uvh_test.main: frame=32215 COUNTED track_id=472 class=SUV
+2026-08-29 09:56:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=471 as duplicate of class SUV, prev_tid=472, dist=28.6px, thresh=150.0px, bbox_size=458.9x384.4
+2026-08-29 09:56:22 [DEBUG] uvh_test.main: frame=32828 COUNTED track_id=477 class=Two-wheeler
+2026-08-29 09:56:26 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=481 as duplicate of class Two-wheeler, prev_tid=477, dist=37.5px, thresh=150.0px, bbox_size=158.9x143.1
+2026-08-29 09:56:29 [DEBUG] uvh_test.main: frame=33019 COUNTED track_id=480 class=Two-wheeler
+2026-08-29 09:56:40 [DEBUG] uvh_test.main: frame=33355 COUNTED track_id=482 class=Two-wheeler
+2026-08-29 09:57:09 [DEBUG] uvh_test.main: frame=33895 COUNTED track_id=483 class=Two-wheeler
+2026-08-29 09:57:10 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=485 as duplicate of class Two-wheeler, prev_tid=483, dist=33.4px, thresh=150.0px, bbox_size=122.7x130.6
+2026-08-29 09:57:25 [DEBUG] uvh_test.main: frame=34127 COUNTED track_id=487 class=Two-wheeler
+2026-08-29 09:57:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=488 as duplicate of class Two-wheeler, prev_tid=487, dist=62.3px, thresh=150.0px, bbox_size=139.7x122.6
+2026-08-29 09:57:51 [DEBUG] uvh_test.main: frame=34479 COUNTED track_id=489 class=tempo-traveller
+2026-08-29 09:57:57 [DEBUG] uvh_test.main: frame=34663 COUNTED track_id=497 class=Two-wheeler
+2026-08-29 09:58:11 [DEBUG] uvh_test.main: frame=35112 COUNTED track_id=498 class=Two-wheeler
+2026-08-29 09:58:29 [DEBUG] uvh_test.main: frame=35679 COUNTED track_id=504 class=Two-wheeler
+2026-08-29 09:58:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=512 as duplicate of class Two-wheeler, prev_tid=504, dist=67.9px, thresh=150.0px, bbox_size=151.4x137.9
+2026-08-29 09:58:35 [DEBUG] uvh_test.main: frame=35859 COUNTED track_id=516 class=Sedan
+2026-08-29 09:58:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=515 as duplicate of class Sedan, prev_tid=516, dist=56.8px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 09:58:47 [DEBUG] uvh_test.main: frame=36223 COUNTED track_id=519 class=Two-wheeler
+2026-08-29 09:59:05 [DEBUG] uvh_test.main: frame=36840 COUNTED track_id=525 class=Two-wheeler
+2026-08-29 09:59:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=527 as duplicate of class Two-wheeler, prev_tid=525, dist=39.9px, thresh=150.0px, bbox_size=159.9x135.8
+2026-08-29 09:59:11 [DEBUG] uvh_test.main: frame=37019 COUNTED track_id=528 class=Two-wheeler
+2026-08-29 09:59:13 [DEBUG] uvh_test.main: frame=37079 COUNTED track_id=531 class=Truck
+2026-08-29 09:59:20 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=537 into lost_tid=537, dist=62.4px
+2026-08-29 09:59:20 [DEBUG] uvh_test.main: frame=37271 COUNTED track_id=537 class=Sedan
+2026-08-29 09:59:23 [DEBUG] uvh_test.main: frame=37387 COUNTED track_id=546 class=SUV
+2026-08-29 09:59:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=545 as duplicate of class SUV, prev_tid=546, dist=102.9px, thresh=150.0px, bbox_size=308.3x238.2
+2026-08-29 09:59:24 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=535 as duplicate of class SUV, prev_tid=546, dist=16.3px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:59:24 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=547 as duplicate of class SUV, prev_tid=546, dist=56.5px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 09:59:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=552 as duplicate of class SUV, prev_tid=550, dist=96.9px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 09:59:29 [DEBUG] uvh_test.main: frame=37559 COUNTED track_id=550 class=SUV
+2026-08-29 09:59:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=549 as duplicate of class SUV, prev_tid=550, dist=72.8px, thresh=150.0px, bbox_size=360.3x293.2
+2026-08-29 09:59:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=553 as duplicate of class SUV, prev_tid=550, dist=54.9px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 09:59:40 [DEBUG] uvh_test.main: frame=37931 COUNTED track_id=557 class=Two-wheeler
+2026-08-29 09:59:54 [DEBUG] uvh_test.main: frame=38388 COUNTED track_id=558 class=Two-wheeler
+2026-08-29 09:59:59 [DEBUG] uvh_test.main: frame=38527 COUNTED track_id=562 class=Hatchback
+2026-08-29 10:00:24 [DEBUG] uvh_test.main: frame=39399 COUNTED track_id=565 class=Two-wheeler
+2026-08-29 10:00:58 [DEBUG] uvh_test.main: frame=40571 COUNTED track_id=566 class=Two-wheeler
+2026-08-29 10:01:18 [DEBUG] uvh_test.main: frame=41231 COUNTED track_id=569 class=Bus
+2026-08-29 10:01:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=570 as duplicate of class Bus, prev_tid=569, dist=70.0px, thresh=344.3px, bbox_size=459.0x384.7
+2026-08-29 10:01:20 [DEBUG] uvh_test.main: frame=41300 COUNTED track_id=571 class=Two-wheeler
+2026-08-29 10:01:26 [DEBUG] uvh_test.main: frame=41467 COUNTED track_id=578 class=Two-wheeler
+2026-08-29 10:01:34 [DEBUG] uvh_test.main: frame=41731 COUNTED track_id=585 class=Two-wheeler
+2026-08-29 10:01:50 [DEBUG] uvh_test.main: frame=42223 COUNTED track_id=588 class=Two-wheeler
+2026-08-29 10:01:56 [DEBUG] uvh_test.main: frame=42430 COUNTED track_id=591 class=Two-wheeler
+2026-08-29 10:01:59 [DEBUG] uvh_test.main: frame=42527 COUNTED track_id=594 class=Two-wheeler
+2026-08-29 10:02:04 [DEBUG] uvh_test.main: frame=42679 COUNTED track_id=592 class=Two-wheeler
+2026-08-29 10:02:38 [DEBUG] uvh_test.main: frame=43788 COUNTED track_id=596 class=Two-wheeler
+2026-08-29 10:03:02 [DEBUG] uvh_test.main: frame=44588 COUNTED track_id=604 class=Sedan
+2026-08-29 10:03:03 [DEBUG] uvh_test.main: frame=44591 COUNTED track_id=602 class=MUV
+2026-08-29 10:03:03 [DEBUG] uvh_test.main: frame=44599 COUNTED track_id=599 class=Two-wheeler
+2026-08-29 10:03:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=598 as duplicate of class Two-wheeler, prev_tid=599, dist=39.9px, thresh=150.0px, bbox_size=162.8x139.0
+2026-08-29 10:03:34 [DEBUG] uvh_test.main: frame=45619 COUNTED track_id=610 class=Two-wheeler
+2026-08-29 10:03:51 [DEBUG] uvh_test.main: frame=46199 COUNTED track_id=619 class=Three-wheeler
+2026-08-29 10:04:06 [DEBUG] uvh_test.main: frame=46659 COUNTED track_id=626 class=Two-wheeler
+2026-08-29 10:04:27 [DEBUG] uvh_test.main: frame=47347 COUNTED track_id=629 class=LCV
+2026-08-29 10:04:27 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=632 as duplicate of class LCV, prev_tid=629, dist=35.5px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 10:04:36 [DEBUG] uvh_test.main: frame=47611 COUNTED track_id=640 class=tempo-traveller
+2026-08-29 10:04:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=639 as duplicate of class tempo-traveller, prev_tid=640, dist=24.9px, thresh=300.0px, bbox_size=459.0x384.5
+2026-08-29 10:04:54 [DEBUG] uvh_test.main: frame=48159 COUNTED track_id=644 class=Two-wheeler
+2026-08-29 10:05:12 [DEBUG] uvh_test.main: frame=48742 COUNTED track_id=648 class=SUV
+2026-08-29 10:05:28 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=660 as duplicate of class LCV, prev_tid=657, dist=70.7px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 10:05:28 [DEBUG] uvh_test.main: frame=49222 COUNTED track_id=657 class=LCV
+2026-08-29 10:05:28 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=658 as duplicate of class LCV, prev_tid=657, dist=49.0px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 10:05:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=654 as duplicate of class LCV, prev_tid=657, dist=88.4px, thresh=150.0px, bbox_size=362.0x298.8
+2026-08-29 10:05:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=663 as duplicate of class SUV, prev_tid=662, dist=67.8px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 10:05:37 [DEBUG] uvh_test.main: frame=49487 COUNTED track_id=662 class=SUV
+2026-08-29 10:05:53 [DEBUG] uvh_test.main: frame=50039 COUNTED track_id=669 class=SUV
+2026-08-29 10:05:53 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=668 as duplicate of class SUV, prev_tid=669, dist=55.1px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 10:05:57 [DEBUG] uvh_test.main: frame=50152 COUNTED track_id=670 class=Two-wheeler
+2026-08-29 10:06:12 [DEBUG] uvh_test.main: frame=50643 COUNTED track_id=671 class=Two-wheeler
+2026-08-29 10:06:21 [DEBUG] uvh_test.main: frame=50908 COUNTED track_id=677 class=Truck
+2026-08-29 10:06:25 [DEBUG] uvh_test.main: frame=51003 COUNTED track_id=680 class=SUV
+2026-08-29 10:06:35 [DEBUG] uvh_test.main: frame=51320 COUNTED track_id=686 class=Two-wheeler
+2026-08-29 10:07:11 [DEBUG] uvh_test.main: frame=52523 COUNTED track_id=693 class=SUV
+2026-08-29 10:07:11 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=692 as duplicate of class SUV, prev_tid=693, dist=48.2px, thresh=150.0px, bbox_size=353.7x283.6
+2026-08-29 10:07:13 [DEBUG] uvh_test.main: frame=52599 COUNTED track_id=700 class=Two-wheeler
+2026-08-29 10:07:22 [DEBUG] uvh_test.main: frame=52880 COUNTED track_id=702 class=Two-wheeler
+2026-08-29 10:07:35 [DEBUG] uvh_test.main: frame=53261 COUNTED track_id=705 class=Two-wheeler
+2026-08-29 10:08:25 [DEBUG] uvh_test.main: frame=54803 COUNTED track_id=706 class=Two-wheeler
+2026-08-29 10:08:34 [DEBUG] uvh_test.main: frame=55087 COUNTED track_id=707 class=Two-wheeler
+2026-08-29 10:08:39 [DEBUG] uvh_test.main: frame=55247 COUNTED track_id=709 class=Two-wheeler
+2026-08-29 10:08:50 [DEBUG] uvh_test.main: frame=55571 COUNTED track_id=711 class=Truck
+2026-08-29 10:08:51 [DEBUG] uvh_test.main: frame=55583 COUNTED track_id=713 class=tempo-traveller
+2026-08-29 10:08:56 [DEBUG] uvh_test.main: frame=55732 COUNTED track_id=716 class=Two-wheeler
+2026-08-29 10:09:26 [DEBUG] uvh_test.main: frame=56440 COUNTED track_id=732 class=Three-wheeler
+2026-08-29 10:09:26 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=731 as duplicate of class Three-wheeler, prev_tid=732, dist=88.7px, thresh=150.0px, bbox_size=343.9x286.9
+2026-08-29 10:09:27 [DEBUG] uvh_test.main: frame=56447 COUNTED track_id=718 class=SUV
+2026-08-29 10:09:40 [DEBUG] uvh_test.main: frame=56611 COUNTED track_id=735 class=Two-wheeler
+2026-08-29 10:09:58 [DEBUG] uvh_test.main: frame=56872 COUNTED track_id=738 class=Two-wheeler
+2026-08-29 10:10:01 [DEBUG] uvh_test.main: frame=56903 COUNTED track_id=737 class=Two-wheeler
+2026-08-29 10:10:11 [DEBUG] uvh_test.main: frame=57039 COUNTED track_id=741 class=Bus
+2026-08-29 10:10:13 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=742 as duplicate of class Bus, prev_tid=741, dist=67.5px, thresh=344.2px, bbox_size=458.9x384.6
+2026-08-29 10:10:28 [DEBUG] uvh_test.main: frame=57332 COUNTED track_id=748 class=Two-wheeler
+2026-08-29 10:10:50 [DEBUG] uvh_test.main: frame=57652 COUNTED track_id=751 class=Two-wheeler
+2026-08-29 10:11:53 [DEBUG] uvh_test.main: frame=59044 COUNTED track_id=756 class=tempo-traveller
+2026-08-29 10:12:14 [DEBUG] uvh_test.main: frame=59427 COUNTED track_id=759 class=Two-wheeler
+2026-08-29 10:12:41 [DEBUG] uvh_test.main: frame=59888 COUNTED track_id=761 class=Two-wheeler
+2026-08-29 10:13:02 [DEBUG] uvh_test.main: frame=60491 COUNTED track_id=762 class=Two-wheeler
+2026-08-29 10:13:10 [DEBUG] uvh_test.main: frame=60723 COUNTED track_id=769 class=Two-wheeler
+2026-08-29 10:13:11 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=770 as duplicate of class Two-wheeler, prev_tid=769, dist=100.7px, thresh=150.0px, bbox_size=149.6x115.3
+2026-08-29 10:13:12 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=772 as duplicate of class Two-wheeler, prev_tid=769, dist=27.6px, thresh=150.0px, bbox_size=170.0x145.2
+2026-08-29 10:13:16 [DEBUG] uvh_test.main: frame=60912 COUNTED track_id=777 class=Two-wheeler
+2026-08-29 10:13:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=775 as duplicate of class Two-wheeler, prev_tid=777, dist=138.0px, thresh=150.0px, bbox_size=161.2x142.0
+2026-08-29 10:13:23 [DEBUG] uvh_test.main: frame=61120 COUNTED track_id=779 class=Two-wheeler
+2026-08-29 10:13:23 [DEBUG] uvh_test.main: frame=61120 COUNTED track_id=783 class=Two-wheeler
+2026-08-29 10:13:27 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=778 as duplicate of class Two-wheeler, prev_tid=779, dist=103.1px, thresh=150.0px, bbox_size=126.5x117.8
+2026-08-29 10:13:27 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=781 as duplicate of class Two-wheeler, prev_tid=779, dist=30.0px, thresh=150.0px, bbox_size=174.5x145.6
+2026-08-29 10:13:41 [DEBUG] uvh_test.main: frame=61663 COUNTED track_id=786 class=Two-wheeler
+2026-08-29 10:13:49 [DEBUG] uvh_test.main: frame=61883 COUNTED track_id=790 class=Two-wheeler
+2026-08-29 10:13:56 [DEBUG] uvh_test.main: frame=62103 COUNTED track_id=798 class=Two-wheeler
+2026-08-29 10:14:14 [DEBUG] uvh_test.main: frame=62719 COUNTED track_id=799 class=Three-wheeler
+2026-08-29 10:14:14 [DEBUG] uvh_test.main: frame=62719 COUNTED track_id=800 class=Truck
+2026-08-29 10:14:17 [DEBUG] uvh_test.main: frame=62811 COUNTED track_id=802 class=Two-wheeler
+2026-08-29 10:14:25 [DEBUG] uvh_test.main: frame=63071 COUNTED track_id=806 class=Two-wheeler
+2026-08-29 10:14:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=807 as duplicate of class Bus, prev_tid=809, dist=80.1px, thresh=343.6px, bbox_size=458.2x384.5
+2026-08-29 10:14:37 [DEBUG] uvh_test.main: frame=63459 COUNTED track_id=809 class=Bus
+2026-08-29 10:14:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=810 as duplicate of class Bus, prev_tid=809, dist=79.9px, thresh=343.9px, bbox_size=458.6x384.5
+2026-08-29 10:14:44 [DEBUG] uvh_test.main: frame=63670 COUNTED track_id=815 class=Two-wheeler
+2026-08-29 10:15:09 [DEBUG] uvh_test.main: frame=64502 COUNTED track_id=816 class=Two-wheeler
+2026-08-29 10:15:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=818 as duplicate of class SUV, prev_tid=820, dist=83.2px, thresh=150.0px, bbox_size=336.2x277.2
+2026-08-29 10:15:23 [DEBUG] uvh_test.main: frame=64947 COUNTED track_id=820 class=SUV
+2026-08-29 10:15:56 [DEBUG] uvh_test.main: frame=66067 COUNTED track_id=833 class=Two-wheeler
+2026-08-29 10:16:09 [DEBUG] uvh_test.main: frame=66528 COUNTED track_id=836 class=SUV
+2026-08-29 10:16:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=835 as duplicate of class SUV, prev_tid=836, dist=3.7px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 10:16:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=837 as duplicate of class SUV, prev_tid=836, dist=68.0px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 10:16:28 [DEBUG] uvh_test.main: frame=67167 COUNTED track_id=841 class=Two-wheeler
+2026-08-29 10:16:59 [DEBUG] uvh_test.main: frame=68228 COUNTED track_id=844 class=Two-wheeler
+2026-08-29 10:17:10 [DEBUG] uvh_test.main: frame=68589 COUNTED track_id=846 class=Two-wheeler
+2026-08-29 10:17:17 [DEBUG] uvh_test.main: frame=68827 COUNTED track_id=855 class=Bus
+2026-08-29 10:17:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=853 as duplicate of class Bus, prev_tid=855, dist=70.1px, thresh=344.2px, bbox_size=458.9x384.4
+2026-08-29 10:17:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=856 as duplicate of class Bus, prev_tid=855, dist=102.6px, thresh=344.1px, bbox_size=458.8x384.4
+2026-08-29 10:17:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=849 as duplicate of class Bus, prev_tid=855, dist=123.4px, thresh=344.1px, bbox_size=458.8x384.4
+2026-08-29 10:17:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=857 as duplicate of class Bus, prev_tid=855, dist=0.3px, thresh=344.2px, bbox_size=458.9x384.3
+2026-08-29 10:17:49 [DEBUG] uvh_test.main: frame=69912 COUNTED track_id=865 class=LCV
+2026-08-29 10:17:56 [DEBUG] uvh_test.main: frame=70107 COUNTED track_id=868 class=tempo-traveller
+2026-08-29 10:18:03 [DEBUG] uvh_test.main: frame=70359 COUNTED track_id=871 class=Two-wheeler
+2026-08-29 10:18:08 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=874 as duplicate of class Two-wheeler, prev_tid=871, dist=44.9px, thresh=150.0px, bbox_size=157.2x138.4
+2026-08-29 10:18:27 [DEBUG] uvh_test.main: frame=71123 COUNTED track_id=880 class=tempo-traveller
+2026-08-29 10:18:48 [DEBUG] uvh_test.main: frame=71831 COUNTED track_id=887 class=SUV
+2026-08-29 10:19:11 [DEBUG] uvh_test.main: frame=72631 COUNTED track_id=892 class=Two-wheeler
+2026-08-29 10:19:17 [DEBUG] uvh_test.main: frame=72801 COUNTED track_id=893 class=tempo-traveller
+2026-08-29 10:19:19 [DEBUG] uvh_test.main: frame=72879 COUNTED track_id=895 class=Two-wheeler
+2026-08-29 10:19:30 [DEBUG] uvh_test.main: frame=73209 COUNTED track_id=897 class=Two-wheeler
+2026-08-29 10:19:44 [DEBUG] uvh_test.main: frame=73694 COUNTED track_id=901 class=Two-wheeler
+2026-08-29 10:19:59 [DEBUG] uvh_test.main: frame=74211 COUNTED track_id=908 class=Sedan
+2026-08-29 10:20:37 [DEBUG] uvh_test.main: frame=75543 COUNTED track_id=914 class=Sedan
+2026-08-29 10:20:41 [DEBUG] uvh_test.main: frame=75660 COUNTED track_id=917 class=Two-wheeler
+2026-08-29 10:20:44 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=920 as duplicate of class Two-wheeler, prev_tid=917, dist=62.3px, thresh=150.0px, bbox_size=149.5x116.8
+2026-08-29 10:21:07 [DEBUG] uvh_test.main: frame=76500 COUNTED track_id=924 class=Two-wheeler
+2026-08-29 10:21:19 [DEBUG] uvh_test.main: frame=76871 COUNTED track_id=927 class=Two-wheeler
+2026-08-29 10:21:28 [DEBUG] uvh_test.main: frame=77147 COUNTED track_id=933 class=Sedan
+2026-08-29 10:21:52 [DEBUG] uvh_test.main: frame=77902 COUNTED track_id=938 class=Two-wheeler
+2026-08-29 10:22:28 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=944 as duplicate of class tempo-traveller, prev_tid=942, dist=73.1px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 10:22:28 [DEBUG] uvh_test.main: frame=79060 COUNTED track_id=942 class=tempo-traveller
+2026-08-29 10:22:28 [DEBUG] uvh_test.main: frame=79063 COUNTED track_id=945 class=SUV
+2026-08-29 10:22:32 [DEBUG] uvh_test.main: frame=79186 COUNTED track_id=948 class=LCV
+2026-08-29 10:22:45 [DEBUG] uvh_test.main: frame=79623 COUNTED track_id=954 class=Three-wheeler
+2026-08-29 10:22:56 [DEBUG] uvh_test.main: frame=79971 COUNTED track_id=956 class=Two-wheeler
+2026-08-29 10:23:01 [DEBUG] uvh_test.main: frame=80100 COUNTED track_id=964 class=Two-wheeler
+2026-08-29 10:23:04 [DEBUG] uvh_test.main: frame=80159 COUNTED track_id=966 class=LCV
+2026-08-29 10:23:06 [DEBUG] uvh_test.main: frame=80212 COUNTED track_id=972 class=MUV
+2026-08-29 10:23:42 [DEBUG] uvh_test.main: frame=81425 COUNTED track_id=975 class=Two-wheeler
+2026-08-29 10:23:45 [DEBUG] uvh_test.main: frame=81519 COUNTED track_id=976 class=Sedan
+2026-08-29 10:23:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=977 as duplicate of class Sedan, prev_tid=976, dist=71.2px, thresh=150.0px, bbox_size=457.5x384.3
+2026-08-29 10:23:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=983 as duplicate of class LCV, prev_tid=982, dist=88.5px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 10:23:49 [DEBUG] uvh_test.main: frame=81607 COUNTED track_id=982 class=LCV
+2026-08-29 10:23:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=980 as duplicate of class LCV, prev_tid=982, dist=15.4px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 10:23:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=981 as duplicate of class LCV, prev_tid=982, dist=55.8px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 10:23:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=979 as duplicate of class LCV, prev_tid=982, dist=63.9px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 10:23:54 [DEBUG] uvh_test.main: frame=81739 COUNTED track_id=987 class=Two-wheeler
+2026-08-29 10:24:21 [DEBUG] uvh_test.main: frame=82631 COUNTED track_id=992 class=Truck
+2026-08-29 10:24:39 [DEBUG] uvh_test.main: frame=83199 COUNTED track_id=996 class=Two-wheeler
+2026-08-29 10:24:42 [DEBUG] uvh_test.main: frame=83299 COUNTED track_id=999 class=Two-wheeler
+2026-08-29 10:24:50 [DEBUG] uvh_test.main: frame=83547 COUNTED track_id=1001 class=Two-wheeler
+2026-08-29 10:24:51 [DEBUG] uvh_test.main: frame=83579 COUNTED track_id=1005 class=Two-wheeler
+2026-08-29 10:24:53 [DEBUG] uvh_test.main: frame=83644 COUNTED track_id=1000 class=Two-wheeler
+2026-08-29 10:24:56 [DEBUG] uvh_test.main: frame=83731 COUNTED track_id=1015 class=MUV
+2026-08-29 10:25:43 [DEBUG] uvh_test.main: frame=85363 COUNTED track_id=1019 class=Two-wheeler
+2026-08-29 10:25:49 [DEBUG] uvh_test.main: frame=85551 COUNTED track_id=1026 class=Two-wheeler
+2026-08-29 10:26:10 [DEBUG] uvh_test.main: frame=86179 COUNTED track_id=1038 class=Truck
+2026-08-29 10:26:28 [DEBUG] uvh_test.main: frame=86763 COUNTED track_id=1042 class=Two-wheeler
+2026-08-29 10:26:33 [DEBUG] uvh_test.main: frame=86928 COUNTED track_id=1046 class=Two-wheeler
+2026-08-29 10:26:44 [DEBUG] uvh_test.main: frame=87271 COUNTED track_id=1049 class=LCV
+2026-08-29 10:26:45 [DEBUG] uvh_test.main: frame=87311 COUNTED track_id=1052 class=SUV
+2026-08-29 10:26:51 [DEBUG] uvh_test.main: frame=87483 COUNTED track_id=1057 class=Two-wheeler
+2026-08-29 10:26:56 [DEBUG] uvh_test.main: frame=87641 COUNTED track_id=1058 class=Two-wheeler
+2026-08-29 10:27:30 [DEBUG] uvh_test.main: frame=88759 COUNTED track_id=1064 class=Bus
+2026-08-29 10:27:30 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1063 as duplicate of class Bus, prev_tid=1064, dist=70.5px, thresh=344.0px, bbox_size=458.7x384.5
+2026-08-29 10:27:35 [DEBUG] uvh_test.main: frame=88899 COUNTED track_id=1074 class=Two-wheeler
+2026-08-29 10:27:36 [DEBUG] uvh_test.main: frame=88939 COUNTED track_id=1076 class=Two-wheeler
+2026-08-29 10:27:42 [DEBUG] uvh_test.main: frame=89099 COUNTED track_id=1075 class=Two-wheeler
+2026-08-29 10:27:44 [DEBUG] uvh_test.main: frame=89163 COUNTED track_id=1079 class=Two-wheeler
+2026-08-29 10:27:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1078 as duplicate of class Two-wheeler, prev_tid=1075, dist=72.9px, thresh=150.0px, bbox_size=180.0x141.4
+2026-08-29 10:27:51 [DEBUG] uvh_test.main: frame=89380 COUNTED track_id=1088 class=Sedan
+2026-08-29 10:28:10 [DEBUG] uvh_test.main: frame=89959 COUNTED track_id=1094 class=tempo-traveller
+2026-08-29 10:28:34 [DEBUG] uvh_test.main: frame=90707 COUNTED track_id=1103 class=Two-wheeler
+2026-08-29 10:28:58 [DEBUG] uvh_test.main: frame=91452 COUNTED track_id=1104 class=Two-wheeler
+2026-08-29 10:29:04 [DEBUG] uvh_test.main: frame=91619 COUNTED track_id=1106 class=Two-wheeler
+2026-08-29 10:29:08 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1108 as duplicate of class Two-wheeler, prev_tid=1106, dist=8.9px, thresh=150.0px, bbox_size=164.0x144.0
+2026-08-29 10:29:20 [DEBUG] uvh_test.main: frame=92140 COUNTED track_id=1110 class=Two-wheeler
+2026-08-29 10:29:26 [DEBUG] uvh_test.main: frame=92322 COUNTED track_id=1112 class=MUV
+2026-08-29 10:29:36 [DEBUG] uvh_test.main: frame=92647 COUNTED track_id=1115 class=Two-wheeler
+2026-08-29 10:29:45 [DEBUG] uvh_test.main: frame=92921 COUNTED track_id=1119 class=tempo-traveller
+2026-08-29 10:29:49 [DEBUG] uvh_test.main: frame=93047 COUNTED track_id=1120 class=Two-wheeler
+2026-08-29 10:30:00 [DEBUG] uvh_test.main: frame=93361 COUNTED track_id=1122 class=Two-wheeler
+2026-08-29 10:30:10 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1127 as duplicate of class SUV, prev_tid=1126, dist=69.7px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 10:30:10 [DEBUG] uvh_test.main: frame=93679 COUNTED track_id=1126 class=SUV
+2026-08-29 10:30:10 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1128 as duplicate of class SUV, prev_tid=1126, dist=45.4px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 10:30:19 [DEBUG] uvh_test.main: frame=93939 COUNTED track_id=1132 class=LCV
+2026-08-29 10:30:20 [DEBUG] uvh_test.main: frame=93971 COUNTED track_id=1131 class=Two-wheeler
+2026-08-29 10:30:26 [DEBUG] uvh_test.main: frame=94147 COUNTED track_id=1138 class=Two-wheeler
+2026-08-29 10:30:35 [DEBUG] uvh_test.main: frame=94427 COUNTED track_id=1141 class=MUV
+2026-08-29 10:30:35 [DEBUG] uvh_test.main: frame=94428 COUNTED track_id=1139 class=tempo-traveller
+2026-08-29 10:30:52 [DEBUG] uvh_test.main: frame=94979 COUNTED track_id=1145 class=Two-wheeler
+2026-08-29 10:31:03 [DEBUG] uvh_test.main: frame=95308 COUNTED track_id=1148 class=Two-wheeler
+2026-08-29 10:31:09 [DEBUG] uvh_test.main: frame=95491 COUNTED track_id=1152 class=Two-wheeler
+2026-08-29 10:31:35 [DEBUG] uvh_test.main: frame=96304 COUNTED track_id=1154 class=Two-wheeler
+2026-08-29 10:31:41 [DEBUG] uvh_test.main: frame=96487 COUNTED track_id=1156 class=Two-wheeler
+2026-08-29 10:31:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1159 as duplicate of class Two-wheeler, prev_tid=1156, dist=68.5px, thresh=150.0px, bbox_size=160.5x150.0
+2026-08-29 10:31:57 [DEBUG] uvh_test.main: frame=96965 COUNTED track_id=1164 class=Two-wheeler
+2026-08-29 10:32:41 [DEBUG] uvh_test.main: frame=98487 COUNTED track_id=1167 class=Two-wheeler
+2026-08-29 10:33:06 [DEBUG] uvh_test.main: frame=99312 COUNTED track_id=1171 class=MUV
+2026-08-29 10:33:15 [DEBUG] uvh_test.main: frame=99628 COUNTED track_id=1179 class=MUV
+2026-08-29 10:33:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1180 as duplicate of class MUV, prev_tid=1179, dist=11.9px, thresh=150.0px, bbox_size=369.7x305.5
+2026-08-29 10:33:51 [DEBUG] uvh_test.main: frame=100868 COUNTED track_id=1188 class=Sedan
+2026-08-29 10:33:51 [DEBUG] uvh_test.main: frame=100871 COUNTED track_id=1186 class=SUV
+2026-08-29 10:33:56 [DEBUG] uvh_test.main: frame=101020 COUNTED track_id=1189 class=Two-wheeler
+2026-08-29 10:33:58 [DEBUG] uvh_test.main: frame=101111 COUNTED track_id=1194 class=Sedan
+2026-08-29 10:33:58 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=1197 into lost_tid=1194, dist=61.4px
+2026-08-29 10:33:58 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=1197 as duplicate of class Sedan, prev_tid=1194, dist=68.2px, thresh=150.0px
+2026-08-29 10:34:03 [DEBUG] uvh_test.main: frame=101239 COUNTED track_id=1203 class=Sedan
+2026-08-29 10:34:03 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1199 as duplicate of class Sedan, prev_tid=1203, dist=131.2px, thresh=150.0px, bbox_size=458.7x384.3
+2026-08-29 10:34:42 [DEBUG] uvh_test.main: frame=102559 COUNTED track_id=1206 class=Two-wheeler
+2026-08-29 10:34:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1212 as duplicate of class Two-wheeler, prev_tid=1206, dist=116.1px, thresh=150.0px, bbox_size=198.3x180.4
+2026-08-29 10:34:44 [DEBUG] uvh_test.main: frame=102623 COUNTED track_id=1213 class=Three-wheeler
+2026-08-29 10:35:03 [DEBUG] uvh_test.main: frame=103164 COUNTED track_id=1221 class=Two-wheeler
+2026-08-29 10:35:14 [DEBUG] uvh_test.main: frame=103520 COUNTED track_id=1227 class=Two-wheeler
+2026-08-29 10:35:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1228 as duplicate of class Two-wheeler, prev_tid=1227, dist=2.3px, thresh=150.0px, bbox_size=169.0x149.6
+2026-08-29 10:35:41 [DEBUG] uvh_test.main: frame=104359 COUNTED track_id=1233 class=Truck
+2026-08-29 10:35:43 [DEBUG] uvh_test.main: frame=104443 COUNTED track_id=1236 class=Two-wheeler
+2026-08-29 10:35:53 [DEBUG] uvh_test.main: frame=104723 COUNTED track_id=1238 class=Two-wheeler
+2026-08-29 10:36:00 [DEBUG] uvh_test.main: frame=104963 COUNTED track_id=1240 class=SUV
+2026-08-29 10:36:11 [DEBUG] uvh_test.main: frame=105307 COUNTED track_id=1244 class=Two-wheeler
+2026-08-29 10:36:19 [DEBUG] uvh_test.main: frame=105571 COUNTED track_id=1247 class=Two-wheeler
+2026-08-29 10:36:26 [DEBUG] uvh_test.main: frame=105780 COUNTED track_id=1252 class=Two-wheeler
+2026-08-29 10:36:36 [DEBUG] uvh_test.main: frame=106080 COUNTED track_id=1253 class=Two-wheeler
+2026-08-29 10:36:44 [DEBUG] uvh_test.main: frame=106305 COUNTED track_id=1256 class=Two-wheeler
+2026-08-29 10:36:58 [DEBUG] uvh_test.main: frame=106770 COUNTED track_id=1269 class=Two-wheeler
+2026-08-29 10:36:59 [DEBUG] uvh_test.main: frame=106782 COUNTED track_id=1268 class=SUV
+2026-08-29 10:37:16 [DEBUG] uvh_test.main: frame=107331 COUNTED track_id=1279 class=Two-wheeler
+2026-08-29 10:37:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1277 as duplicate of class Two-wheeler, prev_tid=1279, dist=89.3px, thresh=150.0px, bbox_size=158.8x149.1
+2026-08-29 10:37:18 [DEBUG] uvh_test.main: frame=107379 COUNTED track_id=1276 class=Two-wheeler
+2026-08-29 10:37:21 [DEBUG] uvh_test.main: frame=107462 COUNTED track_id=1282 class=MUV
+2026-08-29 10:37:36 [DEBUG] uvh_test.main: frame=107920 COUNTED track_id=1291 class=Sedan
+2026-08-29 10:37:36 [DEBUG] uvh_test.main: frame=107922 COUNTED track_id=1288 class=Sedan
+2026-08-29 10:37:36 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1290 as duplicate of class Sedan, prev_tid=1288, dist=107.2px, thresh=150.0px, bbox_size=361.0x292.9
+2026-08-29 10:37:36 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1289 as duplicate of class Sedan, prev_tid=1288, dist=62.7px, thresh=150.0px, bbox_size=453.8x384.3
+2026-08-29 10:37:37 [DEBUG] uvh_test.main: frame=107958 COUNTED track_id=1285 class=Two-wheeler
+2026-08-29 10:37:40 [DEBUG] uvh_test.main: frame=108047 COUNTED track_id=1296 class=SUV
+2026-08-29 10:37:41 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1297 as duplicate of class SUV, prev_tid=1296, dist=74.3px, thresh=150.0px, bbox_size=291.0x232.0
+2026-08-29 10:38:10 [DEBUG] uvh_test.main: frame=108959 COUNTED track_id=1305 class=tempo-traveller
+2026-08-29 10:38:10 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1304 as duplicate of class tempo-traveller, prev_tid=1305, dist=88.9px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 10:38:20 [DEBUG] uvh_test.main: frame=109259 COUNTED track_id=1310 class=Two-wheeler
+2026-08-29 10:38:25 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1312 as duplicate of class Two-wheeler, prev_tid=1310, dist=66.5px, thresh=150.0px, bbox_size=136.8x122.6
+2026-08-29 10:38:43 [DEBUG] uvh_test.main: frame=109959 COUNTED track_id=1313 class=Two-wheeler
+2026-08-29 10:38:46 [DEBUG] uvh_test.main: frame=110072 COUNTED track_id=1317 class=Two-wheeler
+2026-08-29 10:38:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1316 as duplicate of class Two-wheeler, prev_tid=1313, dist=69.1px, thresh=150.0px, bbox_size=161.8x146.4
+2026-08-29 10:38:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1314 as duplicate of class Two-wheeler, prev_tid=1313, dist=32.8px, thresh=150.0px, bbox_size=145.6x126.9
+2026-08-29 10:39:00 [DEBUG] uvh_test.main: frame=110483 COUNTED track_id=1326 class=MUV
+2026-08-29 10:39:20 [DEBUG] uvh_test.main: frame=111099 COUNTED track_id=1331 class=Two-wheeler
+2026-08-29 10:39:25 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1334 as duplicate of class Two-wheeler, prev_tid=1331, dist=102.5px, thresh=150.0px, bbox_size=200.7x195.4
+2026-08-29 10:39:27 [DEBUG] uvh_test.main: frame=111299 COUNTED track_id=1332 class=Two-wheeler
+2026-08-29 10:39:34 [DEBUG] uvh_test.main: frame=111499 COUNTED track_id=1336 class=Two-wheeler
+2026-08-29 10:39:35 [DEBUG] uvh_test.main: frame=111520 COUNTED track_id=1340 class=Two-wheeler
+2026-08-29 10:39:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1339 as duplicate of class Two-wheeler, prev_tid=1336, dist=59.1px, thresh=150.0px, bbox_size=149.0x125.8
+2026-08-29 10:39:48 [DEBUG] uvh_test.main: frame=111850 COUNTED track_id=1343 class=SUV
+2026-08-29 10:40:12 [DEBUG] uvh_test.main: frame=112599 COUNTED track_id=1353 class=Two-wheeler
+2026-08-29 10:40:27 [DEBUG] uvh_test.main: frame=113085 COUNTED track_id=1354 class=Two-wheeler
+2026-08-29 10:40:45 [DEBUG] uvh_test.main: frame=113651 COUNTED track_id=1360 class=Two-wheeler
+2026-08-29 10:40:53 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1368 as duplicate of class SUV, prev_tid=1367, dist=67.9px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 10:40:53 [DEBUG] uvh_test.main: frame=113907 COUNTED track_id=1367 class=SUV
+2026-08-29 10:41:37 [DEBUG] uvh_test.main: frame=115367 COUNTED track_id=1370 class=Two-wheeler
+2026-08-29 10:41:51 [DEBUG] uvh_test.main: frame=115783 COUNTED track_id=1375 class=SUV
+2026-08-29 10:41:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1374 as duplicate of class SUV, prev_tid=1375, dist=101.8px, thresh=150.0px, bbox_size=459.1x384.3
+2026-08-29 10:41:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1377 as duplicate of class SUV, prev_tid=1375, dist=67.7px, thresh=150.0px, bbox_size=367.3x303.5
+2026-08-29 10:42:02 [DEBUG] uvh_test.main: frame=116111 COUNTED track_id=1379 class=Two-wheeler
+2026-08-29 10:42:32 [DEBUG] uvh_test.main: frame=117031 COUNTED track_id=1385 class=Sedan
+2026-08-29 10:42:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1384 as duplicate of class Sedan, prev_tid=1385, dist=56.4px, thresh=150.0px, bbox_size=351.4x284.6
+2026-08-29 10:42:38 [DEBUG] uvh_test.main: frame=117187 COUNTED track_id=1387 class=Two-wheeler
+2026-08-29 10:42:54 [DEBUG] uvh_test.main: frame=117619 COUNTED track_id=1389 class=Two-wheeler
+2026-08-29 10:43:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1395 as duplicate of class Bus, prev_tid=1397, dist=67.8px, thresh=344.3px, bbox_size=459.0x384.5
+2026-08-29 10:43:02 [DEBUG] uvh_test.main: frame=117839 COUNTED track_id=1397 class=Bus
+2026-08-29 10:43:03 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1396 as duplicate of class Bus, prev_tid=1397, dist=114.1px, thresh=344.1px, bbox_size=458.8x384.4
+2026-08-29 10:43:45 [DEBUG] uvh_test.main: frame=119161 COUNTED track_id=1404 class=Two-wheeler
+2026-08-29 10:44:00 [DEBUG] uvh_test.main: frame=119601 COUNTED track_id=1407 class=Two-wheeler
+2026-08-29 10:44:17 [DEBUG] uvh_test.main: frame=120099 COUNTED track_id=1409 class=Two-wheeler
+2026-08-29 10:44:20 [DEBUG] uvh_test.main: frame=120203 COUNTED track_id=1414 class=SUV
+2026-08-29 10:44:20 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1415 as duplicate of class SUV, prev_tid=1414, dist=56.7px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 10:44:34 [DEBUG] uvh_test.main: frame=120599 COUNTED track_id=1418 class=Two-wheeler
+2026-08-29 10:44:38 [DEBUG] uvh_test.main: frame=120730 COUNTED track_id=1421 class=SUV
+2026-08-29 10:44:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1420 as duplicate of class SUV, prev_tid=1421, dist=66.7px, thresh=150.0px, bbox_size=353.1x289.2
+2026-08-29 10:44:49 [DEBUG] uvh_test.main: frame=121027 COUNTED track_id=1428 class=Two-wheeler
+2026-08-29 10:45:05 [DEBUG] uvh_test.main: frame=121464 COUNTED track_id=1435 class=LCV
+2026-08-29 10:45:06 [DEBUG] uvh_test.main: frame=121482 COUNTED track_id=1437 class=Two-wheeler
+2026-08-29 10:45:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1429 as duplicate of class Two-wheeler, prev_tid=1437, dist=38.2px, thresh=150.0px, bbox_size=138.6x115.3
+2026-08-29 10:45:17 [DEBUG] uvh_test.main: frame=121782 COUNTED track_id=1444 class=Two-wheeler
+2026-08-29 10:45:28 [DEBUG] uvh_test.main: frame=122079 COUNTED track_id=1445 class=Two-wheeler
+2026-08-29 10:45:34 [DEBUG] uvh_test.main: frame=122259 COUNTED track_id=1448 class=Truck
+2026-08-29 10:45:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1449 as duplicate of class Truck, prev_tid=1448, dist=79.7px, thresh=300.0px, bbox_size=458.2x384.4
+2026-08-29 10:45:40 [DEBUG] uvh_test.main: frame=122420 COUNTED track_id=1451 class=Two-wheeler
+2026-08-29 10:45:44 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1454 as duplicate of class Two-wheeler, prev_tid=1451, dist=15.5px, thresh=150.0px, bbox_size=135.3x124.2
+2026-08-29 10:45:51 [DEBUG] uvh_test.main: frame=122725 COUNTED track_id=1456 class=Two-wheeler
+2026-08-29 10:46:05 [DEBUG] uvh_test.main: frame=123087 COUNTED track_id=1461 class=Three-wheeler
+2026-08-29 10:46:07 [DEBUG] uvh_test.main: frame=123159 COUNTED track_id=1463 class=Two-wheeler
+2026-08-29 10:46:17 [DEBUG] uvh_test.main: frame=123427 COUNTED track_id=1467 class=Two-wheeler
+2026-08-29 10:46:46 [DEBUG] uvh_test.main: frame=124359 COUNTED track_id=1470 class=Sedan
+2026-08-29 10:46:47 [DEBUG] uvh_test.main: frame=124360 COUNTED track_id=1472 class=SUV
+2026-08-29 10:47:01 [DEBUG] uvh_test.main: frame=124851 COUNTED track_id=1475 class=Hatchback
+2026-08-29 10:47:48 [DEBUG] uvh_test.main: frame=126360 COUNTED track_id=1479 class=Two-wheeler
+2026-08-29 10:48:29 [DEBUG] uvh_test.main: frame=127680 COUNTED track_id=1483 class=Two-wheeler
+2026-08-29 10:48:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1485 as duplicate of class Two-wheeler, prev_tid=1483, dist=80.9px, thresh=150.0px, bbox_size=178.3x158.4
+2026-08-29 10:48:35 [DEBUG] uvh_test.main: frame=127839 COUNTED track_id=1489 class=Two-wheeler
+2026-08-29 10:48:38 [DEBUG] uvh_test.main: frame=127919 COUNTED track_id=1492 class=Three-wheeler
+2026-08-29 10:48:54 [DEBUG] uvh_test.main: frame=128420 COUNTED track_id=1494 class=Two-wheeler
+2026-08-29 10:49:01 [DEBUG] uvh_test.main: frame=128599 COUNTED track_id=1502 class=Sedan
+2026-08-29 10:49:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1501 as duplicate of class Sedan, prev_tid=1502, dist=21.4px, thresh=150.0px, bbox_size=285.1x217.6
+2026-08-29 10:49:01 [DEBUG] uvh_test.main: frame=128605 COUNTED track_id=1499 class=Two-wheeler
+2026-08-29 10:50:05 [DEBUG] uvh_test.main: frame=130628 COUNTED track_id=1508 class=Two-wheeler
+2026-08-29 10:50:13 [DEBUG] uvh_test.main: frame=130863 COUNTED track_id=1514 class=Two-wheeler
+2026-08-29 10:50:21 [DEBUG] uvh_test.main: frame=131068 COUNTED track_id=1518 class=Two-wheeler
+2026-08-29 10:50:40 [DEBUG] uvh_test.main: frame=131659 COUNTED track_id=1520 class=Two-wheeler
+2026-08-29 10:51:14 [DEBUG] uvh_test.main: frame=132533 COUNTED track_id=1534 class=Two-wheeler
+2026-08-29 10:51:15 [DEBUG] uvh_test.main: frame=132539 COUNTED track_id=1530 class=Truck
+2026-08-29 10:51:15 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=1526 into lost_tid=1531, dist=93.5px
+2026-08-29 10:51:15 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=1526 as duplicate of class Truck, prev_tid=1530, dist=169.2px, thresh=300.0px
+2026-08-29 10:51:23 [DEBUG] uvh_test.main: frame=132732 COUNTED track_id=1543 class=SUV
+2026-08-29 10:51:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1539 as duplicate of class SUV, prev_tid=1543, dist=128.3px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 10:51:31 [DEBUG] uvh_test.main: frame=132959 COUNTED track_id=1545 class=Two-wheeler
+2026-08-29 10:51:39 [DEBUG] uvh_test.main: frame=133180 COUNTED track_id=1550 class=Two-wheeler
+2026-08-29 10:51:41 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1547 as duplicate of class Two-wheeler, prev_tid=1550, dist=117.4px, thresh=150.0px, bbox_size=144.4x137.1
+2026-08-29 10:51:44 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1549 as duplicate of class Two-wheeler, prev_tid=1550, dist=75.8px, thresh=150.0px, bbox_size=183.2x165.6
+2026-08-29 10:51:46 [DEBUG] uvh_test.main: frame=133368 COUNTED track_id=1555 class=Two-wheeler
+2026-08-29 10:51:58 [DEBUG] uvh_test.main: frame=133719 COUNTED track_id=1558 class=Two-wheeler
+2026-08-29 10:52:07 [DEBUG] uvh_test.main: frame=133972 COUNTED track_id=1561 class=Two-wheeler
+2026-08-29 10:52:10 [DEBUG] uvh_test.main: frame=134045 COUNTED track_id=1563 class=Two-wheeler
+2026-08-29 10:52:22 [DEBUG] uvh_test.main: frame=134383 COUNTED track_id=1568 class=Two-wheeler
+2026-08-29 10:52:29 [DEBUG] uvh_test.main: frame=134581 COUNTED track_id=1572 class=Two-wheeler
+2026-08-29 10:52:38 [DEBUG] uvh_test.main: frame=134827 COUNTED track_id=1578 class=SUV
+2026-08-29 10:52:42 [DEBUG] uvh_test.main: frame=134922 COUNTED track_id=1585 class=LCV
+2026-08-29 10:52:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1584 as duplicate of class LCV, prev_tid=1585, dist=32.2px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 10:52:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1577 as duplicate of class LCV, prev_tid=1585, dist=57.5px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 10:52:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1587 as duplicate of class LCV, prev_tid=1585, dist=36.6px, thresh=150.0px, bbox_size=459.2x384.6
+2026-08-29 10:52:44 [DEBUG] uvh_test.main: frame=134963 COUNTED track_id=1592 class=Sedan
+2026-08-29 10:53:05 [DEBUG] uvh_test.main: frame=135611 COUNTED track_id=1594 class=Two-wheeler
+2026-08-29 10:53:33 [DEBUG] uvh_test.main: frame=136519 COUNTED track_id=1596 class=Two-wheeler
+2026-08-29 10:53:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1601 as duplicate of class Two-wheeler, prev_tid=1596, dist=142.8px, thresh=150.0px, bbox_size=179.1x187.0
+2026-08-29 10:53:55 [DEBUG] uvh_test.main: frame=137204 COUNTED track_id=1604 class=Two-wheeler
+2026-08-29 10:54:14 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1618 as duplicate of class Truck, prev_tid=1609, dist=169.2px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 10:54:14 [DEBUG] uvh_test.main: frame=137643 COUNTED track_id=1609 class=Truck
+2026-08-29 10:54:14 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1608 as duplicate of class Truck, prev_tid=1609, dist=197.2px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 10:54:14 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1619 as duplicate of class Truck, prev_tid=1609, dist=128.9px, thresh=300.0px, bbox_size=459.0x384.3
+2026-08-29 10:54:15 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=1614 into lost_tid=1614, dist=43.3px
+2026-08-29 10:54:15 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=1614 as duplicate of class Truck, prev_tid=1609, dist=207.1px, thresh=300.0px
+2026-08-29 10:54:20 [DEBUG] uvh_test.main: frame=137793 COUNTED track_id=1621 class=Two-wheeler
+2026-08-29 10:54:34 [DEBUG] uvh_test.main: frame=138219 COUNTED track_id=1623 class=Two-wheeler
+2026-08-29 10:54:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1630 as duplicate of class Sedan, prev_tid=1626, dist=6.2px, thresh=150.0px, bbox_size=315.9x192.2
+2026-08-29 10:54:56 [DEBUG] uvh_test.main: frame=138839 COUNTED track_id=1626 class=Sedan
+2026-08-29 10:54:59 [DEBUG] uvh_test.main: frame=138939 COUNTED track_id=1631 class=Two-wheeler
+2026-08-29 10:55:13 [DEBUG] uvh_test.main: frame=139339 COUNTED track_id=1641 class=Three-wheeler
+2026-08-29 10:56:40 [DEBUG] uvh_test.main: frame=142219 COUNTED track_id=1642 class=Two-wheeler
+2026-08-29 10:56:52 [DEBUG] uvh_test.main: frame=142574 COUNTED track_id=1647 class=Hatchback
+2026-08-29 10:56:57 [DEBUG] uvh_test.main: frame=142719 COUNTED track_id=1649 class=Two-wheeler
+2026-08-29 10:57:00 [DEBUG] uvh_test.main: frame=142799 COUNTED track_id=1654 class=Truck
+2026-08-29 10:57:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1652 as duplicate of class Truck, prev_tid=1654, dist=146.9px, thresh=300.0px, bbox_size=458.9x384.4
+2026-08-29 10:57:08 [DEBUG] uvh_test.main: frame=143005 COUNTED track_id=1658 class=Two-wheeler
+2026-08-29 10:57:36 [DEBUG] uvh_test.main: frame=143873 COUNTED track_id=1663 class=Two-wheeler
+2026-08-29 10:57:49 [DEBUG] uvh_test.main: frame=144279 COUNTED track_id=1664 class=Two-wheeler
+2026-08-29 10:57:51 [DEBUG] uvh_test.main: frame=144331 COUNTED track_id=1667 class=SUV
+2026-08-29 10:58:56 [DEBUG] uvh_test.main: frame=146444 COUNTED track_id=1669 class=Two-wheeler
+2026-08-29 10:58:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1671 as duplicate of class Two-wheeler, prev_tid=1669, dist=108.6px, thresh=150.0px, bbox_size=158.7x153.2
+2026-08-29 10:59:02 [DEBUG] uvh_test.main: frame=146627 COUNTED track_id=1672 class=Two-wheeler
+2026-08-29 10:59:16 [DEBUG] uvh_test.main: frame=147029 COUNTED track_id=1674 class=Two-wheeler
+2026-08-29 10:59:29 [DEBUG] uvh_test.main: frame=147391 COUNTED track_id=1680 class=Sedan
+2026-08-29 10:59:29 [DEBUG] uvh_test.main: frame=147408 COUNTED track_id=1681 class=Two-wheeler
+2026-08-29 10:59:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1679 as duplicate of class Two-wheeler, prev_tid=1681, dist=46.5px, thresh=150.0px, bbox_size=136.3x107.0
+2026-08-29 10:59:45 [DEBUG] uvh_test.main: frame=147811 COUNTED track_id=1685 class=Two-wheeler
+2026-08-29 11:00:04 [DEBUG] uvh_test.main: frame=148380 COUNTED track_id=1687 class=Two-wheeler
+2026-08-29 11:00:08 [DEBUG] uvh_test.main: frame=148479 COUNTED track_id=1696 class=LCV
+2026-08-29 11:00:09 [DEBUG] uvh_test.main: frame=148483 COUNTED track_id=1697 class=LCV
+2026-08-29 11:00:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1693 as duplicate of class LCV, prev_tid=1696, dist=110.6px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:00:18 [DEBUG] uvh_test.main: frame=148729 COUNTED track_id=1702 class=Two-wheeler
+2026-08-29 11:00:33 [DEBUG] uvh_test.main: frame=149167 COUNTED track_id=1710 class=Two-wheeler
+2026-08-29 11:00:35 [DEBUG] uvh_test.main: frame=149231 COUNTED track_id=1712 class=SUV
+2026-08-29 11:00:36 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1707 as duplicate of class Two-wheeler, prev_tid=1710, dist=49.8px, thresh=150.0px, bbox_size=169.7x162.5
+2026-08-29 11:00:38 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1720 as duplicate of class SUV, prev_tid=1712, dist=96.5px, thresh=150.0px, bbox_size=255.4x175.3
+2026-08-29 11:00:46 [DEBUG] uvh_test.main: frame=149520 COUNTED track_id=1722 class=Two-wheeler
+2026-08-29 11:01:07 [DEBUG] uvh_test.main: frame=150139 COUNTED track_id=1737 class=Bus
+2026-08-29 11:01:07 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1734 as duplicate of class Bus, prev_tid=1737, dist=76.5px, thresh=344.2px, bbox_size=458.9x384.6
+2026-08-29 11:01:08 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1736 as duplicate of class Bus, prev_tid=1737, dist=112.0px, thresh=344.2px, bbox_size=459.0x384.4
+2026-08-29 11:01:20 [DEBUG] uvh_test.main: frame=150487 COUNTED track_id=1742 class=MUV
+2026-08-29 11:01:25 [DEBUG] uvh_test.main: frame=150627 COUNTED track_id=1745 class=Two-wheeler
+2026-08-29 11:01:33 [DEBUG] uvh_test.main: frame=150847 COUNTED track_id=1756 class=Truck
+2026-08-29 11:01:42 [DEBUG] uvh_test.main: frame=151086 COUNTED track_id=1758 class=Two-wheeler
+2026-08-29 11:01:56 [DEBUG] uvh_test.main: frame=151479 COUNTED track_id=1763 class=Sedan
+2026-08-29 11:01:59 [DEBUG] uvh_test.main: frame=151559 COUNTED track_id=1768 class=Two-wheeler
+2026-08-29 11:02:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1772 as duplicate of class Two-wheeler, prev_tid=1768, dist=61.2px, thresh=150.0px, bbox_size=197.0x169.1
+2026-08-29 11:02:05 [DEBUG] uvh_test.main: frame=151715 COUNTED track_id=1780 class=Two-wheeler
+2026-08-29 11:02:05 [DEBUG] uvh_test.main: frame=151719 COUNTED track_id=1777 class=Two-wheeler
+2026-08-29 11:02:29 [DEBUG] uvh_test.main: frame=152439 COUNTED track_id=1785 class=Two-wheeler
+2026-08-29 11:02:52 [DEBUG] uvh_test.main: frame=153123 COUNTED track_id=1788 class=Two-wheeler
+2026-08-29 11:03:02 [DEBUG] uvh_test.main: frame=153443 COUNTED track_id=1791 class=Sedan
+2026-08-29 11:03:12 [DEBUG] uvh_test.main: frame=153723 COUNTED track_id=1796 class=Three-wheeler
+2026-08-29 11:03:14 [DEBUG] uvh_test.main: frame=153779 COUNTED track_id=1804 class=Two-wheeler
+2026-08-29 11:03:23 [DEBUG] uvh_test.main: frame=154055 COUNTED track_id=1807 class=MUV
+2026-08-29 11:03:49 [DEBUG] uvh_test.main: frame=154815 COUNTED track_id=1810 class=Two-wheeler
+2026-08-29 11:03:51 [DEBUG] uvh_test.main: frame=154875 COUNTED track_id=1818 class=Two-wheeler
+2026-08-29 11:04:03 [DEBUG] uvh_test.main: frame=155220 COUNTED track_id=1825 class=SUV
+2026-08-29 11:04:03 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1827 as duplicate of class SUV, prev_tid=1825, dist=123.6px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:04:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1826 as duplicate of class SUV, prev_tid=1825, dist=150.0px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:04:30 [DEBUG] uvh_test.main: frame=156067 COUNTED track_id=1834 class=Sedan
+2026-08-29 11:04:30 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1836 as duplicate of class Sedan, prev_tid=1834, dist=55.2px, thresh=150.0px, bbox_size=322.7x257.6
+2026-08-29 11:04:35 [DEBUG] uvh_test.main: frame=156180 COUNTED track_id=1833 class=Bus
+2026-08-29 11:04:36 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1840 as duplicate of class Bus, prev_tid=1833, dist=30.5px, thresh=344.2px, bbox_size=458.9x384.6
+2026-08-29 11:04:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1842 as duplicate of class Bus, prev_tid=1833, dist=98.8px, thresh=344.1px, bbox_size=458.9x384.5
+2026-08-29 11:04:41 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1851 as duplicate of class tempo-traveller, prev_tid=1848, dist=93.4px, thresh=300.0px, bbox_size=457.9x384.3
+2026-08-29 11:04:41 [DEBUG] uvh_test.main: frame=156315 COUNTED track_id=1848 class=tempo-traveller
+2026-08-29 11:04:41 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1852 as duplicate of class tempo-traveller, prev_tid=1848, dist=25.8px, thresh=300.0px, bbox_size=459.5x384.9
+2026-08-29 11:04:42 [DEBUG] uvh_test.main: frame=156347 COUNTED track_id=1853 class=Two-wheeler
+2026-08-29 11:04:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1846 as duplicate of class Two-wheeler, prev_tid=1853, dist=4.5px, thresh=150.0px, bbox_size=174.4x157.4
+2026-08-29 11:05:00 [DEBUG] uvh_test.main: frame=156835 COUNTED track_id=1856 class=Two-wheeler
+2026-08-29 11:05:34 [DEBUG] uvh_test.main: frame=157907 COUNTED track_id=1859 class=Two-wheeler
+2026-08-29 11:05:47 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=1864 into lost_tid=1864, dist=78.1px
+2026-08-29 11:05:47 [DEBUG] uvh_test.main: frame=158276 COUNTED track_id=1864 class=Two-wheeler
+2026-08-29 11:05:53 [DEBUG] uvh_test.main: frame=158461 COUNTED track_id=1866 class=Two-wheeler
+2026-08-29 11:06:10 [DEBUG] uvh_test.main: frame=158995 COUNTED track_id=1871 class=Two-wheeler
+2026-08-29 11:06:45 [DEBUG] uvh_test.main: frame=160067 COUNTED track_id=1876 class=Two-wheeler
+2026-08-29 11:07:22 [DEBUG] uvh_test.main: frame=161208 COUNTED track_id=1877 class=Two-wheeler
+2026-08-29 11:07:30 [DEBUG] uvh_test.main: frame=161423 COUNTED track_id=1884 class=Two-wheeler
+2026-08-29 11:07:30 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1879 as duplicate of class Two-wheeler, prev_tid=1884, dist=88.0px, thresh=150.0px, bbox_size=157.7x144.2
+2026-08-29 11:08:01 [DEBUG] uvh_test.main: frame=162423 COUNTED track_id=1888 class=MUV
+2026-08-29 11:08:03 [DEBUG] uvh_test.main: frame=162459 COUNTED track_id=1890 class=Two-wheeler
+2026-08-29 11:08:29 [DEBUG] uvh_test.main: frame=163263 COUNTED track_id=1895 class=Two-wheeler
+2026-08-29 11:08:32 [DEBUG] uvh_test.main: frame=163335 COUNTED track_id=1894 class=Two-wheeler
+2026-08-29 11:08:38 [DEBUG] uvh_test.main: frame=163475 COUNTED track_id=1901 class=Two-wheeler
+2026-08-29 11:08:44 [DEBUG] uvh_test.main: frame=163645 COUNTED track_id=1905 class=LCV
+2026-08-29 11:08:47 [DEBUG] uvh_test.main: frame=163707 COUNTED track_id=1909 class=Two-wheeler
+2026-08-29 11:08:53 [DEBUG] uvh_test.main: frame=163879 COUNTED track_id=1912 class=Two-wheeler
+2026-08-29 11:09:08 [DEBUG] uvh_test.main: frame=164299 COUNTED track_id=1913 class=Two-wheeler
+2026-08-29 11:09:38 [DEBUG] uvh_test.main: frame=165219 COUNTED track_id=1922 class=SUV
+2026-08-29 11:09:38 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1920 as duplicate of class SUV, prev_tid=1922, dist=106.1px, thresh=150.0px, bbox_size=458.8x384.3
+2026-08-29 11:09:41 [DEBUG] uvh_test.main: frame=165316 COUNTED track_id=1923 class=Two-wheeler
+2026-08-29 11:09:51 [DEBUG] uvh_test.main: frame=165568 COUNTED track_id=1930 class=Truck
+2026-08-29 11:10:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1932 as duplicate of class Bus, prev_tid=1934, dist=69.6px, thresh=344.1px, bbox_size=458.8x384.3
+2026-08-29 11:10:51 [DEBUG] uvh_test.main: frame=167439 COUNTED track_id=1934 class=Bus
+2026-08-29 11:11:23 [DEBUG] uvh_test.main: frame=168396 COUNTED track_id=1942 class=Two-wheeler
+2026-08-29 11:12:03 [DEBUG] uvh_test.main: frame=169763 COUNTED track_id=1945 class=Two-wheeler
+2026-08-29 11:12:30 [DEBUG] uvh_test.main: frame=170675 COUNTED track_id=1948 class=Two-wheeler
+2026-08-29 11:12:31 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1951 as duplicate of class Two-wheeler, prev_tid=1948, dist=69.3px, thresh=150.0px, bbox_size=172.4x154.6
+2026-08-29 11:12:44 [DEBUG] uvh_test.main: frame=171135 COUNTED track_id=1956 class=Two-wheeler
+2026-08-29 11:13:01 [DEBUG] uvh_test.main: frame=171703 COUNTED track_id=1961 class=Sedan
+2026-08-29 11:13:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1958 as duplicate of class Sedan, prev_tid=1961, dist=71.3px, thresh=150.0px, bbox_size=452.4x384.3
+2026-08-29 11:13:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1960 as duplicate of class Sedan, prev_tid=1961, dist=50.4px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:13:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1971 as duplicate of class LCV, prev_tid=1967, dist=55.5px, thresh=150.0px, bbox_size=515.3x388.9
+2026-08-29 11:13:06 [DEBUG] uvh_test.main: frame=171823 COUNTED track_id=1967 class=LCV
+2026-08-29 11:13:47 [DEBUG] uvh_test.main: frame=173260 COUNTED track_id=1972 class=Two-wheeler
+2026-08-29 11:14:06 [DEBUG] uvh_test.main: frame=173882 COUNTED track_id=1973 class=Two-wheeler
+2026-08-29 11:14:07 [DEBUG] uvh_test.main: frame=173907 COUNTED track_id=1977 class=MUV
+2026-08-29 11:14:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1979 as duplicate of class LCV, prev_tid=1987, dist=21.7px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:14:29 [DEBUG] uvh_test.main: frame=174519 COUNTED track_id=1987 class=LCV
+2026-08-29 11:14:41 [DEBUG] uvh_test.main: frame=174879 COUNTED track_id=1989 class=Two-wheeler
+2026-08-29 11:14:41 [DEBUG] uvh_test.main: frame=174879 COUNTED track_id=1998 class=Two-wheeler
+2026-08-29 11:14:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=1991 as duplicate of class Two-wheeler, prev_tid=1989, dist=37.7px, thresh=150.0px, bbox_size=165.3x136.9
+2026-08-29 11:14:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2006 as duplicate of class LCV, prev_tid=2005, dist=69.6px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:14:45 [DEBUG] uvh_test.main: frame=174975 COUNTED track_id=2005 class=LCV
+2026-08-29 11:14:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2004 as duplicate of class LCV, prev_tid=2005, dist=44.8px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:14:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2007 as duplicate of class LCV, prev_tid=2005, dist=25.3px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:14:50 [DEBUG] uvh_test.main: frame=175127 COUNTED track_id=2009 class=Two-wheeler
+2026-08-29 11:14:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2012 as duplicate of class Two-wheeler, prev_tid=2009, dist=29.1px, thresh=150.0px, bbox_size=177.1x155.4
+2026-08-29 11:14:55 [DEBUG] uvh_test.main: frame=175267 COUNTED track_id=2015 class=Two-wheeler
+2026-08-29 11:15:25 [DEBUG] uvh_test.main: frame=176307 COUNTED track_id=2018 class=Two-wheeler
+2026-08-29 11:15:52 [DEBUG] uvh_test.main: frame=177244 COUNTED track_id=2021 class=Two-wheeler
+2026-08-29 11:16:04 [DEBUG] uvh_test.main: frame=177627 COUNTED track_id=2024 class=Two-wheeler
+2026-08-29 11:16:10 [DEBUG] uvh_test.main: frame=177799 COUNTED track_id=2028 class=Two-wheeler
+2026-08-29 11:16:13 [DEBUG] uvh_test.main: frame=177899 COUNTED track_id=2033 class=MUV
+2026-08-29 11:16:13 [DEBUG] uvh_test.main: frame=177899 COUNTED track_id=2034 class=tempo-traveller
+2026-08-29 11:16:37 [DEBUG] uvh_test.main: frame=178717 COUNTED track_id=2039 class=Two-wheeler
+2026-08-29 11:16:47 [DEBUG] uvh_test.main: frame=179018 COUNTED track_id=2044 class=Two-wheeler
+2026-08-29 11:16:53 [DEBUG] uvh_test.main: frame=179196 COUNTED track_id=2046 class=Two-wheeler
+2026-08-29 11:17:08 [DEBUG] uvh_test.main: frame=179688 COUNTED track_id=2052 class=Sedan
+2026-08-29 11:17:08 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2053 as duplicate of class Sedan, prev_tid=2052, dist=112.2px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:17:10 [DEBUG] uvh_test.main: frame=179745 COUNTED track_id=2050 class=Two-wheeler
+2026-08-29 11:17:26 [DEBUG] uvh_test.main: frame=180259 COUNTED track_id=2059 class=Two-wheeler
+2026-08-29 11:17:41 [DEBUG] uvh_test.main: frame=180716 COUNTED track_id=2063 class=Two-wheeler
+2026-08-29 11:17:44 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2067 as duplicate of class Two-wheeler, prev_tid=2063, dist=51.5px, thresh=150.0px, bbox_size=157.7x145.6
+2026-08-29 11:17:56 [DEBUG] uvh_test.main: frame=181157 COUNTED track_id=2068 class=Two-wheeler
+2026-08-29 11:18:11 [DEBUG] uvh_test.main: frame=181669 COUNTED track_id=2071 class=Two-wheeler
+2026-08-29 11:18:24 [DEBUG] uvh_test.main: frame=182115 COUNTED track_id=2074 class=Two-wheeler
+2026-08-29 11:18:35 [DEBUG] uvh_test.main: frame=182483 COUNTED track_id=2075 class=Two-wheeler
+2026-08-29 11:18:44 [DEBUG] uvh_test.main: frame=182789 COUNTED track_id=2079 class=Two-wheeler
+2026-08-29 11:19:10 [DEBUG] uvh_test.main: frame=183619 COUNTED track_id=2085 class=LCV
+2026-08-29 11:19:45 [DEBUG] uvh_test.main: frame=184796 COUNTED track_id=2093 class=Three-wheeler
+2026-08-29 11:20:12 [DEBUG] uvh_test.main: frame=185715 COUNTED track_id=2095 class=Two-wheeler
+2026-08-29 11:20:20 [DEBUG] uvh_test.main: frame=185955 COUNTED track_id=2102 class=Two-wheeler
+2026-08-29 11:20:21 [DEBUG] uvh_test.main: frame=185983 COUNTED track_id=2098 class=Two-wheeler
+2026-08-29 11:20:24 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2106 as duplicate of class Two-wheeler, prev_tid=2102, dist=94.5px, thresh=150.0px, bbox_size=204.5x163.1
+2026-08-29 11:20:36 [DEBUG] uvh_test.main: frame=186449 COUNTED track_id=2108 class=Two-wheeler
+2026-08-29 11:20:43 [DEBUG] uvh_test.main: frame=186667 COUNTED track_id=2109 class=Two-wheeler
+2026-08-29 11:20:51 [DEBUG] uvh_test.main: frame=186919 COUNTED track_id=2113 class=MUV
+2026-08-29 11:21:39 [DEBUG] uvh_test.main: frame=188575 COUNTED track_id=2120 class=Two-wheeler
+2026-08-29 11:21:47 [DEBUG] uvh_test.main: frame=188835 COUNTED track_id=2122 class=Two-wheeler
+2026-08-29 11:22:01 [DEBUG] uvh_test.main: frame=189283 COUNTED track_id=2127 class=Two-wheeler
+2026-08-29 11:22:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2125 as duplicate of class Two-wheeler, prev_tid=2127, dist=93.7px, thresh=150.0px, bbox_size=151.7x119.1
+2026-08-29 11:22:14 [DEBUG] uvh_test.main: frame=189683 COUNTED track_id=2130 class=Two-wheeler
+2026-08-29 11:23:39 [DEBUG] uvh_test.main: frame=192638 COUNTED track_id=2142 class=Sedan
+2026-08-29 11:23:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2140 as duplicate of class Sedan, prev_tid=2142, dist=49.2px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:23:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2141 as duplicate of class Sedan, prev_tid=2142, dist=38.5px, thresh=150.0px, bbox_size=366.8x305.2
+2026-08-29 11:23:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2139 as duplicate of class Sedan, prev_tid=2142, dist=42.6px, thresh=150.0px, bbox_size=354.7x289.0
+2026-08-29 11:23:43 [DEBUG] uvh_test.main: frame=192747 COUNTED track_id=2147 class=Two-wheeler
+2026-08-29 11:23:50 [DEBUG] uvh_test.main: frame=192987 COUNTED track_id=2148 class=Two-wheeler
+2026-08-29 11:24:05 [DEBUG] uvh_test.main: frame=193444 COUNTED track_id=2152 class=MUV
+2026-08-29 11:24:05 [DEBUG] uvh_test.main: frame=193445 COUNTED track_id=2153 class=Hatchback
+2026-08-29 11:24:09 [DEBUG] uvh_test.main: frame=193569 COUNTED track_id=2155 class=Three-wheeler
+2026-08-29 11:24:28 [DEBUG] uvh_test.main: frame=194197 COUNTED track_id=2162 class=Two-wheeler
+2026-08-29 11:24:46 [DEBUG] uvh_test.main: frame=194784 COUNTED track_id=2163 class=MUV
+2026-08-29 11:25:17 [DEBUG] uvh_test.main: frame=195775 COUNTED track_id=2172 class=Two-wheeler
+2026-08-29 11:25:27 [DEBUG] uvh_test.main: frame=196068 COUNTED track_id=2176 class=Two-wheeler
+2026-08-29 11:25:31 [DEBUG] uvh_test.main: frame=196187 COUNTED track_id=2178 class=SUV
+2026-08-29 11:25:31 [DEBUG] uvh_test.main: frame=196187 COUNTED track_id=2179 class=SUV
+2026-08-29 11:25:44 [DEBUG] uvh_test.main: frame=196623 COUNTED track_id=2182 class=Two-wheeler
+2026-08-29 11:25:57 [DEBUG] uvh_test.main: frame=197007 COUNTED track_id=2184 class=Two-wheeler
+2026-08-29 11:26:05 [DEBUG] uvh_test.main: frame=197263 COUNTED track_id=2187 class=Bus
+2026-08-29 11:26:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2186 as duplicate of class Bus, prev_tid=2187, dist=51.2px, thresh=344.3px, bbox_size=459.0x384.6
+2026-08-29 11:26:08 [DEBUG] uvh_test.main: frame=197360 COUNTED track_id=2195 class=Two-wheeler
+2026-08-29 11:26:30 [DEBUG] uvh_test.main: frame=198039 COUNTED track_id=2203 class=Two-wheeler
+2026-08-29 11:26:31 [DEBUG] uvh_test.main: frame=198055 COUNTED track_id=2202 class=Two-wheeler
+2026-08-29 11:26:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2197 as duplicate of class Two-wheeler, prev_tid=2202, dist=54.8px, thresh=150.0px, bbox_size=142.3x118.1
+2026-08-29 11:27:04 [DEBUG] uvh_test.main: frame=199135 COUNTED track_id=2206 class=Two-wheeler
+2026-08-29 11:27:07 [DEBUG] uvh_test.main: frame=199207 COUNTED track_id=2209 class=SUV
+2026-08-29 11:27:08 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=2211 into lost_tid=2211, dist=47.8px
+2026-08-29 11:27:08 [DEBUG] uvh_test.main: frame=199239 COUNTED track_id=2211 class=LCV
+2026-08-29 11:27:14 [DEBUG] uvh_test.main: frame=199363 COUNTED track_id=2217 class=LCV
+2026-08-29 11:27:15 [DEBUG] uvh_test.main: frame=199407 COUNTED track_id=2221 class=Truck
+2026-08-29 11:27:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2222 as duplicate of class Truck, prev_tid=2221, dist=65.0px, thresh=300.0px, bbox_size=458.9x384.5
+2026-08-29 11:27:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2219 as duplicate of class Truck, prev_tid=2221, dist=15.3px, thresh=300.0px, bbox_size=458.7x384.4
+2026-08-29 11:27:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2218 as duplicate of class Truck, prev_tid=2221, dist=63.0px, thresh=300.0px, bbox_size=458.8x384.3
+2026-08-29 11:27:19 [DEBUG] uvh_test.main: frame=199467 COUNTED track_id=2220 class=Two-wheeler
+2026-08-29 11:27:39 [DEBUG] uvh_test.main: frame=200127 COUNTED track_id=2223 class=Two-wheeler
+2026-08-29 11:27:45 [DEBUG] uvh_test.main: frame=200323 COUNTED track_id=2229 class=Hatchback
+2026-08-29 11:28:08 [DEBUG] uvh_test.main: frame=201095 COUNTED track_id=2230 class=Two-wheeler
+2026-08-29 11:28:11 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2231 as duplicate of class Two-wheeler, prev_tid=2230, dist=28.7px, thresh=150.0px, bbox_size=151.6x131.3
+2026-08-29 11:28:44 [DEBUG] uvh_test.main: frame=202316 COUNTED track_id=2235 class=Truck
+2026-08-29 11:28:45 [DEBUG] uvh_test.main: frame=202335 COUNTED track_id=2236 class=Truck
+2026-08-29 11:28:49 [DEBUG] uvh_test.main: frame=202415 COUNTED track_id=2237 class=Two-wheeler
+2026-08-29 11:29:16 [DEBUG] uvh_test.main: frame=203315 COUNTED track_id=2246 class=Two-wheeler
+2026-08-29 11:29:44 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2256 as duplicate of class LCV, prev_tid=2255, dist=67.8px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 11:29:44 [DEBUG] uvh_test.main: frame=204243 COUNTED track_id=2255 class=LCV
+2026-08-29 11:29:54 [DEBUG] uvh_test.main: frame=204516 COUNTED track_id=2261 class=LCV
+2026-08-29 11:30:00 [DEBUG] uvh_test.main: frame=204715 COUNTED track_id=2264 class=Two-wheeler
+2026-08-29 11:30:03 [DEBUG] uvh_test.main: frame=204787 COUNTED track_id=2266 class=Three-wheeler
+2026-08-29 11:30:35 [DEBUG] uvh_test.main: frame=205828 COUNTED track_id=2267 class=Two-wheeler
+2026-08-29 11:30:38 [DEBUG] uvh_test.main: frame=205927 COUNTED track_id=2270 class=Truck
+2026-08-29 11:30:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2271 as duplicate of class Truck, prev_tid=2270, dist=29.3px, thresh=300.0px, bbox_size=457.9x384.3
+2026-08-29 11:30:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2272 as duplicate of class Truck, prev_tid=2270, dist=65.9px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 11:30:52 [DEBUG] uvh_test.main: frame=206315 COUNTED track_id=2274 class=Two-wheeler
+2026-08-29 11:31:02 [DEBUG] uvh_test.main: frame=206656 COUNTED track_id=2277 class=Two-wheeler
+2026-08-29 11:31:08 [DEBUG] uvh_test.main: frame=206825 COUNTED track_id=2280 class=Two-wheeler
+2026-08-29 11:31:15 [DEBUG] uvh_test.main: frame=207063 COUNTED track_id=2281 class=MUV
+2026-08-29 11:31:28 [DEBUG] uvh_test.main: frame=207471 COUNTED track_id=2288 class=Two-wheeler
+2026-08-29 11:31:39 [DEBUG] uvh_test.main: frame=207793 COUNTED track_id=2290 class=tempo-traveller
+2026-08-29 11:31:46 [DEBUG] uvh_test.main: frame=208011 COUNTED track_id=2302 class=SUV
+2026-08-29 11:31:52 [DEBUG] uvh_test.main: frame=208159 COUNTED track_id=2306 class=Two-wheeler
+2026-08-29 11:31:57 [DEBUG] uvh_test.main: frame=208321 COUNTED track_id=2308 class=Two-wheeler
+2026-08-29 11:32:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2309 as duplicate of class Two-wheeler, prev_tid=2308, dist=75.3px, thresh=150.0px, bbox_size=165.7x151.1
+2026-08-29 11:32:05 [DEBUG] uvh_test.main: frame=208531 COUNTED track_id=2311 class=Two-wheeler
+2026-08-29 11:32:26 [DEBUG] uvh_test.main: frame=209191 COUNTED track_id=2320 class=MUV
+2026-08-29 11:32:34 [DEBUG] uvh_test.main: frame=209423 COUNTED track_id=2326 class=Three-wheeler
+2026-08-29 11:32:49 [DEBUG] uvh_test.main: frame=209836 COUNTED track_id=2332 class=Two-wheeler
+2026-08-29 11:32:49 [DEBUG] uvh_test.main: frame=209851 COUNTED track_id=2335 class=Two-wheeler
+2026-08-29 11:32:55 [DEBUG] uvh_test.main: frame=210019 COUNTED track_id=2336 class=Two-wheeler
+2026-08-29 11:33:01 [DEBUG] uvh_test.main: frame=210195 COUNTED track_id=2337 class=Two-wheeler
+2026-08-29 11:33:14 [DEBUG] uvh_test.main: frame=210599 COUNTED track_id=2339 class=Two-wheeler
+2026-08-29 11:33:55 [DEBUG] uvh_test.main: frame=212020 COUNTED track_id=2342 class=LCV
+2026-08-29 11:33:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2344 as duplicate of class LCV, prev_tid=2342, dist=67.8px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:33:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2345 as duplicate of class LCV, prev_tid=2342, dist=48.3px, thresh=150.0px, bbox_size=459.1x384.5
+2026-08-29 11:34:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2352 as duplicate of class Truck, prev_tid=2349, dist=94.2px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 11:34:02 [DEBUG] uvh_test.main: frame=212151 COUNTED track_id=2349 class=Truck
+2026-08-29 11:34:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2351 as duplicate of class Truck, prev_tid=2349, dist=36.6px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 11:34:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2353 as duplicate of class Truck, prev_tid=2349, dist=102.9px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 11:34:05 [DEBUG] uvh_test.main: frame=212216 COUNTED track_id=2357 class=SUV
+2026-08-29 11:34:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2359 as duplicate of class SUV, prev_tid=2357, dist=38.8px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:34:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2360 as duplicate of class SUV, prev_tid=2357, dist=53.1px, thresh=150.0px, bbox_size=355.6x291.9
+2026-08-29 11:34:11 [DEBUG] uvh_test.main: frame=212363 COUNTED track_id=2365 class=Two-wheeler
+2026-08-29 11:34:14 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2364 as duplicate of class Two-wheeler, prev_tid=2365, dist=53.7px, thresh=150.0px, bbox_size=132.5x115.6
+2026-08-29 11:34:19 [DEBUG] uvh_test.main: frame=212591 COUNTED track_id=2368 class=Truck
+2026-08-29 11:34:21 [DEBUG] uvh_test.main: frame=212635 COUNTED track_id=2367 class=Two-wheeler
+2026-08-29 11:34:26 [DEBUG] uvh_test.main: frame=212795 COUNTED track_id=2375 class=Two-wheeler
+2026-08-29 11:34:31 [DEBUG] uvh_test.main: frame=212935 COUNTED track_id=2380 class=Truck
+2026-08-29 11:34:40 [DEBUG] uvh_test.main: frame=213173 COUNTED track_id=2384 class=Two-wheeler
+2026-08-29 11:34:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2382 as duplicate of class Two-wheeler, prev_tid=2384, dist=71.1px, thresh=150.0px, bbox_size=135.6x142.3
+2026-08-29 11:35:06 [DEBUG] uvh_test.main: frame=213995 COUNTED track_id=2385 class=Two-wheeler
+2026-08-29 11:35:09 [DEBUG] uvh_test.main: frame=214075 COUNTED track_id=2390 class=MUV
+2026-08-29 11:35:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2389 as duplicate of class MUV, prev_tid=2390, dist=24.7px, thresh=150.0px, bbox_size=377.6x313.1
+2026-08-29 11:35:15 [DEBUG] uvh_test.main: frame=214191 COUNTED track_id=2399 class=Truck
+2026-08-29 11:35:22 [DEBUG] uvh_test.main: frame=214411 COUNTED track_id=2401 class=Two-wheeler
+2026-08-29 11:35:37 [DEBUG] uvh_test.main: frame=214843 COUNTED track_id=2405 class=Sedan
+2026-08-29 11:35:37 [DEBUG] uvh_test.main: frame=214851 COUNTED track_id=2404 class=SUV
+2026-08-29 11:35:43 [DEBUG] uvh_test.main: frame=215011 COUNTED track_id=2408 class=Two-wheeler
+2026-08-29 11:35:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2410 as duplicate of class Two-wheeler, prev_tid=2408, dist=52.6px, thresh=150.0px, bbox_size=189.1x154.6
+2026-08-29 11:35:55 [DEBUG] uvh_test.main: frame=215379 COUNTED track_id=2413 class=Two-wheeler
+2026-08-29 11:36:15 [DEBUG] uvh_test.main: frame=216016 COUNTED track_id=2414 class=Two-wheeler
+2026-08-29 11:36:39 [DEBUG] uvh_test.main: frame=216719 COUNTED track_id=2423 class=Two-wheeler
+2026-08-29 11:36:57 [DEBUG] uvh_test.main: frame=217319 COUNTED track_id=2425 class=Two-wheeler
+2026-08-29 11:37:05 [DEBUG] uvh_test.main: frame=217543 COUNTED track_id=2431 class=SUV
+2026-08-29 11:37:06 [DEBUG] uvh_test.main: frame=217591 COUNTED track_id=2430 class=Two-wheeler
+2026-08-29 11:37:08 [DEBUG] uvh_test.main: frame=217655 COUNTED track_id=2434 class=LCV
+2026-08-29 11:37:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2433 as duplicate of class Two-wheeler, prev_tid=2430, dist=64.4px, thresh=150.0px, bbox_size=159.9x142.7
+2026-08-29 11:37:13 [DEBUG] uvh_test.main: frame=217775 COUNTED track_id=2439 class=Two-wheeler
+2026-08-29 11:37:17 [DEBUG] uvh_test.main: frame=217911 COUNTED track_id=2446 class=SUV
+2026-08-29 11:37:20 [DEBUG] uvh_test.main: frame=217983 COUNTED track_id=2444 class=Two-wheeler
+2026-08-29 11:37:34 [DEBUG] uvh_test.main: frame=218396 COUNTED track_id=2452 class=Two-wheeler
+2026-08-29 11:37:46 [DEBUG] uvh_test.main: frame=218753 COUNTED track_id=2463 class=Sedan
+2026-08-29 11:37:46 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2459 as duplicate of class Sedan, prev_tid=2463, dist=117.0px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:37:47 [DEBUG] uvh_test.main: frame=218796 COUNTED track_id=2461 class=Two-wheeler
+2026-08-29 11:38:05 [DEBUG] uvh_test.main: frame=219340 COUNTED track_id=2477 class=Sedan
+2026-08-29 11:38:11 [DEBUG] uvh_test.main: frame=219511 COUNTED track_id=2480 class=Truck
+2026-08-29 11:38:15 [DEBUG] uvh_test.main: frame=219611 COUNTED track_id=2487 class=Two-wheeler
+2026-08-29 11:38:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2491 as duplicate of class Sedan, prev_tid=2489, dist=22.2px, thresh=150.0px, bbox_size=458.9x384.2
+2026-08-29 11:38:43 [DEBUG] uvh_test.main: frame=220539 COUNTED track_id=2489 class=Sedan
+2026-08-29 11:38:43 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2492 as duplicate of class Sedan, prev_tid=2489, dist=39.4px, thresh=150.0px, bbox_size=458.8x384.3
+2026-08-29 11:38:47 [DEBUG] uvh_test.main: frame=220671 COUNTED track_id=2495 class=Two-wheeler
+2026-08-29 11:39:00 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2499 as duplicate of class SUV, prev_tid=2498, dist=25.8px, thresh=150.0px, bbox_size=378.4x311.5
+2026-08-29 11:39:00 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2501 as duplicate of class SUV, prev_tid=2498, dist=90.2px, thresh=150.0px, bbox_size=458.1x384.3
+2026-08-29 11:39:00 [DEBUG] uvh_test.main: frame=221091 COUNTED track_id=2498 class=SUV
+2026-08-29 11:39:06 [DEBUG] uvh_test.main: frame=221263 COUNTED track_id=2504 class=tempo-traveller
+2026-08-29 11:39:07 [DEBUG] uvh_test.main: frame=221311 COUNTED track_id=2508 class=Two-wheeler
+2026-08-29 11:39:30 [DEBUG] uvh_test.main: frame=222051 COUNTED track_id=2511 class=Two-wheeler
+2026-08-29 11:39:58 [DEBUG] uvh_test.main: frame=222959 COUNTED track_id=2516 class=Two-wheeler
+2026-08-29 11:40:56 [DEBUG] uvh_test.main: frame=224895 COUNTED track_id=2529 class=tempo-traveller
+2026-08-29 11:41:10 [DEBUG] uvh_test.main: frame=225383 COUNTED track_id=2531 class=Two-wheeler
+2026-08-29 11:41:16 [DEBUG] uvh_test.main: frame=225572 COUNTED track_id=2535 class=Two-wheeler
+2026-08-29 11:41:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2536 as duplicate of class Two-wheeler, prev_tid=2535, dist=44.5px, thresh=150.0px, bbox_size=100.6x125.3
+2026-08-29 11:41:29 [DEBUG] uvh_test.main: frame=225951 COUNTED track_id=2540 class=Two-wheeler
+2026-08-29 11:41:46 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=2544 into lost_tid=2544, dist=85.6px
+2026-08-29 11:41:46 [DEBUG] uvh_test.main: frame=226512 COUNTED track_id=2544 class=Two-wheeler
+2026-08-29 11:42:00 [DEBUG] uvh_test.main: frame=226992 COUNTED track_id=2548 class=Two-wheeler
+2026-08-29 11:42:00 [DEBUG] uvh_test.main: frame=226995 COUNTED track_id=2546 class=Two-wheeler
+2026-08-29 11:42:18 [DEBUG] uvh_test.main: frame=227572 COUNTED track_id=2550 class=Two-wheeler
+2026-08-29 11:42:21 [DEBUG] uvh_test.main: frame=227659 COUNTED track_id=2554 class=Sedan
+2026-08-29 11:42:31 [DEBUG] uvh_test.main: frame=227955 COUNTED track_id=2569 class=Truck
+2026-08-29 11:42:46 [DEBUG] uvh_test.main: frame=228435 COUNTED track_id=2570 class=Two-wheeler
+2026-08-29 11:42:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2573 as duplicate of class Two-wheeler, prev_tid=2570, dist=8.9px, thresh=150.0px, bbox_size=153.8x142.8
+2026-08-29 11:42:53 [DEBUG] uvh_test.main: frame=228651 COUNTED track_id=2575 class=Two-wheeler
+2026-08-29 11:43:04 [DEBUG] uvh_test.main: frame=228955 COUNTED track_id=2578 class=Two-wheeler
+2026-08-29 11:43:07 [DEBUG] uvh_test.main: frame=229063 COUNTED track_id=2580 class=LCV
+2026-08-29 11:43:36 [DEBUG] uvh_test.main: frame=230039 COUNTED track_id=2585 class=Sedan
+2026-08-29 11:44:19 [DEBUG] uvh_test.main: frame=231516 COUNTED track_id=2589 class=Two-wheeler
+2026-08-29 11:44:31 [DEBUG] uvh_test.main: frame=231912 COUNTED track_id=2596 class=Two-wheeler
+2026-08-29 11:44:32 [DEBUG] uvh_test.main: frame=231925 COUNTED track_id=2591 class=Two-wheeler
+2026-08-29 11:44:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2598 as duplicate of class Two-wheeler, prev_tid=2596, dist=72.7px, thresh=150.0px, bbox_size=203.4x214.7
+2026-08-29 11:44:47 [DEBUG] uvh_test.main: frame=232355 COUNTED track_id=2602 class=LCV
+2026-08-29 11:44:48 [DEBUG] uvh_test.main: frame=232364 COUNTED track_id=2600 class=Two-wheeler
+2026-08-29 11:44:56 [DEBUG] uvh_test.main: frame=232616 COUNTED track_id=2607 class=Two-wheeler
+2026-08-29 11:45:05 [DEBUG] uvh_test.main: frame=232871 COUNTED track_id=2612 class=Two-wheeler
+2026-08-29 11:45:48 [DEBUG] uvh_test.main: frame=234312 COUNTED track_id=2620 class=Two-wheeler
+2026-08-29 11:45:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2621 as duplicate of class Two-wheeler, prev_tid=2620, dist=52.4px, thresh=150.0px, bbox_size=152.4x115.9
+2026-08-29 11:46:03 [DEBUG] uvh_test.main: frame=234771 COUNTED track_id=2624 class=tempo-traveller
+2026-08-29 11:46:57 [DEBUG] uvh_test.main: frame=236660 COUNTED track_id=2628 class=Two-wheeler
+2026-08-29 11:47:01 [DEBUG] uvh_test.main: frame=236792 COUNTED track_id=2632 class=SUV
+2026-08-29 11:47:15 [DEBUG] uvh_test.main: frame=237224 COUNTED track_id=2634 class=Two-wheeler
+2026-08-29 11:47:19 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2635 as duplicate of class Two-wheeler, prev_tid=2634, dist=99.1px, thresh=150.0px, bbox_size=171.1x164.7
+2026-08-29 11:47:22 [DEBUG] uvh_test.main: frame=237464 COUNTED track_id=2638 class=Two-wheeler
+2026-08-29 11:47:31 [DEBUG] uvh_test.main: frame=237743 COUNTED track_id=2642 class=Two-wheeler
+2026-08-29 11:47:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2643 as duplicate of class Two-wheeler, prev_tid=2642, dist=86.4px, thresh=150.0px, bbox_size=170.3x150.8
+2026-08-29 11:47:52 [DEBUG] uvh_test.main: frame=238392 COUNTED track_id=2649 class=SUV
+2026-08-29 11:47:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2647 as duplicate of class SUV, prev_tid=2649, dist=50.7px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 11:47:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2651 as duplicate of class SUV, prev_tid=2649, dist=59.6px, thresh=150.0px, bbox_size=362.3x296.1
+2026-08-29 11:47:59 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2658 as duplicate of class LCV, prev_tid=2656, dist=67.9px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:47:59 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2652 as duplicate of class LCV, prev_tid=2656, dist=8.8px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:47:59 [DEBUG] uvh_test.main: frame=238551 COUNTED track_id=2656 class=LCV
+2026-08-29 11:48:06 [DEBUG] uvh_test.main: frame=238737 COUNTED track_id=2661 class=Two-wheeler
+2026-08-29 11:48:06 [DEBUG] uvh_test.main: frame=238751 COUNTED track_id=2665 class=Two-wheeler
+2026-08-29 11:48:08 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2666 as duplicate of class Two-wheeler, prev_tid=2661, dist=73.4px, thresh=150.0px, bbox_size=174.3x146.8
+2026-08-29 11:48:31 [DEBUG] uvh_test.main: frame=239523 COUNTED track_id=2669 class=Two-wheeler
+2026-08-29 11:48:36 [DEBUG] uvh_test.main: frame=239695 COUNTED track_id=2671 class=Two-wheeler
+2026-08-29 11:48:47 [DEBUG] uvh_test.main: frame=240031 COUNTED track_id=2676 class=Truck
+2026-08-29 11:48:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2675 as duplicate of class Truck, prev_tid=2676, dist=79.3px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 11:48:55 [DEBUG] uvh_test.main: frame=240275 COUNTED track_id=2681 class=MUV
+2026-08-29 11:48:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2682 as duplicate of class SUV, prev_tid=2680, dist=70.9px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 11:48:56 [DEBUG] uvh_test.main: frame=240284 COUNTED track_id=2680 class=SUV
+2026-08-29 11:49:09 [DEBUG] uvh_test.main: frame=240671 COUNTED track_id=2685 class=Sedan
+2026-08-29 11:49:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2687 as duplicate of class Sedan, prev_tid=2685, dist=39.0px, thresh=150.0px, bbox_size=363.1x297.5
+2026-08-29 11:49:09 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2686 as duplicate of class Sedan, prev_tid=2685, dist=36.3px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:49:20 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2694 as duplicate of class Truck, prev_tid=2691, dist=67.0px, thresh=300.0px, bbox_size=459.0x384.3
+2026-08-29 11:49:20 [DEBUG] uvh_test.main: frame=240963 COUNTED track_id=2691 class=Truck
+2026-08-29 11:49:21 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2689 as duplicate of class Truck, prev_tid=2691, dist=135.7px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 11:49:21 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2693 as duplicate of class Truck, prev_tid=2691, dist=23.2px, thresh=300.0px, bbox_size=458.9x384.5
+2026-08-29 11:49:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2697 as duplicate of class MUV, prev_tid=2696, dist=63.0px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:49:22 [DEBUG] uvh_test.main: frame=240999 COUNTED track_id=2696 class=MUV
+2026-08-29 11:49:24 [DEBUG] uvh_test.main: frame=241023 COUNTED track_id=2695 class=SUV
+2026-08-29 11:50:12 [DEBUG] uvh_test.main: frame=242579 COUNTED track_id=2702 class=LCV
+2026-08-29 11:50:22 [DEBUG] uvh_test.main: frame=242883 COUNTED track_id=2704 class=Two-wheeler
+2026-08-29 11:50:56 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2710 as duplicate of class Sedan, prev_tid=2709, dist=77.9px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:50:56 [DEBUG] uvh_test.main: frame=243923 COUNTED track_id=2709 class=Sedan
+2026-08-29 11:50:59 [DEBUG] uvh_test.main: frame=244012 COUNTED track_id=2718 class=SUV
+2026-08-29 11:50:59 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2711 as duplicate of class SUV, prev_tid=2718, dist=94.3px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:51:12 [DEBUG] uvh_test.main: frame=244404 COUNTED track_id=2721 class=Two-wheeler
+2026-08-29 11:51:41 [DEBUG] uvh_test.main: frame=245332 COUNTED track_id=2727 class=Two-wheeler
+2026-08-29 11:51:44 [DEBUG] uvh_test.main: frame=245423 COUNTED track_id=2732 class=Truck
+2026-08-29 11:52:46 [DEBUG] uvh_test.main: frame=247424 COUNTED track_id=2743 class=Two-wheeler
+2026-08-29 11:53:10 [DEBUG] uvh_test.main: frame=248195 COUNTED track_id=2748 class=tempo-traveller
+2026-08-29 11:53:27 [DEBUG] uvh_test.main: frame=248783 COUNTED track_id=2752 class=Two-wheeler
+2026-08-29 11:53:30 [DEBUG] uvh_test.main: frame=248872 COUNTED track_id=2759 class=Sedan
+2026-08-29 11:53:41 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=2765 into lost_tid=2765, dist=82.5px
+2026-08-29 11:53:41 [DEBUG] uvh_test.main: frame=249192 COUNTED track_id=2765 class=Two-wheeler
+2026-08-29 11:53:59 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2773 as duplicate of class SUV, prev_tid=2771, dist=63.0px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 11:53:59 [DEBUG] uvh_test.main: frame=249775 COUNTED track_id=2771 class=SUV
+2026-08-29 11:53:59 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2772 as duplicate of class SUV, prev_tid=2771, dist=25.8px, thresh=150.0px, bbox_size=364.1x296.5
+2026-08-29 11:53:59 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=2770 into lost_tid=2770, dist=89.9px
+2026-08-29 11:53:59 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=2770 as duplicate of class SUV, prev_tid=2771, dist=95.6px, thresh=150.0px
+2026-08-29 11:54:03 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2779 as duplicate of class SUV, prev_tid=2771, dist=34.5px, thresh=150.0px, bbox_size=352.4x288.8
+2026-08-29 11:54:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2780 as duplicate of class SUV, prev_tid=2771, dist=46.1px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:54:05 [DEBUG] uvh_test.main: frame=249979 COUNTED track_id=2785 class=Two-wheeler
+2026-08-29 11:54:15 [DEBUG] uvh_test.main: frame=250294 COUNTED track_id=2795 class=SUV
+2026-08-29 11:54:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2796 as duplicate of class SUV, prev_tid=2795, dist=78.7px, thresh=150.0px, bbox_size=256.5x204.0
+2026-08-29 11:54:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2792 as duplicate of class SUV, prev_tid=2795, dist=67.8px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 11:54:23 [DEBUG] uvh_test.main: frame=250531 COUNTED track_id=2800 class=SUV
+2026-08-29 11:54:23 [DEBUG] uvh_test.main: frame=250532 COUNTED track_id=2804 class=Two-wheeler
+2026-08-29 11:54:45 [DEBUG] uvh_test.main: frame=251222 COUNTED track_id=2808 class=Two-wheeler
+2026-08-29 11:54:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2809 as duplicate of class Two-wheeler, prev_tid=2808, dist=18.1px, thresh=150.0px, bbox_size=138.4x129.2
+2026-08-29 11:55:16 [DEBUG] uvh_test.main: frame=252196 COUNTED track_id=2813 class=Two-wheeler
+2026-08-29 11:55:19 [DEBUG] uvh_test.main: frame=252283 COUNTED track_id=2816 class=Two-wheeler
+2026-08-29 11:55:31 [DEBUG] uvh_test.main: frame=252651 COUNTED track_id=2820 class=Two-wheeler
+2026-08-29 11:55:35 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2818 as duplicate of class Two-wheeler, prev_tid=2820, dist=140.9px, thresh=150.0px, bbox_size=140.7x126.2
+2026-08-29 11:55:43 [DEBUG] uvh_test.main: frame=252973 COUNTED track_id=2823 class=Two-wheeler
+2026-08-29 11:55:55 [DEBUG] uvh_test.main: frame=253360 COUNTED track_id=2826 class=Two-wheeler
+2026-08-29 11:56:05 [DEBUG] uvh_test.main: frame=253663 COUNTED track_id=2828 class=Two-wheeler
+2026-08-29 11:56:21 [DEBUG] uvh_test.main: frame=254152 COUNTED track_id=2835 class=Two-wheeler
+2026-08-29 11:56:23 [DEBUG] uvh_test.main: frame=254211 COUNTED track_id=2832 class=Two-wheeler
+2026-08-29 11:56:30 [DEBUG] uvh_test.main: frame=254411 COUNTED track_id=2836 class=Two-wheeler
+2026-08-29 11:56:40 [DEBUG] uvh_test.main: frame=254695 COUNTED track_id=2838 class=Two-wheeler
+2026-08-29 11:57:46 [DEBUG] uvh_test.main: frame=256959 COUNTED track_id=2842 class=Two-wheeler
+2026-08-29 11:58:03 [DEBUG] uvh_test.main: frame=257495 COUNTED track_id=2845 class=Two-wheeler
+2026-08-29 11:58:07 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2846 as duplicate of class Two-wheeler, prev_tid=2845, dist=42.1px, thresh=150.0px, bbox_size=156.4x142.1
+2026-08-29 11:58:17 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=2850 into lost_tid=2850, dist=90.4px
+2026-08-29 11:58:17 [DEBUG] uvh_test.main: frame=257892 COUNTED track_id=2850 class=Two-wheeler
+2026-08-29 11:58:45 [DEBUG] uvh_test.main: frame=258803 COUNTED track_id=2853 class=Two-wheeler
+2026-08-29 11:58:58 [DEBUG] uvh_test.main: frame=259172 COUNTED track_id=2854 class=Two-wheeler
+2026-08-29 11:59:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2858 as duplicate of class Two-wheeler, prev_tid=2854, dist=80.5px, thresh=150.0px, bbox_size=200.1x166.6
+2026-08-29 11:59:15 [DEBUG] uvh_test.main: frame=259657 COUNTED track_id=2863 class=SUV
+2026-08-29 12:00:22 [DEBUG] uvh_test.main: frame=261873 COUNTED track_id=2867 class=Two-wheeler
+2026-08-29 12:00:23 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2873 as duplicate of class SUV, prev_tid=2872, dist=27.6px, thresh=150.0px, bbox_size=359.3x291.0
+2026-08-29 12:00:23 [DEBUG] uvh_test.main: frame=261891 COUNTED track_id=2872 class=SUV
+2026-08-29 12:00:45 [DEBUG] uvh_test.main: frame=262631 COUNTED track_id=2878 class=Two-wheeler
+2026-08-29 12:01:13 [DEBUG] uvh_test.main: frame=263553 COUNTED track_id=2880 class=Two-wheeler
+2026-08-29 12:01:32 [DEBUG] uvh_test.main: frame=264179 COUNTED track_id=2881 class=Two-wheeler
+2026-08-29 12:01:42 [DEBUG] uvh_test.main: frame=264494 COUNTED track_id=2883 class=Two-wheeler
+2026-08-29 12:01:53 [DEBUG] uvh_test.main: frame=264820 COUNTED track_id=2885 class=Two-wheeler
+2026-08-29 12:02:21 [DEBUG] uvh_test.main: frame=265752 COUNTED track_id=2887 class=Two-wheeler
+2026-08-29 12:02:24 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2890 as duplicate of class Two-wheeler, prev_tid=2887, dist=61.7px, thresh=150.0px, bbox_size=152.5x130.5
+2026-08-29 12:02:39 [DEBUG] uvh_test.main: frame=266294 COUNTED track_id=2892 class=Two-wheeler
+2026-08-29 12:02:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2891 as duplicate of class Two-wheeler, prev_tid=2892, dist=7.2px, thresh=150.0px, bbox_size=158.0x143.6
+2026-08-29 12:02:49 [DEBUG] uvh_test.main: frame=266571 COUNTED track_id=2898 class=Truck
+2026-08-29 12:02:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2901 as duplicate of class Truck, prev_tid=2898, dist=104.2px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 12:02:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2902 as duplicate of class Truck, prev_tid=2898, dist=46.1px, thresh=300.0px, bbox_size=459.0x384.3
+2026-08-29 12:02:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2900 as duplicate of class Truck, prev_tid=2898, dist=108.3px, thresh=300.0px, bbox_size=458.8x384.3
+2026-08-29 12:03:24 [DEBUG] uvh_test.main: frame=267708 COUNTED track_id=2908 class=Sedan
+2026-08-29 12:03:45 [DEBUG] uvh_test.main: frame=268455 COUNTED track_id=2910 class=Two-wheeler
+2026-08-29 12:03:55 [DEBUG] uvh_test.main: frame=268771 COUNTED track_id=2920 class=Sedan
+2026-08-29 12:03:55 [DEBUG] uvh_test.main: frame=268771 COUNTED track_id=2921 class=Hatchback
+2026-08-29 12:04:08 [DEBUG] uvh_test.main: frame=269207 COUNTED track_id=2923 class=Two-wheeler
+2026-08-29 12:04:35 [DEBUG] uvh_test.main: frame=270039 COUNTED track_id=2933 class=Two-wheeler
+2026-08-29 12:04:42 [DEBUG] uvh_test.main: frame=270271 COUNTED track_id=2936 class=Two-wheeler
+2026-08-29 12:04:58 [DEBUG] uvh_test.main: frame=270774 COUNTED track_id=2941 class=Two-wheeler
+2026-08-29 12:05:08 [DEBUG] uvh_test.main: frame=271087 COUNTED track_id=2949 class=SUV
+2026-08-29 12:05:15 [DEBUG] uvh_test.main: frame=271327 COUNTED track_id=2951 class=Truck
+2026-08-29 12:05:16 [DEBUG] uvh_test.main: frame=271329 COUNTED track_id=2952 class=Bus
+2026-08-29 12:05:22 [DEBUG] uvh_test.main: frame=271511 COUNTED track_id=2956 class=Two-wheeler
+2026-08-29 12:05:26 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2960 as duplicate of class Two-wheeler, prev_tid=2956, dist=57.2px, thresh=150.0px, bbox_size=174.6x142.5
+2026-08-29 12:05:43 [DEBUG] uvh_test.main: frame=272187 COUNTED track_id=2961 class=Two-wheeler
+2026-08-29 12:05:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2962 as duplicate of class Two-wheeler, prev_tid=2961, dist=82.8px, thresh=150.0px, bbox_size=162.9x114.1
+2026-08-29 12:05:59 [DEBUG] uvh_test.main: frame=272667 COUNTED track_id=2968 class=Two-wheeler
+2026-08-29 12:06:15 [DEBUG] uvh_test.main: frame=273140 COUNTED track_id=2974 class=tempo-traveller
+2026-08-29 12:06:40 [DEBUG] uvh_test.main: frame=274007 COUNTED track_id=2983 class=Two-wheeler
+2026-08-29 12:06:50 [DEBUG] uvh_test.main: frame=274307 COUNTED track_id=2985 class=Two-wheeler
+2026-08-29 12:06:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=2986 as duplicate of class Two-wheeler, prev_tid=2985, dist=53.6px, thresh=150.0px, bbox_size=144.8x145.0
+2026-08-29 12:07:20 [DEBUG] uvh_test.main: frame=275315 COUNTED track_id=2991 class=Sedan
+2026-08-29 12:07:24 [DEBUG] uvh_test.main: frame=275452 COUNTED track_id=2996 class=Two-wheeler
+2026-08-29 12:07:29 [DEBUG] uvh_test.main: frame=275595 COUNTED track_id=2998 class=Two-wheeler
+2026-08-29 12:07:29 [DEBUG] uvh_test.main: frame=275595 COUNTED track_id=3004 class=Sedan
+2026-08-29 12:07:38 [DEBUG] uvh_test.main: frame=275847 COUNTED track_id=3010 class=Truck
+2026-08-29 12:07:52 [DEBUG] uvh_test.main: frame=276307 COUNTED track_id=3014 class=Two-wheeler
+2026-08-29 12:08:01 [DEBUG] uvh_test.main: frame=276571 COUNTED track_id=3017 class=LCV
+2026-08-29 12:08:25 [DEBUG] uvh_test.main: frame=277387 COUNTED track_id=3020 class=Two-wheeler
+2026-08-29 12:09:16 [DEBUG] uvh_test.main: frame=279128 COUNTED track_id=3025 class=Two-wheeler
+2026-08-29 12:09:33 [DEBUG] uvh_test.main: frame=279716 COUNTED track_id=3028 class=Two-wheeler
+2026-08-29 12:09:54 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=3034 into lost_tid=3034, dist=85.3px
+2026-08-29 12:09:54 [DEBUG] uvh_test.main: frame=280429 COUNTED track_id=3034 class=Two-wheeler
+2026-08-29 12:10:16 [DEBUG] uvh_test.main: frame=281155 COUNTED track_id=3037 class=Two-wheeler
+2026-08-29 12:10:32 [DEBUG] uvh_test.main: frame=281731 COUNTED track_id=3040 class=MUV
+2026-08-29 12:10:47 [DEBUG] uvh_test.main: frame=282227 COUNTED track_id=3043 class=Two-wheeler
+2026-08-29 12:11:20 [DEBUG] uvh_test.main: frame=283388 COUNTED track_id=3044 class=Truck
+2026-08-29 12:11:28 [DEBUG] uvh_test.main: frame=283628 COUNTED track_id=3052 class=Bus
+2026-08-29 12:11:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3055 as duplicate of class Bus, prev_tid=3052, dist=76.3px, thresh=344.2px, bbox_size=458.9x384.4
+2026-08-29 12:11:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3053 as duplicate of class Bus, prev_tid=3052, dist=17.6px, thresh=344.2px, bbox_size=459.0x384.6
+2026-08-29 12:11:46 [DEBUG] uvh_test.main: frame=284099 COUNTED track_id=3068 class=Truck
+2026-08-29 12:11:47 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3066 as duplicate of class Truck, prev_tid=3068, dist=140.3px, thresh=244.4px, bbox_size=325.9x156.9
+2026-08-29 12:11:48 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3067 as duplicate of class Truck, prev_tid=3068, dist=2.8px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 12:11:48 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=3062 into lost_tid=3058, dist=88.6px
+2026-08-29 12:11:48 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=3062 as duplicate of class Truck, prev_tid=3068, dist=75.0px, thresh=300.0px
+2026-08-29 12:12:00 [DEBUG] uvh_test.main: frame=284428 COUNTED track_id=3071 class=LCV
+2026-08-29 12:12:19 [DEBUG] uvh_test.main: frame=285079 COUNTED track_id=3079 class=Two-wheeler
+2026-08-29 12:12:46 [DEBUG] uvh_test.main: frame=286035 COUNTED track_id=3080 class=Bus
+2026-08-29 12:12:49 [DEBUG] uvh_test.main: frame=286131 COUNTED track_id=3082 class=Two-wheeler
+2026-08-29 12:13:10 [DEBUG] uvh_test.main: frame=286790 COUNTED track_id=3085 class=Two-wheeler
+2026-08-29 12:13:12 [DEBUG] uvh_test.main: frame=286860 COUNTED track_id=3092 class=MUV
+2026-08-29 12:13:12 [DEBUG] uvh_test.main: frame=286860 COUNTED track_id=3093 class=Sedan
+2026-08-29 12:13:26 [DEBUG] uvh_test.main: frame=287307 COUNTED track_id=3096 class=Three-wheeler
+2026-08-29 12:13:41 [DEBUG] uvh_test.main: frame=287785 COUNTED track_id=3102 class=tempo-traveller
+2026-08-29 12:13:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3105 as duplicate of class SUV, prev_tid=3106, dist=66.2px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 12:13:51 [DEBUG] uvh_test.main: frame=288131 COUNTED track_id=3106 class=SUV
+2026-08-29 12:13:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3107 as duplicate of class SUV, prev_tid=3106, dist=43.8px, thresh=150.0px, bbox_size=364.0x297.4
+2026-08-29 12:13:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3108 as duplicate of class SUV, prev_tid=3106, dist=6.3px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 12:13:53 [DEBUG] uvh_test.main: frame=288187 COUNTED track_id=3109 class=Two-wheeler
+2026-08-29 12:14:06 [DEBUG] uvh_test.main: frame=288607 COUNTED track_id=3119 class=Hatchback
+2026-08-29 12:14:10 [DEBUG] uvh_test.main: frame=288729 COUNTED track_id=3120 class=Two-wheeler
+2026-08-29 12:14:38 [DEBUG] uvh_test.main: frame=289671 COUNTED track_id=3122 class=Two-wheeler
+2026-08-29 12:15:04 [DEBUG] uvh_test.main: frame=290555 COUNTED track_id=3125 class=SUV
+2026-08-29 12:15:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3127 as duplicate of class SUV, prev_tid=3125, dist=100.0px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 12:15:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3128 as duplicate of class SUV, prev_tid=3125, dist=122.4px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:15:22 [DEBUG] uvh_test.main: frame=291167 COUNTED track_id=3131 class=Two-wheeler
+2026-08-29 12:15:25 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3133 as duplicate of class Two-wheeler, prev_tid=3131, dist=36.6px, thresh=150.0px, bbox_size=163.5x160.3
+2026-08-29 12:15:28 [DEBUG] uvh_test.main: frame=291369 COUNTED track_id=3134 class=Two-wheeler
+2026-08-29 12:15:30 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3135 as duplicate of class Two-wheeler, prev_tid=3134, dist=29.9px, thresh=150.0px, bbox_size=138.7x127.7
+2026-08-29 12:15:34 [DEBUG] uvh_test.main: frame=291528 COUNTED track_id=3136 class=Two-wheeler
+2026-08-29 12:15:40 [DEBUG] uvh_test.main: frame=291707 COUNTED track_id=3139 class=Two-wheeler
+2026-08-29 12:15:59 [DEBUG] uvh_test.main: frame=292311 COUNTED track_id=3140 class=Two-wheeler
+2026-08-29 12:16:06 [DEBUG] uvh_test.main: frame=292535 COUNTED track_id=3145 class=Two-wheeler
+2026-08-29 12:16:11 [DEBUG] uvh_test.main: frame=292687 COUNTED track_id=3148 class=SUV
+2026-08-29 12:16:24 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3153 as duplicate of class SUV, prev_tid=3152, dist=71.3px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:16:24 [DEBUG] uvh_test.main: frame=293152 COUNTED track_id=3152 class=SUV
+2026-08-29 12:16:24 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3154 as duplicate of class SUV, prev_tid=3152, dist=27.0px, thresh=150.0px, bbox_size=358.4x294.1
+2026-08-29 12:16:31 [DEBUG] uvh_test.main: frame=293348 COUNTED track_id=3159 class=LCV
+2026-08-29 12:16:39 [DEBUG] uvh_test.main: frame=293616 COUNTED track_id=3160 class=Two-wheeler
+2026-08-29 12:16:50 [DEBUG] uvh_test.main: frame=293948 COUNTED track_id=3168 class=Two-wheeler
+2026-08-29 12:17:39 [DEBUG] uvh_test.main: frame=295575 COUNTED track_id=3182 class=SUV
+2026-08-29 12:17:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3183 as duplicate of class SUV, prev_tid=3182, dist=132.5px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:17:45 [DEBUG] uvh_test.main: frame=295787 COUNTED track_id=3188 class=Sedan
+2026-08-29 12:17:46 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3185 as duplicate of class Sedan, prev_tid=3188, dist=71.5px, thresh=150.0px, bbox_size=458.0x384.4
+2026-08-29 12:17:46 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=3186 into lost_tid=3186, dist=95.9px
+2026-08-29 12:17:46 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=3186 as duplicate of class Sedan, prev_tid=3188, dist=40.3px, thresh=150.0px
+2026-08-29 12:17:46 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3187 as duplicate of class Sedan, prev_tid=3188, dist=44.8px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 12:17:59 [DEBUG] uvh_test.main: frame=296227 COUNTED track_id=3189 class=Two-wheeler
+2026-08-29 12:18:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3190 as duplicate of class Two-wheeler, prev_tid=3189, dist=41.4px, thresh=150.0px, bbox_size=144.7x130.5
+2026-08-29 12:18:33 [DEBUG] uvh_test.main: frame=297335 COUNTED track_id=3193 class=Two-wheeler
+2026-08-29 12:18:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3194 as duplicate of class Two-wheeler, prev_tid=3193, dist=27.3px, thresh=150.0px, bbox_size=163.5x135.1
+2026-08-29 12:19:00 [DEBUG] uvh_test.main: frame=298215 COUNTED track_id=3203 class=Bus
+2026-08-29 12:19:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3200 as duplicate of class Bus, prev_tid=3203, dist=3.2px, thresh=344.2px, bbox_size=459.0x384.5
+2026-08-29 12:19:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3202 as duplicate of class Bus, prev_tid=3203, dist=67.6px, thresh=344.0px, bbox_size=458.6x384.4
+2026-08-29 12:19:01 [DEBUG] uvh_test.main: frame=298247 COUNTED track_id=3205 class=Two-wheeler
+2026-08-29 12:19:43 [DEBUG] uvh_test.main: frame=299647 COUNTED track_id=3209 class=Two-wheeler
+2026-08-29 12:20:00 [DEBUG] uvh_test.main: frame=300151 COUNTED track_id=3214 class=LCV
+2026-08-29 12:20:08 [DEBUG] uvh_test.main: frame=300379 COUNTED track_id=3221 class=Two-wheeler
+2026-08-29 12:20:14 [DEBUG] uvh_test.main: frame=300572 COUNTED track_id=3225 class=Two-wheeler
+2026-08-29 12:20:27 [DEBUG] uvh_test.main: frame=300875 COUNTED track_id=3231 class=Truck
+2026-08-29 12:20:33 [DEBUG] uvh_test.main: frame=301055 COUNTED track_id=3239 class=Two-wheeler
+2026-08-29 12:20:58 [DEBUG] uvh_test.main: frame=301879 COUNTED track_id=3241 class=Two-wheeler
+2026-08-29 12:21:10 [DEBUG] uvh_test.main: frame=302251 COUNTED track_id=3242 class=Two-wheeler
+2026-08-29 12:21:12 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3244 as duplicate of class Two-wheeler, prev_tid=3242, dist=27.1px, thresh=150.0px, bbox_size=145.2x142.6
+2026-08-29 12:21:16 [DEBUG] uvh_test.main: frame=302432 COUNTED track_id=3248 class=Truck
+2026-08-29 12:21:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3249 as duplicate of class Truck, prev_tid=3248, dist=64.2px, thresh=300.0px, bbox_size=458.1x384.4
+2026-08-29 12:21:17 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3250 as duplicate of class Truck, prev_tid=3248, dist=97.0px, thresh=300.0px, bbox_size=447.3x384.3
+2026-08-29 12:21:50 [DEBUG] uvh_test.main: frame=303567 COUNTED track_id=3256 class=Two-wheeler
+2026-08-29 12:22:15 [DEBUG] uvh_test.main: frame=304419 COUNTED track_id=3257 class=Two-wheeler
+2026-08-29 12:22:19 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3259 as duplicate of class Two-wheeler, prev_tid=3257, dist=54.1px, thresh=150.0px, bbox_size=158.2x139.4
+2026-08-29 12:22:31 [DEBUG] uvh_test.main: frame=304895 COUNTED track_id=3262 class=Two-wheeler
+2026-08-29 12:22:40 [DEBUG] uvh_test.main: frame=305187 COUNTED track_id=3266 class=Bus
+2026-08-29 12:22:41 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3265 as duplicate of class Bus, prev_tid=3266, dist=48.4px, thresh=344.1px, bbox_size=458.8x384.4
+2026-08-29 12:22:42 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3267 as duplicate of class Bus, prev_tid=3266, dist=155.8px, thresh=344.3px, bbox_size=459.0x384.6
+2026-08-29 12:22:54 [DEBUG] uvh_test.main: frame=305659 COUNTED track_id=3272 class=SUV
+2026-08-29 12:23:15 [DEBUG] uvh_test.main: frame=306360 COUNTED track_id=3276 class=Two-wheeler
+2026-08-29 12:23:20 [DEBUG] uvh_test.main: frame=306531 COUNTED track_id=3280 class=Two-wheeler
+2026-08-29 12:23:31 [DEBUG] uvh_test.main: frame=306868 COUNTED track_id=3282 class=Two-wheeler
+2026-08-29 12:23:40 [DEBUG] uvh_test.main: frame=307135 COUNTED track_id=3285 class=Two-wheeler
+2026-08-29 12:23:52 [DEBUG] uvh_test.main: frame=307527 COUNTED track_id=3290 class=MUV
+2026-08-29 12:23:52 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3289 as duplicate of class SUV, prev_tid=3288, dist=69.5px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 12:23:52 [DEBUG] uvh_test.main: frame=307535 COUNTED track_id=3288 class=SUV
+2026-08-29 12:23:55 [DEBUG] uvh_test.main: frame=307612 COUNTED track_id=3295 class=Two-wheeler
+2026-08-29 12:24:08 [DEBUG] uvh_test.main: frame=308019 COUNTED track_id=3297 class=Two-wheeler
+2026-08-29 12:24:19 [DEBUG] uvh_test.main: frame=308388 COUNTED track_id=3298 class=Two-wheeler
+2026-08-29 12:24:46 [DEBUG] uvh_test.main: frame=309273 COUNTED track_id=3299 class=Two-wheeler
+2026-08-29 12:24:51 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3303 as duplicate of class Two-wheeler, prev_tid=3299, dist=84.5px, thresh=150.0px, bbox_size=166.2x146.7
+2026-08-29 12:25:09 [DEBUG] uvh_test.main: frame=309992 COUNTED track_id=3306 class=MUV
+2026-08-29 12:25:10 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3305 as duplicate of class MUV, prev_tid=3306, dist=8.8px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:25:23 [DEBUG] uvh_test.main: frame=310447 COUNTED track_id=3310 class=Two-wheeler
+2026-08-29 12:25:37 [DEBUG] uvh_test.main: frame=310947 COUNTED track_id=3314 class=Two-wheeler
+2026-08-29 12:26:04 [DEBUG] uvh_test.main: frame=311799 COUNTED track_id=3319 class=Two-wheeler
+2026-08-29 12:26:06 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3322 as duplicate of class Two-wheeler, prev_tid=3319, dist=75.2px, thresh=150.0px, bbox_size=172.2x157.7
+2026-08-29 12:26:43 [DEBUG] uvh_test.main: frame=313095 COUNTED track_id=3330 class=Two-wheeler
+2026-08-29 12:26:58 [DEBUG] uvh_test.main: frame=313556 COUNTED track_id=3331 class=Truck
+2026-08-29 12:27:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3342 as duplicate of class LCV, prev_tid=3341, dist=32.7px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 12:27:04 [DEBUG] uvh_test.main: frame=313727 COUNTED track_id=3341 class=LCV
+2026-08-29 12:27:05 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3345 as duplicate of class LCV, prev_tid=3341, dist=56.3px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:27:05 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3343 as duplicate of class LCV, prev_tid=3341, dist=61.3px, thresh=150.0px, bbox_size=458.9x384.5
+2026-08-29 12:27:10 [DEBUG] uvh_test.main: frame=313897 COUNTED track_id=3347 class=Two-wheeler
+2026-08-29 12:27:22 [DEBUG] uvh_test.main: frame=314255 COUNTED track_id=3350 class=Bus
+2026-08-29 12:27:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3348 as duplicate of class Bus, prev_tid=3350, dist=50.1px, thresh=344.2px, bbox_size=459.0x384.4
+2026-08-29 12:27:22 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3349 as duplicate of class Bus, prev_tid=3350, dist=18.5px, thresh=344.2px, bbox_size=459.0x384.6
+2026-08-29 12:27:49 [DEBUG] uvh_test.main: frame=315187 COUNTED track_id=3354 class=Two-wheeler
+2026-08-29 12:28:03 [DEBUG] uvh_test.main: frame=315671 COUNTED track_id=3356 class=Truck
+2026-08-29 12:28:13 [DEBUG] uvh_test.main: frame=315987 COUNTED track_id=3357 class=Two-wheeler
+2026-08-29 12:28:38 [DEBUG] uvh_test.main: frame=316787 COUNTED track_id=3369 class=Two-wheeler
+2026-08-29 12:28:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3374 as duplicate of class Truck, prev_tid=3373, dist=68.1px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 12:28:39 [DEBUG] uvh_test.main: frame=316799 COUNTED track_id=3373 class=Truck
+2026-08-29 12:28:39 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3370 as duplicate of class Truck, prev_tid=3373, dist=34.5px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 12:28:40 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3361 as duplicate of class Truck, prev_tid=3373, dist=69.4px, thresh=300.0px, bbox_size=459.1x384.4
+2026-08-29 12:28:56 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=3382 into lost_tid=3382, dist=44.2px
+2026-08-29 12:28:56 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=3382 as duplicate of class Truck, prev_tid=3383, dist=80.7px, thresh=300.0px
+2026-08-29 12:28:56 [DEBUG] uvh_test.main: frame=317287 COUNTED track_id=3383 class=Truck
+2026-08-29 12:28:57 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3381 as duplicate of class Truck, prev_tid=3383, dist=23.5px, thresh=300.0px, bbox_size=459.0x384.6
+2026-08-29 12:28:57 [DEBUG] uvh_test.main: frame=317311 COUNTED track_id=3387 class=MUV
+2026-08-29 12:29:08 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3392 as duplicate of class SUV, prev_tid=3391, dist=67.4px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:29:08 [DEBUG] uvh_test.main: frame=317659 COUNTED track_id=3391 class=SUV
+2026-08-29 12:29:26 [DEBUG] uvh_test.main: frame=318312 COUNTED track_id=3394 class=Two-wheeler
+2026-08-29 12:29:35 [DEBUG] uvh_test.main: frame=318595 COUNTED track_id=3395 class=Two-wheeler
+2026-08-29 12:29:43 [DEBUG] uvh_test.main: frame=318847 COUNTED track_id=3396 class=Two-wheeler
+2026-08-29 12:29:56 [DEBUG] uvh_test.main: frame=319259 COUNTED track_id=3401 class=MUV
+2026-08-29 12:29:56 [DEBUG] uvh_test.main: frame=319259 COUNTED track_id=3402 class=Sedan
+2026-08-29 12:30:23 [DEBUG] uvh_test.main: frame=320239 COUNTED track_id=3403 class=Two-wheeler
+2026-08-29 12:30:54 [DEBUG] uvh_test.main: frame=321289 COUNTED track_id=3406 class=Two-wheeler
+2026-08-29 12:30:59 [DEBUG] uvh_test.main: frame=321459 COUNTED track_id=3407 class=Two-wheeler
+2026-08-29 12:31:12 [DEBUG] uvh_test.main: frame=321867 COUNTED track_id=3409 class=Two-wheeler
+2026-08-29 12:31:49 [DEBUG] uvh_test.main: frame=322882 COUNTED track_id=3418 class=Truck
+2026-08-29 12:31:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3425 as duplicate of class Truck, prev_tid=3418, dist=161.2px, thresh=262.2px, bbox_size=349.6x139.9
+2026-08-29 12:31:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3426 as duplicate of class Truck, prev_tid=3418, dist=13.9px, thresh=300.0px, bbox_size=458.9x384.3
+2026-08-29 12:31:59 [DEBUG] uvh_test.main: frame=323162 COUNTED track_id=3428 class=Two-wheeler
+2026-08-29 12:32:15 [DEBUG] uvh_test.main: frame=323647 COUNTED track_id=3432 class=Two-wheeler
+2026-08-29 12:32:17 [DEBUG] uvh_test.main: frame=323728 COUNTED track_id=3435 class=SUV
+2026-08-29 12:32:18 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3434 as duplicate of class SUV, prev_tid=3435, dist=38.9px, thresh=150.0px, bbox_size=458.9x384.4
+2026-08-29 12:32:27 [DEBUG] uvh_test.main: frame=324039 COUNTED track_id=3442 class=Three-wheeler
+2026-08-29 12:32:36 [DEBUG] uvh_test.main: frame=324301 COUNTED track_id=3449 class=Two-wheeler
+2026-08-29 12:32:41 [DEBUG] uvh_test.main: frame=324459 COUNTED track_id=3452 class=Truck
+2026-08-29 12:32:41 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3451 as duplicate of class Truck, prev_tid=3452, dist=80.1px, thresh=300.0px, bbox_size=458.8x384.4
+2026-08-29 12:32:49 [DEBUG] uvh_test.main: frame=324682 COUNTED track_id=3457 class=Two-wheeler
+2026-08-29 12:32:55 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3460 as duplicate of class Truck, prev_tid=3459, dist=67.3px, thresh=300.0px, bbox_size=458.9x384.4
+2026-08-29 12:32:55 [DEBUG] uvh_test.main: frame=324859 COUNTED track_id=3459 class=Truck
+2026-08-29 12:33:07 [DEBUG] uvh_test.main: frame=325244 COUNTED track_id=3463 class=Two-wheeler
+2026-08-29 12:33:10 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3465 as duplicate of class Two-wheeler, prev_tid=3463, dist=47.1px, thresh=150.0px, bbox_size=161.6x143.9
+2026-08-29 12:33:16 [DEBUG] uvh_test.main: frame=325511 COUNTED track_id=3469 class=MUV
+2026-08-29 12:33:16 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3468 as duplicate of class MUV, prev_tid=3469, dist=32.1px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 12:33:29 [DEBUG] uvh_test.main: frame=325923 COUNTED track_id=3471 class=Two-wheeler
+2026-08-29 12:33:34 [DEBUG] uvh_test.main: frame=326084 COUNTED track_id=3476 class=Two-wheeler
+2026-08-29 12:33:44 [DEBUG] uvh_test.main: frame=326404 COUNTED track_id=3479 class=Sedan
+2026-08-29 12:33:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3480 as duplicate of class Sedan, prev_tid=3479, dist=81.6px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 12:33:50 [DEBUG] uvh_test.main: frame=326563 COUNTED track_id=3482 class=Two-wheeler
+2026-08-29 12:33:58 [DEBUG] uvh_test.main: frame=326811 COUNTED track_id=3484 class=Two-wheeler
+2026-08-29 12:34:12 [DEBUG] uvh_test.main: frame=327287 COUNTED track_id=3485 class=Two-wheeler
+2026-08-29 12:34:38 [DEBUG] uvh_test.main: frame=328171 COUNTED track_id=3486 class=Two-wheeler
+2026-08-29 12:34:44 [DEBUG] uvh_test.main: frame=328347 COUNTED track_id=3489 class=Two-wheeler
+2026-08-29 12:34:51 [DEBUG] uvh_test.main: frame=328559 COUNTED track_id=3490 class=Three-wheeler
+2026-08-29 12:35:28 [DEBUG] uvh_test.main: frame=329823 COUNTED track_id=3505 class=Two-wheeler
+2026-08-29 12:35:32 [DEBUG] uvh_test.main: frame=329943 COUNTED track_id=3506 class=Two-wheeler
+2026-08-29 12:35:37 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3507 as duplicate of class Two-wheeler, prev_tid=3506, dist=36.1px, thresh=150.0px, bbox_size=138.4x128.7
+2026-08-29 12:36:04 [DEBUG] uvh_test.main: frame=330982 COUNTED track_id=3510 class=Two-wheeler
+2026-08-29 12:36:39 [DEBUG] uvh_test.main: frame=332132 COUNTED track_id=3517 class=Two-wheeler
+2026-08-29 12:36:41 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3516 as duplicate of class Two-wheeler, prev_tid=3517, dist=56.8px, thresh=150.0px, bbox_size=144.6x127.0
+2026-08-29 12:36:49 [DEBUG] uvh_test.main: frame=332452 COUNTED track_id=3520 class=Two-wheeler
+2026-08-29 12:37:02 [DEBUG] uvh_test.main: frame=332859 COUNTED track_id=3521 class=Two-wheeler
+2026-08-29 12:37:05 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3524 as duplicate of class Two-wheeler, prev_tid=3521, dist=82.3px, thresh=150.0px, bbox_size=168.9x148.4
+2026-08-29 12:37:07 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3522 as duplicate of class Two-wheeler, prev_tid=3521, dist=1.9px, thresh=150.0px, bbox_size=141.4x122.2
+2026-08-29 12:37:24 [DEBUG] uvh_test.main: frame=333501 COUNTED track_id=3529 class=Two-wheeler
+2026-08-29 12:37:32 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3534 as duplicate of class Bus, prev_tid=3533, dist=138.5px, thresh=344.2px, bbox_size=458.9x384.5
+2026-08-29 12:37:32 [DEBUG] uvh_test.main: frame=333751 COUNTED track_id=3533 class=Bus
+2026-08-29 12:37:33 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3536 as duplicate of class Bus, prev_tid=3533, dist=70.1px, thresh=344.1px, bbox_size=458.8x384.4
+2026-08-29 12:37:34 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3531 as duplicate of class Bus, prev_tid=3533, dist=209.3px, thresh=344.2px, bbox_size=459.0x384.4
+2026-08-29 12:37:55 [DEBUG] uvh_test.main: frame=334539 COUNTED track_id=3538 class=Two-wheeler
+2026-08-29 12:38:00 [DEBUG] uvh_test.main: frame=334688 COUNTED track_id=3546 class=Sedan
+2026-08-29 12:38:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3548 as duplicate of class Sedan, prev_tid=3546, dist=93.9px, thresh=150.0px, bbox_size=449.8x384.3
+2026-08-29 12:38:01 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3547 as duplicate of class Sedan, prev_tid=3546, dist=10.1px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 12:38:01 [DEBUG] uvh_test.main: frame=334711 COUNTED track_id=3544 class=Two-wheeler
+2026-08-29 12:38:03 [DEBUG] uvh_test.main: frame=334783 COUNTED track_id=3554 class=Sedan
+2026-08-29 12:38:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3553 as duplicate of class Sedan, prev_tid=3554, dist=35.4px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:38:24 [DEBUG] uvh_test.main: frame=335451 COUNTED track_id=3556 class=Two-wheeler
+2026-08-29 12:38:33 [DEBUG] uvh_test.main: frame=335747 COUNTED track_id=3559 class=Two-wheeler
+2026-08-29 12:38:41 [DEBUG] uvh_test.main: frame=335963 COUNTED track_id=3560 class=Two-wheeler
+2026-08-29 12:38:45 [DEBUG] uvh_test.main: frame=336083 COUNTED track_id=3564 class=MUV
+2026-08-29 12:38:45 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3562 as duplicate of class MUV, prev_tid=3564, dist=5.8px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:38:57 [DEBUG] uvh_test.main: frame=336460 COUNTED track_id=3568 class=Two-wheeler
+2026-08-29 12:39:15 [DEBUG] uvh_test.main: frame=337079 COUNTED track_id=3571 class=Two-wheeler
+2026-08-29 12:39:31 [DEBUG] uvh_test.main: frame=337622 COUNTED track_id=3575 class=Sedan
+2026-08-29 12:39:48 [DEBUG] uvh_test.main: frame=338180 COUNTED track_id=3582 class=Two-wheeler
+2026-08-29 12:39:49 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3583 as duplicate of class Two-wheeler, prev_tid=3582, dist=65.7px, thresh=150.0px, bbox_size=137.3x118.5
+2026-08-29 12:39:59 [DEBUG] uvh_test.main: frame=338504 COUNTED track_id=3584 class=Two-wheeler
+2026-08-29 12:40:06 [DEBUG] uvh_test.main: frame=338743 COUNTED track_id=3589 class=SUV
+2026-08-29 12:40:19 [DEBUG] uvh_test.main: frame=339139 COUNTED track_id=3592 class=Two-wheeler
+2026-08-29 12:40:19 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3593 as duplicate of class Two-wheeler, prev_tid=3592, dist=67.0px, thresh=150.0px, bbox_size=170.2x159.8
+2026-08-29 12:40:34 [DEBUG] uvh_test.main: frame=339580 COUNTED track_id=3596 class=Two-wheeler
+2026-08-29 12:41:00 [DEBUG] uvh_test.main: frame=340460 COUNTED track_id=3597 class=Two-wheeler
+2026-08-29 12:41:02 [DEBUG] uvh_test.main: frame=340543 COUNTED track_id=3601 class=SUV
+2026-08-29 12:41:02 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3602 as duplicate of class SUV, prev_tid=3601, dist=44.9px, thresh=150.0px, bbox_size=344.7x278.5
+2026-08-29 12:41:31 [DEBUG] uvh_test.main: frame=341527 COUNTED track_id=3606 class=Two-wheeler
+2026-08-29 12:41:35 [DEBUG] uvh_test.main: frame=341652 COUNTED track_id=3613 class=SUV
+2026-08-29 12:41:36 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3609 as duplicate of class SUV, prev_tid=3613, dist=142.3px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 12:41:38 [DEBUG] uvh_test.main: frame=341727 COUNTED track_id=3620 class=Two-wheeler
+2026-08-29 12:41:53 [DEBUG] uvh_test.main: frame=342203 COUNTED track_id=3623 class=SUV
+2026-08-29 12:42:31 [DEBUG] uvh_test.main: frame=343480 COUNTED track_id=3629 class=Truck
+2026-08-29 12:42:50 [DEBUG] uvh_test.main: frame=344121 COUNTED track_id=3636 class=Two-wheeler
+2026-08-29 12:43:08 [DEBUG] uvh_test.main: frame=344689 COUNTED track_id=3638 class=Two-wheeler
+2026-08-29 12:43:14 [DEBUG] uvh_test.main: frame=344872 COUNTED track_id=3639 class=Two-wheeler
+2026-08-29 12:43:32 [DEBUG] uvh_test.main: frame=345443 COUNTED track_id=3641 class=Two-wheeler
+2026-08-29 12:43:42 [DEBUG] uvh_test.main: frame=345791 COUNTED track_id=3643 class=Two-wheeler
+2026-08-29 12:43:49 [DEBUG] uvh_test.main: frame=345999 COUNTED track_id=3644 class=Two-wheeler
+2026-08-29 12:44:03 [DEBUG] uvh_test.main: frame=346464 COUNTED track_id=3645 class=Two-wheeler
+2026-08-29 12:44:10 [DEBUG] uvh_test.main: frame=346691 COUNTED track_id=3646 class=Two-wheeler
+2026-08-29 12:44:27 [DEBUG] uvh_test.main: frame=347247 COUNTED track_id=3652 class=Two-wheeler
+2026-08-29 12:44:29 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3654 as duplicate of class Two-wheeler, prev_tid=3652, dist=79.0px, thresh=150.0px, bbox_size=162.6x146.4
+2026-08-29 12:44:59 [DEBUG] uvh_test.main: frame=348292 COUNTED track_id=3657 class=tempo-traveller
+2026-08-29 12:45:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3661 as duplicate of class LCV, prev_tid=3663, dist=67.1px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 12:45:04 [DEBUG] uvh_test.main: frame=348431 COUNTED track_id=3663 class=LCV
+2026-08-29 12:45:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3664 as duplicate of class LCV, prev_tid=3663, dist=86.2px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 12:45:04 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3660 as duplicate of class LCV, prev_tid=3663, dist=74.8px, thresh=150.0px, bbox_size=458.9x384.3
+2026-08-29 12:45:15 [DEBUG] uvh_test.main: frame=348767 COUNTED track_id=3669 class=SUV
+2026-08-29 12:45:23 [DEBUG] uvh_test.main: frame=349019 COUNTED track_id=3672 class=Two-wheeler
+2026-08-29 12:45:42 [DEBUG] uvh_test.main: frame=349629 COUNTED track_id=3673 class=Two-wheeler
+2026-08-29 12:46:07 [DEBUG] uvh_test.main: frame=350479 COUNTED track_id=3675 class=Two-wheeler
+2026-08-29 12:46:44 [DEBUG] uvh_test.main: frame=351767 COUNTED track_id=3679 class=Two-wheeler
+2026-08-29 12:47:36 [DEBUG] uvh_test.main: frame=353600 COUNTED track_id=3680 class=Two-wheeler
+2026-08-29 12:48:00 [DEBUG] uvh_test.main: frame=354411 COUNTED track_id=3683 class=Two-wheeler
+2026-08-29 12:48:10 [DEBUG] uvh_test.main: frame=354725 COUNTED track_id=3685 class=Two-wheeler
+2026-08-29 12:48:13 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3688 as duplicate of class Two-wheeler, prev_tid=3685, dist=63.7px, thresh=150.0px, bbox_size=136.3x122.0
+2026-08-29 12:48:18 [DEBUG] uvh_test.main: frame=354940 COUNTED track_id=3690 class=Two-wheeler
+2026-08-29 12:48:34 [DEBUG] uvh_test.main: frame=355487 COUNTED track_id=3702 class=Two-wheeler
+2026-08-29 12:48:50 [DEBUG] uvh_test.main: frame=356023 COUNTED track_id=3705 class=Hatchback
+2026-08-29 12:48:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3704 as duplicate of class Hatchback, prev_tid=3705, dist=78.5px, thresh=150.0px, bbox_size=459.0x384.4
+2026-08-29 12:49:08 [DEBUG] uvh_test.main: frame=356647 COUNTED track_id=3707 class=Two-wheeler
+2026-08-29 12:49:15 [DEBUG] uvh_test.main: frame=356847 COUNTED track_id=3709 class=tempo-traveller
+2026-08-29 12:49:27 [DEBUG] uvh_test.main: frame=357228 COUNTED track_id=3726 class=Three-wheeler
+2026-08-29 12:49:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3731 as duplicate of class SUV, prev_tid=3728, dist=64.4px, thresh=150.0px, bbox_size=458.2x384.3
+2026-08-29 12:49:50 [INFO] uvh_test.counter: SAFETY NET MERGE: Merging current tid=3733 into lost_tid=3733, dist=39.1px
+2026-08-29 12:49:50 [INFO] uvh_test.counter: SAFETY NET REJECTION (MERGE PATH): Rejecting tid=3733 as duplicate of class SUV, prev_tid=3728, dist=12.0px, thresh=150.0px
+2026-08-29 12:49:50 [DEBUG] uvh_test.main: frame=357959 COUNTED track_id=3728 class=SUV
+2026-08-29 12:49:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3730 as duplicate of class SUV, prev_tid=3728, dist=62.7px, thresh=150.0px, bbox_size=459.0x384.3
+2026-08-29 12:49:50 [INFO] uvh_test.counter: SAFETY NET REJECTION: Rejecting tid=3732 as duplicate of class SUV, prev_tid=3728, dist=69.0px, thresh=150.0px, bbox_size=459.1x384.4
+2026-08-29 12:49:52 [DEBUG] uvh_test.main: frame=358043 COUNTED track_id=3735 class=Two-wheeler
+2026-08-29 12:50:28 [DEBUG] uvh_test.main: frame=359207 COUNTED track_id=3746 class=Three-wheeler
+2026-08-29 12:50:32 [DEBUG] uvh_test.main: frame=359303 COUNTED track_id=3750 class=Two-wheeler
+2026-08-29 12:50:48 [DEBUG] uvh_test.main: frame=359799 COUNTED track_id=3753 class=tempo-traveller

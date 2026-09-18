@@ -1,0 +1,1652 @@
+Total tracks: 1055
+Total bus tracks: 281
+Bus crossed: 87
+
+--- BUS CROSSING EVENTS ---
+Track   4: crossed at 587, lifespan 91, frames 540-630, not_counted_reason: 
+Track  30: crossed at 4907, lifespan 31, frames 4880-4910, not_counted_reason: 
+Track  32: crossed at 5215, lifespan 123, frames 5176-5298, not_counted_reason: 
+Track  52: crossed at 7351, lifespan 283, frames 7336-7618, not_counted_reason: 
+Track  47: crossed at 7359, lifespan 91, frames 7300-7390, not_counted_reason: 
+Track  49: crossed at 7379, lifespan 99, frames 7312-7410, not_counted_reason: 
+Track 318: crossed at 25191, lifespan 11, frames 25188-25198, not_counted_reason: 
+Track 331: crossed at 25479, lifespan 52, frames 25432-25483, not_counted_reason: 
+Track 330: crossed at 25485, lifespan 459, frames 25408-25866, not_counted_reason: 
+Track 337: crossed at 25495, lifespan 87, frames 25488-25574, not_counted_reason: 
+Track 333: crossed at 25539, lifespan 128, frames 25439-25566, not_counted_reason: 
+Track 327: crossed at 25659, lifespan 295, frames 25372-25666, not_counted_reason: 
+Track 349: crossed at 25900, lifespan 41, frames 25890-25930, not_counted_reason: 
+Track 356: crossed at 25908, lifespan 35, frames 25896-25930, not_counted_reason: 
+Track 345: crossed at 25920, lifespan 107, frames 25880-25986, not_counted_reason: 
+Track 340: crossed at 25927, lifespan 63, frames 25868-25930, not_counted_reason: 
+Track 376: crossed at 26435, lifespan 219, frames 26428-26646, not_counted_reason: 
+Track 377: crossed at 26447, lifespan 88, frames 26428-26515, not_counted_reason: 
+Track 381: crossed at 26479, lifespan 67, frames 26440-26506, not_counted_reason: 
+Track 383: crossed at 26479, lifespan 59, frames 26448-26506, not_counted_reason: 
+Track 389: crossed at 26484, lifespan 23, frames 26484-26506, not_counted_reason: Never crossed counting line
+Track 379: crossed at 26495, lifespan 71, frames 26440-26510, not_counted_reason: 
+Track 378: crossed at 26500, lifespan 79, frames 26428-26506, not_counted_reason: 
+Track 406: crossed at 26835, lifespan 75, frames 26832-26906, not_counted_reason: 
+Track 407: crossed at 26840, lifespan 55, frames 26832-26886, not_counted_reason: 
+Track 401: crossed at 26847, lifespan 51, frames 26828-26878, not_counted_reason: 
+Track 396: crossed at 26851, lifespan 67, frames 26820-26886, not_counted_reason: 
+Track 399: crossed at 26872, lifespan 71, frames 26828-26898, not_counted_reason: 
+Track 408: crossed at 26887, lifespan 130, frames 26832-26961, not_counted_reason: 
+Track 410: crossed at 26888, lifespan 39, frames 26852-26890, not_counted_reason: 
+Track 411: crossed at 26888, lifespan 15, frames 26876-26890, not_counted_reason: 
+Track 397: crossed at 26891, lifespan 67, frames 26828-26894, not_counted_reason: 
+Track 434: crossed at 28207, lifespan 71, frames 28148-28218, not_counted_reason: 
+Track 488: crossed at 32215, lifespan 43, frames 32176-32218, not_counted_reason: 
+Track 489: crossed at 32247, lifespan 73, frames 32182-32254, not_counted_reason: 
+Track 517: crossed at 34478, lifespan 31, frames 34456-34486, not_counted_reason: 
+Track 526: crossed at 35302, lifespan 17, frames 35288-35304, not_counted_reason: 
+Track 529: crossed at 35307, lifespan 59, frames 35291-35349, not_counted_reason: 
+Track 602: crossed at 41203, lifespan 79, frames 41200-41278, not_counted_reason: 
+Track 601: crossed at 41212, lifespan 59, frames 41200-41258, not_counted_reason: 
+Track 604: crossed at 41221, lifespan 47, frames 41204-41250, not_counted_reason: 
+Track 608: crossed at 41228, lifespan 55, frames 41224-41278, not_counted_reason: 
+Track 609: crossed at 41239, lifespan 55, frames 41224-41278, not_counted_reason: 
+Track 623: crossed at 41519, lifespan 43, frames 41480-41522, not_counted_reason: 
+Track 649: crossed at 44579, lifespan 47, frames 44552-44598, not_counted_reason: 
+Track 667: crossed at 46343, lifespan 35, frames 46324-46358, not_counted_reason: 
+Track 683: crossed at 47579, lifespan 51, frames 47560-47610, not_counted_reason: 
+Track 682: crossed at 47587, lifespan 147, frames 47560-47706, not_counted_reason: 
+Track 687: crossed at 48723, lifespan 76, frames 48683-48758, not_counted_reason: 
+Track 700: crossed at 49462, lifespan 50, frames 49440-49489, not_counted_reason: 
+Track 706: crossed at 50022, lifespan 48, frames 49991-50038, not_counted_reason: 
+Track 712: crossed at 50022, lifespan 27, frames 50000-50026, not_counted_reason: 
+Track 720: crossed at 50963, lifespan 48, frames 50920-50967, not_counted_reason: 
+Track 745: crossed at 55552, lifespan 115, frames 55512-55626, not_counted_reason: 
+Track 747: crossed at 55571, lifespan 87, frames 55520-55606, not_counted_reason: 
+Track 750: crossed at 55631, lifespan 133, frames 55526-55658, not_counted_reason: 
+Track 770: crossed at 57000, lifespan 131, frames 56992-57122, not_counted_reason: 
+Track 764: crossed at 57003, lifespan 83, frames 56980-57062, not_counted_reason: 
+Track 773: crossed at 57004, lifespan 59, frames 56992-57050, not_counted_reason: 
+Track 774: crossed at 57008, lifespan 95, frames 56992-57086, not_counted_reason: 
+Track 772: crossed at 57019, lifespan 195, frames 56992-57186, not_counted_reason: 
+Track 777: crossed at 57024, lifespan 59, frames 57020-57078, not_counted_reason: 
+Track 765: crossed at 57051, lifespan 83, frames 56984-57066, not_counted_reason: 
+Track 767: crossed at 57059, lifespan 79, frames 56984-57062, not_counted_reason: 
+Track 769: crossed at 57063, lifespan 79, frames 56992-57070, not_counted_reason: 
+Track 855: crossed at 63407, lifespan 29, frames 63400-63428, not_counted_reason: 
+Track 846: crossed at 63420, lifespan 288, frames 63331-63618, not_counted_reason: 
+Track 850: crossed at 63439, lifespan 207, frames 63383-63589, not_counted_reason: 
+Track 849: crossed at 63442, lifespan 74, frames 63371-63444, not_counted_reason: 
+Track 847: crossed at 63446, lifespan 108, frames 63351-63458, not_counted_reason: 
+Track 865: crossed at 64943, lifespan 47, frames 64900-64946, not_counted_reason: 
+Track 897: crossed at 68780, lifespan 271, frames 68740-69010, not_counted_reason: 
+Track 902: crossed at 68799, lifespan 207, frames 68760-68966, not_counted_reason: 
+Track 900: crossed at 68808, lifespan 67, frames 68752-68818, not_counted_reason: 
+Track 907: crossed at 70100, lifespan 151, frames 70068-70218, not_counted_reason: 
+Track 910: crossed at 70119, lifespan 53, frames 70072-70124, not_counted_reason: 
+Track 909: crossed at 70149, lifespan 107, frames 70072-70178, not_counted_reason: 
+Track 957: crossed at 79059, lifespan 75, frames 78991-79065, not_counted_reason: 
+Track 975: crossed at 80211, lifespan 51, frames 80172-80222, not_counted_reason: 
+Track 973: crossed at 80219, lifespan 83, frames 80160-80242, not_counted_reason: 
+Track 976: crossed at 80223, lifespan 47, frames 80180-80226, not_counted_reason: 
+Track 1037: crossed at 87299, lifespan 127, frames 87180-87306, not_counted_reason: 
+Track 1039: crossed at 87319, lifespan 55, frames 87268-87322, not_counted_reason: 
+Track 1060: crossed at 88722, lifespan 59, frames 88712-88770, not_counted_reason: 
+Track 1061: crossed at 88723, lifespan 147, frames 88720-88866, not_counted_reason: 
+Track 1062: crossed at 88732, lifespan 43, frames 88724-88766, not_counted_reason: 
+Track 1058: crossed at 88751, lifespan 59, frames 88700-88758, not_counted_reason: 
+
+--- BUS FRAGMENTATION ---
+Overlap: Track 46 (7268-7346) & Track 47 (7300-7390) overlap: 46
+Overlap: Track 46 (7268-7346) & Track 48 (7308-7378) overlap: 38
+Overlap: Track 46 (7268-7346) & Track 49 (7312-7410) overlap: 34
+Overlap: Track 46 (7268-7346) & Track 50 (7312-7346) overlap: 34
+Overlap: Track 46 (7268-7346) & Track 51 (7328-7374) overlap: 18
+Overlap: Track 46 (7268-7346) & Track 52 (7336-7618) overlap: 10
+Overlap: Track 47 (7300-7390) & Track 48 (7308-7378) overlap: 82
+Overlap: Track 47 (7300-7390) & Track 49 (7312-7410) overlap: 78
+Overlap: Track 47 (7300-7390) & Track 50 (7312-7346) overlap: 78
+Overlap: Track 47 (7300-7390) & Track 51 (7328-7374) overlap: 62
+Overlap: Track 47 (7300-7390) & Track 52 (7336-7618) overlap: 54
+Overlap: Track 48 (7308-7378) & Track 49 (7312-7410) overlap: 66
+Overlap: Track 48 (7308-7378) & Track 50 (7312-7346) overlap: 66
+Overlap: Track 48 (7308-7378) & Track 51 (7328-7374) overlap: 50
+Overlap: Track 48 (7308-7378) & Track 52 (7336-7618) overlap: 42
+Overlap: Track 49 (7312-7410) & Track 50 (7312-7346) overlap: 98
+Overlap: Track 49 (7312-7410) & Track 51 (7328-7374) overlap: 82
+Overlap: Track 49 (7312-7410) & Track 52 (7336-7618) overlap: 74
+Overlap: Track 50 (7312-7346) & Track 51 (7328-7374) overlap: 18
+Overlap: Track 50 (7312-7346) & Track 52 (7336-7618) overlap: 10
+Overlap: Track 51 (7328-7374) & Track 52 (7336-7618) overlap: 38
+Overlap: Track 192 (15468-15473) & Track 193 (15468-15490) overlap: 5
+Overlap: Track 192 (15468-15473) & Track 194 (15468-15486) overlap: 5
+Overlap: Track 193 (15468-15490) & Track 194 (15468-15486) overlap: 22
+Overlap: Track 258 (20737-20790) & Track 259 (20769-20775) overlap: 21
+Overlap: Track 258 (20737-20790) & Track 260 (20769-20787) overlap: 21
+Overlap: Track 258 (20737-20790) & Track 262 (20772-20775) overlap: 18
+Overlap: Track 258 (20737-20790) & Track 264 (20772-20807) overlap: 18
+Overlap: Track 258 (20737-20790) & Track 265 (20772-20778) overlap: 18
+Overlap: Track 259 (20769-20775) & Track 260 (20769-20787) overlap: 6
+Overlap: Track 259 (20769-20775) & Track 262 (20772-20775) overlap: 3
+Overlap: Track 259 (20769-20775) & Track 264 (20772-20807) overlap: 3
+Overlap: Track 259 (20769-20775) & Track 265 (20772-20778) overlap: 3
+Overlap: Track 260 (20769-20787) & Track 262 (20772-20775) overlap: 15
+Overlap: Track 260 (20769-20787) & Track 264 (20772-20807) overlap: 15
+Overlap: Track 260 (20769-20787) & Track 265 (20772-20778) overlap: 15
+Overlap: Track 262 (20772-20775) & Track 264 (20772-20807) overlap: 3
+Overlap: Track 262 (20772-20775) & Track 265 (20772-20778) overlap: 3
+Overlap: Track 264 (20772-20807) & Track 265 (20772-20778) overlap: 35
+Overlap: Track 313 (25160-25186) & Track 314 (25168-25194) overlap: 18
+Overlap: Track 313 (25160-25186) & Track 315 (25168-25190) overlap: 18
+Overlap: Track 313 (25160-25186) & Track 316 (25168-25194) overlap: 18
+Overlap: Track 313 (25160-25186) & Track 317 (25170-25194) overlap: 16
+Fragment: Track 313 (ends 25186) -> Track 318 (starts 25188) gap: 2
+Fragment: Track 313 (ends 25186) -> Track 319 (starts 25188) gap: 2
+Overlap: Track 314 (25168-25194) & Track 315 (25168-25190) overlap: 26
+Overlap: Track 314 (25168-25194) & Track 316 (25168-25194) overlap: 26
+Overlap: Track 314 (25168-25194) & Track 317 (25170-25194) overlap: 24
+Overlap: Track 314 (25168-25194) & Track 318 (25188-25198) overlap: 6
+Overlap: Track 314 (25168-25194) & Track 319 (25188-25198) overlap: 6
+Overlap: Track 315 (25168-25190) & Track 316 (25168-25194) overlap: 22
+Overlap: Track 315 (25168-25190) & Track 317 (25170-25194) overlap: 20
+Overlap: Track 315 (25168-25190) & Track 318 (25188-25198) overlap: 2
+Overlap: Track 315 (25168-25190) & Track 319 (25188-25198) overlap: 2
+Overlap: Track 316 (25168-25194) & Track 317 (25170-25194) overlap: 24
+Overlap: Track 316 (25168-25194) & Track 318 (25188-25198) overlap: 6
+Overlap: Track 316 (25168-25194) & Track 319 (25188-25198) overlap: 6
+Overlap: Track 317 (25170-25194) & Track 318 (25188-25198) overlap: 6
+Overlap: Track 317 (25170-25194) & Track 319 (25188-25198) overlap: 6
+Overlap: Track 318 (25188-25198) & Track 319 (25188-25198) overlap: 10
+Overlap: Track 327 (25372-25666) & Track 330 (25408-25866) overlap: 258
+Overlap: Track 327 (25372-25666) & Track 331 (25432-25483) overlap: 234
+Overlap: Track 327 (25372-25666) & Track 333 (25439-25566) overlap: 227
+Overlap: Track 327 (25372-25666) & Track 335 (25468-25505) overlap: 198
+Overlap: Track 327 (25372-25666) & Track 336 (25470-25510) overlap: 196
+Overlap: Track 327 (25372-25666) & Track 337 (25488-25574) overlap: 178
+Overlap: Track 327 (25372-25666) & Track 338 (25488-25534) overlap: 178
+Overlap: Track 330 (25408-25866) & Track 331 (25432-25483) overlap: 434
+Overlap: Track 330 (25408-25866) & Track 333 (25439-25566) overlap: 427
+Overlap: Track 330 (25408-25866) & Track 335 (25468-25505) overlap: 398
+Overlap: Track 330 (25408-25866) & Track 336 (25470-25510) overlap: 396
+Overlap: Track 330 (25408-25866) & Track 337 (25488-25574) overlap: 378
+Overlap: Track 330 (25408-25866) & Track 338 (25488-25534) overlap: 378
+Fragment: Track 330 (ends 25866) -> Track 340 (starts 25868) gap: 2
+Fragment: Track 330 (ends 25866) -> Track 341 (starts 25872) gap: 6
+Fragment: Track 330 (ends 25866) -> Track 342 (starts 25872) gap: 6
+Fragment: Track 330 (ends 25866) -> Track 343 (starts 25876) gap: 10
+Fragment: Track 330 (ends 25866) -> Track 345 (starts 25880) gap: 14
+Fragment: Track 330 (ends 25866) -> Track 346 (starts 25880) gap: 14
+Fragment: Track 330 (ends 25866) -> Track 347 (starts 25888) gap: 22
+Fragment: Track 330 (ends 25866) -> Track 348 (starts 25888) gap: 22
+Fragment: Track 330 (ends 25866) -> Track 349 (starts 25890) gap: 24
+Fragment: Track 330 (ends 25866) -> Track 350 (starts 25892) gap: 26
+Fragment: Track 330 (ends 25866) -> Track 351 (starts 25892) gap: 26
+Fragment: Track 330 (ends 25866) -> Track 352 (starts 25896) gap: 30
+Fragment: Track 330 (ends 25866) -> Track 353 (starts 25896) gap: 30
+Fragment: Track 330 (ends 25866) -> Track 354 (starts 25896) gap: 30
+Fragment: Track 330 (ends 25866) -> Track 355 (starts 25896) gap: 30
+Fragment: Track 330 (ends 25866) -> Track 356 (starts 25896) gap: 30
+Fragment: Track 330 (ends 25866) -> Track 358 (starts 25896) gap: 30
+Fragment: Track 330 (ends 25866) -> Track 359 (starts 25908) gap: 42
+Fragment: Track 330 (ends 25866) -> Track 360 (starts 25909) gap: 43
+Overlap: Track 331 (25432-25483) & Track 333 (25439-25566) overlap: 44
+Overlap: Track 331 (25432-25483) & Track 335 (25468-25505) overlap: 15
+Overlap: Track 331 (25432-25483) & Track 336 (25470-25510) overlap: 13
+Fragment: Track 331 (ends 25483) -> Track 337 (starts 25488) gap: 5
+Fragment: Track 331 (ends 25483) -> Track 338 (starts 25488) gap: 5
+Overlap: Track 333 (25439-25566) & Track 335 (25468-25505) overlap: 98
+Overlap: Track 333 (25439-25566) & Track 336 (25470-25510) overlap: 96
+Overlap: Track 333 (25439-25566) & Track 337 (25488-25574) overlap: 78
+Overlap: Track 333 (25439-25566) & Track 338 (25488-25534) overlap: 78
+Overlap: Track 335 (25468-25505) & Track 336 (25470-25510) overlap: 35
+Overlap: Track 335 (25468-25505) & Track 337 (25488-25574) overlap: 17
+Overlap: Track 335 (25468-25505) & Track 338 (25488-25534) overlap: 17
+Overlap: Track 336 (25470-25510) & Track 337 (25488-25574) overlap: 22
+Overlap: Track 336 (25470-25510) & Track 338 (25488-25534) overlap: 22
+Overlap: Track 337 (25488-25574) & Track 338 (25488-25534) overlap: 86
+Overlap: Track 340 (25868-25930) & Track 341 (25872-25926) overlap: 58
+Overlap: Track 340 (25868-25930) & Track 342 (25872-25914) overlap: 58
+Overlap: Track 340 (25868-25930) & Track 343 (25876-25918) overlap: 54
+Overlap: Track 340 (25868-25930) & Track 345 (25880-25986) overlap: 50
+Overlap: Track 340 (25868-25930) & Track 346 (25880-25924) overlap: 50
+Overlap: Track 340 (25868-25930) & Track 347 (25888-25926) overlap: 42
+Overlap: Track 340 (25868-25930) & Track 348 (25888-25926) overlap: 42
+Overlap: Track 340 (25868-25930) & Track 349 (25890-25930) overlap: 40
+Overlap: Track 340 (25868-25930) & Track 350 (25892-25926) overlap: 38
+Overlap: Track 340 (25868-25930) & Track 351 (25892-25910) overlap: 38
+Overlap: Track 340 (25868-25930) & Track 352 (25896-25926) overlap: 34
+Overlap: Track 340 (25868-25930) & Track 353 (25896-25918) overlap: 34
+Overlap: Track 340 (25868-25930) & Track 354 (25896-25946) overlap: 34
+Overlap: Track 340 (25868-25930) & Track 355 (25896-25918) overlap: 34
+Overlap: Track 340 (25868-25930) & Track 356 (25896-25930) overlap: 34
+Overlap: Track 340 (25868-25930) & Track 358 (25896-25914) overlap: 34
+Overlap: Track 340 (25868-25930) & Track 359 (25908-25926) overlap: 22
+Overlap: Track 340 (25868-25930) & Track 360 (25909-25910) overlap: 21
+Overlap: Track 341 (25872-25926) & Track 342 (25872-25914) overlap: 54
+Overlap: Track 341 (25872-25926) & Track 343 (25876-25918) overlap: 50
+Overlap: Track 341 (25872-25926) & Track 345 (25880-25986) overlap: 46
+Overlap: Track 341 (25872-25926) & Track 346 (25880-25924) overlap: 46
+Overlap: Track 341 (25872-25926) & Track 347 (25888-25926) overlap: 38
+Overlap: Track 341 (25872-25926) & Track 348 (25888-25926) overlap: 38
+Overlap: Track 341 (25872-25926) & Track 349 (25890-25930) overlap: 36
+Overlap: Track 341 (25872-25926) & Track 350 (25892-25926) overlap: 34
+Overlap: Track 341 (25872-25926) & Track 351 (25892-25910) overlap: 34
+Overlap: Track 341 (25872-25926) & Track 352 (25896-25926) overlap: 30
+Overlap: Track 341 (25872-25926) & Track 353 (25896-25918) overlap: 30
+Overlap: Track 341 (25872-25926) & Track 354 (25896-25946) overlap: 30
+Overlap: Track 341 (25872-25926) & Track 355 (25896-25918) overlap: 30
+Overlap: Track 341 (25872-25926) & Track 356 (25896-25930) overlap: 30
+Overlap: Track 341 (25872-25926) & Track 358 (25896-25914) overlap: 30
+Overlap: Track 341 (25872-25926) & Track 359 (25908-25926) overlap: 18
+Overlap: Track 341 (25872-25926) & Track 360 (25909-25910) overlap: 17
+Overlap: Track 342 (25872-25914) & Track 343 (25876-25918) overlap: 38
+Overlap: Track 342 (25872-25914) & Track 345 (25880-25986) overlap: 34
+Overlap: Track 342 (25872-25914) & Track 346 (25880-25924) overlap: 34
+Overlap: Track 342 (25872-25914) & Track 347 (25888-25926) overlap: 26
+Overlap: Track 342 (25872-25914) & Track 348 (25888-25926) overlap: 26
+Overlap: Track 342 (25872-25914) & Track 349 (25890-25930) overlap: 24
+Overlap: Track 342 (25872-25914) & Track 350 (25892-25926) overlap: 22
+Overlap: Track 342 (25872-25914) & Track 351 (25892-25910) overlap: 22
+Overlap: Track 342 (25872-25914) & Track 352 (25896-25926) overlap: 18
+Overlap: Track 342 (25872-25914) & Track 353 (25896-25918) overlap: 18
+Overlap: Track 342 (25872-25914) & Track 354 (25896-25946) overlap: 18
+Overlap: Track 342 (25872-25914) & Track 355 (25896-25918) overlap: 18
+Overlap: Track 342 (25872-25914) & Track 356 (25896-25930) overlap: 18
+Overlap: Track 342 (25872-25914) & Track 358 (25896-25914) overlap: 18
+Overlap: Track 342 (25872-25914) & Track 359 (25908-25926) overlap: 6
+Overlap: Track 342 (25872-25914) & Track 360 (25909-25910) overlap: 5
+Overlap: Track 343 (25876-25918) & Track 345 (25880-25986) overlap: 38
+Overlap: Track 343 (25876-25918) & Track 346 (25880-25924) overlap: 38
+Overlap: Track 343 (25876-25918) & Track 347 (25888-25926) overlap: 30
+Overlap: Track 343 (25876-25918) & Track 348 (25888-25926) overlap: 30
+Overlap: Track 343 (25876-25918) & Track 349 (25890-25930) overlap: 28
+Overlap: Track 343 (25876-25918) & Track 350 (25892-25926) overlap: 26
+Overlap: Track 343 (25876-25918) & Track 351 (25892-25910) overlap: 26
+Overlap: Track 343 (25876-25918) & Track 352 (25896-25926) overlap: 22
+Overlap: Track 343 (25876-25918) & Track 353 (25896-25918) overlap: 22
+Overlap: Track 343 (25876-25918) & Track 354 (25896-25946) overlap: 22
+Overlap: Track 343 (25876-25918) & Track 355 (25896-25918) overlap: 22
+Overlap: Track 343 (25876-25918) & Track 356 (25896-25930) overlap: 22
+Overlap: Track 343 (25876-25918) & Track 358 (25896-25914) overlap: 22
+Overlap: Track 343 (25876-25918) & Track 359 (25908-25926) overlap: 10
+Overlap: Track 343 (25876-25918) & Track 360 (25909-25910) overlap: 9
+Overlap: Track 345 (25880-25986) & Track 346 (25880-25924) overlap: 106
+Overlap: Track 345 (25880-25986) & Track 347 (25888-25926) overlap: 98
+Overlap: Track 345 (25880-25986) & Track 348 (25888-25926) overlap: 98
+Overlap: Track 345 (25880-25986) & Track 349 (25890-25930) overlap: 96
+Overlap: Track 345 (25880-25986) & Track 350 (25892-25926) overlap: 94
+Overlap: Track 345 (25880-25986) & Track 351 (25892-25910) overlap: 94
+Overlap: Track 345 (25880-25986) & Track 352 (25896-25926) overlap: 90
+Overlap: Track 345 (25880-25986) & Track 353 (25896-25918) overlap: 90
+Overlap: Track 345 (25880-25986) & Track 354 (25896-25946) overlap: 90
+Overlap: Track 345 (25880-25986) & Track 355 (25896-25918) overlap: 90
+Overlap: Track 345 (25880-25986) & Track 356 (25896-25930) overlap: 90
+Overlap: Track 345 (25880-25986) & Track 358 (25896-25914) overlap: 90
+Overlap: Track 345 (25880-25986) & Track 359 (25908-25926) overlap: 78
+Overlap: Track 345 (25880-25986) & Track 360 (25909-25910) overlap: 77
+Overlap: Track 346 (25880-25924) & Track 347 (25888-25926) overlap: 36
+Overlap: Track 346 (25880-25924) & Track 348 (25888-25926) overlap: 36
+Overlap: Track 346 (25880-25924) & Track 349 (25890-25930) overlap: 34
+Overlap: Track 346 (25880-25924) & Track 350 (25892-25926) overlap: 32
+Overlap: Track 346 (25880-25924) & Track 351 (25892-25910) overlap: 32
+Overlap: Track 346 (25880-25924) & Track 352 (25896-25926) overlap: 28
+Overlap: Track 346 (25880-25924) & Track 353 (25896-25918) overlap: 28
+Overlap: Track 346 (25880-25924) & Track 354 (25896-25946) overlap: 28
+Overlap: Track 346 (25880-25924) & Track 355 (25896-25918) overlap: 28
+Overlap: Track 346 (25880-25924) & Track 356 (25896-25930) overlap: 28
+Overlap: Track 346 (25880-25924) & Track 358 (25896-25914) overlap: 28
+Overlap: Track 346 (25880-25924) & Track 359 (25908-25926) overlap: 16
+Overlap: Track 346 (25880-25924) & Track 360 (25909-25910) overlap: 15
+Overlap: Track 347 (25888-25926) & Track 348 (25888-25926) overlap: 38
+Overlap: Track 347 (25888-25926) & Track 349 (25890-25930) overlap: 36
+Overlap: Track 347 (25888-25926) & Track 350 (25892-25926) overlap: 34
+Overlap: Track 347 (25888-25926) & Track 351 (25892-25910) overlap: 34
+Overlap: Track 347 (25888-25926) & Track 352 (25896-25926) overlap: 30
+Overlap: Track 347 (25888-25926) & Track 353 (25896-25918) overlap: 30
+Overlap: Track 347 (25888-25926) & Track 354 (25896-25946) overlap: 30
+Overlap: Track 347 (25888-25926) & Track 355 (25896-25918) overlap: 30
+Overlap: Track 347 (25888-25926) & Track 356 (25896-25930) overlap: 30
+Overlap: Track 347 (25888-25926) & Track 358 (25896-25914) overlap: 30
+Overlap: Track 347 (25888-25926) & Track 359 (25908-25926) overlap: 18
+Overlap: Track 347 (25888-25926) & Track 360 (25909-25910) overlap: 17
+Overlap: Track 348 (25888-25926) & Track 349 (25890-25930) overlap: 36
+Overlap: Track 348 (25888-25926) & Track 350 (25892-25926) overlap: 34
+Overlap: Track 348 (25888-25926) & Track 351 (25892-25910) overlap: 34
+Overlap: Track 348 (25888-25926) & Track 352 (25896-25926) overlap: 30
+Overlap: Track 348 (25888-25926) & Track 353 (25896-25918) overlap: 30
+Overlap: Track 348 (25888-25926) & Track 354 (25896-25946) overlap: 30
+Overlap: Track 348 (25888-25926) & Track 355 (25896-25918) overlap: 30
+Overlap: Track 348 (25888-25926) & Track 356 (25896-25930) overlap: 30
+Overlap: Track 348 (25888-25926) & Track 358 (25896-25914) overlap: 30
+Overlap: Track 348 (25888-25926) & Track 359 (25908-25926) overlap: 18
+Overlap: Track 348 (25888-25926) & Track 360 (25909-25910) overlap: 17
+Overlap: Track 349 (25890-25930) & Track 350 (25892-25926) overlap: 38
+Overlap: Track 349 (25890-25930) & Track 351 (25892-25910) overlap: 38
+Overlap: Track 349 (25890-25930) & Track 352 (25896-25926) overlap: 34
+Overlap: Track 349 (25890-25930) & Track 353 (25896-25918) overlap: 34
+Overlap: Track 349 (25890-25930) & Track 354 (25896-25946) overlap: 34
+Overlap: Track 349 (25890-25930) & Track 355 (25896-25918) overlap: 34
+Overlap: Track 349 (25890-25930) & Track 356 (25896-25930) overlap: 34
+Overlap: Track 349 (25890-25930) & Track 358 (25896-25914) overlap: 34
+Overlap: Track 349 (25890-25930) & Track 359 (25908-25926) overlap: 22
+Overlap: Track 349 (25890-25930) & Track 360 (25909-25910) overlap: 21
+Overlap: Track 350 (25892-25926) & Track 351 (25892-25910) overlap: 34
+Overlap: Track 350 (25892-25926) & Track 352 (25896-25926) overlap: 30
+Overlap: Track 350 (25892-25926) & Track 353 (25896-25918) overlap: 30
+Overlap: Track 350 (25892-25926) & Track 354 (25896-25946) overlap: 30
+Overlap: Track 350 (25892-25926) & Track 355 (25896-25918) overlap: 30
+Overlap: Track 350 (25892-25926) & Track 356 (25896-25930) overlap: 30
+Overlap: Track 350 (25892-25926) & Track 358 (25896-25914) overlap: 30
+Overlap: Track 350 (25892-25926) & Track 359 (25908-25926) overlap: 18
+Overlap: Track 350 (25892-25926) & Track 360 (25909-25910) overlap: 17
+Overlap: Track 351 (25892-25910) & Track 352 (25896-25926) overlap: 14
+Overlap: Track 351 (25892-25910) & Track 353 (25896-25918) overlap: 14
+Overlap: Track 351 (25892-25910) & Track 354 (25896-25946) overlap: 14
+Overlap: Track 351 (25892-25910) & Track 355 (25896-25918) overlap: 14
+Overlap: Track 351 (25892-25910) & Track 356 (25896-25930) overlap: 14
+Overlap: Track 351 (25892-25910) & Track 358 (25896-25914) overlap: 14
+Overlap: Track 351 (25892-25910) & Track 359 (25908-25926) overlap: 2
+Overlap: Track 351 (25892-25910) & Track 360 (25909-25910) overlap: 1
+Overlap: Track 352 (25896-25926) & Track 353 (25896-25918) overlap: 30
+Overlap: Track 352 (25896-25926) & Track 354 (25896-25946) overlap: 30
+Overlap: Track 352 (25896-25926) & Track 355 (25896-25918) overlap: 30
+Overlap: Track 352 (25896-25926) & Track 356 (25896-25930) overlap: 30
+Overlap: Track 352 (25896-25926) & Track 358 (25896-25914) overlap: 30
+Overlap: Track 352 (25896-25926) & Track 359 (25908-25926) overlap: 18
+Overlap: Track 352 (25896-25926) & Track 360 (25909-25910) overlap: 17
+Overlap: Track 353 (25896-25918) & Track 354 (25896-25946) overlap: 22
+Overlap: Track 353 (25896-25918) & Track 355 (25896-25918) overlap: 22
+Overlap: Track 353 (25896-25918) & Track 356 (25896-25930) overlap: 22
+Overlap: Track 353 (25896-25918) & Track 358 (25896-25914) overlap: 22
+Overlap: Track 353 (25896-25918) & Track 359 (25908-25926) overlap: 10
+Overlap: Track 353 (25896-25918) & Track 360 (25909-25910) overlap: 9
+Overlap: Track 354 (25896-25946) & Track 355 (25896-25918) overlap: 50
+Overlap: Track 354 (25896-25946) & Track 356 (25896-25930) overlap: 50
+Overlap: Track 354 (25896-25946) & Track 358 (25896-25914) overlap: 50
+Overlap: Track 354 (25896-25946) & Track 359 (25908-25926) overlap: 38
+Overlap: Track 354 (25896-25946) & Track 360 (25909-25910) overlap: 37
+Overlap: Track 355 (25896-25918) & Track 356 (25896-25930) overlap: 22
+Overlap: Track 355 (25896-25918) & Track 358 (25896-25914) overlap: 22
+Overlap: Track 355 (25896-25918) & Track 359 (25908-25926) overlap: 10
+Overlap: Track 355 (25896-25918) & Track 360 (25909-25910) overlap: 9
+Overlap: Track 356 (25896-25930) & Track 358 (25896-25914) overlap: 34
+Overlap: Track 356 (25896-25930) & Track 359 (25908-25926) overlap: 22
+Overlap: Track 356 (25896-25930) & Track 360 (25909-25910) overlap: 21
+Overlap: Track 358 (25896-25914) & Track 359 (25908-25926) overlap: 6
+Overlap: Track 358 (25896-25914) & Track 360 (25909-25910) overlap: 5
+Overlap: Track 359 (25908-25926) & Track 360 (25909-25910) overlap: 17
+Overlap: Track 365 (26340-26486) & Track 367 (26416-26486) overlap: 70
+Overlap: Track 365 (26340-26486) & Track 368 (26416-26506) overlap: 70
+Overlap: Track 365 (26340-26486) & Track 369 (26420-26490) overlap: 66
+Overlap: Track 365 (26340-26486) & Track 370 (26420-26490) overlap: 66
+Overlap: Track 365 (26340-26486) & Track 371 (26420-26494) overlap: 66
+Overlap: Track 365 (26340-26486) & Track 372 (26420-26486) overlap: 66
+Overlap: Track 365 (26340-26486) & Track 373 (26420-26506) overlap: 66
+Overlap: Track 365 (26340-26486) & Track 374 (26420-26486) overlap: 66
+Overlap: Track 365 (26340-26486) & Track 375 (26428-26494) overlap: 58
+Overlap: Track 365 (26340-26486) & Track 376 (26428-26646) overlap: 58
+Overlap: Track 365 (26340-26486) & Track 377 (26428-26515) overlap: 58
+Overlap: Track 365 (26340-26486) & Track 378 (26428-26506) overlap: 58
+Overlap: Track 365 (26340-26486) & Track 379 (26440-26510) overlap: 46
+Overlap: Track 365 (26340-26486) & Track 380 (26440-26490) overlap: 46
+Overlap: Track 365 (26340-26486) & Track 381 (26440-26506) overlap: 46
+Overlap: Track 365 (26340-26486) & Track 382 (26441-26490) overlap: 45
+Overlap: Track 365 (26340-26486) & Track 383 (26448-26506) overlap: 38
+Overlap: Track 365 (26340-26486) & Track 384 (26448-26486) overlap: 38
+Overlap: Track 365 (26340-26486) & Track 386 (26472-26486) overlap: 14
+Overlap: Track 365 (26340-26486) & Track 387 (26472-26510) overlap: 14
+Overlap: Track 365 (26340-26486) & Track 388 (26480-26498) overlap: 6
+Overlap: Track 365 (26340-26486) & Track 389 (26484-26506) overlap: 2
+Overlap: Track 367 (26416-26486) & Track 368 (26416-26506) overlap: 70
+Overlap: Track 367 (26416-26486) & Track 369 (26420-26490) overlap: 66
+Overlap: Track 367 (26416-26486) & Track 370 (26420-26490) overlap: 66
+Overlap: Track 367 (26416-26486) & Track 371 (26420-26494) overlap: 66
+Overlap: Track 367 (26416-26486) & Track 372 (26420-26486) overlap: 66
+Overlap: Track 367 (26416-26486) & Track 373 (26420-26506) overlap: 66
+Overlap: Track 367 (26416-26486) & Track 374 (26420-26486) overlap: 66
+Overlap: Track 367 (26416-26486) & Track 375 (26428-26494) overlap: 58
+Overlap: Track 367 (26416-26486) & Track 376 (26428-26646) overlap: 58
+Overlap: Track 367 (26416-26486) & Track 377 (26428-26515) overlap: 58
+Overlap: Track 367 (26416-26486) & Track 378 (26428-26506) overlap: 58
+Overlap: Track 367 (26416-26486) & Track 379 (26440-26510) overlap: 46
+Overlap: Track 367 (26416-26486) & Track 380 (26440-26490) overlap: 46
+Overlap: Track 367 (26416-26486) & Track 381 (26440-26506) overlap: 46
+Overlap: Track 367 (26416-26486) & Track 382 (26441-26490) overlap: 45
+Overlap: Track 367 (26416-26486) & Track 383 (26448-26506) overlap: 38
+Overlap: Track 367 (26416-26486) & Track 384 (26448-26486) overlap: 38
+Overlap: Track 367 (26416-26486) & Track 386 (26472-26486) overlap: 14
+Overlap: Track 367 (26416-26486) & Track 387 (26472-26510) overlap: 14
+Overlap: Track 367 (26416-26486) & Track 388 (26480-26498) overlap: 6
+Overlap: Track 367 (26416-26486) & Track 389 (26484-26506) overlap: 2
+Overlap: Track 368 (26416-26506) & Track 369 (26420-26490) overlap: 86
+Overlap: Track 368 (26416-26506) & Track 370 (26420-26490) overlap: 86
+Overlap: Track 368 (26416-26506) & Track 371 (26420-26494) overlap: 86
+Overlap: Track 368 (26416-26506) & Track 372 (26420-26486) overlap: 86
+Overlap: Track 368 (26416-26506) & Track 373 (26420-26506) overlap: 86
+Overlap: Track 368 (26416-26506) & Track 374 (26420-26486) overlap: 86
+Overlap: Track 368 (26416-26506) & Track 375 (26428-26494) overlap: 78
+Overlap: Track 368 (26416-26506) & Track 376 (26428-26646) overlap: 78
+Overlap: Track 368 (26416-26506) & Track 377 (26428-26515) overlap: 78
+Overlap: Track 368 (26416-26506) & Track 378 (26428-26506) overlap: 78
+Overlap: Track 368 (26416-26506) & Track 379 (26440-26510) overlap: 66
+Overlap: Track 368 (26416-26506) & Track 380 (26440-26490) overlap: 66
+Overlap: Track 368 (26416-26506) & Track 381 (26440-26506) overlap: 66
+Overlap: Track 368 (26416-26506) & Track 382 (26441-26490) overlap: 65
+Overlap: Track 368 (26416-26506) & Track 383 (26448-26506) overlap: 58
+Overlap: Track 368 (26416-26506) & Track 384 (26448-26486) overlap: 58
+Overlap: Track 368 (26416-26506) & Track 386 (26472-26486) overlap: 34
+Overlap: Track 368 (26416-26506) & Track 387 (26472-26510) overlap: 34
+Overlap: Track 368 (26416-26506) & Track 388 (26480-26498) overlap: 26
+Overlap: Track 368 (26416-26506) & Track 389 (26484-26506) overlap: 22
+Overlap: Track 369 (26420-26490) & Track 370 (26420-26490) overlap: 70
+Overlap: Track 369 (26420-26490) & Track 371 (26420-26494) overlap: 70
+Overlap: Track 369 (26420-26490) & Track 372 (26420-26486) overlap: 70
+Overlap: Track 369 (26420-26490) & Track 373 (26420-26506) overlap: 70
+Overlap: Track 369 (26420-26490) & Track 374 (26420-26486) overlap: 70
+Overlap: Track 369 (26420-26490) & Track 375 (26428-26494) overlap: 62
+Overlap: Track 369 (26420-26490) & Track 376 (26428-26646) overlap: 62
+Overlap: Track 369 (26420-26490) & Track 377 (26428-26515) overlap: 62
+Overlap: Track 369 (26420-26490) & Track 378 (26428-26506) overlap: 62
+Overlap: Track 369 (26420-26490) & Track 379 (26440-26510) overlap: 50
+Overlap: Track 369 (26420-26490) & Track 380 (26440-26490) overlap: 50
+Overlap: Track 369 (26420-26490) & Track 381 (26440-26506) overlap: 50
+Overlap: Track 369 (26420-26490) & Track 382 (26441-26490) overlap: 49
+Overlap: Track 369 (26420-26490) & Track 383 (26448-26506) overlap: 42
+Overlap: Track 369 (26420-26490) & Track 384 (26448-26486) overlap: 42
+Overlap: Track 369 (26420-26490) & Track 386 (26472-26486) overlap: 18
+Overlap: Track 369 (26420-26490) & Track 387 (26472-26510) overlap: 18
+Overlap: Track 369 (26420-26490) & Track 388 (26480-26498) overlap: 10
+Overlap: Track 369 (26420-26490) & Track 389 (26484-26506) overlap: 6
+Overlap: Track 370 (26420-26490) & Track 371 (26420-26494) overlap: 70
+Overlap: Track 370 (26420-26490) & Track 372 (26420-26486) overlap: 70
+Overlap: Track 370 (26420-26490) & Track 373 (26420-26506) overlap: 70
+Overlap: Track 370 (26420-26490) & Track 374 (26420-26486) overlap: 70
+Overlap: Track 370 (26420-26490) & Track 375 (26428-26494) overlap: 62
+Overlap: Track 370 (26420-26490) & Track 376 (26428-26646) overlap: 62
+Overlap: Track 370 (26420-26490) & Track 377 (26428-26515) overlap: 62
+Overlap: Track 370 (26420-26490) & Track 378 (26428-26506) overlap: 62
+Overlap: Track 370 (26420-26490) & Track 379 (26440-26510) overlap: 50
+Overlap: Track 370 (26420-26490) & Track 380 (26440-26490) overlap: 50
+Overlap: Track 370 (26420-26490) & Track 381 (26440-26506) overlap: 50
+Overlap: Track 370 (26420-26490) & Track 382 (26441-26490) overlap: 49
+Overlap: Track 370 (26420-26490) & Track 383 (26448-26506) overlap: 42
+Overlap: Track 370 (26420-26490) & Track 384 (26448-26486) overlap: 42
+Overlap: Track 370 (26420-26490) & Track 386 (26472-26486) overlap: 18
+Overlap: Track 370 (26420-26490) & Track 387 (26472-26510) overlap: 18
+Overlap: Track 370 (26420-26490) & Track 388 (26480-26498) overlap: 10
+Overlap: Track 370 (26420-26490) & Track 389 (26484-26506) overlap: 6
+Overlap: Track 371 (26420-26494) & Track 372 (26420-26486) overlap: 74
+Overlap: Track 371 (26420-26494) & Track 373 (26420-26506) overlap: 74
+Overlap: Track 371 (26420-26494) & Track 374 (26420-26486) overlap: 74
+Overlap: Track 371 (26420-26494) & Track 375 (26428-26494) overlap: 66
+Overlap: Track 371 (26420-26494) & Track 376 (26428-26646) overlap: 66
+Overlap: Track 371 (26420-26494) & Track 377 (26428-26515) overlap: 66
+Overlap: Track 371 (26420-26494) & Track 378 (26428-26506) overlap: 66
+Overlap: Track 371 (26420-26494) & Track 379 (26440-26510) overlap: 54
+Overlap: Track 371 (26420-26494) & Track 380 (26440-26490) overlap: 54
+Overlap: Track 371 (26420-26494) & Track 381 (26440-26506) overlap: 54
+Overlap: Track 371 (26420-26494) & Track 382 (26441-26490) overlap: 53
+Overlap: Track 371 (26420-26494) & Track 383 (26448-26506) overlap: 46
+Overlap: Track 371 (26420-26494) & Track 384 (26448-26486) overlap: 46
+Overlap: Track 371 (26420-26494) & Track 386 (26472-26486) overlap: 22
+Overlap: Track 371 (26420-26494) & Track 387 (26472-26510) overlap: 22
+Overlap: Track 371 (26420-26494) & Track 388 (26480-26498) overlap: 14
+Overlap: Track 371 (26420-26494) & Track 389 (26484-26506) overlap: 10
+Overlap: Track 372 (26420-26486) & Track 373 (26420-26506) overlap: 66
+Overlap: Track 372 (26420-26486) & Track 374 (26420-26486) overlap: 66
+Overlap: Track 372 (26420-26486) & Track 375 (26428-26494) overlap: 58
+Overlap: Track 372 (26420-26486) & Track 376 (26428-26646) overlap: 58
+Overlap: Track 372 (26420-26486) & Track 377 (26428-26515) overlap: 58
+Overlap: Track 372 (26420-26486) & Track 378 (26428-26506) overlap: 58
+Overlap: Track 372 (26420-26486) & Track 379 (26440-26510) overlap: 46
+Overlap: Track 372 (26420-26486) & Track 380 (26440-26490) overlap: 46
+Overlap: Track 372 (26420-26486) & Track 381 (26440-26506) overlap: 46
+Overlap: Track 372 (26420-26486) & Track 382 (26441-26490) overlap: 45
+Overlap: Track 372 (26420-26486) & Track 383 (26448-26506) overlap: 38
+Overlap: Track 372 (26420-26486) & Track 384 (26448-26486) overlap: 38
+Overlap: Track 372 (26420-26486) & Track 386 (26472-26486) overlap: 14
+Overlap: Track 372 (26420-26486) & Track 387 (26472-26510) overlap: 14
+Overlap: Track 372 (26420-26486) & Track 388 (26480-26498) overlap: 6
+Overlap: Track 372 (26420-26486) & Track 389 (26484-26506) overlap: 2
+Overlap: Track 373 (26420-26506) & Track 374 (26420-26486) overlap: 86
+Overlap: Track 373 (26420-26506) & Track 375 (26428-26494) overlap: 78
+Overlap: Track 373 (26420-26506) & Track 376 (26428-26646) overlap: 78
+Overlap: Track 373 (26420-26506) & Track 377 (26428-26515) overlap: 78
+Overlap: Track 373 (26420-26506) & Track 378 (26428-26506) overlap: 78
+Overlap: Track 373 (26420-26506) & Track 379 (26440-26510) overlap: 66
+Overlap: Track 373 (26420-26506) & Track 380 (26440-26490) overlap: 66
+Overlap: Track 373 (26420-26506) & Track 381 (26440-26506) overlap: 66
+Overlap: Track 373 (26420-26506) & Track 382 (26441-26490) overlap: 65
+Overlap: Track 373 (26420-26506) & Track 383 (26448-26506) overlap: 58
+Overlap: Track 373 (26420-26506) & Track 384 (26448-26486) overlap: 58
+Overlap: Track 373 (26420-26506) & Track 386 (26472-26486) overlap: 34
+Overlap: Track 373 (26420-26506) & Track 387 (26472-26510) overlap: 34
+Overlap: Track 373 (26420-26506) & Track 388 (26480-26498) overlap: 26
+Overlap: Track 373 (26420-26506) & Track 389 (26484-26506) overlap: 22
+Overlap: Track 374 (26420-26486) & Track 375 (26428-26494) overlap: 58
+Overlap: Track 374 (26420-26486) & Track 376 (26428-26646) overlap: 58
+Overlap: Track 374 (26420-26486) & Track 377 (26428-26515) overlap: 58
+Overlap: Track 374 (26420-26486) & Track 378 (26428-26506) overlap: 58
+Overlap: Track 374 (26420-26486) & Track 379 (26440-26510) overlap: 46
+Overlap: Track 374 (26420-26486) & Track 380 (26440-26490) overlap: 46
+Overlap: Track 374 (26420-26486) & Track 381 (26440-26506) overlap: 46
+Overlap: Track 374 (26420-26486) & Track 382 (26441-26490) overlap: 45
+Overlap: Track 374 (26420-26486) & Track 383 (26448-26506) overlap: 38
+Overlap: Track 374 (26420-26486) & Track 384 (26448-26486) overlap: 38
+Overlap: Track 374 (26420-26486) & Track 386 (26472-26486) overlap: 14
+Overlap: Track 374 (26420-26486) & Track 387 (26472-26510) overlap: 14
+Overlap: Track 374 (26420-26486) & Track 388 (26480-26498) overlap: 6
+Overlap: Track 374 (26420-26486) & Track 389 (26484-26506) overlap: 2
+Overlap: Track 375 (26428-26494) & Track 376 (26428-26646) overlap: 66
+Overlap: Track 375 (26428-26494) & Track 377 (26428-26515) overlap: 66
+Overlap: Track 375 (26428-26494) & Track 378 (26428-26506) overlap: 66
+Overlap: Track 375 (26428-26494) & Track 379 (26440-26510) overlap: 54
+Overlap: Track 375 (26428-26494) & Track 380 (26440-26490) overlap: 54
+Overlap: Track 375 (26428-26494) & Track 381 (26440-26506) overlap: 54
+Overlap: Track 375 (26428-26494) & Track 382 (26441-26490) overlap: 53
+Overlap: Track 375 (26428-26494) & Track 383 (26448-26506) overlap: 46
+Overlap: Track 375 (26428-26494) & Track 384 (26448-26486) overlap: 46
+Overlap: Track 375 (26428-26494) & Track 386 (26472-26486) overlap: 22
+Overlap: Track 375 (26428-26494) & Track 387 (26472-26510) overlap: 22
+Overlap: Track 375 (26428-26494) & Track 388 (26480-26498) overlap: 14
+Overlap: Track 375 (26428-26494) & Track 389 (26484-26506) overlap: 10
+Overlap: Track 376 (26428-26646) & Track 377 (26428-26515) overlap: 218
+Overlap: Track 376 (26428-26646) & Track 378 (26428-26506) overlap: 218
+Overlap: Track 376 (26428-26646) & Track 379 (26440-26510) overlap: 206
+Overlap: Track 376 (26428-26646) & Track 380 (26440-26490) overlap: 206
+Overlap: Track 376 (26428-26646) & Track 381 (26440-26506) overlap: 206
+Overlap: Track 376 (26428-26646) & Track 382 (26441-26490) overlap: 205
+Overlap: Track 376 (26428-26646) & Track 383 (26448-26506) overlap: 198
+Overlap: Track 376 (26428-26646) & Track 384 (26448-26486) overlap: 198
+Overlap: Track 376 (26428-26646) & Track 386 (26472-26486) overlap: 174
+Overlap: Track 376 (26428-26646) & Track 387 (26472-26510) overlap: 174
+Overlap: Track 376 (26428-26646) & Track 388 (26480-26498) overlap: 166
+Overlap: Track 376 (26428-26646) & Track 389 (26484-26506) overlap: 162
+Fragment: Track 376 (ends 26646) -> Track 393 (starts 26716) gap: 70
+Overlap: Track 377 (26428-26515) & Track 378 (26428-26506) overlap: 87
+Overlap: Track 377 (26428-26515) & Track 379 (26440-26510) overlap: 75
+Overlap: Track 377 (26428-26515) & Track 380 (26440-26490) overlap: 75
+Overlap: Track 377 (26428-26515) & Track 381 (26440-26506) overlap: 75
+Overlap: Track 377 (26428-26515) & Track 382 (26441-26490) overlap: 74
+Overlap: Track 377 (26428-26515) & Track 383 (26448-26506) overlap: 67
+Overlap: Track 377 (26428-26515) & Track 384 (26448-26486) overlap: 67
+Overlap: Track 377 (26428-26515) & Track 386 (26472-26486) overlap: 43
+Overlap: Track 377 (26428-26515) & Track 387 (26472-26510) overlap: 43
+Overlap: Track 377 (26428-26515) & Track 388 (26480-26498) overlap: 35
+Overlap: Track 377 (26428-26515) & Track 389 (26484-26506) overlap: 31
+Overlap: Track 378 (26428-26506) & Track 379 (26440-26510) overlap: 66
+Overlap: Track 378 (26428-26506) & Track 380 (26440-26490) overlap: 66
+Overlap: Track 378 (26428-26506) & Track 381 (26440-26506) overlap: 66
+Overlap: Track 378 (26428-26506) & Track 382 (26441-26490) overlap: 65
+Overlap: Track 378 (26428-26506) & Track 383 (26448-26506) overlap: 58
+Overlap: Track 378 (26428-26506) & Track 384 (26448-26486) overlap: 58
+Overlap: Track 378 (26428-26506) & Track 386 (26472-26486) overlap: 34
+Overlap: Track 378 (26428-26506) & Track 387 (26472-26510) overlap: 34
+Overlap: Track 378 (26428-26506) & Track 388 (26480-26498) overlap: 26
+Overlap: Track 378 (26428-26506) & Track 389 (26484-26506) overlap: 22
+Overlap: Track 379 (26440-26510) & Track 380 (26440-26490) overlap: 70
+Overlap: Track 379 (26440-26510) & Track 381 (26440-26506) overlap: 70
+Overlap: Track 379 (26440-26510) & Track 382 (26441-26490) overlap: 69
+Overlap: Track 379 (26440-26510) & Track 383 (26448-26506) overlap: 62
+Overlap: Track 379 (26440-26510) & Track 384 (26448-26486) overlap: 62
+Overlap: Track 379 (26440-26510) & Track 386 (26472-26486) overlap: 38
+Overlap: Track 379 (26440-26510) & Track 387 (26472-26510) overlap: 38
+Overlap: Track 379 (26440-26510) & Track 388 (26480-26498) overlap: 30
+Overlap: Track 379 (26440-26510) & Track 389 (26484-26506) overlap: 26
+Overlap: Track 380 (26440-26490) & Track 381 (26440-26506) overlap: 50
+Overlap: Track 380 (26440-26490) & Track 382 (26441-26490) overlap: 49
+Overlap: Track 380 (26440-26490) & Track 383 (26448-26506) overlap: 42
+Overlap: Track 380 (26440-26490) & Track 384 (26448-26486) overlap: 42
+Overlap: Track 380 (26440-26490) & Track 386 (26472-26486) overlap: 18
+Overlap: Track 380 (26440-26490) & Track 387 (26472-26510) overlap: 18
+Overlap: Track 380 (26440-26490) & Track 388 (26480-26498) overlap: 10
+Overlap: Track 380 (26440-26490) & Track 389 (26484-26506) overlap: 6
+Overlap: Track 381 (26440-26506) & Track 382 (26441-26490) overlap: 65
+Overlap: Track 381 (26440-26506) & Track 383 (26448-26506) overlap: 58
+Overlap: Track 381 (26440-26506) & Track 384 (26448-26486) overlap: 58
+Overlap: Track 381 (26440-26506) & Track 386 (26472-26486) overlap: 34
+Overlap: Track 381 (26440-26506) & Track 387 (26472-26510) overlap: 34
+Overlap: Track 381 (26440-26506) & Track 388 (26480-26498) overlap: 26
+Overlap: Track 381 (26440-26506) & Track 389 (26484-26506) overlap: 22
+Overlap: Track 382 (26441-26490) & Track 383 (26448-26506) overlap: 42
+Overlap: Track 382 (26441-26490) & Track 384 (26448-26486) overlap: 42
+Overlap: Track 382 (26441-26490) & Track 386 (26472-26486) overlap: 18
+Overlap: Track 382 (26441-26490) & Track 387 (26472-26510) overlap: 18
+Overlap: Track 382 (26441-26490) & Track 388 (26480-26498) overlap: 10
+Overlap: Track 382 (26441-26490) & Track 389 (26484-26506) overlap: 6
+Overlap: Track 383 (26448-26506) & Track 384 (26448-26486) overlap: 58
+Overlap: Track 383 (26448-26506) & Track 386 (26472-26486) overlap: 34
+Overlap: Track 383 (26448-26506) & Track 387 (26472-26510) overlap: 34
+Overlap: Track 383 (26448-26506) & Track 388 (26480-26498) overlap: 26
+Overlap: Track 383 (26448-26506) & Track 389 (26484-26506) overlap: 22
+Overlap: Track 384 (26448-26486) & Track 386 (26472-26486) overlap: 14
+Overlap: Track 384 (26448-26486) & Track 387 (26472-26510) overlap: 14
+Overlap: Track 384 (26448-26486) & Track 388 (26480-26498) overlap: 6
+Overlap: Track 384 (26448-26486) & Track 389 (26484-26506) overlap: 2
+Overlap: Track 386 (26472-26486) & Track 387 (26472-26510) overlap: 14
+Overlap: Track 386 (26472-26486) & Track 388 (26480-26498) overlap: 6
+Overlap: Track 386 (26472-26486) & Track 389 (26484-26506) overlap: 2
+Overlap: Track 387 (26472-26510) & Track 388 (26480-26498) overlap: 30
+Overlap: Track 387 (26472-26510) & Track 389 (26484-26506) overlap: 26
+Overlap: Track 388 (26480-26498) & Track 389 (26484-26506) overlap: 14
+Overlap: Track 393 (26716-26878) & Track 395 (26820-26886) overlap: 58
+Overlap: Track 393 (26716-26878) & Track 396 (26820-26886) overlap: 58
+Overlap: Track 393 (26716-26878) & Track 397 (26828-26894) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 398 (26828-26878) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 399 (26828-26898) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 400 (26828-26886) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 401 (26828-26878) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 402 (26828-26878) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 403 (26828-26886) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 404 (26828-26878) overlap: 50
+Overlap: Track 393 (26716-26878) & Track 405 (26830-26878) overlap: 48
+Overlap: Track 393 (26716-26878) & Track 406 (26832-26906) overlap: 46
+Overlap: Track 393 (26716-26878) & Track 407 (26832-26886) overlap: 46
+Overlap: Track 393 (26716-26878) & Track 408 (26832-26961) overlap: 46
+Overlap: Track 393 (26716-26878) & Track 409 (26832-26846) overlap: 46
+Overlap: Track 393 (26716-26878) & Track 410 (26852-26890) overlap: 26
+Overlap: Track 393 (26716-26878) & Track 411 (26876-26890) overlap: 2
+Overlap: Track 393 (26716-26878) & Track 412 (26876-26878) overlap: 2
+Overlap: Track 395 (26820-26886) & Track 396 (26820-26886) overlap: 66
+Overlap: Track 395 (26820-26886) & Track 397 (26828-26894) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 398 (26828-26878) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 399 (26828-26898) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 400 (26828-26886) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 401 (26828-26878) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 402 (26828-26878) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 403 (26828-26886) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 404 (26828-26878) overlap: 58
+Overlap: Track 395 (26820-26886) & Track 405 (26830-26878) overlap: 56
+Overlap: Track 395 (26820-26886) & Track 406 (26832-26906) overlap: 54
+Overlap: Track 395 (26820-26886) & Track 407 (26832-26886) overlap: 54
+Overlap: Track 395 (26820-26886) & Track 408 (26832-26961) overlap: 54
+Overlap: Track 395 (26820-26886) & Track 409 (26832-26846) overlap: 54
+Overlap: Track 395 (26820-26886) & Track 410 (26852-26890) overlap: 34
+Overlap: Track 395 (26820-26886) & Track 411 (26876-26890) overlap: 10
+Overlap: Track 395 (26820-26886) & Track 412 (26876-26878) overlap: 10
+Overlap: Track 396 (26820-26886) & Track 397 (26828-26894) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 398 (26828-26878) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 399 (26828-26898) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 400 (26828-26886) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 401 (26828-26878) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 402 (26828-26878) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 403 (26828-26886) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 404 (26828-26878) overlap: 58
+Overlap: Track 396 (26820-26886) & Track 405 (26830-26878) overlap: 56
+Overlap: Track 396 (26820-26886) & Track 406 (26832-26906) overlap: 54
+Overlap: Track 396 (26820-26886) & Track 407 (26832-26886) overlap: 54
+Overlap: Track 396 (26820-26886) & Track 408 (26832-26961) overlap: 54
+Overlap: Track 396 (26820-26886) & Track 409 (26832-26846) overlap: 54
+Overlap: Track 396 (26820-26886) & Track 410 (26852-26890) overlap: 34
+Overlap: Track 396 (26820-26886) & Track 411 (26876-26890) overlap: 10
+Overlap: Track 396 (26820-26886) & Track 412 (26876-26878) overlap: 10
+Overlap: Track 397 (26828-26894) & Track 398 (26828-26878) overlap: 66
+Overlap: Track 397 (26828-26894) & Track 399 (26828-26898) overlap: 66
+Overlap: Track 397 (26828-26894) & Track 400 (26828-26886) overlap: 66
+Overlap: Track 397 (26828-26894) & Track 401 (26828-26878) overlap: 66
+Overlap: Track 397 (26828-26894) & Track 402 (26828-26878) overlap: 66
+Overlap: Track 397 (26828-26894) & Track 403 (26828-26886) overlap: 66
+Overlap: Track 397 (26828-26894) & Track 404 (26828-26878) overlap: 66
+Overlap: Track 397 (26828-26894) & Track 405 (26830-26878) overlap: 64
+Overlap: Track 397 (26828-26894) & Track 406 (26832-26906) overlap: 62
+Overlap: Track 397 (26828-26894) & Track 407 (26832-26886) overlap: 62
+Overlap: Track 397 (26828-26894) & Track 408 (26832-26961) overlap: 62
+Overlap: Track 397 (26828-26894) & Track 409 (26832-26846) overlap: 62
+Overlap: Track 397 (26828-26894) & Track 410 (26852-26890) overlap: 42
+Overlap: Track 397 (26828-26894) & Track 411 (26876-26890) overlap: 18
+Overlap: Track 397 (26828-26894) & Track 412 (26876-26878) overlap: 18
+Overlap: Track 398 (26828-26878) & Track 399 (26828-26898) overlap: 50
+Overlap: Track 398 (26828-26878) & Track 400 (26828-26886) overlap: 50
+Overlap: Track 398 (26828-26878) & Track 401 (26828-26878) overlap: 50
+Overlap: Track 398 (26828-26878) & Track 402 (26828-26878) overlap: 50
+Overlap: Track 398 (26828-26878) & Track 403 (26828-26886) overlap: 50
+Overlap: Track 398 (26828-26878) & Track 404 (26828-26878) overlap: 50
+Overlap: Track 398 (26828-26878) & Track 405 (26830-26878) overlap: 48
+Overlap: Track 398 (26828-26878) & Track 406 (26832-26906) overlap: 46
+Overlap: Track 398 (26828-26878) & Track 407 (26832-26886) overlap: 46
+Overlap: Track 398 (26828-26878) & Track 408 (26832-26961) overlap: 46
+Overlap: Track 398 (26828-26878) & Track 409 (26832-26846) overlap: 46
+Overlap: Track 398 (26828-26878) & Track 410 (26852-26890) overlap: 26
+Overlap: Track 398 (26828-26878) & Track 411 (26876-26890) overlap: 2
+Overlap: Track 398 (26828-26878) & Track 412 (26876-26878) overlap: 2
+Overlap: Track 399 (26828-26898) & Track 400 (26828-26886) overlap: 70
+Overlap: Track 399 (26828-26898) & Track 401 (26828-26878) overlap: 70
+Overlap: Track 399 (26828-26898) & Track 402 (26828-26878) overlap: 70
+Overlap: Track 399 (26828-26898) & Track 403 (26828-26886) overlap: 70
+Overlap: Track 399 (26828-26898) & Track 404 (26828-26878) overlap: 70
+Overlap: Track 399 (26828-26898) & Track 405 (26830-26878) overlap: 68
+Overlap: Track 399 (26828-26898) & Track 406 (26832-26906) overlap: 66
+Overlap: Track 399 (26828-26898) & Track 407 (26832-26886) overlap: 66
+Overlap: Track 399 (26828-26898) & Track 408 (26832-26961) overlap: 66
+Overlap: Track 399 (26828-26898) & Track 409 (26832-26846) overlap: 66
+Overlap: Track 399 (26828-26898) & Track 410 (26852-26890) overlap: 46
+Overlap: Track 399 (26828-26898) & Track 411 (26876-26890) overlap: 22
+Overlap: Track 399 (26828-26898) & Track 412 (26876-26878) overlap: 22
+Overlap: Track 400 (26828-26886) & Track 401 (26828-26878) overlap: 58
+Overlap: Track 400 (26828-26886) & Track 402 (26828-26878) overlap: 58
+Overlap: Track 400 (26828-26886) & Track 403 (26828-26886) overlap: 58
+Overlap: Track 400 (26828-26886) & Track 404 (26828-26878) overlap: 58
+Overlap: Track 400 (26828-26886) & Track 405 (26830-26878) overlap: 56
+Overlap: Track 400 (26828-26886) & Track 406 (26832-26906) overlap: 54
+Overlap: Track 400 (26828-26886) & Track 407 (26832-26886) overlap: 54
+Overlap: Track 400 (26828-26886) & Track 408 (26832-26961) overlap: 54
+Overlap: Track 400 (26828-26886) & Track 409 (26832-26846) overlap: 54
+Overlap: Track 400 (26828-26886) & Track 410 (26852-26890) overlap: 34
+Overlap: Track 400 (26828-26886) & Track 411 (26876-26890) overlap: 10
+Overlap: Track 400 (26828-26886) & Track 412 (26876-26878) overlap: 10
+Overlap: Track 401 (26828-26878) & Track 402 (26828-26878) overlap: 50
+Overlap: Track 401 (26828-26878) & Track 403 (26828-26886) overlap: 50
+Overlap: Track 401 (26828-26878) & Track 404 (26828-26878) overlap: 50
+Overlap: Track 401 (26828-26878) & Track 405 (26830-26878) overlap: 48
+Overlap: Track 401 (26828-26878) & Track 406 (26832-26906) overlap: 46
+Overlap: Track 401 (26828-26878) & Track 407 (26832-26886) overlap: 46
+Overlap: Track 401 (26828-26878) & Track 408 (26832-26961) overlap: 46
+Overlap: Track 401 (26828-26878) & Track 409 (26832-26846) overlap: 46
+Overlap: Track 401 (26828-26878) & Track 410 (26852-26890) overlap: 26
+Overlap: Track 401 (26828-26878) & Track 411 (26876-26890) overlap: 2
+Overlap: Track 401 (26828-26878) & Track 412 (26876-26878) overlap: 2
+Overlap: Track 402 (26828-26878) & Track 403 (26828-26886) overlap: 50
+Overlap: Track 402 (26828-26878) & Track 404 (26828-26878) overlap: 50
+Overlap: Track 402 (26828-26878) & Track 405 (26830-26878) overlap: 48
+Overlap: Track 402 (26828-26878) & Track 406 (26832-26906) overlap: 46
+Overlap: Track 402 (26828-26878) & Track 407 (26832-26886) overlap: 46
+Overlap: Track 402 (26828-26878) & Track 408 (26832-26961) overlap: 46
+Overlap: Track 402 (26828-26878) & Track 409 (26832-26846) overlap: 46
+Overlap: Track 402 (26828-26878) & Track 410 (26852-26890) overlap: 26
+Overlap: Track 402 (26828-26878) & Track 411 (26876-26890) overlap: 2
+Overlap: Track 402 (26828-26878) & Track 412 (26876-26878) overlap: 2
+Overlap: Track 403 (26828-26886) & Track 404 (26828-26878) overlap: 58
+Overlap: Track 403 (26828-26886) & Track 405 (26830-26878) overlap: 56
+Overlap: Track 403 (26828-26886) & Track 406 (26832-26906) overlap: 54
+Overlap: Track 403 (26828-26886) & Track 407 (26832-26886) overlap: 54
+Overlap: Track 403 (26828-26886) & Track 408 (26832-26961) overlap: 54
+Overlap: Track 403 (26828-26886) & Track 409 (26832-26846) overlap: 54
+Overlap: Track 403 (26828-26886) & Track 410 (26852-26890) overlap: 34
+Overlap: Track 403 (26828-26886) & Track 411 (26876-26890) overlap: 10
+Overlap: Track 403 (26828-26886) & Track 412 (26876-26878) overlap: 10
+Overlap: Track 404 (26828-26878) & Track 405 (26830-26878) overlap: 48
+Overlap: Track 404 (26828-26878) & Track 406 (26832-26906) overlap: 46
+Overlap: Track 404 (26828-26878) & Track 407 (26832-26886) overlap: 46
+Overlap: Track 404 (26828-26878) & Track 408 (26832-26961) overlap: 46
+Overlap: Track 404 (26828-26878) & Track 409 (26832-26846) overlap: 46
+Overlap: Track 404 (26828-26878) & Track 410 (26852-26890) overlap: 26
+Overlap: Track 404 (26828-26878) & Track 411 (26876-26890) overlap: 2
+Overlap: Track 404 (26828-26878) & Track 412 (26876-26878) overlap: 2
+Overlap: Track 405 (26830-26878) & Track 406 (26832-26906) overlap: 46
+Overlap: Track 405 (26830-26878) & Track 407 (26832-26886) overlap: 46
+Overlap: Track 405 (26830-26878) & Track 408 (26832-26961) overlap: 46
+Overlap: Track 405 (26830-26878) & Track 409 (26832-26846) overlap: 46
+Overlap: Track 405 (26830-26878) & Track 410 (26852-26890) overlap: 26
+Overlap: Track 405 (26830-26878) & Track 411 (26876-26890) overlap: 2
+Overlap: Track 405 (26830-26878) & Track 412 (26876-26878) overlap: 2
+Overlap: Track 406 (26832-26906) & Track 407 (26832-26886) overlap: 74
+Overlap: Track 406 (26832-26906) & Track 408 (26832-26961) overlap: 74
+Overlap: Track 406 (26832-26906) & Track 409 (26832-26846) overlap: 74
+Overlap: Track 406 (26832-26906) & Track 410 (26852-26890) overlap: 54
+Overlap: Track 406 (26832-26906) & Track 411 (26876-26890) overlap: 30
+Overlap: Track 406 (26832-26906) & Track 412 (26876-26878) overlap: 30
+Overlap: Track 407 (26832-26886) & Track 408 (26832-26961) overlap: 54
+Overlap: Track 407 (26832-26886) & Track 409 (26832-26846) overlap: 54
+Overlap: Track 407 (26832-26886) & Track 410 (26852-26890) overlap: 34
+Overlap: Track 407 (26832-26886) & Track 411 (26876-26890) overlap: 10
+Overlap: Track 407 (26832-26886) & Track 412 (26876-26878) overlap: 10
+Overlap: Track 408 (26832-26961) & Track 409 (26832-26846) overlap: 129
+Overlap: Track 408 (26832-26961) & Track 410 (26852-26890) overlap: 109
+Overlap: Track 408 (26832-26961) & Track 411 (26876-26890) overlap: 85
+Overlap: Track 408 (26832-26961) & Track 412 (26876-26878) overlap: 85
+Fragment: Track 409 (ends 26846) -> Track 410 (starts 26852) gap: 6
+Fragment: Track 409 (ends 26846) -> Track 411 (starts 26876) gap: 30
+Fragment: Track 409 (ends 26846) -> Track 412 (starts 26876) gap: 30
+Overlap: Track 410 (26852-26890) & Track 411 (26876-26890) overlap: 14
+Overlap: Track 410 (26852-26890) & Track 412 (26876-26878) overlap: 14
+Overlap: Track 411 (26876-26890) & Track 412 (26876-26878) overlap: 14
+Overlap: Track 429 (28012-28026) & Track 430 (28016-28026) overlap: 10
+Overlap: Track 429 (28012-28026) & Track 431 (28016-28018) overlap: 10
+Fragment: Track 429 (ends 28026) -> Track 434 (starts 28148) gap: 122
+Fragment: Track 429 (ends 28026) -> Track 436 (starts 28168) gap: 142
+Fragment: Track 429 (ends 28026) -> Track 437 (starts 28172) gap: 146
+Fragment: Track 429 (ends 28026) -> Track 438 (starts 28172) gap: 146
+Overlap: Track 430 (28016-28026) & Track 431 (28016-28018) overlap: 10
+Fragment: Track 430 (ends 28026) -> Track 434 (starts 28148) gap: 122
+Fragment: Track 430 (ends 28026) -> Track 436 (starts 28168) gap: 142
+Fragment: Track 430 (ends 28026) -> Track 437 (starts 28172) gap: 146
+Fragment: Track 430 (ends 28026) -> Track 438 (starts 28172) gap: 146
+Fragment: Track 431 (ends 28018) -> Track 434 (starts 28148) gap: 130
+Overlap: Track 434 (28148-28218) & Track 436 (28168-28186) overlap: 50
+Overlap: Track 434 (28148-28218) & Track 437 (28172-28190) overlap: 46
+Overlap: Track 434 (28148-28218) & Track 438 (28172-28206) overlap: 46
+Overlap: Track 436 (28168-28186) & Track 437 (28172-28190) overlap: 14
+Overlap: Track 436 (28168-28186) & Track 438 (28172-28206) overlap: 14
+Overlap: Track 437 (28172-28190) & Track 438 (28172-28206) overlap: 18
+Overlap: Track 486 (32172-32186) & Track 488 (32176-32218) overlap: 10
+Overlap: Track 486 (32172-32186) & Track 489 (32182-32254) overlap: 4
+Fragment: Track 486 (ends 32186) -> Track 490 (starts 32188) gap: 2
+Overlap: Track 488 (32176-32218) & Track 489 (32182-32254) overlap: 36
+Overlap: Track 488 (32176-32218) & Track 490 (32188-32194) overlap: 30
+Overlap: Track 489 (32182-32254) & Track 490 (32188-32194) overlap: 66
+Overlap: Track 512 (34436-34466) & Track 513 (34451-34466) overlap: 15
+Overlap: Track 512 (34436-34466) & Track 514 (34451-34466) overlap: 15
+Overlap: Track 512 (34436-34466) & Track 515 (34456-34466) overlap: 10
+Overlap: Track 512 (34436-34466) & Track 516 (34456-34466) overlap: 10
+Overlap: Track 512 (34436-34466) & Track 517 (34456-34486) overlap: 10
+Overlap: Track 513 (34451-34466) & Track 514 (34451-34466) overlap: 15
+Overlap: Track 513 (34451-34466) & Track 515 (34456-34466) overlap: 10
+Overlap: Track 513 (34451-34466) & Track 516 (34456-34466) overlap: 10
+Overlap: Track 513 (34451-34466) & Track 517 (34456-34486) overlap: 10
+Overlap: Track 514 (34451-34466) & Track 515 (34456-34466) overlap: 10
+Overlap: Track 514 (34451-34466) & Track 516 (34456-34466) overlap: 10
+Overlap: Track 514 (34451-34466) & Track 517 (34456-34486) overlap: 10
+Overlap: Track 515 (34456-34466) & Track 516 (34456-34466) overlap: 10
+Overlap: Track 515 (34456-34466) & Track 517 (34456-34486) overlap: 10
+Overlap: Track 516 (34456-34466) & Track 517 (34456-34486) overlap: 10
+Overlap: Track 524 (35288-35341) & Track 525 (35288-35338) overlap: 53
+Overlap: Track 524 (35288-35341) & Track 526 (35288-35304) overlap: 53
+Overlap: Track 524 (35288-35341) & Track 527 (35289-35329) overlap: 52
+Overlap: Track 524 (35288-35341) & Track 528 (35291-35338) overlap: 50
+Overlap: Track 524 (35288-35341) & Track 529 (35291-35349) overlap: 50
+Overlap: Track 524 (35288-35341) & Track 532 (35311-35346) overlap: 30
+Overlap: Track 524 (35288-35341) & Track 533 (35311-35346) overlap: 30
+Overlap: Track 524 (35288-35341) & Track 534 (35311-35338) overlap: 30
+Overlap: Track 524 (35288-35341) & Track 536 (35321-35341) overlap: 20
+Overlap: Track 524 (35288-35341) & Track 537 (35323-35366) overlap: 18
+Overlap: Track 525 (35288-35338) & Track 526 (35288-35304) overlap: 50
+Overlap: Track 525 (35288-35338) & Track 527 (35289-35329) overlap: 49
+Overlap: Track 525 (35288-35338) & Track 528 (35291-35338) overlap: 47
+Overlap: Track 525 (35288-35338) & Track 529 (35291-35349) overlap: 47
+Overlap: Track 525 (35288-35338) & Track 532 (35311-35346) overlap: 27
+Overlap: Track 525 (35288-35338) & Track 533 (35311-35346) overlap: 27
+Overlap: Track 525 (35288-35338) & Track 534 (35311-35338) overlap: 27
+Overlap: Track 525 (35288-35338) & Track 536 (35321-35341) overlap: 17
+Overlap: Track 525 (35288-35338) & Track 537 (35323-35366) overlap: 15
+Overlap: Track 526 (35288-35304) & Track 527 (35289-35329) overlap: 15
+Overlap: Track 526 (35288-35304) & Track 528 (35291-35338) overlap: 13
+Overlap: Track 526 (35288-35304) & Track 529 (35291-35349) overlap: 13
+Fragment: Track 526 (ends 35304) -> Track 532 (starts 35311) gap: 7
+Fragment: Track 526 (ends 35304) -> Track 533 (starts 35311) gap: 7
+Fragment: Track 526 (ends 35304) -> Track 534 (starts 35311) gap: 7
+Fragment: Track 526 (ends 35304) -> Track 536 (starts 35321) gap: 17
+Fragment: Track 526 (ends 35304) -> Track 537 (starts 35323) gap: 19
+Overlap: Track 527 (35289-35329) & Track 528 (35291-35338) overlap: 38
+Overlap: Track 527 (35289-35329) & Track 529 (35291-35349) overlap: 38
+Overlap: Track 527 (35289-35329) & Track 532 (35311-35346) overlap: 18
+Overlap: Track 527 (35289-35329) & Track 533 (35311-35346) overlap: 18
+Overlap: Track 527 (35289-35329) & Track 534 (35311-35338) overlap: 18
+Overlap: Track 527 (35289-35329) & Track 536 (35321-35341) overlap: 8
+Overlap: Track 527 (35289-35329) & Track 537 (35323-35366) overlap: 6
+Overlap: Track 528 (35291-35338) & Track 529 (35291-35349) overlap: 47
+Overlap: Track 528 (35291-35338) & Track 532 (35311-35346) overlap: 27
+Overlap: Track 528 (35291-35338) & Track 533 (35311-35346) overlap: 27
+Overlap: Track 528 (35291-35338) & Track 534 (35311-35338) overlap: 27
+Overlap: Track 528 (35291-35338) & Track 536 (35321-35341) overlap: 17
+Overlap: Track 528 (35291-35338) & Track 537 (35323-35366) overlap: 15
+Overlap: Track 529 (35291-35349) & Track 532 (35311-35346) overlap: 38
+Overlap: Track 529 (35291-35349) & Track 533 (35311-35346) overlap: 38
+Overlap: Track 529 (35291-35349) & Track 534 (35311-35338) overlap: 38
+Overlap: Track 529 (35291-35349) & Track 536 (35321-35341) overlap: 28
+Overlap: Track 529 (35291-35349) & Track 537 (35323-35366) overlap: 26
+Overlap: Track 532 (35311-35346) & Track 533 (35311-35346) overlap: 35
+Overlap: Track 532 (35311-35346) & Track 534 (35311-35338) overlap: 35
+Overlap: Track 532 (35311-35346) & Track 536 (35321-35341) overlap: 25
+Overlap: Track 532 (35311-35346) & Track 537 (35323-35366) overlap: 23
+Overlap: Track 533 (35311-35346) & Track 534 (35311-35338) overlap: 35
+Overlap: Track 533 (35311-35346) & Track 536 (35321-35341) overlap: 25
+Overlap: Track 533 (35311-35346) & Track 537 (35323-35366) overlap: 23
+Overlap: Track 534 (35311-35338) & Track 536 (35321-35341) overlap: 17
+Overlap: Track 534 (35311-35338) & Track 537 (35323-35366) overlap: 15
+Overlap: Track 536 (35321-35341) & Track 537 (35323-35366) overlap: 18
+Overlap: Track 545 (35820-35829) & Track 546 (35820-35838) overlap: 9
+Overlap: Track 545 (35820-35829) & Track 547 (35820-35829) overlap: 9
+Overlap: Track 545 (35820-35829) & Track 549 (35828-35846) overlap: 1
+Overlap: Track 546 (35820-35838) & Track 547 (35820-35829) overlap: 18
+Overlap: Track 546 (35820-35838) & Track 549 (35828-35846) overlap: 10
+Overlap: Track 547 (35820-35829) & Track 549 (35828-35846) overlap: 1
+Overlap: Track 562 (37192-37238) & Track 563 (37212-37227) overlap: 26
+Overlap: Track 562 (37192-37238) & Track 564 (37224-37238) overlap: 14
+Overlap: Track 562 (37192-37238) & Track 565 (37224-37230) overlap: 14
+Overlap: Track 563 (37212-37227) & Track 564 (37224-37238) overlap: 3
+Overlap: Track 563 (37212-37227) & Track 565 (37224-37230) overlap: 3
+Overlap: Track 564 (37224-37238) & Track 565 (37224-37230) overlap: 14
+Overlap: Track 571 (37508-37538) & Track 573 (37512-37538) overlap: 26
+Overlap: Track 571 (37508-37538) & Track 574 (37512-37531) overlap: 26
+Overlap: Track 571 (37508-37538) & Track 575 (37516-37538) overlap: 22
+Overlap: Track 573 (37512-37538) & Track 574 (37512-37531) overlap: 26
+Overlap: Track 573 (37512-37538) & Track 575 (37516-37538) overlap: 22
+Overlap: Track 574 (37512-37531) & Track 575 (37516-37538) overlap: 15
+Overlap: Track 596 (41120-41250) & Track 598 (41180-41258) overlap: 70
+Overlap: Track 596 (41120-41250) & Track 599 (41180-41250) overlap: 70
+Overlap: Track 596 (41120-41250) & Track 601 (41200-41258) overlap: 50
+Overlap: Track 596 (41120-41250) & Track 602 (41200-41278) overlap: 50
+Overlap: Track 596 (41120-41250) & Track 603 (41200-41249) overlap: 50
+Overlap: Track 596 (41120-41250) & Track 604 (41204-41250) overlap: 46
+Overlap: Track 596 (41120-41250) & Track 605 (41208-41250) overlap: 42
+Overlap: Track 596 (41120-41250) & Track 606 (41212-41610) overlap: 38
+Overlap: Track 596 (41120-41250) & Track 608 (41224-41278) overlap: 26
+Overlap: Track 596 (41120-41250) & Track 609 (41224-41278) overlap: 26
+Overlap: Track 596 (41120-41250) & Track 610 (41224-41246) overlap: 26
+Fragment: Track 596 (ends 41250) -> Track 617 (starts 41266) gap: 16
+Overlap: Track 598 (41180-41258) & Track 599 (41180-41250) overlap: 78
+Overlap: Track 598 (41180-41258) & Track 601 (41200-41258) overlap: 58
+Overlap: Track 598 (41180-41258) & Track 602 (41200-41278) overlap: 58
+Overlap: Track 598 (41180-41258) & Track 603 (41200-41249) overlap: 58
+Overlap: Track 598 (41180-41258) & Track 604 (41204-41250) overlap: 54
+Overlap: Track 598 (41180-41258) & Track 605 (41208-41250) overlap: 50
+Overlap: Track 598 (41180-41258) & Track 606 (41212-41610) overlap: 46
+Overlap: Track 598 (41180-41258) & Track 608 (41224-41278) overlap: 34
+Overlap: Track 598 (41180-41258) & Track 609 (41224-41278) overlap: 34
+Overlap: Track 598 (41180-41258) & Track 610 (41224-41246) overlap: 34
+Fragment: Track 598 (ends 41258) -> Track 617 (starts 41266) gap: 8
+Overlap: Track 599 (41180-41250) & Track 601 (41200-41258) overlap: 50
+Overlap: Track 599 (41180-41250) & Track 602 (41200-41278) overlap: 50
+Overlap: Track 599 (41180-41250) & Track 603 (41200-41249) overlap: 50
+Overlap: Track 599 (41180-41250) & Track 604 (41204-41250) overlap: 46
+Overlap: Track 599 (41180-41250) & Track 605 (41208-41250) overlap: 42
+Overlap: Track 599 (41180-41250) & Track 606 (41212-41610) overlap: 38
+Overlap: Track 599 (41180-41250) & Track 608 (41224-41278) overlap: 26
+Overlap: Track 599 (41180-41250) & Track 609 (41224-41278) overlap: 26
+Overlap: Track 599 (41180-41250) & Track 610 (41224-41246) overlap: 26
+Fragment: Track 599 (ends 41250) -> Track 617 (starts 41266) gap: 16
+Overlap: Track 601 (41200-41258) & Track 602 (41200-41278) overlap: 58
+Overlap: Track 601 (41200-41258) & Track 603 (41200-41249) overlap: 58
+Overlap: Track 601 (41200-41258) & Track 604 (41204-41250) overlap: 54
+Overlap: Track 601 (41200-41258) & Track 605 (41208-41250) overlap: 50
+Overlap: Track 601 (41200-41258) & Track 606 (41212-41610) overlap: 46
+Overlap: Track 601 (41200-41258) & Track 608 (41224-41278) overlap: 34
+Overlap: Track 601 (41200-41258) & Track 609 (41224-41278) overlap: 34
+Overlap: Track 601 (41200-41258) & Track 610 (41224-41246) overlap: 34
+Fragment: Track 601 (ends 41258) -> Track 617 (starts 41266) gap: 8
+Overlap: Track 602 (41200-41278) & Track 603 (41200-41249) overlap: 78
+Overlap: Track 602 (41200-41278) & Track 604 (41204-41250) overlap: 74
+Overlap: Track 602 (41200-41278) & Track 605 (41208-41250) overlap: 70
+Overlap: Track 602 (41200-41278) & Track 606 (41212-41610) overlap: 66
+Overlap: Track 602 (41200-41278) & Track 608 (41224-41278) overlap: 54
+Overlap: Track 602 (41200-41278) & Track 609 (41224-41278) overlap: 54
+Overlap: Track 602 (41200-41278) & Track 610 (41224-41246) overlap: 54
+Overlap: Track 602 (41200-41278) & Track 617 (41266-41268) overlap: 12
+Overlap: Track 603 (41200-41249) & Track 604 (41204-41250) overlap: 45
+Overlap: Track 603 (41200-41249) & Track 605 (41208-41250) overlap: 41
+Overlap: Track 603 (41200-41249) & Track 606 (41212-41610) overlap: 37
+Overlap: Track 603 (41200-41249) & Track 608 (41224-41278) overlap: 25
+Overlap: Track 603 (41200-41249) & Track 609 (41224-41278) overlap: 25
+Overlap: Track 603 (41200-41249) & Track 610 (41224-41246) overlap: 25
+Fragment: Track 603 (ends 41249) -> Track 617 (starts 41266) gap: 17
+Overlap: Track 604 (41204-41250) & Track 605 (41208-41250) overlap: 42
+Overlap: Track 604 (41204-41250) & Track 606 (41212-41610) overlap: 38
+Overlap: Track 604 (41204-41250) & Track 608 (41224-41278) overlap: 26
+Overlap: Track 604 (41204-41250) & Track 609 (41224-41278) overlap: 26
+Overlap: Track 604 (41204-41250) & Track 610 (41224-41246) overlap: 26
+Fragment: Track 604 (ends 41250) -> Track 617 (starts 41266) gap: 16
+Overlap: Track 605 (41208-41250) & Track 606 (41212-41610) overlap: 38
+Overlap: Track 605 (41208-41250) & Track 608 (41224-41278) overlap: 26
+Overlap: Track 605 (41208-41250) & Track 609 (41224-41278) overlap: 26
+Overlap: Track 605 (41208-41250) & Track 610 (41224-41246) overlap: 26
+Fragment: Track 605 (ends 41250) -> Track 617 (starts 41266) gap: 16
+Overlap: Track 606 (41212-41610) & Track 608 (41224-41278) overlap: 386
+Overlap: Track 606 (41212-41610) & Track 609 (41224-41278) overlap: 386
+Overlap: Track 606 (41212-41610) & Track 610 (41224-41246) overlap: 386
+Overlap: Track 606 (41212-41610) & Track 617 (41266-41268) overlap: 344
+Overlap: Track 606 (41212-41610) & Track 622 (41472-41498) overlap: 138
+Overlap: Track 606 (41212-41610) & Track 623 (41480-41522) overlap: 130
+Overlap: Track 606 (41212-41610) & Track 625 (41488-41502) overlap: 122
+Overlap: Track 606 (41212-41610) & Track 626 (41490-41490) overlap: 120
+Overlap: Track 608 (41224-41278) & Track 609 (41224-41278) overlap: 54
+Overlap: Track 608 (41224-41278) & Track 610 (41224-41246) overlap: 54
+Overlap: Track 608 (41224-41278) & Track 617 (41266-41268) overlap: 12
+Overlap: Track 609 (41224-41278) & Track 610 (41224-41246) overlap: 54
+Overlap: Track 609 (41224-41278) & Track 617 (41266-41268) overlap: 12
+Fragment: Track 610 (ends 41246) -> Track 617 (starts 41266) gap: 20
+Overlap: Track 622 (41472-41498) & Track 623 (41480-41522) overlap: 18
+Overlap: Track 622 (41472-41498) & Track 625 (41488-41502) overlap: 10
+Overlap: Track 622 (41472-41498) & Track 626 (41490-41490) overlap: 8
+Overlap: Track 623 (41480-41522) & Track 625 (41488-41502) overlap: 34
+Overlap: Track 623 (41480-41522) & Track 626 (41490-41490) overlap: 32
+Overlap: Track 625 (41488-41502) & Track 626 (41490-41490) overlap: 12
+Overlap: Track 661 (46308-46326) & Track 663 (46320-46338) overlap: 6
+Overlap: Track 661 (46308-46326) & Track 664 (46320-46326) overlap: 6
+Overlap: Track 661 (46308-46326) & Track 665 (46324-46330) overlap: 2
+Overlap: Track 661 (46308-46326) & Track 666 (46324-46338) overlap: 2
+Overlap: Track 661 (46308-46326) & Track 667 (46324-46358) overlap: 2
+Overlap: Track 663 (46320-46338) & Track 664 (46320-46326) overlap: 18
+Overlap: Track 663 (46320-46338) & Track 665 (46324-46330) overlap: 14
+Overlap: Track 663 (46320-46338) & Track 666 (46324-46338) overlap: 14
+Overlap: Track 663 (46320-46338) & Track 667 (46324-46358) overlap: 14
+Overlap: Track 664 (46320-46326) & Track 665 (46324-46330) overlap: 2
+Overlap: Track 664 (46320-46326) & Track 666 (46324-46338) overlap: 2
+Overlap: Track 664 (46320-46326) & Track 667 (46324-46358) overlap: 2
+Overlap: Track 665 (46324-46330) & Track 666 (46324-46338) overlap: 6
+Overlap: Track 665 (46324-46330) & Track 667 (46324-46358) overlap: 6
+Overlap: Track 666 (46324-46338) & Track 667 (46324-46358) overlap: 14
+Overlap: Track 676 (47492-47562) & Track 678 (47520-47578) overlap: 42
+Overlap: Track 676 (47492-47562) & Track 679 (47544-47566) overlap: 18
+Overlap: Track 676 (47492-47562) & Track 681 (47560-47578) overlap: 2
+Overlap: Track 676 (47492-47562) & Track 682 (47560-47706) overlap: 2
+Overlap: Track 676 (47492-47562) & Track 683 (47560-47610) overlap: 2
+Overlap: Track 678 (47520-47578) & Track 679 (47544-47566) overlap: 34
+Overlap: Track 678 (47520-47578) & Track 681 (47560-47578) overlap: 18
+Overlap: Track 678 (47520-47578) & Track 682 (47560-47706) overlap: 18
+Overlap: Track 678 (47520-47578) & Track 683 (47560-47610) overlap: 18
+Overlap: Track 679 (47544-47566) & Track 681 (47560-47578) overlap: 6
+Overlap: Track 679 (47544-47566) & Track 682 (47560-47706) overlap: 6
+Overlap: Track 679 (47544-47566) & Track 683 (47560-47610) overlap: 6
+Overlap: Track 681 (47560-47578) & Track 682 (47560-47706) overlap: 18
+Overlap: Track 681 (47560-47578) & Track 683 (47560-47610) overlap: 18
+Overlap: Track 682 (47560-47706) & Track 683 (47560-47610) overlap: 146
+Overlap: Track 687 (48683-48758) & Track 689 (48704-48709) overlap: 54
+Overlap: Track 694 (49411-49449) & Track 695 (49431-49458) overlap: 18
+Overlap: Track 694 (49411-49449) & Track 696 (49431-49458) overlap: 18
+Overlap: Track 694 (49411-49449) & Track 698 (49431-49449) overlap: 18
+Overlap: Track 694 (49411-49449) & Track 699 (49433-49446) overlap: 16
+Overlap: Track 694 (49411-49449) & Track 700 (49440-49489) overlap: 9
+Overlap: Track 694 (49411-49449) & Track 701 (49443-49461) overlap: 6
+Overlap: Track 694 (49411-49449) & Track 702 (49443-49461) overlap: 6
+Overlap: Track 695 (49431-49458) & Track 696 (49431-49458) overlap: 27
+Overlap: Track 695 (49431-49458) & Track 698 (49431-49449) overlap: 27
+Overlap: Track 695 (49431-49458) & Track 699 (49433-49446) overlap: 25
+Overlap: Track 695 (49431-49458) & Track 700 (49440-49489) overlap: 18
+Overlap: Track 695 (49431-49458) & Track 701 (49443-49461) overlap: 15
+Overlap: Track 695 (49431-49458) & Track 702 (49443-49461) overlap: 15
+Overlap: Track 696 (49431-49458) & Track 698 (49431-49449) overlap: 27
+Overlap: Track 696 (49431-49458) & Track 699 (49433-49446) overlap: 25
+Overlap: Track 696 (49431-49458) & Track 700 (49440-49489) overlap: 18
+Overlap: Track 696 (49431-49458) & Track 701 (49443-49461) overlap: 15
+Overlap: Track 696 (49431-49458) & Track 702 (49443-49461) overlap: 15
+Overlap: Track 698 (49431-49449) & Track 699 (49433-49446) overlap: 16
+Overlap: Track 698 (49431-49449) & Track 700 (49440-49489) overlap: 9
+Overlap: Track 698 (49431-49449) & Track 701 (49443-49461) overlap: 6
+Overlap: Track 698 (49431-49449) & Track 702 (49443-49461) overlap: 6
+Overlap: Track 699 (49433-49446) & Track 700 (49440-49489) overlap: 6
+Overlap: Track 699 (49433-49446) & Track 701 (49443-49461) overlap: 3
+Overlap: Track 699 (49433-49446) & Track 702 (49443-49461) overlap: 3
+Overlap: Track 700 (49440-49489) & Track 701 (49443-49461) overlap: 46
+Overlap: Track 700 (49440-49489) & Track 702 (49443-49461) overlap: 46
+Overlap: Track 701 (49443-49461) & Track 702 (49443-49461) overlap: 18
+Overlap: Track 704 (49980-50006) & Track 705 (49991-50006) overlap: 15
+Overlap: Track 704 (49980-50006) & Track 706 (49991-50038) overlap: 15
+Overlap: Track 704 (49980-50006) & Track 708 (50000-50009) overlap: 6
+Overlap: Track 704 (49980-50006) & Track 709 (50000-50006) overlap: 6
+Overlap: Track 704 (49980-50006) & Track 710 (50000-50009) overlap: 6
+Overlap: Track 704 (49980-50006) & Track 712 (50000-50026) overlap: 6
+Overlap: Track 705 (49991-50006) & Track 706 (49991-50038) overlap: 15
+Overlap: Track 705 (49991-50006) & Track 708 (50000-50009) overlap: 6
+Overlap: Track 705 (49991-50006) & Track 709 (50000-50006) overlap: 6
+Overlap: Track 705 (49991-50006) & Track 710 (50000-50009) overlap: 6
+Overlap: Track 705 (49991-50006) & Track 712 (50000-50026) overlap: 6
+Overlap: Track 706 (49991-50038) & Track 708 (50000-50009) overlap: 38
+Overlap: Track 706 (49991-50038) & Track 709 (50000-50006) overlap: 38
+Overlap: Track 706 (49991-50038) & Track 710 (50000-50009) overlap: 38
+Overlap: Track 706 (49991-50038) & Track 712 (50000-50026) overlap: 38
+Overlap: Track 708 (50000-50009) & Track 709 (50000-50006) overlap: 9
+Overlap: Track 708 (50000-50009) & Track 710 (50000-50009) overlap: 9
+Overlap: Track 708 (50000-50009) & Track 712 (50000-50026) overlap: 9
+Overlap: Track 709 (50000-50006) & Track 710 (50000-50009) overlap: 6
+Overlap: Track 709 (50000-50006) & Track 712 (50000-50026) overlap: 6
+Overlap: Track 710 (50000-50009) & Track 712 (50000-50026) overlap: 9
+Overlap: Track 744 (55500-55538) & Track 745 (55512-55626) overlap: 26
+Overlap: Track 744 (55500-55538) & Track 746 (55520-55550) overlap: 18
+Overlap: Track 744 (55500-55538) & Track 747 (55520-55606) overlap: 18
+Overlap: Track 744 (55500-55538) & Track 749 (55523-55558) overlap: 15
+Overlap: Track 744 (55500-55538) & Track 750 (55526-55658) overlap: 12
+Overlap: Track 744 (55500-55538) & Track 751 (55532-55538) overlap: 6
+Overlap: Track 745 (55512-55626) & Track 746 (55520-55550) overlap: 106
+Overlap: Track 745 (55512-55626) & Track 747 (55520-55606) overlap: 106
+Overlap: Track 745 (55512-55626) & Track 749 (55523-55558) overlap: 103
+Overlap: Track 745 (55512-55626) & Track 750 (55526-55658) overlap: 100
+Overlap: Track 745 (55512-55626) & Track 751 (55532-55538) overlap: 94
+Overlap: Track 746 (55520-55550) & Track 747 (55520-55606) overlap: 30
+Overlap: Track 746 (55520-55550) & Track 749 (55523-55558) overlap: 27
+Overlap: Track 746 (55520-55550) & Track 750 (55526-55658) overlap: 24
+Overlap: Track 746 (55520-55550) & Track 751 (55532-55538) overlap: 18
+Overlap: Track 747 (55520-55606) & Track 749 (55523-55558) overlap: 83
+Overlap: Track 747 (55520-55606) & Track 750 (55526-55658) overlap: 80
+Overlap: Track 747 (55520-55606) & Track 751 (55532-55538) overlap: 74
+Overlap: Track 749 (55523-55558) & Track 750 (55526-55658) overlap: 32
+Overlap: Track 749 (55523-55558) & Track 751 (55532-55538) overlap: 26
+Overlap: Track 750 (55526-55658) & Track 751 (55532-55538) overlap: 126
+Overlap: Track 764 (56980-57062) & Track 765 (56984-57066) overlap: 78
+Overlap: Track 764 (56980-57062) & Track 766 (56984-57058) overlap: 78
+Overlap: Track 764 (56980-57062) & Track 767 (56984-57062) overlap: 78
+Overlap: Track 764 (56980-57062) & Track 768 (56984-57066) overlap: 78
+Overlap: Track 764 (56980-57062) & Track 769 (56992-57070) overlap: 70
+Overlap: Track 764 (56980-57062) & Track 770 (56992-57122) overlap: 70
+Overlap: Track 764 (56980-57062) & Track 771 (56992-57062) overlap: 70
+Overlap: Track 764 (56980-57062) & Track 772 (56992-57186) overlap: 70
+Overlap: Track 764 (56980-57062) & Track 773 (56992-57050) overlap: 70
+Overlap: Track 764 (56980-57062) & Track 774 (56992-57086) overlap: 70
+Overlap: Track 764 (56980-57062) & Track 776 (57013-57050) overlap: 49
+Overlap: Track 764 (56980-57062) & Track 777 (57020-57078) overlap: 42
+Overlap: Track 764 (56980-57062) & Track 781 (57031-57042) overlap: 31
+Overlap: Track 764 (56980-57062) & Track 783 (57040-57050) overlap: 22
+Overlap: Track 764 (56980-57062) & Track 784 (57040-57058) overlap: 22
+Overlap: Track 764 (56980-57062) & Track 785 (57040-57042) overlap: 22
+Overlap: Track 764 (56980-57062) & Track 786 (57040-57050) overlap: 22
+Overlap: Track 764 (56980-57062) & Track 787 (57040-57046) overlap: 22
+Overlap: Track 765 (56984-57066) & Track 766 (56984-57058) overlap: 82
+Overlap: Track 765 (56984-57066) & Track 767 (56984-57062) overlap: 82
+Overlap: Track 765 (56984-57066) & Track 768 (56984-57066) overlap: 82
+Overlap: Track 765 (56984-57066) & Track 769 (56992-57070) overlap: 74
+Overlap: Track 765 (56984-57066) & Track 770 (56992-57122) overlap: 74
+Overlap: Track 765 (56984-57066) & Track 771 (56992-57062) overlap: 74
+Overlap: Track 765 (56984-57066) & Track 772 (56992-57186) overlap: 74
+Overlap: Track 765 (56984-57066) & Track 773 (56992-57050) overlap: 74
+Overlap: Track 765 (56984-57066) & Track 774 (56992-57086) overlap: 74
+Overlap: Track 765 (56984-57066) & Track 776 (57013-57050) overlap: 53
+Overlap: Track 765 (56984-57066) & Track 777 (57020-57078) overlap: 46
+Overlap: Track 765 (56984-57066) & Track 781 (57031-57042) overlap: 35
+Overlap: Track 765 (56984-57066) & Track 783 (57040-57050) overlap: 26
+Overlap: Track 765 (56984-57066) & Track 784 (57040-57058) overlap: 26
+Overlap: Track 765 (56984-57066) & Track 785 (57040-57042) overlap: 26
+Overlap: Track 765 (56984-57066) & Track 786 (57040-57050) overlap: 26
+Overlap: Track 765 (56984-57066) & Track 787 (57040-57046) overlap: 26
+Overlap: Track 766 (56984-57058) & Track 767 (56984-57062) overlap: 74
+Overlap: Track 766 (56984-57058) & Track 768 (56984-57066) overlap: 74
+Overlap: Track 766 (56984-57058) & Track 769 (56992-57070) overlap: 66
+Overlap: Track 766 (56984-57058) & Track 770 (56992-57122) overlap: 66
+Overlap: Track 766 (56984-57058) & Track 771 (56992-57062) overlap: 66
+Overlap: Track 766 (56984-57058) & Track 772 (56992-57186) overlap: 66
+Overlap: Track 766 (56984-57058) & Track 773 (56992-57050) overlap: 66
+Overlap: Track 766 (56984-57058) & Track 774 (56992-57086) overlap: 66
+Overlap: Track 766 (56984-57058) & Track 776 (57013-57050) overlap: 45
+Overlap: Track 766 (56984-57058) & Track 777 (57020-57078) overlap: 38
+Overlap: Track 766 (56984-57058) & Track 781 (57031-57042) overlap: 27
+Overlap: Track 766 (56984-57058) & Track 783 (57040-57050) overlap: 18
+Overlap: Track 766 (56984-57058) & Track 784 (57040-57058) overlap: 18
+Overlap: Track 766 (56984-57058) & Track 785 (57040-57042) overlap: 18
+Overlap: Track 766 (56984-57058) & Track 786 (57040-57050) overlap: 18
+Overlap: Track 766 (56984-57058) & Track 787 (57040-57046) overlap: 18
+Overlap: Track 767 (56984-57062) & Track 768 (56984-57066) overlap: 78
+Overlap: Track 767 (56984-57062) & Track 769 (56992-57070) overlap: 70
+Overlap: Track 767 (56984-57062) & Track 770 (56992-57122) overlap: 70
+Overlap: Track 767 (56984-57062) & Track 771 (56992-57062) overlap: 70
+Overlap: Track 767 (56984-57062) & Track 772 (56992-57186) overlap: 70
+Overlap: Track 767 (56984-57062) & Track 773 (56992-57050) overlap: 70
+Overlap: Track 767 (56984-57062) & Track 774 (56992-57086) overlap: 70
+Overlap: Track 767 (56984-57062) & Track 776 (57013-57050) overlap: 49
+Overlap: Track 767 (56984-57062) & Track 777 (57020-57078) overlap: 42
+Overlap: Track 767 (56984-57062) & Track 781 (57031-57042) overlap: 31
+Overlap: Track 767 (56984-57062) & Track 783 (57040-57050) overlap: 22
+Overlap: Track 767 (56984-57062) & Track 784 (57040-57058) overlap: 22
+Overlap: Track 767 (56984-57062) & Track 785 (57040-57042) overlap: 22
+Overlap: Track 767 (56984-57062) & Track 786 (57040-57050) overlap: 22
+Overlap: Track 767 (56984-57062) & Track 787 (57040-57046) overlap: 22
+Overlap: Track 768 (56984-57066) & Track 769 (56992-57070) overlap: 74
+Overlap: Track 768 (56984-57066) & Track 770 (56992-57122) overlap: 74
+Overlap: Track 768 (56984-57066) & Track 771 (56992-57062) overlap: 74
+Overlap: Track 768 (56984-57066) & Track 772 (56992-57186) overlap: 74
+Overlap: Track 768 (56984-57066) & Track 773 (56992-57050) overlap: 74
+Overlap: Track 768 (56984-57066) & Track 774 (56992-57086) overlap: 74
+Overlap: Track 768 (56984-57066) & Track 776 (57013-57050) overlap: 53
+Overlap: Track 768 (56984-57066) & Track 777 (57020-57078) overlap: 46
+Overlap: Track 768 (56984-57066) & Track 781 (57031-57042) overlap: 35
+Overlap: Track 768 (56984-57066) & Track 783 (57040-57050) overlap: 26
+Overlap: Track 768 (56984-57066) & Track 784 (57040-57058) overlap: 26
+Overlap: Track 768 (56984-57066) & Track 785 (57040-57042) overlap: 26
+Overlap: Track 768 (56984-57066) & Track 786 (57040-57050) overlap: 26
+Overlap: Track 768 (56984-57066) & Track 787 (57040-57046) overlap: 26
+Overlap: Track 769 (56992-57070) & Track 770 (56992-57122) overlap: 78
+Overlap: Track 769 (56992-57070) & Track 771 (56992-57062) overlap: 78
+Overlap: Track 769 (56992-57070) & Track 772 (56992-57186) overlap: 78
+Overlap: Track 769 (56992-57070) & Track 773 (56992-57050) overlap: 78
+Overlap: Track 769 (56992-57070) & Track 774 (56992-57086) overlap: 78
+Overlap: Track 769 (56992-57070) & Track 776 (57013-57050) overlap: 57
+Overlap: Track 769 (56992-57070) & Track 777 (57020-57078) overlap: 50
+Overlap: Track 769 (56992-57070) & Track 781 (57031-57042) overlap: 39
+Overlap: Track 769 (56992-57070) & Track 783 (57040-57050) overlap: 30
+Overlap: Track 769 (56992-57070) & Track 784 (57040-57058) overlap: 30
+Overlap: Track 769 (56992-57070) & Track 785 (57040-57042) overlap: 30
+Overlap: Track 769 (56992-57070) & Track 786 (57040-57050) overlap: 30
+Overlap: Track 769 (56992-57070) & Track 787 (57040-57046) overlap: 30
+Overlap: Track 770 (56992-57122) & Track 771 (56992-57062) overlap: 130
+Overlap: Track 770 (56992-57122) & Track 772 (56992-57186) overlap: 130
+Overlap: Track 770 (56992-57122) & Track 773 (56992-57050) overlap: 130
+Overlap: Track 770 (56992-57122) & Track 774 (56992-57086) overlap: 130
+Overlap: Track 770 (56992-57122) & Track 776 (57013-57050) overlap: 109
+Overlap: Track 770 (56992-57122) & Track 777 (57020-57078) overlap: 102
+Overlap: Track 770 (56992-57122) & Track 781 (57031-57042) overlap: 91
+Overlap: Track 770 (56992-57122) & Track 783 (57040-57050) overlap: 82
+Overlap: Track 770 (56992-57122) & Track 784 (57040-57058) overlap: 82
+Overlap: Track 770 (56992-57122) & Track 785 (57040-57042) overlap: 82
+Overlap: Track 770 (56992-57122) & Track 786 (57040-57050) overlap: 82
+Overlap: Track 770 (56992-57122) & Track 787 (57040-57046) overlap: 82
+Overlap: Track 771 (56992-57062) & Track 772 (56992-57186) overlap: 70
+Overlap: Track 771 (56992-57062) & Track 773 (56992-57050) overlap: 70
+Overlap: Track 771 (56992-57062) & Track 774 (56992-57086) overlap: 70
+Overlap: Track 771 (56992-57062) & Track 776 (57013-57050) overlap: 49
+Overlap: Track 771 (56992-57062) & Track 777 (57020-57078) overlap: 42
+Overlap: Track 771 (56992-57062) & Track 781 (57031-57042) overlap: 31
+Overlap: Track 771 (56992-57062) & Track 783 (57040-57050) overlap: 22
+Overlap: Track 771 (56992-57062) & Track 784 (57040-57058) overlap: 22
+Overlap: Track 771 (56992-57062) & Track 785 (57040-57042) overlap: 22
+Overlap: Track 771 (56992-57062) & Track 786 (57040-57050) overlap: 22
+Overlap: Track 771 (56992-57062) & Track 787 (57040-57046) overlap: 22
+Overlap: Track 772 (56992-57186) & Track 773 (56992-57050) overlap: 194
+Overlap: Track 772 (56992-57186) & Track 774 (56992-57086) overlap: 194
+Overlap: Track 772 (56992-57186) & Track 776 (57013-57050) overlap: 173
+Overlap: Track 772 (56992-57186) & Track 777 (57020-57078) overlap: 166
+Overlap: Track 772 (56992-57186) & Track 781 (57031-57042) overlap: 155
+Overlap: Track 772 (56992-57186) & Track 783 (57040-57050) overlap: 146
+Overlap: Track 772 (56992-57186) & Track 784 (57040-57058) overlap: 146
+Overlap: Track 772 (56992-57186) & Track 785 (57040-57042) overlap: 146
+Overlap: Track 772 (56992-57186) & Track 786 (57040-57050) overlap: 146
+Overlap: Track 772 (56992-57186) & Track 787 (57040-57046) overlap: 146
+Overlap: Track 773 (56992-57050) & Track 774 (56992-57086) overlap: 58
+Overlap: Track 773 (56992-57050) & Track 776 (57013-57050) overlap: 37
+Overlap: Track 773 (56992-57050) & Track 777 (57020-57078) overlap: 30
+Overlap: Track 773 (56992-57050) & Track 781 (57031-57042) overlap: 19
+Overlap: Track 773 (56992-57050) & Track 783 (57040-57050) overlap: 10
+Overlap: Track 773 (56992-57050) & Track 784 (57040-57058) overlap: 10
+Overlap: Track 773 (56992-57050) & Track 785 (57040-57042) overlap: 10
+Overlap: Track 773 (56992-57050) & Track 786 (57040-57050) overlap: 10
+Overlap: Track 773 (56992-57050) & Track 787 (57040-57046) overlap: 10
+Overlap: Track 774 (56992-57086) & Track 776 (57013-57050) overlap: 73
+Overlap: Track 774 (56992-57086) & Track 777 (57020-57078) overlap: 66
+Overlap: Track 774 (56992-57086) & Track 781 (57031-57042) overlap: 55
+Overlap: Track 774 (56992-57086) & Track 783 (57040-57050) overlap: 46
+Overlap: Track 774 (56992-57086) & Track 784 (57040-57058) overlap: 46
+Overlap: Track 774 (56992-57086) & Track 785 (57040-57042) overlap: 46
+Overlap: Track 774 (56992-57086) & Track 786 (57040-57050) overlap: 46
+Overlap: Track 774 (56992-57086) & Track 787 (57040-57046) overlap: 46
+Overlap: Track 776 (57013-57050) & Track 777 (57020-57078) overlap: 30
+Overlap: Track 776 (57013-57050) & Track 781 (57031-57042) overlap: 19
+Overlap: Track 776 (57013-57050) & Track 783 (57040-57050) overlap: 10
+Overlap: Track 776 (57013-57050) & Track 784 (57040-57058) overlap: 10
+Overlap: Track 776 (57013-57050) & Track 785 (57040-57042) overlap: 10
+Overlap: Track 776 (57013-57050) & Track 786 (57040-57050) overlap: 10
+Overlap: Track 776 (57013-57050) & Track 787 (57040-57046) overlap: 10
+Overlap: Track 777 (57020-57078) & Track 781 (57031-57042) overlap: 47
+Overlap: Track 777 (57020-57078) & Track 783 (57040-57050) overlap: 38
+Overlap: Track 777 (57020-57078) & Track 784 (57040-57058) overlap: 38
+Overlap: Track 777 (57020-57078) & Track 785 (57040-57042) overlap: 38
+Overlap: Track 777 (57020-57078) & Track 786 (57040-57050) overlap: 38
+Overlap: Track 777 (57020-57078) & Track 787 (57040-57046) overlap: 38
+Overlap: Track 781 (57031-57042) & Track 783 (57040-57050) overlap: 2
+Overlap: Track 781 (57031-57042) & Track 784 (57040-57058) overlap: 2
+Overlap: Track 781 (57031-57042) & Track 785 (57040-57042) overlap: 2
+Overlap: Track 781 (57031-57042) & Track 786 (57040-57050) overlap: 2
+Overlap: Track 781 (57031-57042) & Track 787 (57040-57046) overlap: 2
+Overlap: Track 783 (57040-57050) & Track 784 (57040-57058) overlap: 10
+Overlap: Track 783 (57040-57050) & Track 785 (57040-57042) overlap: 10
+Overlap: Track 783 (57040-57050) & Track 786 (57040-57050) overlap: 10
+Overlap: Track 783 (57040-57050) & Track 787 (57040-57046) overlap: 10
+Overlap: Track 784 (57040-57058) & Track 785 (57040-57042) overlap: 18
+Overlap: Track 784 (57040-57058) & Track 786 (57040-57050) overlap: 18
+Overlap: Track 784 (57040-57058) & Track 787 (57040-57046) overlap: 18
+Overlap: Track 785 (57040-57042) & Track 786 (57040-57050) overlap: 2
+Overlap: Track 785 (57040-57042) & Track 787 (57040-57046) overlap: 2
+Overlap: Track 786 (57040-57050) & Track 787 (57040-57046) overlap: 10
+Overlap: Track 846 (63331-63618) & Track 847 (63351-63458) overlap: 267
+Overlap: Track 846 (63331-63618) & Track 848 (63360-63429) overlap: 258
+Overlap: Track 846 (63331-63618) & Track 849 (63371-63444) overlap: 247
+Overlap: Track 846 (63331-63618) & Track 850 (63383-63589) overlap: 235
+Overlap: Track 846 (63331-63618) & Track 851 (63388-63438) overlap: 230
+Overlap: Track 846 (63331-63618) & Track 852 (63388-63449) overlap: 230
+Overlap: Track 846 (63331-63618) & Track 853 (63388-63441) overlap: 230
+Overlap: Track 846 (63331-63618) & Track 854 (63400-63466) overlap: 218
+Overlap: Track 846 (63331-63618) & Track 855 (63400-63428) overlap: 218
+Overlap: Track 846 (63331-63618) & Track 856 (63423-63429) overlap: 195
+Overlap: Track 847 (63351-63458) & Track 848 (63360-63429) overlap: 98
+Overlap: Track 847 (63351-63458) & Track 849 (63371-63444) overlap: 87
+Overlap: Track 847 (63351-63458) & Track 850 (63383-63589) overlap: 75
+Overlap: Track 847 (63351-63458) & Track 851 (63388-63438) overlap: 70
+Overlap: Track 847 (63351-63458) & Track 852 (63388-63449) overlap: 70
+Overlap: Track 847 (63351-63458) & Track 853 (63388-63441) overlap: 70
+Overlap: Track 847 (63351-63458) & Track 854 (63400-63466) overlap: 58
+Overlap: Track 847 (63351-63458) & Track 855 (63400-63428) overlap: 58
+Overlap: Track 847 (63351-63458) & Track 856 (63423-63429) overlap: 35
+Overlap: Track 848 (63360-63429) & Track 849 (63371-63444) overlap: 58
+Overlap: Track 848 (63360-63429) & Track 850 (63383-63589) overlap: 46
+Overlap: Track 848 (63360-63429) & Track 851 (63388-63438) overlap: 41
+Overlap: Track 848 (63360-63429) & Track 852 (63388-63449) overlap: 41
+Overlap: Track 848 (63360-63429) & Track 853 (63388-63441) overlap: 41
+Overlap: Track 848 (63360-63429) & Track 854 (63400-63466) overlap: 29
+Overlap: Track 848 (63360-63429) & Track 855 (63400-63428) overlap: 29
+Overlap: Track 848 (63360-63429) & Track 856 (63423-63429) overlap: 6
+Overlap: Track 849 (63371-63444) & Track 850 (63383-63589) overlap: 61
+Overlap: Track 849 (63371-63444) & Track 851 (63388-63438) overlap: 56
+Overlap: Track 849 (63371-63444) & Track 852 (63388-63449) overlap: 56
+Overlap: Track 849 (63371-63444) & Track 853 (63388-63441) overlap: 56
+Overlap: Track 849 (63371-63444) & Track 854 (63400-63466) overlap: 44
+Overlap: Track 849 (63371-63444) & Track 855 (63400-63428) overlap: 44
+Overlap: Track 849 (63371-63444) & Track 856 (63423-63429) overlap: 21
+Overlap: Track 850 (63383-63589) & Track 851 (63388-63438) overlap: 201
+Overlap: Track 850 (63383-63589) & Track 852 (63388-63449) overlap: 201
+Overlap: Track 850 (63383-63589) & Track 853 (63388-63441) overlap: 201
+Overlap: Track 850 (63383-63589) & Track 854 (63400-63466) overlap: 189
+Overlap: Track 850 (63383-63589) & Track 855 (63400-63428) overlap: 189
+Overlap: Track 850 (63383-63589) & Track 856 (63423-63429) overlap: 166
+Overlap: Track 851 (63388-63438) & Track 852 (63388-63449) overlap: 50
+Overlap: Track 851 (63388-63438) & Track 853 (63388-63441) overlap: 50
+Overlap: Track 851 (63388-63438) & Track 854 (63400-63466) overlap: 38
+Overlap: Track 851 (63388-63438) & Track 855 (63400-63428) overlap: 38
+Overlap: Track 851 (63388-63438) & Track 856 (63423-63429) overlap: 15
+Overlap: Track 852 (63388-63449) & Track 853 (63388-63441) overlap: 61
+Overlap: Track 852 (63388-63449) & Track 854 (63400-63466) overlap: 49
+Overlap: Track 852 (63388-63449) & Track 855 (63400-63428) overlap: 49
+Overlap: Track 852 (63388-63449) & Track 856 (63423-63429) overlap: 26
+Overlap: Track 853 (63388-63441) & Track 854 (63400-63466) overlap: 41
+Overlap: Track 853 (63388-63441) & Track 855 (63400-63428) overlap: 41
+Overlap: Track 853 (63388-63441) & Track 856 (63423-63429) overlap: 18
+Overlap: Track 854 (63400-63466) & Track 855 (63400-63428) overlap: 66
+Overlap: Track 854 (63400-63466) & Track 856 (63423-63429) overlap: 43
+Overlap: Track 855 (63400-63428) & Track 856 (63423-63429) overlap: 5
+Overlap: Track 865 (64900-64946) & Track 866 (64900-64906) overlap: 46
+Overlap: Track 865 (64900-64946) & Track 867 (64900-64918) overlap: 46
+Overlap: Track 865 (64900-64946) & Track 868 (64900-64918) overlap: 46
+Overlap: Track 865 (64900-64946) & Track 869 (64900-64910) overlap: 46
+Overlap: Track 866 (64900-64906) & Track 867 (64900-64918) overlap: 6
+Overlap: Track 866 (64900-64906) & Track 868 (64900-64918) overlap: 6
+Overlap: Track 866 (64900-64906) & Track 869 (64900-64910) overlap: 6
+Overlap: Track 867 (64900-64918) & Track 868 (64900-64918) overlap: 18
+Overlap: Track 867 (64900-64918) & Track 869 (64900-64910) overlap: 18
+Overlap: Track 868 (64900-64918) & Track 869 (64900-64910) overlap: 18
+Fragment: Track 876 (ends 66478) -> Track 877 (starts 66480) gap: 2
+Fragment: Track 876 (ends 66478) -> Track 878 (starts 66488) gap: 10
+Fragment: Track 876 (ends 66478) -> Track 879 (starts 66492) gap: 14
+Fragment: Track 876 (ends 66478) -> Track 880 (starts 66500) gap: 22
+Fragment: Track 876 (ends 66478) -> Track 881 (starts 66500) gap: 22
+Fragment: Track 876 (ends 66478) -> Track 882 (starts 66500) gap: 22
+Overlap: Track 877 (66480-66502) & Track 878 (66488-66518) overlap: 14
+Overlap: Track 877 (66480-66502) & Track 879 (66492-66506) overlap: 10
+Overlap: Track 877 (66480-66502) & Track 880 (66500-66506) overlap: 2
+Overlap: Track 877 (66480-66502) & Track 881 (66500-66510) overlap: 2
+Overlap: Track 877 (66480-66502) & Track 882 (66500-66518) overlap: 2
+Overlap: Track 878 (66488-66518) & Track 879 (66492-66506) overlap: 26
+Overlap: Track 878 (66488-66518) & Track 880 (66500-66506) overlap: 18
+Overlap: Track 878 (66488-66518) & Track 881 (66500-66510) overlap: 18
+Overlap: Track 878 (66488-66518) & Track 882 (66500-66518) overlap: 18
+Overlap: Track 879 (66492-66506) & Track 880 (66500-66506) overlap: 6
+Overlap: Track 879 (66492-66506) & Track 881 (66500-66510) overlap: 6
+Overlap: Track 879 (66492-66506) & Track 882 (66500-66518) overlap: 6
+Overlap: Track 880 (66500-66506) & Track 881 (66500-66510) overlap: 6
+Overlap: Track 880 (66500-66506) & Track 882 (66500-66518) overlap: 6
+Overlap: Track 881 (66500-66510) & Track 882 (66500-66518) overlap: 10
+Overlap: Track 895 (68688-68798) & Track 896 (68720-68786) overlap: 78
+Overlap: Track 895 (68688-68798) & Track 897 (68740-69010) overlap: 58
+Overlap: Track 895 (68688-68798) & Track 898 (68740-68789) overlap: 58
+Overlap: Track 895 (68688-68798) & Track 899 (68744-68782) overlap: 54
+Overlap: Track 895 (68688-68798) & Track 900 (68752-68818) overlap: 46
+Overlap: Track 895 (68688-68798) & Track 902 (68760-68966) overlap: 38
+Overlap: Track 895 (68688-68798) & Track 903 (68768-68810) overlap: 30
+Overlap: Track 896 (68720-68786) & Track 897 (68740-69010) overlap: 46
+Overlap: Track 896 (68720-68786) & Track 898 (68740-68789) overlap: 46
+Overlap: Track 896 (68720-68786) & Track 899 (68744-68782) overlap: 42
+Overlap: Track 896 (68720-68786) & Track 900 (68752-68818) overlap: 34
+Overlap: Track 896 (68720-68786) & Track 902 (68760-68966) overlap: 26
+Overlap: Track 896 (68720-68786) & Track 903 (68768-68810) overlap: 18
+Overlap: Track 897 (68740-69010) & Track 898 (68740-68789) overlap: 270
+Overlap: Track 897 (68740-69010) & Track 899 (68744-68782) overlap: 266
+Overlap: Track 897 (68740-69010) & Track 900 (68752-68818) overlap: 258
+Overlap: Track 897 (68740-69010) & Track 902 (68760-68966) overlap: 250
+Overlap: Track 897 (68740-69010) & Track 903 (68768-68810) overlap: 242
+Overlap: Track 898 (68740-68789) & Track 899 (68744-68782) overlap: 45
+Overlap: Track 898 (68740-68789) & Track 900 (68752-68818) overlap: 37
+Overlap: Track 898 (68740-68789) & Track 902 (68760-68966) overlap: 29
+Overlap: Track 898 (68740-68789) & Track 903 (68768-68810) overlap: 21
+Overlap: Track 899 (68744-68782) & Track 900 (68752-68818) overlap: 30
+Overlap: Track 899 (68744-68782) & Track 902 (68760-68966) overlap: 22
+Overlap: Track 899 (68744-68782) & Track 903 (68768-68810) overlap: 14
+Overlap: Track 900 (68752-68818) & Track 902 (68760-68966) overlap: 58
+Overlap: Track 900 (68752-68818) & Track 903 (68768-68810) overlap: 50
+Overlap: Track 902 (68760-68966) & Track 903 (68768-68810) overlap: 198
+Overlap: Track 906 (70052-70082) & Track 907 (70068-70218) overlap: 14
+Overlap: Track 906 (70052-70082) & Track 908 (70072-70082) overlap: 10
+Overlap: Track 906 (70052-70082) & Track 909 (70072-70178) overlap: 10
+Overlap: Track 906 (70052-70082) & Track 910 (70072-70124) overlap: 10
+Overlap: Track 906 (70052-70082) & Track 911 (70080-70088) overlap: 2
+Overlap: Track 906 (70052-70082) & Track 912 (70080-70093) overlap: 2
+Overlap: Track 907 (70068-70218) & Track 908 (70072-70082) overlap: 146
+Overlap: Track 907 (70068-70218) & Track 909 (70072-70178) overlap: 146
+Overlap: Track 907 (70068-70218) & Track 910 (70072-70124) overlap: 146
+Overlap: Track 907 (70068-70218) & Track 911 (70080-70088) overlap: 138
+Overlap: Track 907 (70068-70218) & Track 912 (70080-70093) overlap: 138
+Overlap: Track 908 (70072-70082) & Track 909 (70072-70178) overlap: 10
+Overlap: Track 908 (70072-70082) & Track 910 (70072-70124) overlap: 10
+Overlap: Track 908 (70072-70082) & Track 911 (70080-70088) overlap: 2
+Overlap: Track 908 (70072-70082) & Track 912 (70080-70093) overlap: 2
+Overlap: Track 909 (70072-70178) & Track 910 (70072-70124) overlap: 106
+Overlap: Track 909 (70072-70178) & Track 911 (70080-70088) overlap: 98
+Overlap: Track 909 (70072-70178) & Track 912 (70080-70093) overlap: 98
+Overlap: Track 910 (70072-70124) & Track 911 (70080-70088) overlap: 44
+Overlap: Track 910 (70072-70124) & Track 912 (70080-70093) overlap: 44
+Overlap: Track 911 (70080-70088) & Track 912 (70080-70093) overlap: 8
+Overlap: Track 957 (78991-79065) & Track 958 (78991-79077) overlap: 74
+Overlap: Track 957 (78991-79065) & Track 961 (79020-79037) overlap: 45
+Overlap: Track 957 (78991-79065) & Track 962 (79051-79129) overlap: 14
+Overlap: Track 958 (78991-79077) & Track 961 (79020-79037) overlap: 57
+Overlap: Track 958 (78991-79077) & Track 962 (79051-79129) overlap: 26
+Fragment: Track 961 (ends 79037) -> Track 962 (starts 79051) gap: 14
+Overlap: Track 973 (80160-80242) & Track 975 (80172-80222) overlap: 70
+Overlap: Track 973 (80160-80242) & Track 976 (80180-80226) overlap: 62
+Overlap: Track 973 (80160-80242) & Track 977 (80184-80198) overlap: 58
+Overlap: Track 975 (80172-80222) & Track 976 (80180-80226) overlap: 42
+Overlap: Track 975 (80172-80222) & Track 977 (80184-80198) overlap: 38
+Overlap: Track 976 (80180-80226) & Track 977 (80184-80198) overlap: 42
+Overlap: Track 1037 (87180-87306) & Track 1038 (87252-87278) overlap: 54
+Overlap: Track 1037 (87180-87306) & Track 1039 (87268-87322) overlap: 38
+Overlap: Track 1037 (87180-87306) & Track 1040 (87268-87282) overlap: 38
+Overlap: Track 1037 (87180-87306) & Track 1041 (87272-87298) overlap: 34
+Overlap: Track 1037 (87180-87306) & Track 1042 (87272-87282) overlap: 34
+Overlap: Track 1037 (87180-87306) & Track 1043 (87272-87298) overlap: 34
+Overlap: Track 1037 (87180-87306) & Track 1044 (87272-87286) overlap: 34
+Overlap: Track 1037 (87180-87306) & Track 1045 (87272-87278) overlap: 34
+Overlap: Track 1038 (87252-87278) & Track 1039 (87268-87322) overlap: 10
+Overlap: Track 1038 (87252-87278) & Track 1040 (87268-87282) overlap: 10
+Overlap: Track 1038 (87252-87278) & Track 1041 (87272-87298) overlap: 6
+Overlap: Track 1038 (87252-87278) & Track 1042 (87272-87282) overlap: 6
+Overlap: Track 1038 (87252-87278) & Track 1043 (87272-87298) overlap: 6
+Overlap: Track 1038 (87252-87278) & Track 1044 (87272-87286) overlap: 6
+Overlap: Track 1038 (87252-87278) & Track 1045 (87272-87278) overlap: 6
+Overlap: Track 1039 (87268-87322) & Track 1040 (87268-87282) overlap: 54
+Overlap: Track 1039 (87268-87322) & Track 1041 (87272-87298) overlap: 50
+Overlap: Track 1039 (87268-87322) & Track 1042 (87272-87282) overlap: 50
+Overlap: Track 1039 (87268-87322) & Track 1043 (87272-87298) overlap: 50
+Overlap: Track 1039 (87268-87322) & Track 1044 (87272-87286) overlap: 50
+Overlap: Track 1039 (87268-87322) & Track 1045 (87272-87278) overlap: 50
+Overlap: Track 1040 (87268-87282) & Track 1041 (87272-87298) overlap: 10
+Overlap: Track 1040 (87268-87282) & Track 1042 (87272-87282) overlap: 10
+Overlap: Track 1040 (87268-87282) & Track 1043 (87272-87298) overlap: 10
+Overlap: Track 1040 (87268-87282) & Track 1044 (87272-87286) overlap: 10
+Overlap: Track 1040 (87268-87282) & Track 1045 (87272-87278) overlap: 10
+Overlap: Track 1041 (87272-87298) & Track 1042 (87272-87282) overlap: 26
+Overlap: Track 1041 (87272-87298) & Track 1043 (87272-87298) overlap: 26
+Overlap: Track 1041 (87272-87298) & Track 1044 (87272-87286) overlap: 26
+Overlap: Track 1041 (87272-87298) & Track 1045 (87272-87278) overlap: 26
+Overlap: Track 1042 (87272-87282) & Track 1043 (87272-87298) overlap: 10
+Overlap: Track 1042 (87272-87282) & Track 1044 (87272-87286) overlap: 10
+Overlap: Track 1042 (87272-87282) & Track 1045 (87272-87278) overlap: 10
+Overlap: Track 1043 (87272-87298) & Track 1044 (87272-87286) overlap: 26
+Overlap: Track 1043 (87272-87298) & Track 1045 (87272-87278) overlap: 26
+Overlap: Track 1044 (87272-87286) & Track 1045 (87272-87278) overlap: 14
+Overlap: Track 1055 (88684-88743) & Track 1056 (88700-88758) overlap: 43
+Overlap: Track 1055 (88684-88743) & Track 1057 (88700-88742) overlap: 43
+Overlap: Track 1055 (88684-88743) & Track 1058 (88700-88758) overlap: 43
+Overlap: Track 1055 (88684-88743) & Track 1059 (88708-88747) overlap: 35
+Overlap: Track 1055 (88684-88743) & Track 1060 (88712-88770) overlap: 31
+Overlap: Track 1055 (88684-88743) & Track 1061 (88720-88866) overlap: 23
+Overlap: Track 1055 (88684-88743) & Track 1062 (88724-88766) overlap: 19
+Overlap: Track 1055 (88684-88743) & Track 1064 (88726-88730) overlap: 17
+Overlap: Track 1055 (88684-88743) & Track 1065 (88728-88746) overlap: 15
+Overlap: Track 1055 (88684-88743) & Track 1067 (88729-88758) overlap: 14
+Overlap: Track 1056 (88700-88758) & Track 1057 (88700-88742) overlap: 58
+Overlap: Track 1056 (88700-88758) & Track 1058 (88700-88758) overlap: 58
+Overlap: Track 1056 (88700-88758) & Track 1059 (88708-88747) overlap: 50
+Overlap: Track 1056 (88700-88758) & Track 1060 (88712-88770) overlap: 46
+Overlap: Track 1056 (88700-88758) & Track 1061 (88720-88866) overlap: 38
+Overlap: Track 1056 (88700-88758) & Track 1062 (88724-88766) overlap: 34
+Overlap: Track 1056 (88700-88758) & Track 1064 (88726-88730) overlap: 32
+Overlap: Track 1056 (88700-88758) & Track 1065 (88728-88746) overlap: 30
+Overlap: Track 1056 (88700-88758) & Track 1067 (88729-88758) overlap: 29
+Overlap: Track 1057 (88700-88742) & Track 1058 (88700-88758) overlap: 42
+Overlap: Track 1057 (88700-88742) & Track 1059 (88708-88747) overlap: 34
+Overlap: Track 1057 (88700-88742) & Track 1060 (88712-88770) overlap: 30
+Overlap: Track 1057 (88700-88742) & Track 1061 (88720-88866) overlap: 22
+Overlap: Track 1057 (88700-88742) & Track 1062 (88724-88766) overlap: 18
+Overlap: Track 1057 (88700-88742) & Track 1064 (88726-88730) overlap: 16
+Overlap: Track 1057 (88700-88742) & Track 1065 (88728-88746) overlap: 14
+Overlap: Track 1057 (88700-88742) & Track 1067 (88729-88758) overlap: 13
+Overlap: Track 1058 (88700-88758) & Track 1059 (88708-88747) overlap: 50
+Overlap: Track 1058 (88700-88758) & Track 1060 (88712-88770) overlap: 46
+Overlap: Track 1058 (88700-88758) & Track 1061 (88720-88866) overlap: 38
+Overlap: Track 1058 (88700-88758) & Track 1062 (88724-88766) overlap: 34
+Overlap: Track 1058 (88700-88758) & Track 1064 (88726-88730) overlap: 32
+Overlap: Track 1058 (88700-88758) & Track 1065 (88728-88746) overlap: 30
+Overlap: Track 1058 (88700-88758) & Track 1067 (88729-88758) overlap: 29
+Overlap: Track 1059 (88708-88747) & Track 1060 (88712-88770) overlap: 35
+Overlap: Track 1059 (88708-88747) & Track 1061 (88720-88866) overlap: 27
+Overlap: Track 1059 (88708-88747) & Track 1062 (88724-88766) overlap: 23
+Overlap: Track 1059 (88708-88747) & Track 1064 (88726-88730) overlap: 21
+Overlap: Track 1059 (88708-88747) & Track 1065 (88728-88746) overlap: 19
+Overlap: Track 1059 (88708-88747) & Track 1067 (88729-88758) overlap: 18
+Overlap: Track 1060 (88712-88770) & Track 1061 (88720-88866) overlap: 50
+Overlap: Track 1060 (88712-88770) & Track 1062 (88724-88766) overlap: 46
+Overlap: Track 1060 (88712-88770) & Track 1064 (88726-88730) overlap: 44
+Overlap: Track 1060 (88712-88770) & Track 1065 (88728-88746) overlap: 42
+Overlap: Track 1060 (88712-88770) & Track 1067 (88729-88758) overlap: 41
+Overlap: Track 1061 (88720-88866) & Track 1062 (88724-88766) overlap: 142
+Overlap: Track 1061 (88720-88866) & Track 1064 (88726-88730) overlap: 140
+Overlap: Track 1061 (88720-88866) & Track 1065 (88728-88746) overlap: 138
+Overlap: Track 1061 (88720-88866) & Track 1067 (88729-88758) overlap: 137
+Overlap: Track 1062 (88724-88766) & Track 1064 (88726-88730) overlap: 40
+Overlap: Track 1062 (88724-88766) & Track 1065 (88728-88746) overlap: 38
+Overlap: Track 1062 (88724-88766) & Track 1067 (88729-88758) overlap: 37
+Overlap: Track 1064 (88726-88730) & Track 1065 (88728-88746) overlap: 2
+Overlap: Track 1064 (88726-88730) & Track 1067 (88729-88758) overlap: 1
+Overlap: Track 1065 (88728-88746) & Track 1067 (88729-88758) overlap: 17
+
+--- MISSED BUS TRACKS ---
+Missed Bus Track 606: frames 41212-41610, lifespan 399, reason: Never crossed counting line
+Missed Bus Track 393: frames 26716-26878, lifespan 163, reason: Never crossed counting line
+Missed Bus Track 365: frames 26340-26486, lifespan 147, reason: Never crossed counting line
+Missed Bus Track 596: frames 41120-41250, lifespan 131, reason: Never crossed counting line
+Missed Bus Track 895: frames 68688-68798, lifespan 111, reason: Never crossed counting line
+Missed Bus Track 368: frames 26416-26506, lifespan 91, reason: Never crossed counting line
+Missed Bus Track 373: frames 26420-26506, lifespan 87, reason: Never crossed counting line
+Missed Bus Track 958: frames 78991-79077, lifespan 87, reason: Never crossed counting line
+Missed Bus Track 768: frames 56984-57066, lifespan 83, reason: Never crossed counting line
+Missed Bus Track 46: frames 7268-7346, lifespan 79, reason: Never crossed counting line
+Missed Bus Track 598: frames 41180-41258, lifespan 79, reason: Never crossed counting line
+Missed Bus Track 962: frames 79051-79129, lifespan 79, reason: Never crossed counting line
+Missed Bus Track 371: frames 26420-26494, lifespan 75, reason: Never crossed counting line
+Missed Bus Track 766: frames 56984-57058, lifespan 75, reason: Never crossed counting line
+Missed Bus Track 48: frames 7308-7378, lifespan 71, reason: Never crossed counting line
+Missed Bus Track 367: frames 26416-26486, lifespan 71, reason: Never crossed counting line
+Missed Bus Track 369: frames 26420-26490, lifespan 71, reason: Never crossed counting line
+Missed Bus Track 370: frames 26420-26490, lifespan 71, reason: Never crossed counting line
+Missed Bus Track 599: frames 41180-41250, lifespan 71, reason: Never crossed counting line
+Missed Bus Track 676: frames 47492-47562, lifespan 71, reason: Never crossed counting line
+Missed Bus Track 771: frames 56992-57062, lifespan 71, reason: Never crossed counting line
+Missed Bus Track 848: frames 63360-63429, lifespan 70, reason: Never crossed counting line
+Missed Bus Track 372: frames 26420-26486, lifespan 67, reason: Never crossed counting line
+Missed Bus Track 374: frames 26420-26486, lifespan 67, reason: Never crossed counting line
+Missed Bus Track 375: frames 26428-26494, lifespan 67, reason: Never crossed counting line
+Missed Bus Track 395: frames 26820-26886, lifespan 67, reason: Never crossed counting line
+Missed Bus Track 854: frames 63400-63466, lifespan 67, reason: Never crossed counting line
+Missed Bus Track 896: frames 68720-68786, lifespan 67, reason: Never crossed counting line
+Missed Bus Track 852: frames 63388-63449, lifespan 62, reason: Never crossed counting line
+Missed Bus Track 1055: frames 88684-88743, lifespan 60, reason: Never crossed counting line
+Missed Bus Track 400: frames 26828-26886, lifespan 59, reason: Never crossed counting line
+Missed Bus Track 403: frames 26828-26886, lifespan 59, reason: Never crossed counting line
+Missed Bus Track 678: frames 47520-47578, lifespan 59, reason: Never crossed counting line
+Missed Bus Track 1056: frames 88700-88758, lifespan 59, reason: Never crossed counting line
+Missed Bus Track 341: frames 25872-25926, lifespan 55, reason: Never crossed counting line
+Missed Bus Track 258: frames 20737-20790, lifespan 54, reason: Never crossed counting line
+Missed Bus Track 524: frames 35288-35341, lifespan 54, reason: Never crossed counting line
+Missed Bus Track 853: frames 63388-63441, lifespan 54, reason: Never crossed counting line
+Missed Bus Track 354: frames 25896-25946, lifespan 51, reason: Never crossed counting line
+Missed Bus Track 380: frames 26440-26490, lifespan 51, reason: Never crossed counting line
+Missed Bus Track 398: frames 26828-26878, lifespan 51, reason: Never crossed counting line
+Missed Bus Track 402: frames 26828-26878, lifespan 51, reason: Never crossed counting line
+Missed Bus Track 404: frames 26828-26878, lifespan 51, reason: Never crossed counting line
+Missed Bus Track 525: frames 35288-35338, lifespan 51, reason: Never crossed counting line
+Missed Bus Track 851: frames 63388-63438, lifespan 51, reason: Never crossed counting line
+Missed Bus Track 382: frames 26441-26490, lifespan 50, reason: Never crossed counting line
+Missed Bus Track 603: frames 41200-41249, lifespan 50, reason: Never crossed counting line
+Missed Bus Track 898: frames 68740-68789, lifespan 50, reason: Never crossed counting line
+Missed Bus Track 405: frames 26830-26878, lifespan 49, reason: Never crossed counting line
+Missed Bus Track 528: frames 35291-35338, lifespan 48, reason: Never crossed counting line
+Missed Bus Track 51: frames 7328-7374, lifespan 47, reason: Never crossed counting line
+Missed Bus Track 338: frames 25488-25534, lifespan 47, reason: Never crossed counting line
+Missed Bus Track 562: frames 37192-37238, lifespan 47, reason: Never crossed counting line
+Missed Bus Track 346: frames 25880-25924, lifespan 45, reason: Never crossed counting line
+Missed Bus Track 537: frames 35323-35366, lifespan 44, reason: Never crossed counting line
+Missed Bus Track 342: frames 25872-25914, lifespan 43, reason: Never crossed counting line
+Missed Bus Track 343: frames 25876-25918, lifespan 43, reason: Never crossed counting line
+Missed Bus Track 605: frames 41208-41250, lifespan 43, reason: Never crossed counting line
+Missed Bus Track 903: frames 68768-68810, lifespan 43, reason: Never crossed counting line
+Missed Bus Track 1057: frames 88700-88742, lifespan 43, reason: Never crossed counting line
+Missed Bus Track 336: frames 25470-25510, lifespan 41, reason: Never crossed counting line
+Missed Bus Track 527: frames 35289-35329, lifespan 41, reason: Never crossed counting line
+Missed Bus Track 1059: frames 88708-88747, lifespan 40, reason: Never crossed counting line
+Missed Bus Track 347: frames 25888-25926, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 348: frames 25888-25926, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 384: frames 26448-26486, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 387: frames 26472-26510, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 694: frames 49411-49449, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 744: frames 55500-55538, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 899: frames 68744-68782, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 982: frames 81460-81498, lifespan 39, reason: Never crossed counting line
+Missed Bus Track 335: frames 25468-25505, lifespan 38, reason: Never crossed counting line
+Missed Bus Track 776: frames 57013-57050, lifespan 38, reason: Never crossed counting line
+Missed Bus Track 264: frames 20772-20807, lifespan 36, reason: Never crossed counting line
+Missed Bus Track 532: frames 35311-35346, lifespan 36, reason: Never crossed counting line
+Missed Bus Track 533: frames 35311-35346, lifespan 36, reason: Never crossed counting line
+Missed Bus Track 749: frames 55523-55558, lifespan 36, reason: Never crossed counting line
+Missed Bus Track 50: frames 7312-7346, lifespan 35, reason: Never crossed counting line
+Missed Bus Track 350: frames 25892-25926, lifespan 35, reason: Never crossed counting line
+Missed Bus Track 438: frames 28172-28206, lifespan 35, reason: Never crossed counting line
+Missed Bus Track 585: frames 38428-38462, lifespan 35, reason: Never crossed counting line
+Missed Bus Track 352: frames 25896-25926, lifespan 31, reason: Never crossed counting line
+Missed Bus Track 512: frames 34436-34466, lifespan 31, reason: Never crossed counting line
+Missed Bus Track 571: frames 37508-37538, lifespan 31, reason: Never crossed counting line
+Missed Bus Track 746: frames 55520-55550, lifespan 31, reason: Never crossed counting line
+Missed Bus Track 878: frames 66488-66518, lifespan 31, reason: Never crossed counting line
+Missed Bus Track 906: frames 70052-70082, lifespan 31, reason: Never crossed counting line
+
+--- MULTIPLE COUNTS (Same timeframe) ---
+Duplicate cross? Track 52 at 7351 and Track 47 at 7359
+Duplicate cross? Track 47 at 7359 and Track 49 at 7379
+Duplicate cross? Track 331 at 25479 and Track 330 at 25485
+Duplicate cross? Track 330 at 25485 and Track 337 at 25495
+Duplicate cross? Track 337 at 25495 and Track 333 at 25539
+Duplicate cross? Track 349 at 25900 and Track 356 at 25908
+Duplicate cross? Track 356 at 25908 and Track 345 at 25920
+Duplicate cross? Track 345 at 25920 and Track 340 at 25927
+Duplicate cross? Track 376 at 26435 and Track 377 at 26447
+Duplicate cross? Track 377 at 26447 and Track 381 at 26479
+Duplicate cross? Track 381 at 26479 and Track 383 at 26479
+Duplicate cross? Track 383 at 26479 and Track 389 at 26484
+Duplicate cross? Track 389 at 26484 and Track 379 at 26495
+Duplicate cross? Track 379 at 26495 and Track 378 at 26500
+Duplicate cross? Track 406 at 26835 and Track 407 at 26840
+Duplicate cross? Track 407 at 26840 and Track 401 at 26847
+Duplicate cross? Track 401 at 26847 and Track 396 at 26851
+Duplicate cross? Track 396 at 26851 and Track 399 at 26872
+Duplicate cross? Track 399 at 26872 and Track 408 at 26887
+Duplicate cross? Track 408 at 26887 and Track 410 at 26888
+Duplicate cross? Track 410 at 26888 and Track 411 at 26888
+Duplicate cross? Track 411 at 26888 and Track 397 at 26891
+Duplicate cross? Track 488 at 32215 and Track 489 at 32247
+Duplicate cross? Track 526 at 35302 and Track 529 at 35307
+Duplicate cross? Track 602 at 41203 and Track 601 at 41212
+Duplicate cross? Track 601 at 41212 and Track 604 at 41221
+Duplicate cross? Track 604 at 41221 and Track 608 at 41228
+Duplicate cross? Track 608 at 41228 and Track 609 at 41239
+Duplicate cross? Track 683 at 47579 and Track 682 at 47587
+Duplicate cross? Track 706 at 50022 and Track 712 at 50022
+Duplicate cross? Track 745 at 55552 and Track 747 at 55571
+Duplicate cross? Track 747 at 55571 and Track 750 at 55631
+Duplicate cross? Track 770 at 57000 and Track 764 at 57003
+Duplicate cross? Track 764 at 57003 and Track 773 at 57004
+Duplicate cross? Track 773 at 57004 and Track 774 at 57008
+Duplicate cross? Track 774 at 57008 and Track 772 at 57019
+Duplicate cross? Track 772 at 57019 and Track 777 at 57024
+Duplicate cross? Track 777 at 57024 and Track 765 at 57051
+Duplicate cross? Track 765 at 57051 and Track 767 at 57059
+Duplicate cross? Track 767 at 57059 and Track 769 at 57063
+Duplicate cross? Track 855 at 63407 and Track 846 at 63420
+Duplicate cross? Track 846 at 63420 and Track 850 at 63439
+Duplicate cross? Track 850 at 63439 and Track 849 at 63442
+Duplicate cross? Track 849 at 63442 and Track 847 at 63446
+Duplicate cross? Track 897 at 68780 and Track 902 at 68799
+Duplicate cross? Track 902 at 68799 and Track 900 at 68808
+Duplicate cross? Track 907 at 70100 and Track 910 at 70119
+Duplicate cross? Track 910 at 70119 and Track 909 at 70149
+Duplicate cross? Track 975 at 80211 and Track 973 at 80219
+Duplicate cross? Track 973 at 80219 and Track 976 at 80223
+Duplicate cross? Track 1037 at 87299 and Track 1039 at 87319
+Duplicate cross? Track 1060 at 88722 and Track 1061 at 88723
+Duplicate cross? Track 1061 at 88723 and Track 1062 at 88732
+Duplicate cross? Track 1062 at 88732 and Track 1058 at 88751

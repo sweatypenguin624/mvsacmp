@@ -1,0 +1,641 @@
+     1	import logging
+     2	from collections import deque
+     3	from typing import Dict, List, Optional, Tuple
+     4	
+     5	import numpy as np
+     6	
+     7	logger = logging.getLogger("uvh_test.counter")
+     8	
+     9	
+    10	class VehicleCounter:
+    11	    """
+    12	    Robust line-crossing counter.
+    13	
+    14	    Design goals:
+    15	    - Count a physical track at most once.
+    16	    - Use bottom-center of bbox for road vehicles.
+    17	    - Require a genuine side-of-line transition.
+    18	    - Require trajectory evidence before counting.
+    19	    - Avoid large fixed pixel-based duplicate suppression.
+    20	    - Keep enough diagnostics to understand failures.
+    21	
+    22	    This class is intentionally conservative:
+    23	    a track should demonstrate that it approached and crossed the
+    24	    counting line before it is counted.
+    25	    """
+    26	
+    27	    def __init__(
+    28	        self,
+    29	        line_points: List[List[float]],
+    30	        count_direction: str = "BOTH",
+    31	        min_track_frames: int = 3,
+    32	        min_crossing_frames: int = 2,
+    33	        trajectory_size: int = 30,
+    34	        crossing_cooldown_frames: int = 8,
+    35	    ):
+    36	        if not line_points or len(line_points) != 2:
+    37	            raise ValueError(
+    38	                "line_points must contain exactly two points"
+    39	            )
+    40	
+    41	        self.line_p1 = np.array(line_points[0], dtype=float)
+    42	        self.line_p2 = np.array(line_points[1], dtype=float)
+    43	
+    44	        if np.allclose(self.line_p1, self.line_p2):
+    45	            raise ValueError("Counting line points must be different")
+    46	
+    47	        self.count_direction = count_direction.upper()
+    48	
+    49	        self.min_track_frames = max(1, int(min_track_frames))
+    50	        self.min_crossing_frames = max(1, int(min_crossing_frames))
+    51	        self.trajectory_size = max(5, int(trajectory_size))
+    52	        self.crossing_cooldown_frames = max(0, int(crossing_cooldown_frames))
+    53	
+    54	        # Track IDs that have already produced a valid count.
+    55	        self.counted_ids = set()
+    56	        self.recent_crossings = []  # stores (frame_idx, direction, class, point)
+    57	
+    58	        # Track IDs that have been explicitly rejected after crossing.
+    59	        self.rejected_ids = set()
+    60	
+    61	        # Previous side-of-line state for each track.
+    62	        self.previous_side: Dict[int, int] = {}
+    63	
+    64	        # Consecutive observations on each side.
+    65	        self.side_history: Dict[int, deque] = {}
+    66	
+    67	        # Recent bottom-center trajectory.
+    68	        self.trajectories: Dict[int, deque] = {}
+    69	
+    70	        # Last frame where a track was seen.
+    71	        self.last_seen_frame: Dict[int, int] = {}
+    72	
+    73	        # Last frame where a crossing was accepted.
+    74	        self.last_crossing_frame: Dict[int, int] = {}
+    75	
+    76	        # Track → crossing information.
+    77	        self.crossing_info: Dict[int, dict] = {}
+    78	
+    79	        # Track → latest state reference.
+    80	        self.track_states: Dict[int, object] = {}
+    81	
+    82	        # Output records.
+    83	        self.records: List[dict] = []
+    84	
+    85	        # Aggregate counts.
+    86	        self.counts: Dict[str, Dict[str, int]] = {}
+    87	
+    88	        # Debug statistics.
+    89	        self.stats = {
+    90	            "tracks_seen": 0,
+    91	            "crossing_candidates": 0,
+    92	            "valid_crossings": 0,
+    93	            "counted": 0,
+    94	            "rejected_short_track": 0,
+    95	            "rejected_direction": 0,
+    96	            "rejected_duplicate": 0,
+    97	        }
+    98	
+    99	        self.frame_count = 0
+   100	
+   101	        logger.info(
+   102	            "VehicleCounter initialized: line=%s -> %s, direction=%s",
+   103	            self.line_p1.tolist(),
+   104	            self.line_p2.tolist(),
+   105	            self.count_direction,
+   106	        )
+   107	
+   108	    # ------------------------------------------------------------------
+   109	    # Geometry
+   110	    # ------------------------------------------------------------------
+   111	
+   112	    def bottom_center(self, box) -> Tuple[float, float]:
+   113	        x1, y1, x2, y2 = map(float, box)
+   114	        return (
+   115	            (x1 + x2) / 2.0,
+   116	            y2,
+   117	        )
+   118	
+   119	    def side_of_line(self, point: Tuple[float, float]) -> int:
+   120	        """
+   121	        Returns:
+   122	            +1 = one side
+   123	            -1 = opposite side
+   124	             0 = exactly/on the line
+   125	        """
+   126	        p = np.array(point, dtype=float)
+   127	
+   128	        direction = self.line_p2 - self.line_p1
+   129	        relative = p - self.line_p1
+   130	
+   131	        cross = (
+   132	            direction[0] * relative[1]
+   133	            - direction[1] * relative[0]
+   134	        )
+   135	
+   136	        eps = 1e-6
+   137	
+   138	        if cross > eps:
+   139	            return 1
+   140	
+   141	        if cross < -eps:
+   142	            return -1
+   143	
+   144	        return 0
+   145	
+   146	    def direction_from_sides(self, previous_side: int, current_side: int) -> str:
+   147	        """
+   148	        Converts a side transition into a stable direction label.
+   149	
+   150	        The labels are intentionally generic:
+   151	        A_TO_B / B_TO_A
+   152	
+   153	        This avoids assuming that image-left/right corresponds to
+   154	        physical traffic direction.
+   155	        """
+   156	        if previous_side < 0 and current_side > 0:
+   157	            return "A_TO_B"
+   158	
+   159	        if previous_side > 0 and current_side < 0:
+   160	            return "B_TO_A"
+   161	
+   162	        return "UNKNOWN"
+   163	
+   164	    def direction_allowed(self, direction: str) -> bool:
+   165	        if self.count_direction == "BOTH":
+   166	            return True
+   167	
+   168	        return direction.upper() == self.count_direction
+   169	
+   170	    # ------------------------------------------------------------------
+   171	    # Track helpers
+   172	    # ------------------------------------------------------------------
+   173	
+   174	    def _get_track_age(self, state, frame_idx: int) -> int:
+   175	        if state is None:
+   176	            return 0
+   177	
+   178	        first_seen = getattr(state, "first_seen_frame", frame_idx)
+   179	
+   180	        return frame_idx - first_seen + 1
+   181	
+   182	    def _update_trajectory(
+   183	        self,
+   184	        tid: int,
+   185	        point: Tuple[float, float],
+   186	    ):
+   187	        if tid not in self.trajectories:
+   188	            self.trajectories[tid] = deque(
+   189	                maxlen=self.trajectory_size
+   190	            )
+   191	
+   192	        self.trajectories[tid].append(point)
+   193	
+   194	    def _update_side_history(
+   195	        self,
+   196	        tid: int,
+   197	        side: int,
+   198	    ):
+   199	        if tid not in self.side_history:
+   200	            self.side_history[tid] = deque(
+   201	                maxlen=self.min_crossing_frames + 2
+   202	            )
+   203	
+   204	        if side != 0:
+   205	            self.side_history[tid].append(side)
+   206	
+   207	    def _has_stable_previous_side(
+   208	        self,
+   209	        tid: int,
+   210	        previous_side: int,
+   211	    ) -> bool:
+   212	        history = self.side_history.get(tid)
+   213	
+   214	        if not history:
+   215	            return False
+   216	
+   217	        # We need enough evidence that the vehicle was actually
+   218	        # travelling on the previous side before crossing.
+   219	        needed = min(
+   220	            self.min_crossing_frames,
+   221	            len(history),
+   222	        )
+   223	
+   224	        if needed <= 0:
+   225	            return False
+   226	
+   227	        recent = list(history)[-needed:]
+   228	
+   229	        return all(side == previous_side for side in recent)
+   230	
+   231	    def _has_post_crossing_evidence(
+   232	        self,
+   233	        tid: int,
+   234	        current_side: int,
+   235	    ) -> bool:
+   236	        history = self.side_history.get(tid)
+   237	
+   238	        if not history:
+   239	            return False
+   240	
+   241	        # Current observation is already in the history.
+   242	        needed = min(
+   243	            self.min_crossing_frames,
+   244	            len(history),
+   245	        )
+   246	
+   247	        if needed <= 0:
+   248	            return False
+   249	
+   250	        recent = list(history)[-needed:]
+   251	
+   252	        return all(side == current_side for side in recent)
+   253	
+   254	    def _trajectory_moving_towards_line(
+   255	        self,
+   256	        tid: int,
+   257	        previous_side: int,
+   258	        current_side: int,
+   259	    ) -> bool:
+   260	        """
+   261	        Basic trajectory sanity check.
+   262	
+   263	        We do not require a sophisticated velocity model here.
+   264	        We only reject obviously unstable transitions.
+   265	
+   266	        A side transition already provides the strongest evidence.
+   267	        """
+   268	        trajectory = self.trajectories.get(tid)
+   269	
+   270	        if not trajectory or len(trajectory) < 2:
+   271	            return True
+   272	
+   273	        p_prev = np.array(trajectory[-2], dtype=float)
+   274	        p_curr = np.array(trajectory[-1], dtype=float)
+   275	
+   276	        movement = p_curr - p_prev
+   277	
+   278	        if np.linalg.norm(movement) < 1e-6:
+   279	            return False
+   280	
+   281	        return True
+   282	
+   283	    # ------------------------------------------------------------------
+   284	    # Crossing
+   285	    # ------------------------------------------------------------------
+   286	
+   287	    def _detect_crossing(
+   288	        self,
+   289	        tid: int,
+   290	        point: Tuple[float, float],
+   291	        frame_idx: int,
+   292	    ) -> Tuple[bool, Optional[str]]:
+   293	        current_side = self.side_of_line(point)
+   294	
+   295	        # Exactly on the line: don't decide yet.
+   296	        if current_side == 0:
+   297	            return False, None
+   298	
+   299	        previous_side = self.previous_side.get(tid)
+   300	
+   301	        # First valid observation.
+   302	        if previous_side is None:
+   303	            self.previous_side[tid] = current_side
+   304	            self._update_side_history(tid, current_side)
+   305	            return False, None
+   306	
+   307	        # Same side -> no crossing.
+   308	        if current_side == previous_side:
+   309	            self._update_side_history(tid, current_side)
+   310	            return False, None
+   311	
+   312	        # We have a side transition.
+   313	        self.stats["crossing_candidates"] += 1
+   314	
+   315	        direction = self.direction_from_sides(
+   316	            previous_side,
+   317	            current_side,
+   318	        )
+   319	
+   320	        # Update state immediately so a noisy oscillation doesn't
+   321	        # repeatedly generate the same candidate.
+   322	        self.previous_side[tid] = current_side
+   323	        self._update_side_history(tid, current_side)
+   324	
+   325	        # Need stable evidence before the transition.
+   326	        if not self._has_stable_previous_side(
+   327	            tid,
+   328	            previous_side,
+   329	        ):
+   330	            return False, None
+   331	
+   332	        # Need stable evidence after the transition.
+   333	        if not self._has_post_crossing_evidence(
+   334	            tid,
+   335	            current_side,
+   336	        ):
+   337	            return False, None
+   338	
+   339	        if not self._trajectory_moving_towards_line(
+   340	            tid,
+   341	            previous_side,
+   342	            current_side,
+   343	        ):
+   344	            return False, None
+   345	
+   346	        # Direction restriction.
+   347	        if not self.direction_allowed(direction):
+   348	            self.stats["rejected_direction"] += 1
+   349	            return False, None
+   350	
+   351	        self.stats["valid_crossings"] += 1
+   352	
+   353	        return True, direction
+   354	
+   355	    # ------------------------------------------------------------------
+   356	    # Counting
+   357	    # ------------------------------------------------------------------
+   358	
+   359	    def update(
+   360	        self,
+   361	        frame_idx: int,
+   362	        active_tracks: list,
+   363	    ) -> List[dict]:
+   364	        """
+   365	        Process all active tracks for the current frame.
+   366	
+   367	        active_tracks format:
+   368	            [
+   369	                (track_id, TrackState, bbox),
+   370	                ...
+   371	            ]
+   372	        """
+   373	        self.frame_count = frame_idx
+   374	
+   375	        frame_records = []
+   376	
+   377	        for tid, state, box in active_tracks:
+   378	            tid = int(tid)
+   379	
+   380	            self.track_states[tid] = state
+   381	            self.last_seen_frame[tid] = frame_idx
+   382	
+   383	            self.stats["tracks_seen"] += 1
+   384	
+   385	            point = self.bottom_center(box)
+   386	
+   387	            self._update_trajectory(tid, point)
+   388	
+   389	            track_age = self._get_track_age(
+   390	                state,
+   391	                frame_idx,
+   392	            )
+   393	
+   394	            # Establish initial side before considering crossing.
+   395	            side = self.side_of_line(point)
+   396	
+   397	            if tid not in self.previous_side and side != 0:
+   398	                self.previous_side[tid] = side
+   399	                self._update_side_history(tid, side)
+   400	
+   401	            crossed, direction = self._detect_crossing(
+   402	                tid,
+   403	                point,
+   404	                frame_idx,
+   405	            )
+   406	
+   407	            if not crossed:
+   408	                continue
+   409	
+   410	            # ----------------------------------------------------------
+   411	            # One count per track ID.
+   412	            # ----------------------------------------------------------
+   413	            if tid in self.counted_ids:
+   414	                self.stats["rejected_duplicate"] += 1
+   415	                continue
+   416	
+   417	            # Track must have existed long enough.
+   418	            if track_age < self.min_track_frames:
+   419	                self.stats["rejected_short_track"] += 1
+   420	
+   421	                try:
+   422	                    state.not_counted_reason = (
+   423	                        "Crossed line before minimum track age"
+   424	                    )
+   425	                except Exception:
+   426	                    pass
+   427	
+   428	                continue
+   429	
+   430	            # Optional cooldown protection.
+   431	            previous_crossing = self.last_crossing_frame.get(tid)
+   432	
+   433	            if (
+   434	                previous_crossing is not None
+   435	                and frame_idx - previous_crossing
+   436	                <= self.crossing_cooldown_frames
+   437	            ):
+   438	                self.stats["rejected_duplicate"] += 1
+   439	                continue
+   440	
+   441	            # ----------------------------------------------------------
+   442	            # Valid count.
+   443	            # ----------------------------------------------------------
+   444	
+   445	            stable_class = "Unknown"
+   446	
+   447	            try:
+   448	                stable_class = state.get_stable_class(
+   449	                    self._class_names
+   450	                )
+   451	            except Exception:
+   452	                pass
+   453	
+   454	            
+   455	            # --- Anti-Fragmentation (Conservative) ---
+   456	            # If a track of the same class crossed recently in the same direction, and is very close both in time and space,
+   457	            # this might be the same physical vehicle with a broken Track ID.
+   458	            is_fragment = False
+   459	            for rc_frame, rc_dir, rc_class, rc_point in self.recent_crossings:
+   460	                if rc_class == stable_class and rc_dir == direction:
+   461	                    if frame_idx - rc_frame < 15:  # within 0.5 seconds (reduced from 2 seconds to avoid rejecting followers)
+   462	                        dist = ((point[0] - rc_point[0])**2 + (point[1] - rc_point[1])**2)**0.5
+   463	                        bbox_size = max(box[2] - box[0], box[3] - box[1])
+   464	                        if dist < bbox_size:  # spatial threshold based on object size
+   465	                            is_fragment = True
+   466	                            self.stats["rejected_duplicate"] += 1
+   467	                            logger.info(f"REJECTED: frame={frame_idx} tid={tid} as fragment of recent crossing (dist={dist:.1f}, bbox_max={bbox_size:.1f}).")
+   468	                            break
+   469	            
+   470	            if is_fragment:
+   471	                # Add to counted_ids anyway so we don't keep checking it
+   472	                self.counted_ids.add(tid)
+   473	                continue
+   474	            
+   475	            # Record this valid crossing
+   476	            self.recent_crossings.append((frame_idx, direction, stable_class, point))
+   477	            # Keep only recent crossings to avoid memory bloat
+   478	            self.recent_crossings = [rc for rc in self.recent_crossings if frame_idx - rc[0] < 300]
+   479	            
+   480	            self.counted_ids.add(tid)
+   481	            self.last_crossing_frame[tid] = frame_idx
+   482	
+   483	            try:
+   484	                state.counted = True
+   485	                state.state = "COUNTED"
+   486	                state.crossing_frame = frame_idx
+   487	                state.crossing_direction = direction
+   488	                state.counting_bbox = (
+   489	                    box.tolist()
+   490	                    if hasattr(box, "tolist")
+   491	                    else list(box)
+   492	                )
+   493	                state.not_counted_reason = ""
+   494	            except Exception:
+   495	                pass
+   496	
+   497	            self.crossing_info[tid] = {
+   498	                "frame": frame_idx,
+   499	                "direction": direction,
+   500	                "class": stable_class,
+   501	                "point": [
+   502	                    float(point[0]),
+   503	                    float(point[1]),
+   504	                ],
+   505	            }
+   506	
+   507	            if stable_class not in self.counts:
+   508	                self.counts[stable_class] = {
+   509	                    "total": 0,
+   510	                    "A_TO_B": 0,
+   511	                    "B_TO_A": 0,
+   512	                }
+   513	
+   514	            self.counts[stable_class]["total"] += 1
+   515	
+   516	            if direction in ("A_TO_B", "B_TO_A"):
+   517	                self.counts[stable_class][direction] += 1
+   518	
+   519	            record = {
+   520	                "frame": frame_idx,
+   521	                "class": stable_class,
+   522	                "direction": direction,
+   523	                "track_id": tid,
+   524	            }
+   525	
+   526	            self.records.append(record)
+   527	            frame_records.append(record)
+   528	
+   529	            self.stats["counted"] += 1
+   530	
+   531	            logger.info(
+   532	                "COUNT: frame=%d tid=%d class=%s direction=%s "
+   533	                "track_age=%d point=(%.1f, %.1f)",
+   534	                frame_idx,
+   535	                tid,
+   536	                stable_class,
+   537	                direction,
+   538	                track_age,
+   539	                point[0],
+   540	                point[1],
+   541	            )
+   542	
+   543	        return frame_records
+   544	
+   545	    # ------------------------------------------------------------------
+   546	    # Class names
+   547	    # ------------------------------------------------------------------
+   548	
+   549	    def set_class_names(self, class_names):
+   550	        """
+   551	        Called by main.py after VehicleCounter construction.
+   552	        """
+   553	        self._class_names = class_names or {}
+   554	
+   555	    # ------------------------------------------------------------------
+   556	    # Diagnostics
+   557	    # ------------------------------------------------------------------
+   558	
+   559	    def get_summary(self) -> dict:
+   560	        return {
+   561	            "total_count": len(self.records),
+   562	            "counts": self.counts,
+   563	            "stats": self.stats,
+   564	            "unique_track_ids_counted": len(self.counted_ids),
+   565	        }
+   566	
+   567	    def get_records(self) -> List[dict]:
+   568	        return list(self.records)
+   569	
+   570	    def cleanup_track(self, tid: int):
+   571	        """
+   572	        Remove transient memory for an old track.
+   573	
+   574	        Do NOT remove tid from counted_ids.
+   575	        counted_ids is intentionally permanent for the duration
+   576	        of this video.
+   577	        """
+   578	        tid = int(tid)
+   579	
+   580	        self.previous_side.pop(tid, None)
+   581	        self.side_history.pop(tid, None)
+   582	        self.trajectories.pop(tid, None)
+   583	        self.last_seen_frame.pop(tid, None)
+   584	        self.track_states.pop(tid, None)
+   585	
+   586	    def reset(self):
+   587	        self.counted_ids.clear()
+   588	        self.recent_crossings.clear()
+   589	        self.rejected_ids.clear()
+   590	        self.previous_side.clear()
+   591	        self.side_history.clear()
+   592	        self.trajectories.clear()
+   593	        self.last_seen_frame.clear()
+   594	        self.last_crossing_frame.clear()
+   595	        self.crossing_info.clear()
+   596	        self.track_states.clear()
+   597	        self.records.clear()
+   598	        self.counts.clear()
+   599	
+   600	        self.stats = {
+   601	            "tracks_seen": 0,
+   602	            "crossing_candidates": 0,
+   603	            "valid_crossings": 0,
+   604	            "counted": 0,
+   605	            "rejected_short_track": 0,
+   606	            "rejected_direction": 0,
+   607	            "rejected_duplicate": 0,
+   608	        }
+   609	
+   610	        self.frame_count = 0
+   611	
+   612	
+   613	# ----------------------------------------------------------------------
+   614	# Compatibility helper
+   615	# ----------------------------------------------------------------------
+   616	
+   617	def create_counter(
+   618	    line_points,
+   619	    count_direction="BOTH",
+   620	    class_names=None,
+   621	    **kwargs,
+   622	):
+   623	    """
+   624	    Convenience constructor.
+   625	
+   626	    Example:
+   627	        counter = create_counter(
+   628	            line_points,
+   629	            count_direction="BOTH",
+   630	            class_names=detector.class_names,
+   631	        )
+   632	    """
+   633	    counter = VehicleCounter(
+   634	        line_points=line_points,
+   635	        count_direction=count_direction,
+   636	        **kwargs,
+   637	    )
+   638	
+   639	    counter.set_class_names(class_names or {})
+   640	
+   641	    return counter

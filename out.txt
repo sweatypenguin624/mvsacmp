@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/storage/users/oauser/mvsa/check_gpu.py", line 6, in <module>
+    out = stdout.read().decode()
+          ^^^^^^^^^^^^^
+  File "/storage/users/oauser/mvsa/env/lib/python3.12/site-packages/paramiko/file.py", line 184, in read
+    new_data = self._read(self._DEFAULT_BUFSIZE)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/users/oauser/mvsa/env/lib/python3.12/site-packages/paramiko/channel.py", line 1359, in _read
+    return self.channel.recv(size)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/users/oauser/mvsa/env/lib/python3.12/site-packages/paramiko/channel.py", line 697, in recv
+    out = self.in_buffer.read(nbytes, self.timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/users/oauser/mvsa/env/lib/python3.12/site-packages/paramiko/buffered_pipe.py", line 150, in read
+    self._cv.wait(timeout)
+  File "/storage/packages/miniconda3/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt
