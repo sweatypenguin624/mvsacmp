@@ -1,3 +1,4 @@
+import argparse
 import os
 import cv2
 from fastapi import FastAPI, Request
@@ -8,7 +9,12 @@ from pathlib import Path
 
 app = FastAPI()
 
-CONFIG_PATH = "/home/users/oauser/mvsa/vehicle-counting/config/vehicle_count_config.yaml"
+DEFAULT_CONFIG_PATH = str(
+    Path(__file__).resolve().parent.parent / "vehicle-counting" / "config" / "vehicle_count_config.yaml"
+)
+# Overwritten from --config at startup; kept as a module global since the
+# /save handler below needs to know which camera's YAML to patch.
+CONFIG_PATH = DEFAULT_CONFIG_PATH
 
 HTML_CONTENT = """
 <!DOCTYPE html>
@@ -35,7 +41,7 @@ HTML_CONTENT = """
     <h2>ROI Calibration Tool</h2>
     <div class="controls">
         <label>Video Path:</label>
-        <input type="text" id="video-path" value="/home/users/oauser/mvsa/realrun/test.mp4">
+        <input type="text" id="video-path" value="/home/mvsacmp/roi_calibration/20260721_060002_tp00018.mp4">
         <button class="btn" onclick="loadFrame()">Load Frame</button>
         <button class="btn btn-danger" onclick="resetLine()">Reset Line</button>
         <button class="btn btn-success" onclick="saveConfig()">Save to Config</button>
@@ -231,6 +237,20 @@ def save_config(req: SaveRequest):
         return JSONResponse({"status": "error", "message": str(e)})
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Headless ROI/counting-line calibration server")
+    parser.add_argument("--config", type=str, default=DEFAULT_CONFIG_PATH,
+                         help="Camera config YAML to write the calibrated counting_line into "
+                              "(e.g. vehicle-counting/config/vehicle_count_config_cvc3_cam_2.yaml). "
+                              "Defaults to the generic vehicle_count_config.yaml if not given.")
+    parser.add_argument("--port", type=int, default=8000)
+    args = parser.parse_args()
+
+    CONFIG_PATH = args.config
+    if not Path(CONFIG_PATH).exists():
+        print(f"WARNING: {CONFIG_PATH} does not exist yet -- /save will fail until it does.")
+
     print(f"Starting ROI Calibration Web Server...")
-    print(f"Open http://localhost:8000 in your browser.")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    print(f"Target config: {CONFIG_PATH}")
+    print(f"Open http://localhost:{args.port} in your browser (use an SSH tunnel if this is remote:")
+    print(f"  ssh -L {args.port}:localhost:{args.port} <user>@<this-host>)")
+    uvicorn.run(app, host="0.0.0.0", port=args.port)
