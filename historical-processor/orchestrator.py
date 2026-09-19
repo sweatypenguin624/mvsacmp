@@ -6,6 +6,7 @@ import time
 import queue
 import threading
 import argparse
+import fcntl
 
 # Ensure historical-processor is on sys.path
 HIST_DIR = Path(__file__).resolve().parent
@@ -28,6 +29,29 @@ def run_command(cmd, desc):
     if result.returncode != 0:
         print(f"[{threading.current_thread().name}] ERROR in {desc}:\n{result.stderr}")
     return result.returncode == 0
+
+# Cross-process GPU concurrency cap. Each camera runs in its own tmux
+# session/process with its own --inf-threads, so per-process thread limits
+# don't stop multiple cameras from hammering the same physical GPU at once.
+# These slot lock files are shared (by path) across every orchestrator
+# process on the box, so together they cap TOTAL concurrent inference
+# subprocesses regardless of how many cameras are running.
+def acquire_gpu_slot(slots_dir, num_slots):
+    os.makedirs(slots_dir, exist_ok=True)
+    while True:
+        for i in range(num_slots):
+            slot_path = os.path.join(slots_dir, f"slot_{i}.lock")
+            fh = open(slot_path, "w")
+            try:
+                fcntl.flock(fh, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                return fh
+            except BlockingIOError:
+                fh.close()
+        time.sleep(2)
+
+def release_gpu_slot(fh):
+    fcntl.flock(fh, fcntl.LOCK_UN)
+    fh.close()
 
 def download_and_remux_worker(download_queue, inference_queue, manifest, folder_id, base_dir):
     downloader = Downloader(root_folder_id=folder_id)
@@ -69,25 +93,26 @@ def download_and_remux_worker(download_queue, inference_queue, manifest, folder_
         inference_queue.put(item)
         download_queue.task_done()
 
-def inference_worker(inference_queue, manifest, base_output_dir, config_file=None):
+def inference_worker(inference_queue, manifest, base_output_dir, config_file=None,
+                      gpu_slots_dir=None, max_concurrent_inference=1, use_dali=True):
     while True:
         item = inference_queue.get()
         if item is None:
             break
-            
+
         file_id = item['file_id']
         date = item['date']
         filename = item['filename']
         timestamp = item['timestamp']
         local_dav = item['local_dav']
         local_mp4 = item['local_mp4']
-        
+
         start_time_part = timestamp.split('-')[0]
         start_time_formatted = start_time_part.replace('.', ':')
-        
+
         output_dir = os.path.join(base_output_dir, date, timestamp)
         os.makedirs(output_dir, exist_ok=True)
-            
+
         # Inference using verified env python
         inference_cmd = [
             ENV_PYTHON, 'vehicle-counting/pipeline/counting/main.py',
@@ -98,8 +123,19 @@ def inference_worker(inference_queue, manifest, base_output_dir, config_file=Non
         ]
         if config_file:
             inference_cmd.extend(['--config', config_file])
-        
-        if not run_command(inference_cmd, f"Inference {filename}"):
+        if use_dali:
+            inference_cmd.append('--use_dali')
+
+        # Block here (not while holding the GPU) until a slot is free, so we
+        # never run more than max_concurrent_inference inference subprocesses
+        # -- across ALL cameras on this box -- against the GPU at once.
+        slot = acquire_gpu_slot(gpu_slots_dir, max_concurrent_inference)
+        try:
+            success = run_command(inference_cmd, f"Inference {filename}")
+        finally:
+            release_gpu_slot(slot)
+
+        if not success:
             manifest.update_status(file_id, "FAILED", error="Inference failed")
         else:
             manifest.update_status(file_id, "COMPLETED")
@@ -130,6 +166,15 @@ def main():
     parser.add_argument('--inf-threads', type=int, default=2, help="Number of inference threads")
     parser.add_argument('--batch-size', type=int, default=5, help="Batch size for fetching pending videos")
     parser.add_argument('--scan', action='store_true', help="Scan Google Drive before starting")
+    parser.add_argument('--max-concurrent-inference', type=int, default=1,
+                         help="Max inference subprocesses running at once ACROSS ALL cameras sharing this GPU "
+                              "(enforced via shared lock files, not just this process's --inf-threads). "
+                              "Keep this in sync across every camera launched on the same box/GPU.")
+    parser.add_argument('--gpu-slots-dir', type=str, default="historical-processor/data/gpu_slots",
+                         help="Shared directory for the cross-process GPU concurrency lock files.")
+    parser.add_argument('--no-dali', action='store_true',
+                         help="Disable NVDEC hardware video decode (--use_dali is passed to main.py by default; "
+                              "main.py falls back to CPU decode automatically if DALI isn't available).")
     args = parser.parse_args()
 
     camera_name = args.camera_name or args.folder_id
@@ -171,6 +216,11 @@ def main():
         t = threading.Thread(
             target=inference_worker,
             args=(inference_queue, manifest, output_dir, args.config),
+            kwargs=dict(
+                gpu_slots_dir=args.gpu_slots_dir,
+                max_concurrent_inference=args.max_concurrent_inference,
+                use_dali=not args.no_dali,
+            ),
             name=f"INF-Worker-{i}"
         )
         t.daemon = True
@@ -185,6 +235,8 @@ def main():
     print(f"Output Dir:   {output_dir}")
     print(f"Config:       {args.config or 'default'}")
     print(f"Workers:      {args.dl_threads} DL, {args.inf_threads} INF")
+    print(f"GPU cap:      {args.max_concurrent_inference} concurrent inference job(s) across ALL cameras (slots: {args.gpu_slots_dir})")
+    print(f"NVDEC:        {'disabled' if args.no_dali else 'enabled (falls back to CPU decode if unavailable)'}")
     print(f"=======================================================\n")
     
     # Reset any previously stuck or failed files on fresh launch
