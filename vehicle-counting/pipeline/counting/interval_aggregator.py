@@ -104,8 +104,12 @@ def aggregate_intervals(
     if counts:
         num_buckets = max(num_buckets, max(counts.keys()) + 1)
 
-    # Ensure consistent column ordering: known_classes first, then any newly seen
-    ordered_classes = list(class_set)
+    # User-requested explicit ordering
+    ordered_classes = [
+        "Hatchback", "Sedan", "SUV", "MUV", "Bus", "Truck", 
+        "Three-wheeler", "Two-wheeler", "LCV", "Mini-bus", 
+        "tempo-traveller", "bicycle", "Van", "Others"
+    ]
 
     out_csv_path = results_dir / "interval_counts.csv"
     with open(out_csv_path, mode="w", newline="") as f:

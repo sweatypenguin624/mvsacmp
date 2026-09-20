@@ -52,7 +52,8 @@ class DALIVideoStreamReader:
                 initial_fill=1,
                 random_shuffle=False,
                 shard_id=0,
-                num_shards=1
+                num_shards=1,
+                skip_vfr_check=True
             )
         
         self.pipe = video_pipe(
@@ -76,8 +77,6 @@ class DALIVideoStreamReader:
                 yield frame_idx, frame_bgr
                 frame_idx += 1
             except StopIteration:
-                break
-            except Exception:
                 break
 
     def close(self):

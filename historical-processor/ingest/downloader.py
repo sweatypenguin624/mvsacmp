@@ -7,9 +7,9 @@ class Downloader:
         if remote:
             self.remote = remote.rstrip(':')
         elif root_folder_id:
-            self.remote = f"Gdrive-yogesh,root_folder_id={root_folder_id}"
+            self.remote = f"abhaydrive,root_folder_id={root_folder_id}"
         else:
-            self.remote = "Gdrive-yogesh,root_folder_id=1fHpvoRMCz0xFK-pWZm_CyW1tTGAQkWmB"
+            self.remote = "abhaydrive,root_folder_id=1fHpvoRMCz0xFK-pWZm_CyW1tTGAQkWmB"
         
     def download_file(self, gdrive_path: str, local_path: str) -> bool:
         if os.path.exists(local_path) and os.path.getsize(local_path) > 0:
@@ -22,7 +22,7 @@ class Downloader:
         print(f"Downloading {gdrive_path} to {local_path} ...")
         
         cmd = [
-            self.rclone_path, "--config", "config/rclone.conf",
+            self.rclone_path,
             "copyto", f"{self.remote}:{gdrive_path}", tmp_path
         ]
         result = subprocess.run(cmd, capture_output=True, text=True)

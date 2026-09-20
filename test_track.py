@@ -1,12 +1,7 @@
-import cv2
 import numpy as np
-import time
 from ultralytics import YOLO
 
-m = YOLO('models/UVH-26/weights/YOLOv11-S/UVH-26-MV-YOLOv11-S.pt')
-img = np.zeros((1080, 1920, 3), dtype=np.uint8)
-
-start = time.time()
-for i in range(100):
-    res = m.track(source=img, persist=True, device='cuda', imgsz=1280, verbose=False)
-print(f"Elapsed for 100 frames: {time.time() - start:.2f}s")
+model = YOLO("yolo11n.pt") # fallback small model
+frames = [np.zeros((640, 640, 3), dtype=np.uint8) for _ in range(3)]
+results = model.track(frames, persist=True)
+print("Results:", type(results), len(results))

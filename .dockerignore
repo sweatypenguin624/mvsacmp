@@ -1,0 +1,10 @@
+.venv/
+.git/
+__pycache__/
+*.pyc
+.env
+*.dav
+*.mp4
+output/
+data/
+.ephemeral/

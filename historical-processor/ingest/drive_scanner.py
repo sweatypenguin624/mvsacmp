@@ -7,13 +7,13 @@ class DriveScanner:
         if remote:
             self.remote = remote if remote.endswith(':') else remote + ':'
         elif root_folder_id:
-            self.remote = f"Gdrive-yogesh,root_folder_id={root_folder_id}:"
+            self.remote = f"abhaydrive,root_folder_id={root_folder_id}:"
         else:
-            self.remote = "Gdrive-yogesh,root_folder_id=1fHpvoRMCz0xFK-pWZm_CyW1tTGAQkWmB:"
+            self.remote = "abhaydrive,root_folder_id=1fHpvoRMCz0xFK-pWZm_CyW1tTGAQkWmB:"
 
     def scan(self, manifest):
         print(f"Scanning {self.remote} with rclone...")
-        cmd = [self.rclone_path, "--config", "config/rclone.conf", "lsjson", "-R", "--files-only", "--fast-list", "--tpslimit", "4", "--tpslimit-burst", "4", self.remote]
+        cmd = [self.rclone_path, "lsjson", "-R", "--files-only", "--fast-list", "--tpslimit", "4", "--tpslimit-burst", "4", self.remote]
         result = subprocess.run(cmd, capture_output=True, text=True)
         
         if result.returncode != 0:
@@ -35,7 +35,7 @@ class DriveScanner:
             name = f.get('Name', '')
             file_id = f.get('ID', path)
             
-            if not name.endswith('.dav'):
+            if not (name.endswith('.dav') or name.endswith('.mp4')):
                 continue
             if "backup" in path.lower():
                 continue
@@ -47,7 +47,10 @@ class DriveScanner:
             else:
                 date = "unknown"
                 
-            start_time = name.replace('.dav', '')
+            if name.endswith('.dav'):
+                start_time = name.replace('.dav', '')
+            elif name.endswith('.mp4'):
+                start_time = name.replace('.mp4', '')
             
             manifest.add_or_update(
                 file_id=file_id,
@@ -58,4 +61,4 @@ class DriveScanner:
             )
             added += 1
                 
-        print(f"Added/Updated {added} .dav files in manifest.")
+        print(f"Added/Updated {added} media files in manifest.")

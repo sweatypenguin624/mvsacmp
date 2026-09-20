@@ -4,7 +4,7 @@ model:
   device: cuda:0
   imgsz: 640
   tracker: bytetrack.yaml
-  yolo_weights: models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.pt
+  yolo_weights: models/UVH-26/weights/YOLOv11-X/UVH-26-MV-YOLOv11-X.engine
 roi:
   count_direction: BOTH
   counting_line:

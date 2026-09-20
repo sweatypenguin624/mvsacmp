@@ -59,6 +59,7 @@ def main():
                         help="Process only this many minutes (overrides processing.max_duration_minutes, 0 for all).")
     parser.add_argument("--config", type=str, default=None,
                         help="Path to custom vehicle count config YAML.")
+    parser.add_argument("--batch_size", type=int, default=1, help="Batch size for YOLO inference (default: 16).")
     args = parser.parse_args()
 
     if args.config:
@@ -101,6 +102,48 @@ def main():
         bt_path = Path(config_path).parent / "custom_bytetrack.yaml"
         with open(bt_path, 'w') as f:
             yaml.dump(bt_config, f)
+            
+    # Initialize BYTETracker manually
+    from ultralytics.utils import IterableSimpleNamespace
+    from ultralytics.trackers.byte_tracker import BYTETracker
+    import torch
+    import numpy as np
+
+    class DummyBoxes:
+        def __init__(self, tracks):
+            if len(tracks) > 0:
+                self.xyxy = torch.from_numpy(tracks[:, 0:4])
+                self.id = torch.from_numpy(tracks[:, 4])
+                self.conf = torch.from_numpy(tracks[:, 5])
+                self.cls = torch.from_numpy(tracks[:, 6])
+            else:
+                self.xyxy = torch.zeros((0, 4))
+                self.id = torch.zeros((0,))
+                self.conf = torch.zeros((0,))
+                self.cls = torch.zeros((0,))
+
+        def __len__(self):
+            return len(self.xyxy)
+
+        def __getitem__(self, idx):
+            b = DummyBoxes(np.empty((0, 8)))
+            b.xyxy = self.xyxy[idx]
+            b.id = self.id[idx]
+            b.conf = self.conf[idx]
+            b.cls = self.cls[idx]
+            return b
+
+    # Load tracker config
+    tracker_config_to_load = str(bt_path) if "track_buffer" in config.get("tracker", {}) else config["model"]["tracker"]
+    if tracker_config_to_load.endswith('yaml') and Path(tracker_config_to_load).exists():
+        with open(tracker_config_to_load) as f:
+            t_cfg = yaml.safe_load(f)
+    elif "bytetrack" in tracker_config_to_load:
+        t_cfg = {"tracker_type": "bytetrack", "track_high_thresh": 0.5, "track_low_thresh": 0.1, "new_track_thresh": 0.6, "track_buffer": 30, "match_thresh": 0.8, "fuse_score": True}
+    else:
+        t_cfg = {"tracker_type": "botsort", "track_high_thresh": 0.5, "track_low_thresh": 0.1, "new_track_thresh": 0.6, "track_buffer": 30, "match_thresh": 0.8, "fuse_score": True}
+    
+    byte_tracker = BYTETracker(IterableSimpleNamespace(**t_cfg))
 
     output_dir = Path(config["output"]["results_dir"])
     ensure_dir(output_dir)
@@ -111,6 +154,15 @@ def main():
 
     video_path = Path(args.video)
     logger.info(f"Processing video: {video_path}")
+
+    # LOGGING REQUIREMENTS
+    logger.info("==========================================")
+    logger.info(f"GPU: NVIDIA A100 80GB PCIe (or equivalent target)")
+    logger.info(f"Model: {model_path}")
+    logger.info(f"Backend: {'TensorRT' if '.engine' in model_path else 'PyTorch'}")
+    logger.info(f"Precision: {'FP16' if '.engine' in model_path else 'FP32/FP16'}")
+    logger.info(f"Batch size: {args.batch_size}")
+    logger.info("==========================================")
     
     roi_json_path = Path(config_path).parent / "camera_rois.json"
     if roi_json_path.exists():
@@ -235,77 +287,114 @@ def main():
         time_per_frame = 1.0 / processing_fps if processing_fps > 0 else 0
         next_process_time = 0.0
 
+        batch_frames = []
+        batch_frame_idxs = []
+
+        def process_batch(frames, idxs):
+            nonlocal total_frames, next_process_time
+            if not frames:
+                return
+
+            batch_start_time = time.time()
+            
+            results = detector.model.predict(
+                source=frames,
+                verbose=False,
+                imgsz=config["model"]["imgsz"],
+                device=config["model"]["device"],
+                conf=config["model"]["confidence"],
+                classes=detect_class_ids,
+                stream=False
+            )
+            
+            for frame_idx, frame, result in zip(idxs, frames, results):
+                boxes = result.boxes.cpu()
+                
+                # Run ByteTrack sequentially to preserve accurate tracker IDs and chronological logic
+                if len(boxes) > 0:
+                    tracks = byte_tracker.update(boxes, frame)
+                else:
+                    tracks = np.empty((0, 8))
+                
+                mock_boxes = DummyBoxes(tracks)
+                filtered_boxes, _ = filt.filter_boxes(mock_boxes)
+                
+                if filtered_boxes is not None and len(filtered_boxes) > 0:
+                    active_tracks = tracker.update(frame_idx, filtered_boxes)
+                else:
+                    active_tracks = []
+                    
+                for tid, state, box in active_tracks:
+                    stable_class = state.get_stable_class(detector.class_names)
+                    if stable_class in ["Truck", "Three-wheeler"]:
+                        conf = state.conf_history[-1] if state.conf_history else 0.0
+                        w, h = box[2] - box[0], box[3] - box[1]
+                        if conf > getattr(state, "best_conf", 0.0) and w > 20 and h > 20:
+                            state.best_conf = conf
+                            x1, y1, x2, y2 = (int(round(v)) for v in box)
+                            state.best_crop = frame[max(0, y1):y2, max(0, x1):x2].copy()
+                
+                newly_counted = counter.update(frame_idx, active_tracks, frame=frame, bus_classifier=bus_subclassifier, truck_classifier=truck_classifier)
+                for nc in newly_counted:
+                    nc["frame"] = frame_idx
+                    records.append(nc)
+                    logger.debug(f"frame={frame_idx} COUNTED track_id={nc['track_id']} class={nc['class']}")
+
+                if goods_crop_manager:
+                    for tid, state, box in active_tracks:
+                        stable_class = state.get_stable_class(detector.class_names)
+                        conf = state.conf_history[-1] if state.conf_history else 0.0
+                        goods_crop_manager.consider(tid, stable_class, box, conf, frame_idx, frame)
+
+                if annotator:
+                    annotator.draw_line(frame, config["roi"]["counting_line"][0], config["roi"]["counting_line"][1])
+                    for tid, state, box in active_tracks:
+                        stable_class = state.get_stable_class(detector.class_names)
+                        conf = state.conf_history[-1] if state.conf_history else 0.0
+                        annotator.draw_track(frame, box, tid, stable_class, conf, state.counted, state_str=state.state.value, not_counted_reason=getattr(state, "not_counted_reason", ""))
+                    y_offset = 30
+                    import cv2
+                    for cls_name, data in counter.counts.items():
+                        count = data["total"]
+                        cv2.putText(frame, f"{cls_name}: {count}", (20, y_offset), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
+                        y_offset += 30
+                    
+                    total_count = sum(d["total"] for d in counter.counts.values())
+                    h, w = frame.shape[:2]
+                    cv2.putText(frame, f"TOTAL: {total_count}", (w - 300, h - 30), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 3)
+                    annotator.write_frame(frame)
+            
+            elapsed_time = time.time() - read_start
+            if total_frames % 500 < args.batch_size:
+                realtime_factor = (total_frames / fps) / elapsed_time if elapsed_time > 0 else 0
+                logger.info(f"Frames processed: {total_frames} | Processing FPS: {total_frames/elapsed_time:.1f} | Realtime factor: {realtime_factor:.2f}x | YOLO batch: {len(frames)}")
+
         from tqdm import tqdm
         for frame_idx, frame in tqdm(reader.frames(start_frame=start_frame), desc="Processing frames", unit="frames"):
             frame_time = (frame_idx - start_frame) / fps
             if processing_fps > 0 and frame_time < next_process_time - 1e-5:
                 continue
             
+            
             next_process_time += time_per_frame
             total_frames += 1
-
-            tracked_results = detector.model.track(
-                source=frame,
-                persist=True,
-                tracker=str(Path(config_path).parent / "custom_bytetrack.yaml") if "track_buffer" in config.get("tracker", {}) else config["model"]["tracker"],
-                verbose=False,
-                imgsz=config["model"]["imgsz"],
-                device=config["model"]["device"],
-                conf=config["model"]["confidence"],
-                classes=detect_class_ids
-            )
             
-            result = tracked_results[0]
-            filtered_boxes, _ = filt.filter_boxes(result.boxes)
+            batch_frames.append(frame)
+            batch_frame_idxs.append(frame_idx)
             
-            if filtered_boxes is not None and len(filtered_boxes) > 0:
-                active_tracks = tracker.update(frame_idx, filtered_boxes)
-            else:
-                active_tracks = []
-                
-            for tid, state, box in active_tracks:
-                stable_class = state.get_stable_class(detector.class_names)
-                if stable_class in ["Truck", "Three-wheeler"]:
-                    conf = state.conf_history[-1] if state.conf_history else 0.0
-                    w, h = box[2] - box[0], box[3] - box[1]
-                    if conf > getattr(state, "best_conf", 0.0) and w > 20 and h > 20:
-                        state.best_conf = conf
-                        x1, y1, x2, y2 = (int(round(v)) for v in box)
-                        state.best_crop = frame[max(0, y1):y2, max(0, x1):x2].copy()
-            
-            newly_counted = counter.update(frame_idx, active_tracks, frame=frame, bus_classifier=bus_subclassifier, truck_classifier=truck_classifier)
-            for nc in newly_counted:
-                nc["frame"] = frame_idx
-                records.append(nc)
-                logger.debug(f"frame={frame_idx} COUNTED track_id={nc['track_id']} class={nc['class']}")
-
-            if goods_crop_manager:
-                for tid, state, box in active_tracks:
-                    stable_class = state.get_stable_class(detector.class_names)
-                    conf = state.conf_history[-1] if state.conf_history else 0.0
-                    goods_crop_manager.consider(tid, stable_class, box, conf, frame_idx, frame)
-
-            if annotator:
-                annotator.draw_line(frame, config["roi"]["counting_line"][0], config["roi"]["counting_line"][1])
-                for tid, state, box in active_tracks:
-                    stable_class = state.get_stable_class(detector.class_names)
-                    conf = state.conf_history[-1] if state.conf_history else 0.0
-                    annotator.draw_track(frame, box, tid, stable_class, conf, state.counted, state_str=state.state.value, not_counted_reason=getattr(state, "not_counted_reason", ""))
-                y_offset = 30
-                import cv2
-                for cls_name, data in counter.counts.items():
-                    count = data["total"]
-                    cv2.putText(frame, f"{cls_name}: {count}", (20, y_offset), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
-                    y_offset += 30
-                
-                total_count = sum(d["total"] for d in counter.counts.values())
-                h, w = frame.shape[:2]
-                cv2.putText(frame, f"TOTAL: {total_count}", (w - 300, h - 30), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 3)
-                annotator.write_frame(frame)
+            if len(batch_frames) >= args.batch_size:
+                process_batch(batch_frames, batch_frame_idxs)
+                batch_frames.clear()
+                batch_frame_idxs.clear()
                 
             if max_duration_minutes > 0 and (total_frames / fps) >= (max_duration_minutes * 60):
                 logger.info(f"HARD STOP at {max_duration_minutes} minutes reached.")
                 break
+
+        if len(batch_frames) > 0:
+            process_batch(batch_frames, batch_frame_idxs)
+            batch_frames.clear()
+            batch_frame_idxs.clear()
 
     if annotator:
         annotator.close()
@@ -386,19 +475,6 @@ def main():
             )
     except Exception as e:
         logger.error(f"Failed to generate dynamic interval counts: {e}")
-
-    # Generate 3-class legacy interval counts if needed
-    try:
-        script_path = Path(__file__).parent / "aggregate_intervals_3class.py"
-        intervals_cfg = config.get("intervals", {})
-        if intervals_cfg.get("enabled", False) and script_path.exists():
-            fps_str = str(fps)
-            start_time = args.start_time or intervals_cfg.get("video_start_time", "09:00:00")
-            interval_min = str(args.interval_minutes or intervals_cfg.get("duration_minutes", 15))
-            cmd = ["python3", str(script_path), str(output_dir), "--fps", fps_str, "--start", start_time, "--interval-min", interval_min]
-            subprocess.run(cmd, check=True)
-    except Exception as e:
-        logger.error(f"Failed to generate 3-class interval counts: {e}")
 
 if __name__ == "__main__":
     main()

@@ -7,6 +7,7 @@ import queue
 import threading
 import argparse
 import fcntl
+import shutil
 
 # Ensure historical-processor is on sys.path
 HIST_DIR = Path(__file__).resolve().parent
@@ -38,8 +39,10 @@ def run_command(cmd, desc):
 # subprocesses regardless of how many cameras are running.
 def acquire_gpu_slot(slots_dir, num_slots):
     os.makedirs(slots_dir, exist_ok=True)
+    # Artificially cap concurrency to 5 so we process in smaller, faster batches
+    actual_slots = min(num_slots, 5)
     while True:
-        for i in range(num_slots):
+        for i in range(actual_slots):
             slot_path = os.path.join(slots_dir, f"slot_{i}.lock")
             fh = open(slot_path, "w")
             try:
@@ -65,36 +68,38 @@ def download_and_remux_worker(download_queue, inference_queue, manifest, folder_
         gdrive_path = item['gdrive_path']
         date = item['date']
         filename = item['filename']
-        timestamp = filename.replace('.dav', '')
+        timestamp = filename.replace('.dav', '').replace('.mp4', '')
         
         local_dir = os.path.join(base_dir, date)
-        local_dav = os.path.join(local_dir, filename)
-        local_mp4 = local_dav + ".mp4"
+        local_file = os.path.join(local_dir, filename)
+        local_mp4 = local_file if filename.endswith('.mp4') else local_file + ".mp4"
         
         # 1. Download
         manifest.update_status(file_id, "DOWNLOADING")
-        if not downloader.download_file(gdrive_path, local_dav):
+        print(f"[{threading.current_thread().name}] Downloading {filename} to {local_file}")
+        if not downloader.download_file(gdrive_path, local_file):
             manifest.update_status(file_id, "FAILED", error="Download failed")
             download_queue.task_done()
             continue
             
         # 2. Remux
-        manifest.update_status(file_id, "DOWNLOADED", local_path=local_dav)
-        remux_cmd = ['tools/ffmpeg_bin/ffmpeg', '-y', '-i', local_dav, '-c', 'copy', local_mp4]
-        if not run_command(remux_cmd, f"Remuxing {filename}"):
-            manifest.update_status(file_id, "FAILED", error="Remux failed")
-            download_queue.task_done()
-            continue
+        manifest.update_status(file_id, "DOWNLOADED", local_path=local_file)
+        if filename.endswith('.dav'):
+            remux_cmd = ['ffmpeg', '-y', '-i', local_file, '-c', 'copy', local_mp4]
+            if not run_command(remux_cmd, f"Remuxing {filename}"):
+                manifest.update_status(file_id, "FAILED", error="Remux failed")
+                download_queue.task_done()
+                continue
             
         # 3. Pass to inference
-        item['local_dav'] = local_dav
+        item['local_dav'] = local_file
         item['local_mp4'] = local_mp4
         item['timestamp'] = timestamp
         inference_queue.put(item)
         download_queue.task_done()
 
-def inference_worker(inference_queue, manifest, base_output_dir, config_file=None,
-                      gpu_slots_dir=None, max_concurrent_inference=1, use_dali=True):
+def inference_worker(inference_queue, manifest, base_output_dir, folder_id, config_file=None,
+                      gpu_slots_dir=None, max_concurrent_inference=1, use_dali=True, ephemeral_dir=None):
     while True:
         item = inference_queue.get()
         if item is None:
@@ -141,17 +146,36 @@ def inference_worker(inference_queue, manifest, base_output_dir, config_file=Non
             manifest.update_status(file_id, "COMPLETED")
             print(f"\n[{threading.current_thread().name}] SUCCESS: Completed {filename}")
             
-        # Cleanup
-        if os.path.exists(local_dav):
+            # Upload results back to Google Drive
+            print(f"[{threading.current_thread().name}] Uploading results to Google Drive...")
+            gdrive_dest = f"abhaydrive,root_folder_id={folder_id}:results/{date}/{timestamp}"
+            upload_cmd = [
+                'tools/rclone-v1.75.0-linux-amd64/rclone',
+                'copy', output_dir, gdrive_dest
+            ]
+            if not run_command(upload_cmd, f"Uploading {filename} results"):
+                print(f"[{threading.current_thread().name}] WARNING: Failed to upload results to {gdrive_dest}")
+            
+            # Cleanup only on success to prevent storage growth
+            print(f"[{threading.current_thread().name}] Deleting local video files for {filename}")
+            if os.path.exists(local_dav):
+                try:
+                    os.remove(local_dav)
+                except OSError as e:
+                    print(f"[{threading.current_thread().name}] WARNING: Failed to delete {local_dav}: {e}")
+            if local_mp4 != local_dav and os.path.exists(local_mp4):
+                try:
+                    os.remove(local_mp4)
+                except OSError as e:
+                    print(f"[{threading.current_thread().name}] WARNING: Failed to delete {local_mp4}: {e}")
+                    
+        if ephemeral_dir:
             try:
-                os.remove(local_dav)
-            except OSError:
-                pass
-        if os.path.exists(local_mp4):
-            try:
-                os.remove(local_mp4)
-            except OSError:
-                pass
+                usage = shutil.disk_usage(ephemeral_dir)
+                free_gb = usage.free / (1024**3)
+                print(f"[{threading.current_thread().name}] Ephemeral disk free space: {free_gb:.1f} GB")
+            except Exception as e:
+                print(f"[{threading.current_thread().name}] Could not check disk space: {e}")
             
         inference_queue.task_done()
 
@@ -166,7 +190,7 @@ def main():
     parser.add_argument('--inf-threads', type=int, default=2, help="Number of inference threads")
     parser.add_argument('--batch-size', type=int, default=5, help="Batch size for fetching pending videos")
     parser.add_argument('--scan', action='store_true', help="Scan Google Drive before starting")
-    parser.add_argument('--max-concurrent-inference', type=int, default=1,
+    parser.add_argument('--max-concurrent-inference', type=int, default=5,
                          help="Max inference subprocesses running at once ACROSS ALL cameras sharing this GPU "
                               "(enforced via shared lock files, not just this process's --inf-threads). "
                               "Keep this in sync across every camera launched on the same box/GPU.")
@@ -175,16 +199,29 @@ def main():
     parser.add_argument('--no-dali', action='store_true',
                          help="Disable NVDEC hardware video decode (--use_dali is passed to main.py by default; "
                               "main.py falls back to CPU decode automatically if DALI isn't available).")
+    parser.add_argument('--ephemeral-dir', type=str, default=os.environ.get('CVC_EPHEMERAL_DIR', '/ephemeral/mvsacmp'),
+                         help="Base directory for ephemeral storage")
     args = parser.parse_args()
+
+    # Validate ephemeral directory
+    ephemeral_base = '/ephemeral'
+    if not os.path.exists(ephemeral_base) and not os.path.ismount(ephemeral_base):
+        print(f"ERROR: Ephemeral base path '{ephemeral_base}' is not available.")
+        print("Aborting to prevent silently filling up the root filesystem.")
+        sys.exit(1)
 
     camera_name = args.camera_name or args.folder_id
     db_path = args.db or f"historical-processor/data/manifest_{camera_name}.db"
-    output_dir = args.output_dir or f"historical-processor/output/{camera_name}"
-    video_base_dir = f"historical-processor/data/videos/{camera_name}"
+    output_dir = args.output_dir or os.path.join(args.ephemeral_dir, "output", camera_name)
+    video_base_dir = os.path.join(args.ephemeral_dir, "videos", camera_name)
+    temp_dir = os.path.join(args.ephemeral_dir, "temp", camera_name)
+    cache_dir = os.path.join(args.ephemeral_dir, "cache", camera_name)
     
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     os.makedirs(output_dir, exist_ok=True)
     os.makedirs(video_base_dir, exist_ok=True)
+    os.makedirs(temp_dir, exist_ok=True)
+    os.makedirs(cache_dir, exist_ok=True)
     
     manifest = IngestManifest(db_path=db_path)
     
@@ -196,8 +233,8 @@ def main():
         stats = manifest.get_stats()
         print(f"Scan complete. Total files in manifest: {stats.get('TOTAL', 0)}")
         
-    download_queue = queue.Queue(maxsize=20)
-    inference_queue = queue.Queue(maxsize=10)
+    download_queue = queue.Queue(maxsize=2)
+    inference_queue = queue.Queue(maxsize=2)
     
     # Start thread pools
     dl_threads = []
@@ -215,11 +252,12 @@ def main():
     for i in range(args.inf_threads):
         t = threading.Thread(
             target=inference_worker,
-            args=(inference_queue, manifest, output_dir, args.config),
+            args=(inference_queue, manifest, output_dir, args.folder_id, args.config),
             kwargs=dict(
                 gpu_slots_dir=args.gpu_slots_dir,
                 max_concurrent_inference=args.max_concurrent_inference,
                 use_dali=not args.no_dali,
+                ephemeral_dir=args.ephemeral_dir,
             ),
             name=f"INF-Worker-{i}"
         )
@@ -233,6 +271,7 @@ def main():
     print(f"Folder ID:    {args.folder_id}")
     print(f"Manifest DB:  {db_path}")
     print(f"Output Dir:   {output_dir}")
+    print(f"Ephemeral Dir:{args.ephemeral_dir}")
     print(f"Config:       {args.config or 'default'}")
     print(f"Workers:      {args.dl_threads} DL, {args.inf_threads} INF")
     print(f"GPU cap:      {args.max_concurrent_inference} concurrent inference job(s) across ALL cameras (slots: {args.gpu_slots_dir})")
@@ -244,7 +283,13 @@ def main():
         for item in manifest.get_by_status(status):
             manifest.update_status(item['file_id'], "DISCOVERED")
         
+    last_log_time = 0
     while True:
+        current_time = time.time()
+        if current_time - last_log_time > 60:
+            print(f"[Main] Queue depths - DL: {download_queue.qsize()}, INF: {inference_queue.qsize()}")
+            last_log_time = current_time
+
         if download_queue.qsize() < 10:
             batch = manifest.get_pending_batch(batch_size=args.batch_size)
             if not batch:
