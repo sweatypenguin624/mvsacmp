@@ -49,6 +49,32 @@ if [ ! -f "$CONFIG" ]; then
   exit 1
 fi
 
+# Don't depend on a venv being activated in this shell -- auto-detect one at
+# the conventional repo-relative location (same convention as
+# historical-processor/orchestrator.py's ENV_PYTHON), falling back to
+# whatever python3 resolves to.
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [ -z "${PYTHON_BIN:-}" ]; then
+  PYTHON_BIN="python3"
+  if [ -x "${REPO_ROOT}/env/bin/python" ]; then
+    PYTHON_BIN="${REPO_ROOT}/env/bin/python"
+  fi
+fi
+
+# Fail fast on a broken env instead of burning GPU time launching
+# MAX_PARALLEL processes that are all guaranteed to die on the same
+# ModuleNotFoundError.
+if ! preflight_err="$("$PYTHON_BIN" -c "import torch, ultralytics" 2>&1)"; then
+  echo "FATAL: '$PYTHON_BIN' cannot import torch/ultralytics -- wrong Python env?"
+  echo "$preflight_err"
+  echo
+  echo "If you have a venv, either activate it before running this script,"
+  echo "or make sure it's at ${REPO_ROOT}/env (auto-detected), or pass its"
+  echo "python binary via: PYTHON_BIN=/path/to/venv/bin/python $0 ..."
+  exit 1
+fi
+echo "Using Python: $PYTHON_BIN"
+
 mkdir -p "$OUTPUT_ROOT"
 echo "Running up to $MAX_PARALLEL video(s) at once, output under $OUTPUT_ROOT/"
 if [ -n "$DURATION_MINUTES" ]; then
@@ -71,7 +97,7 @@ for video in "$@"; do
     if [ -n "$DURATION_MINUTES" ]; then
       extra_args+=(--duration_minutes "$DURATION_MINUTES")
     fi
-    python3 vehicle-counting/pipeline/counting/main.py \
+    "$PYTHON_BIN" vehicle-counting/pipeline/counting/main.py \
       --video "$video" \
       --output_dir "$out_dir" \
       --config "$CONFIG" \
