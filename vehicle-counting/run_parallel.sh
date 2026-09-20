@@ -49,28 +49,33 @@ if [ ! -f "$CONFIG" ]; then
   exit 1
 fi
 
-# Don't depend on a venv being activated in this shell -- auto-detect one at
-# the conventional repo-relative location (same convention as
-# historical-processor/orchestrator.py's ENV_PYTHON), falling back to
-# whatever python3 resolves to.
+# Prefer whatever venv is actually activated in this shell ($VIRTUAL_ENV is
+# set by `source .../bin/activate`) over guessing a conventional path -- an
+# activated venv is a deliberate signal of which one you want. Fall back to
+# common repo-relative locations, then plain python3.
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 if [ -z "${PYTHON_BIN:-}" ]; then
-  PYTHON_BIN="python3"
-  if [ -x "${REPO_ROOT}/env/bin/python" ]; then
+  if [ -n "${VIRTUAL_ENV:-}" ] && [ -x "${VIRTUAL_ENV}/bin/python" ]; then
+    PYTHON_BIN="${VIRTUAL_ENV}/bin/python"
+  elif [ -x "${REPO_ROOT}/env/bin/python" ]; then
     PYTHON_BIN="${REPO_ROOT}/env/bin/python"
+  elif [ -x "${REPO_ROOT}/.venv/bin/python" ]; then
+    PYTHON_BIN="${REPO_ROOT}/.venv/bin/python"
+  else
+    PYTHON_BIN="python3"
   fi
 fi
 
 # Fail fast on a broken env instead of burning GPU time launching
 # MAX_PARALLEL processes that are all guaranteed to die on the same
 # ModuleNotFoundError.
-if ! preflight_err="$("$PYTHON_BIN" -c "import torch, ultralytics" 2>&1)"; then
-  echo "FATAL: '$PYTHON_BIN' cannot import torch/ultralytics -- wrong Python env?"
+if ! preflight_err="$("$PYTHON_BIN" -c "import torch, ultralytics, tensorrt" 2>&1)"; then
+  echo "FATAL: '$PYTHON_BIN' cannot import torch/ultralytics/tensorrt -- wrong Python env?"
   echo "$preflight_err"
   echo
   echo "If you have a venv, either activate it before running this script,"
-  echo "or make sure it's at ${REPO_ROOT}/env (auto-detected), or pass its"
-  echo "python binary via: PYTHON_BIN=/path/to/venv/bin/python $0 ..."
+  echo "or make sure it's at ${REPO_ROOT}/env or ${REPO_ROOT}/.venv (auto-detected),"
+  echo "or pass its python binary via: PYTHON_BIN=/path/to/venv/bin/python $0 ..."
   exit 1
 fi
 echo "Using Python: $PYTHON_BIN"
